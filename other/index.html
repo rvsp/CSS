@@ -1,158 +1,186 @@
 <!doctype html>
 <html>
-  <head>
 
-    <meta charset="utf-8" />
-    <title>Other Features</title>
+<head>
 
-   <link rel="stylesheet" href="../intro/css/main.css"/>
- <style>
-  html { 
-  --splashcolor: #cc0000;
-  --lightsplash: #ff9999;
-  --dark_bg: #666666;
-  --colorpop: #aa0000;
-}
- .cursors li {
-	width: 170px; height: 70px; line-height:70px;
-	float: left; margin: 0 15px 15px 0;
-	border-radius: 15px; text-align:center;
-	background: linear-gradient(rgba(200, 0, 0, .4), rgba(200, 0, 0, .6));
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.3), inset 1px 1px #fff;
-	list-style-type: none;
- }
-.cursors ul:last-of-type li {
-	background: linear-gradient(rgba(200, 0, 0, .2), rgba(200, 0, 0, .4));
- }
-	/* COLUMNS*/
+  <meta charset="utf-8" />
+  <title>Other Features</title>
 
-	#columnsslide {
-            column-count: 2;
-            column-rule: 1px solid #bbb;
-            column-gap: 2em;
-          }
-          #columnsslide p {
-            font-size: 15px;
-			font-family:Arial, Helvetica, sans-serif;
-          }
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <style>
+    html {
+      --splashcolor: #cc0000;
+      --lightsplash: #ff9999;
+      --dark_bg: #666666;
+      --colorpop: #aa0000;
+    }
 
-            .textwrap{width: 94%; height: 1.1em;
- height: 1.1em; overflow: hidden; line-height: 1.1em; margin:0.2em 0}
+    .cursors li {
+      width: 170px;
+      height: 70px;
+      line-height: 70px;
+      float: left;
+      margin: 0 15px 15px 0;
+      border-radius: 15px;
+      text-align: center;
+      background: linear-gradient(rgba(200, 0, 0, .4), rgba(200, 0, 0, .6));
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fff;
+      list-style-type: none;
+    }
 
- 
-.codelike.codelike.codelike {
-  font-size: 1.5rem;
-}
-body {background-repeat: no-repeat; background-size: cover;}
-.filter {
-    background-size: cover;
-}
-.filter section {
+    .cursors ul:last-of-type li {
+      background: linear-gradient(rgba(200, 0, 0, .2), rgba(200, 0, 0, .4));
+    }
 
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas:
-    "style      style"
-    "paragraph  image"
-}
-.filter p {
-  grid-area: paragraph;
-  align-self: start;
-  background-color: #fffb;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.filter style {
-  grid-area: style;
-  margin: 10px;
-}
-.filter img {
-  grid-area: image;
-  margin: 10px;
-  border: 3px solid var(--colorpop);
-  max-height: 100%;
-  max-width: 100%;
-}
-.borderimageexamples {
-  max-width: 50%;
-  margin: auto;
-  padding: 5px;
-  border: 10px solid;
-  white-space: pre;
-  overflow: scroll;
-}
-.slicing {
-margin: 1em auto;
-height: 400px;
-width: 400px;
-background-image: 
-  linear-gradient(to bottom, var(--colorpop) 5px, transparent 5px 245px, var(--colorpop) 245px), 
-  linear-gradient(to left, var(--colorpop) 5px, transparent 5px 245px, var(--colorpop) 245px), 
-  linear-gradient(to bottom,transparent -3%, var(--dark_bg), transparent 103%);
-background-size: 400px 250px, 250px 400px, 90% 90%;
-background-position: center;
-background-repeat: no-repeat;
-}
-.dream {
-  font-family: serif; 
-  text-shadow: none;
-  background-color: white;
-}
- </style>
-  </head>
-  <body>
+    /* COLUMNS*/
 
-<header>
+    #columnsslide {
+      column-count: 2;
+      column-rule: 1px solid #bbb;
+      column-gap: 2em;
+    }
+
+    #columnsslide p {
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .textwrap {
+      width: 94%;
+      height: 1.1em;
+      height: 1.1em;
+      overflow: hidden;
+      line-height: 1.1em;
+      margin: 0.2em 0
+    }
+
+
+    .codelike.codelike.codelike {
+      font-size: 1.5rem;
+    }
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .filter {
+      background-size: cover;
+    }
+
+    .filter section {
+
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        "style      style"
+        "paragraph  image"
+    }
+
+    .filter p {
+      grid-area: paragraph;
+      align-self: start;
+      background-color: #fffb;
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
+
+    .filter style {
+      grid-area: style;
+      margin: 10px;
+    }
+
+    .filter img {
+      grid-area: image;
+      margin: 10px;
+      border: 3px solid var(--colorpop);
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    .borderimageexamples {
+      max-width: 50%;
+      margin: auto;
+      padding: 5px;
+      border: 10px solid;
+      white-space: pre;
+      overflow: scroll;
+    }
+
+    .slicing {
+      margin: 1em auto;
+      height: 400px;
+      width: 400px;
+      background-image:
+        linear-gradient(to bottom, var(--colorpop) 5px, transparent 5px 245px, var(--colorpop) 245px),
+        linear-gradient(to left, var(--colorpop) 5px, transparent 5px 245px, var(--colorpop) 245px),
+        linear-gradient(to bottom, transparent -3%, var(--dark_bg), transparent 103%);
+      background-size: 400px 250px, 250px 400px, 90% 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .dream {
+      font-family: serif;
+      text-shadow: none;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
     <nav>
       <ul>
         <li><button class="cancel" id="back">Back</button></li>
         <li><button class="done" id="next">Next</button></li>
       </ul>
     </nav>
-</header>
+  </header>
 
   <div id="info">
     <p>
-    <span class="key">&rarr;</span> and <span class="key">&rarr;</span> to change slides.
-    <span class="key">2</span> for comments. <a href="https://estelle.github.com/CSS">estelle.github.com/CSS</a>
+      <span class="key">&rarr;</span> and <span class="key">&rarr;</span> to change slides.
+      <span class="key">2</span> for comments. <a href="https://rvsp.github.com/CSS">rvsp.github.com/CSS</a>
     </p>
   </div>
 
   <div id="presentation">
 
-   <div id="presentation-counter"></div>
+    <div id="presentation-counter"></div>
 
-   <div id="slides">
-
-
-<div class="slide intro">
-    <header>
-    	<h1>CSS: Other Features</h1>
-    </header>
-  </section>
-</div>
+    <div id="slides">
 
 
-<div class="slide">
-    <header>
-    <h1>Border Images</h1>
-  </header>
-    <section class="content">
-  <ul class="col3" style="column-rule: none">
-    <li>Border Images
-      <ul>
-       <code> <li>border-image shorthand</li>
+      <div class="slide intro">
+        <header>
+          <h1>CSS: Other Features</h1>
+        </header>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Border Images</h1>
+        </header>
+        <section class="content">
+          <ul class="col3" style="column-rule: none">
+            <li>Border Images
+              <ul>
+                <code> <li>border-image shorthand</li>
         <li>border-image-source</li>
         <li>border-image-slice</li>
         <li>border-image-width</li>
         <li>border-image-outset</li>
         <li>border-image-repeat</li></code>
-        <li>Putting it all together</li>
-      </ul>
-    </li>
-    <li>Web performance</li>
-    <li>Multi column layout
-      <ul><code>
+                <li>Putting it all together</li>
+              </ul>
+            </li>
+            <li>Web performance</li>
+            <li>Multi column layout
+              <ul><code>
         <li>column-count</li>
         <li>column-fill</li>
         <li>column-rule
@@ -165,447 +193,553 @@ background-repeat: no-repeat;
         <li>column-span</li>
         <li>column-width</li>
         <li>columns</li></code>
-        <li>Related Properties
-          <ul>
-           <code> <li>break-after</li>
+                <li>Related Properties
+                  <ul>
+                    <code> <li>break-after</li>
             <li>break-before</li>
             <li>break-inside</li>
             <li>orphans</li>
             <li>widows</li></code>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>Art direction</li>
+            <li>Cursors</li>
+            <li>Other features</li>
           </ul>
-        </li>
-      </ul>
-    </li>
-
-    <li>Art direction</li>
-    <li>Cursors</li>
-    <li>Other features</li>
-  </ul>
-    </section>
-</div>
+        </section>
+      </div>
 
 
-<!-- Border Images-->
-<div class="slide intro">
-     <header>
-    <h1>Border Images</h1>
-  </header>
- </div>
+      <!-- Border Images-->
+      <div class="slide intro">
+        <header>
+          <h1>Border Images</h1>
+        </header>
+      </div>
 
 
-<!-- what is -->
-<div class="slide">
-   <header>
-    <h1>What is Border Image</h1>
-  </header>
-  <section class="content">
-  <div class="whatisborderimage"></div>
-  <div class="slicing"></div>
-     </section>
- </div>
+      <!-- what is -->
+      <div class="slide">
+        <header>
+          <h1>What is Border Image</h1>
+        </header>
+        <section class="content">
+          <div class="whatisborderimage"></div>
+          <div class="slicing"></div>
+        </section>
+      </div>
 
 
-<!-- border-image shorthand-->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image</a></code> shorthand property</h1>
-  </header>
-<section class="content">
-  <p>Shorthand for <code>border-image-source, border-image-slice, border-image-width, border-image-outset</code>, and <code>border-image-repeat</code>. Omitted sub-values are set to initial.</p>
-  <pre contenteditable>&lt;source> &lt;slice> / &lt;width> / &lt;outset> &lt;repeat></pre>
-  <dl>
-  <dt>border-image-source</dt>
-  <dd>The source image.</dd>
-  <dt>border-image-slice</dt>
-  <dd>The dimensions for slicing the source image into regions.{1,4}</dd>
-  <dt>border-image-width</dt>
-  <dd>The width of the border image.{1,4}</dd>
-  <dt>border-image-outset</dt>
-  <dd>The distance of the border image from the element's outside edge. Up to four values may be specified. {1,4}</dd>
-  <dt>border-image-repeat</dt>
-  <dd>Defines how the top and bottom and left and right edge regions of the source image are adjusted to  fit the dimensions of the border image.{1,2}</dd>
-</dl>
+      <!-- border-image shorthand-->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image</a></code>
+            shorthand property</h1>
+        </header>
+        <section class="content">
+          <p>Shorthand for
+            <code>border-image-source, border-image-slice, border-image-width, border-image-outset</code>, and
+            <code>border-image-repeat</code>. Omitted sub-values are set to initial.</p>
+          <pre contenteditable>&lt;source> &lt;slice> / &lt;width> / &lt;outset> &lt;repeat></pre>
+          <dl>
+            <dt>border-image-source</dt>
+            <dd>The source image.</dd>
+            <dt>border-image-slice</dt>
+            <dd>The dimensions for slicing the source image into regions.{1,4}</dd>
+            <dt>border-image-width</dt>
+            <dd>The width of the border image.{1,4}</dd>
+            <dt>border-image-outset</dt>
+            <dd>The distance of the border image from the element's outside edge. Up to four values may be specified.
+              {1,4}</dd>
+            <dt>border-image-repeat</dt>
+            <dd>Defines how the top and bottom and left and right edge regions of the source image are adjusted to fit
+              the dimensions of the border image.{1,2}</dd>
+          </dl>
 
-</section>
-</div>
+        </section>
+      </div>
 
-<div class="slide object">
-  <header onclick="setData('bi');"><h1>Browser support: <code>border-image</code> property</h1>
-  </header>
-<object id="bi" data="https://caniuse.com/#search=border-image"></object>
-  <a href="https://caniuse.com/#search=border-image" target="play" title="open resource in new window" class="objectlink">Open</a>
-</div>
-
-
-
-
-<!-- border-image-source-->
-<!-- border-image-slice-->
-<!-- border-image-width-->
-<!-- border-image-outset-->
-<!-- border-image-repeat-->
-<!-- border-image shorthand-->
-
-
-<!-- border-image-source-->
-
-
-<div class="slide bisrc">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-source</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the source image used to create the border image.</p>
-  <pre contenteditable>none | &lt;image></pre>
-  <p>The image type can be any of the image types we covered in the images section</p>
-
-  <style contenteditable class="editme">.bisrc div {
-    border-image-source: url(img/dots.png);
-}</style>
-<div class="borderimageexamples">
-  border: 10px solid;
-  border-image-source: url(img/dots.png);</div>
-  <p>No border image will appear if there is no border width set either thru border-width or border-image-width, described shortly.</p>
-</section>
-</div>
-
-<!-- border-image-slice-->
-<div class="slide bislice">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Divides the background image file into regions. These regions form the components of an element's border image.</p>
-  <pre contenteditable>&lt;number-percentage>{1,4} && fill?</pre>
-  <p>The slicing process creates nine regions in total: four corners, four edges, and a middle region. Four slice lines, set a given distance from their respective sides, control the size of the regions.</p>
-  <dl>
-    <dt>values{1,4}</dt>
-    <dd>The edge offset in pixels or percentages for raster images and coordinates for vector images. For vector images, the number is relative to the element's size, not the size of the source image, so percentages are generally preferable in these cases.</dd>
-    <dt>fill</dt>
-    <dd>Preserves the middle image region and displays it like a background image, but stacked above the actual background. Its width and height are sized to match the top and left image regions, respectively.</dd>
-    </dl></section>
-</div>
-
-<!-- border-image-slice-->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code> property</h1>
-  </header>
-<section class="content">
-  <div class="slicing"></div>
-</section>
-</div>
-
-<!-- border-image-slice-->
-<div class="slide bislice">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code> property</h1>
-  </header>
-<section class="content">
-      <style contenteditable class="editme">.bislice div {
-    border-image-source: url(img/dots.png);
-    border-image-slice: 20 fill;
-}</style>
-<div class="borderimageexamples">  border: 10px solid;
-  border-image-source: url(img/dots.png);
-  border-image-slice: 20 fill;</div>
-</section>
-</div>
+      <div class="slide object">
+        <header onclick="setData('bi');">
+          <h1>Browser support: <code>border-image</code> property</h1>
+        </header>
+        <object id="bi" data="https://caniuse.com/#search=border-image"></object>
+        <a href="https://caniuse.com/#search=border-image" target="play" title="open resource in new window"
+          class="objectlink">Open</a>
+      </div>
 
 
 
-<!-- border-image-width-->
-<div class="slide biwidth">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-width</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the width of an element's border image.</p>
-  <pre contenteditable>&lt;length-percentage> | &lt;number> | auto {1,4}</pre>
-  <p>If this property's value is greater than the element's border-width, the border image will extend beyond the padding (and/or content) edge.</p>
 
-  <p>Takes up to four values, in TRouBLe order<sup>*</sup> </p>
-<dl>
-  <dt>&lt;length-percentage></dt>
-    <dd>Defines the width of the border, like <code>border-width</code>. Percents are supported, and are relative to the border image offsets. Can't be negative.</dd>
-  <dt>&lt;number></dt>
-    <dd>Unitless multiple of the corresponding border-width. Can't be negative.</dd>
-  <dt>auto</dt>
-    <dd>Same as <code>border-image-slice</code>, or <code>border-width</code> if <code>border-image-slice</code> dimensions weren't defined.</dd>
-
-    <p><small>* TRouBLe order as described in <code>border, padding</code>, and <code>margin</code></small></p></section>
-</div>
+      <!-- border-image-source-->
+      <!-- border-image-slice-->
+      <!-- border-image-width-->
+      <!-- border-image-outset-->
+      <!-- border-image-repeat-->
+      <!-- border-image shorthand-->
 
 
-
-<!-- border-image-width-->
-<div class="slide biwidth">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-width</a></code> property</h1>
-  </header>
-<section class="content">
-          <style contenteditable class="editme">.biwidth div {
-    border-image-source: url(img/dots.png);
-    border-image-slice: 20 fill;
-    border-image-width: 20px;
-}</style>
-<div class="borderimageexamples">  border: 10px solid;
-  border-image-source: url(img/dots.png);
-  border-image-slice: 20px;
-  border-image-width: 20 fill;</div>
-</section>
-</div>
+      <!-- border-image-source-->
 
 
+      <div class="slide bisrc">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-source</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the source image used to create the border image.</p>
+          <pre contenteditable>none | &lt;image></pre>
+          <p>The image type can be any of the image types we covered in the images section</p>
 
-<!-- border-image-outset-->
-<div class="slide bioutset">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-outset</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>The border-image-outset CSS property sets the distance by which an element's border image is set out from its border box.</p>
-  <pre contenteditable> &lt;length> | &lt;number> {1,4}</pre>
-  <p>Takes up to four values, in TRouBLe order<sup>*</sup> </p>
-<p>Either takes a <code>&lt;length></code> dimension, or the number is a multiple of the element's corresponding border-widths. 
-<pre contenteditable>border-width: 1em 2px 0 1.5rem;
+          <style contenteditable class="editme">
+            .bisrc div {
+              border-image-source: url(img/dots.png);
+            }
+          </style>
+          <div class="borderimageexamples">
+            border: 10px solid;
+            border-image-source: url(img/dots.png);</div>
+          <p>No border image will appear if there is no border width set either thru border-width or border-image-width,
+            described shortly.</p>
+        </section>
+      </div>
+
+      <!-- border-image-slice-->
+      <div class="slide bislice">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Divides the background image file into regions. These regions form the components of an element's border
+            image.</p>
+          <pre contenteditable>&lt;number-percentage>{1,4} && fill?</pre>
+          <p>The slicing process creates nine regions in total: four corners, four edges, and a middle region. Four
+            slice lines, set a given distance from their respective sides, control the size of the regions.</p>
+          <dl>
+            <dt>values{1,4}</dt>
+            <dd>The edge offset in pixels or percentages for raster images and coordinates for vector images. For vector
+              images, the number is relative to the element's size, not the size of the source image, so percentages are
+              generally preferable in these cases.</dd>
+            <dt>fill</dt>
+            <dd>Preserves the middle image region and displays it like a background image, but stacked above the actual
+              background. Its width and height are sized to match the top and left image regions, respectively.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <!-- border-image-slice-->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <div class="slicing"></div>
+        </section>
+      </div>
+
+      <!-- border-image-slice-->
+      <div class="slide bislice">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-slice</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .bislice div {
+              border-image-source: url(img/dots.png);
+              border-image-slice: 20 fill;
+            }
+          </style>
+          <div class="borderimageexamples"> border: 10px solid;
+            border-image-source: url(img/dots.png);
+            border-image-slice: 20 fill;</div>
+        </section>
+      </div>
+
+
+
+      <!-- border-image-width-->
+      <div class="slide biwidth">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-width</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the width of an element's border image.</p>
+          <pre contenteditable>&lt;length-percentage> | &lt;number> | auto {1,4}</pre>
+          <p>If this property's value is greater than the element's border-width, the border image will extend beyond
+            the padding (and/or content) edge.</p>
+
+          <p>Takes up to four values, in TRouBLe order<sup>*</sup> </p>
+          <dl>
+            <dt>&lt;length-percentage></dt>
+            <dd>Defines the width of the border, like <code>border-width</code>. Percents are supported, and are
+              relative to the border image offsets. Can't be negative.</dd>
+            <dt>&lt;number></dt>
+            <dd>Unitless multiple of the corresponding border-width. Can't be negative.</dd>
+            <dt>auto</dt>
+            <dd>Same as <code>border-image-slice</code>, or <code>border-width</code> if <code>border-image-slice</code>
+              dimensions weren't defined.</dd>
+
+            <p><small>* TRouBLe order as described in <code>border, padding</code>, and <code>margin</code></small></p>
+        </section>
+      </div>
+
+
+
+      <!-- border-image-width-->
+      <div class="slide biwidth">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-width</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .biwidth div {
+              border-image-source: url(img/dots.png);
+              border-image-slice: 20 fill;
+              border-image-width: 20px;
+            }
+          </style>
+          <div class="borderimageexamples"> border: 10px solid;
+            border-image-source: url(img/dots.png);
+            border-image-slice: 20px;
+            border-image-width: 20 fill;</div>
+        </section>
+      </div>
+
+
+
+      <!-- border-image-outset-->
+      <div class="slide bioutset">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-outset</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>The border-image-outset CSS property sets the distance by which an element's border image is set out from
+            its border box.</p>
+          <pre contenteditable> &lt;length> | &lt;number> {1,4}</pre>
+          <p>Takes up to four values, in TRouBLe order<sup>*</sup> </p>
+          <p>Either takes a <code>&lt;length></code> dimension, or the number is a multiple of the element's
+            corresponding border-widths.
+          <pre contenteditable>border-width: 1em 2px 0 1.5rem;
 border-image-outset: 2;
-border-image-outset: 2em 4px 0 3rem</pre> 
- <p>The parts of the border image that are rendered outside the element's border box with border-image-outset do not trigger overflow scrollbars and don't capture mouse events</p>
-  <p><small>* TRouBLe order as described in <code>border, padding</code>, and <code>margin</code></small></p></section>
-</div>
+border-image-outset: 2em 4px 0 3rem</pre>
+          <p>The parts of the border image that are rendered outside the element's border box with border-image-outset
+            do not trigger overflow scrollbars and don't capture mouse events</p>
+          <p><small>* TRouBLe order as described in <code>border, padding</code>, and <code>margin</code></small></p>
+        </section>
+      </div>
 
 
 
-<!-- border-image-outset-->
-<div class="slide bioutset">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-outset</a></code> property</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">.bioutset div {
-    border-image-source: url(img/dots.png);
-    border-image-slice: 20;
-    border-width: 20px;
-    border-image-outset: 2;
-}</style>
-<div class="borderimageexamples">don't see all of me?
-Maybe add a margin!
-Outset doesn't impact box model.
-But takes up space like outline and box-shadow.</div>
-</section>
-</div>
+      <!-- border-image-outset-->
+      <div class="slide bioutset">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-outset</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .bioutset div {
+              border-image-source: url(img/dots.png);
+              border-image-slice: 20;
+              border-width: 20px;
+              border-image-outset: 2;
+            }
+          </style>
+          <div class="borderimageexamples">don't see all of me?
+            Maybe add a margin!
+            Outset doesn't impact box model.
+            But takes up space like outline and box-shadow.</div>
+        </section>
+      </div>
 
 
 
-<!-- border-image-repeat-->
-<div class="slide birepeat">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-repeat</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Defines how the edge regions of the image (the non corner parts) are handled in filling those regions.</p>
-  <pre contenteditable>stretch | repeat | round | space {1,2}</pre>
-  <dl>
-  <dt>stretch</dt>
-  <dd>Middle parts are stretched to fill the borders between each corner.</dd>
-  <dt>repeat</dt>
-  <dd>Middle parts are tiled (repeated) to fill the borders between each corner. A tile may be clipped to fit.</dd>
-  <dt>round</dt>
-  <dd>Middle parts are tiled (repeated) to fill the borders between each corner. Tiles may be stretched to fit.</dd>
-  <dt>space</dt>
-  <dd>Middle parts are tiled (repeated) to fill the borders between each corner. Not tile will be clipped or stretched. Rather, space will be distributed between  tiles if necessary.</dd>
-</dl></section>
-</div>
+      <!-- border-image-repeat-->
+      <div class="slide birepeat">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-repeat</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Defines how the edge regions of the image (the non corner parts) are handled in filling those regions.</p>
+          <pre contenteditable>stretch | repeat | round | space {1,2}</pre>
+          <dl>
+            <dt>stretch</dt>
+            <dd>Middle parts are stretched to fill the borders between each corner.</dd>
+            <dt>repeat</dt>
+            <dd>Middle parts are tiled (repeated) to fill the borders between each corner. A tile may be clipped to fit.
+            </dd>
+            <dt>round</dt>
+            <dd>Middle parts are tiled (repeated) to fill the borders between each corner. Tiles may be stretched to
+              fit.</dd>
+            <dt>space</dt>
+            <dd>Middle parts are tiled (repeated) to fill the borders between each corner. Not tile will be clipped or
+              stretched. Rather, space will be distributed between tiles if necessary.</dd>
+          </dl>
+        </section>
+      </div>
 
 
 
-<!-- border-image-repeat-->
-<div class="slide birepeat">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-repeat</a></code> property</h1>
-  </header>
-<section class="content">
-<style contenteditable class="editme">.birepeat div { margin-bottom: 100px;
-    border-image-source: repeating-linear-gradient(45deg, var(--colorpop), #ccc, var(--dark_bg) 30px);
-    border-image-source: url(img/dots.png);
-    border-image-slice: 20;
-    border-width: 20px;
-    border-image-outset: 2;
-    border-image-repeat: repeat space;
-}</style>
-<div class="borderimageexamples" contenteditable="">Change the border-image-repeat value to see the different effect. 
-Edit this text to grow/shrink this element.</div>
-</section>
-</div>
+      <!-- border-image-repeat-->
+      <div class="slide birepeat">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="resource">border-image-repeat</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .birepeat div {
+              margin-bottom: 100px;
+              border-image-source: repeating-linear-gradient(45deg, var(--colorpop), #ccc, var(--dark_bg) 30px);
+              border-image-source: url(img/dots.png);
+              border-image-slice: 20;
+              border-width: 20px;
+              border-image-outset: 2;
+              border-image-repeat: repeat space;
+            }
+          </style>
+          <div class="borderimageexamples" contenteditable="">Change the border-image-repeat value to see the different
+            effect.
+            Edit this text to grow/shrink this element.</div>
+        </section>
+      </div>
 
 
 
 
- <!-- -->
-<div class="slide">
-  <header>
-    <h1>border image recap</h1>
-  </header>
-    <section class="content">
-<pre contenteditable><b>border-image</b>: source || slice / width / outset  || repeat;</pre>
+      <!-- -->
+      <div class="slide">
+        <header>
+          <h1>border image recap</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable><b>border-image</b>: source || slice / width / outset  || repeat;</pre>
 
-<pre contenteditable><b>border-style</b>: 
+          <pre contenteditable><b>border-style</b>: 
 <b>border-image-source</b>: <strong>none</strong> | url() | &lt;image>
 <b>border-image-slice</b>: &lt;number> | XX% {1,4} &amp;&amp; fill
 <b>border-image-width</b>: &lt;length> | XX% | &lt;number> | <strong>1</strong> | auto {1,4}
 <b>border-image-outset</b>: &lt;length> | &lt;number> {1,4}
 <b>border-image-repeat</b>: <strong>stretch</strong> | repeat | round | space{1,2}</pre>
-    <ul>
-    <li>Syntax for non-prefixed differs</li>
-    <li>Must also declare <code>border-style</code></li>
-    <li>Declaring <code>border</code> overrides it, but not any of the long-hand properties
-    <li><a href="http://border-image.com/">Border image tool</a></li>
-  border-image browser support</a></li>
-</ul>
-     </section>
- </div>
+          <ul>
+            <li>Syntax for non-prefixed differs</li>
+            <li>Must also declare <code>border-style</code></li>
+            <li>Declaring <code>border</code> overrides it, but not any of the long-hand properties
+            <li><a href="http://border-image.com/">Border image tool</a></li>
+            border-image browser support</a></li>
+          </ul>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>border-image</h1>
-  </header>
-    <section class="content"><br/>
-<div id="border-image" contenteditable>&lt;div id="border-image"></div><br/>
-<style contenteditable class="editme">#border-image {
-  border-image: url(img/gradient.png) 3 / 3px stretch;
-}</style>
-</section>
+      <div class="slide">
+        <header>
+          <h1>border-image</h1>
+        </header>
+        <section class="content"><br />
+          <div id="border-image" contenteditable>&lt;div id="border-image"></div><br />
+          <style contenteditable class="editme">
+            #border-image {
+              border-image: url(img/gradient.png) 3 / 3px stretch;
+            }
+          </style>
+        </section>
 
-</div>
+      </div>
 
-<div class="slide object">
-<header><h1>Play with border-image</h1>
-  </header>
-<object data="files/83_longcat.html"></object>
-<a href="files/83_longcat.html" target="play" class="objectlink">Try it out</a>
-</div>
-
-
-
-<div class="slide intro"><header><h1>Web Performance</h1>
-  </header></div> 
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/css/isolation" target="resource">isolation</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Determines whether an element must create a new stacking context.</p>
-  <pre contenteditable>auto | isolate</pre>
-  <p>Use case: Prevent elements from blending with their backdrops.</p>
-  <dl><dt>auto</dt>
-    <dd>A new stacking context is created only if one of the properties applied to the element requires it.</dd>
-    <dt>isolate</dt>
-    <dd>A new stacking context must be created. Also prevents an element from blending into other elements that are in the backdrop.</dd>
-    </dl> 
-</section>
-</div>
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/css/contain" target="resource">contain</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Allows you to say an element and its contents are, as much as possible, independent of the rest of the document tree.</p>
-  <pre contenteditable>none | strict | content |  size | layout | style | paint</pre>
-  <p>Enables the browser to recalculate layout, style, paint, and size for a limited area of the DOM and not the entire page.</p>
-  <pre contenteditable>contain: size paint;</pre>
-  <dl>
-  <dt>none</dt>
-  <dd>Element renders as normal, with no containment applied.</dd>
-  <dt>strict</dt>
-  <dd>All containment rules except style are applied. Same as <code>contain: size layout paint;</code>.</dd>
-  <dt>content</dt>
-  <dd>All containment rules except size and style are applied to the element. Same as <code>contain: layout paint</code>.</dd>
-  <dt>size</dt>
-  <dd>Element can be sized without reflowing its descendants. No need to check them for size changes.</dd>
-  <dt>layout</dt>
-  <dd>Nothing outside the element may affect its internal layout, and nothing inside the element may effect the external layout.</dd>
-  <dt>style</dt>
-  <dd>For properties that can effect more than just an element and its descendants, those effects don't escape the containing element.</dd>
-  <dt>paint</dt>
-  <dd>Descendants of the element don't display outside its bounds. If an element is off-screen or otherwise not visible, its descendants are also guaranteed to not be visible.</dd>
-</dl>
-  <p><code>paint, strict</code> and <code>content</code> creates a new stacking context, a new block formatting context and, new
-containing blocks for the descendants which position property is absolute or fixed.</p>
-</section>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Play with border-image</h1>
+        </header>
+        <object data="files/83_longcat.html"></object>
+        <a href="files/83_longcat.html" target="play" class="objectlink">Try it out</a>
+      </div>
 
 
 
+      <div class="slide intro">
+        <header>
+          <h1>Web Performance</h1>
+        </header>
+      </div>
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>GPU accelerants</h1>
-  </header>
-   <section class="content">
-    <p>Properties that will lead to compositing include:</p>
-    <ul><li>3D transforms (<code>transform: translateZ(), rotate3d()</code>, etc.)</li>
-    <li>animating <code>transform</code> and <code>opacity</code></li>
-    <li><code>position: fixed</code></li>
-    <li><code>will-change:</code></li>
-      <li><code>filter:</code></li>
-  </ul>
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/css/isolation" target="resource">isolation</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Determines whether an element must create a new stacking context.</p>
+          <pre contenteditable>auto | isolate</pre>
+          <p>Use case: Prevent elements from blending with their backdrops.</p>
+          <dl>
+            <dt>auto</dt>
+            <dd>A new stacking context is created only if one of the properties applied to the element requires it.</dd>
+            <dt>isolate</dt>
+            <dd>A new stacking context must be created. Also prevents an element from blending into other elements that
+              are in the backdrop.</dd>
+          </dl>
+        </section>
+      </div>
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/css/will-change" target="resource">will-change</a></code> property</h1>
-  </header>
-   <section class="content">
-    <p>Hints how an element is expected to change so browser can optimize for change before an element is happens. Can increase the responsiveness of a page by doing expensive work before its required.</p>
-    <pre contenteditable class="multi">auto | scroll-position | contents | &lt;ident></pre>
 
-<dl><dt>auto</dt>
-    <dd>Tells the browser "You do you", which it was going to do anyway.</dd>
-
-<dt>scroll-position</dt>
-    <dd>Tells the browser "The scroll position will change or be animated soon"</dd>
-<dt>contents</dt>
-    <dd>Tells the browser "something about contents will animate or change soon."</dd>
-<dt>&lt;ident></dt>
-<dd>    A property or several properties that will animate or change soon. A shorthand indicates that all the longhands will participate.<br>Can't be set to: <code>unset, initial, inherit, will-change, auto, scroll-position, or contents</code>.  </dd></dl>
-    <p>Chromes establishes a new compositing layer or a new stacking context for each element with this property set to anything but auto.</p>
-    <ul>
-      <li>Avoid using!</li>
-      <li>Don't apply will-change to too many elements.</li>
-    </ul>
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/css/contain" target="resource">contain</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Allows you to say an element and its contents are, as much as possible, independent of the rest of the
+            document tree.</p>
+          <pre contenteditable>none | strict | content |  size | layout | style | paint</pre>
+          <p>Enables the browser to recalculate layout, style, paint, and size for a limited area of the DOM and not the
+            entire page.</p>
+          <pre contenteditable>contain: size paint;</pre>
+          <dl>
+            <dt>none</dt>
+            <dd>Element renders as normal, with no containment applied.</dd>
+            <dt>strict</dt>
+            <dd>All containment rules except style are applied. Same as <code>contain: size layout paint;</code>.</dd>
+            <dt>content</dt>
+            <dd>All containment rules except size and style are applied to the element. Same as
+              <code>contain: layout paint</code>.</dd>
+            <dt>size</dt>
+            <dd>Element can be sized without reflowing its descendants. No need to check them for size changes.</dd>
+            <dt>layout</dt>
+            <dd>Nothing outside the element may affect its internal layout, and nothing inside the element may effect
+              the external layout.</dd>
+            <dt>style</dt>
+            <dd>For properties that can effect more than just an element and its descendants, those effects don't escape
+              the containing element.</dd>
+            <dt>paint</dt>
+            <dd>Descendants of the element don't display outside its bounds. If an element is off-screen or otherwise
+              not visible, its descendants are also guaranteed to not be visible.</dd>
+          </dl>
+          <p><code>paint, strict</code> and <code>content</code> creates a new stacking context, a new block formatting
+            context and, new
+            containing blocks for the descendants which position property is absolute or fixed.</p>
+        </section>
+      </div>
 
 
 
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Preventing render blocking</h1>
-  </header>
-   <section class="content">
-    <p>Browser blocks rendering until all styles are parsed. It does not block on styles it knows it will not use.</p>
-    <ul>
-      <li>Use media queries so it knows when to block.</li> 
-      <li>Move not-immediately used styles, such as print styles, into separate files.
-      </li>
-      <li>This makes 'needed' CSS file much smaller</li></ul>
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>GPU accelerants</h1>
+        </header>
+        <section class="content">
+          <p>Properties that will lead to compositing include:</p>
+          <ul>
+            <li>3D transforms (<code>transform: translateZ(), rotate3d()</code>, etc.)</li>
+            <li>animating <code>transform</code> and <code>opacity</code></li>
+            <li><code>position: fixed</code></li>
+            <li><code>will-change:</code></li>
+            <li><code>filter:</code></li>
+          </ul>
+        </section>
+      </div>
 
-<pre  contenteditable>
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/css/will-change" target="resource">will-change</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Hints how an element is expected to change so browser can optimize for change before an element is happens.
+            Can increase the responsiveness of a page by doing expensive work before its required.</p>
+          <pre contenteditable class="multi">auto | scroll-position | contents | &lt;ident></pre>
+
+          <dl>
+            <dt>auto</dt>
+            <dd>Tells the browser "You do you", which it was going to do anyway.</dd>
+
+            <dt>scroll-position</dt>
+            <dd>Tells the browser "The scroll position will change or be animated soon"</dd>
+            <dt>contents</dt>
+            <dd>Tells the browser "something about contents will animate or change soon."</dd>
+            <dt>&lt;ident></dt>
+            <dd> A property or several properties that will animate or change soon. A shorthand indicates that all the
+              longhands will participate.<br>Can't be set to:
+              <code>unset, initial, inherit, will-change, auto, scroll-position, or contents</code>. </dd>
+          </dl>
+          <p>Chromes establishes a new compositing layer or a new stacking context for each element with this property
+            set to anything but auto.</p>
+          <ul>
+            <li>Avoid using!</li>
+            <li>Don't apply will-change to too many elements.</li>
+          </ul>
+        </section>
+      </div>
+
+
+
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Preventing render blocking</h1>
+        </header>
+        <section class="content">
+          <p>Browser blocks rendering until all styles are parsed. It does not block on styles it knows it will not use.
+          </p>
+          <ul>
+            <li>Use media queries so it knows when to block.</li>
+            <li>Move not-immediately used styles, such as print styles, into separate files.
+            </li>
+            <li>This makes 'needed' CSS file much smaller</li>
+          </ul>
+
+          <pre contenteditable>
 &lt;link rel="stylesheet" href="styles.css"&gt; &lt;!-- blocking --&gt;
 &lt;link rel="stylesheet" href="print.css" media="print"&gt; &lt;!-- not blocking --&gt; 
 &lt;link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)"&gt; &lt;!-- not blocking on large screens --&gt;</pre>
 
-<p>Browser does download not-needed-now stylesheets, but doesn't render block. By separating out the CSS into multiple files, the main render-blocking file is much smaller reducing the time that rendering is blocked.</p>
-  </section>
-</div>
+          <p>Browser does download not-needed-now stylesheets, but doesn't render block. By separating out the CSS into
+            multiple files, the main render-blocking file is much smaller reducing the time that rendering is blocked.
+          </p>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1>Selector performance</h1>
-  </header>
-<section class="content">
-  <h3>There are lower hanging fruit!</h3>
-  <p>Optimize a single image. You've saved more bytes, times, and CPU than micromanaging selectors</p>
-  <details><summary>Allegedly, there is the order</summary>
-  <pre>ID, e.g. #header
+      <div class="slide">
+        <header>
+          <h1>Selector performance</h1>
+        </header>
+        <section class="content">
+          <h3>There are lower hanging fruit!</h3>
+          <p>Optimize a single image. You've saved more bytes, times, and CPU than micromanaging selectors</p>
+          <details>
+            <summary>Allegedly, there is the order</summary>
+            <pre>ID, e.g. #header
 Class, e.g. .promo
 Type, e.g. div
 Adjacent sibling, e.g. h2 + p
@@ -614,48 +748,64 @@ Descendant, e.g. ul a
 Universal, i.e. *
 Attribute, e.g. [type=”text”]
 Pseudo-classes/-elements, e.g. a:hover</pre>
-</details>
-<p>Read <a href="https://meiert.com/en/blog/performance-of-css-selectors-2/">Performance of CSS Selectors is Still Irrelevant</a></p>
-</section>
-</div>
+          </details>
+          <p>Read <a href="https://meiert.com/en/blog/performance-of-css-selectors-2/">Performance of CSS Selectors is
+              Still Irrelevant</a></p>
+        </section>
+      </div>
 
-<div class="slide intro">
-<header><h1>Multi Column Layout</h1>
-  </header>
-<section class="content">
-</section>
-</div>
-
-
-<div class="slide object">
-  <header onclick="setData('bi');"><h1>Browser support: Columns</h1>
-  </header>
-<object id="bi" data="https://caniuse.com/#search=columns"></object>
-  <a href="https://caniuse.com/#columns" target="play" title="open resource in new window" class="objectlink">Open</a>
-</div>
+      <div class="slide intro">
+        <header>
+          <h1>Multi Column Layout</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
+      <div class="slide object">
+        <header onclick="setData('bi');">
+          <h1>Browser support: Columns</h1>
+        </header>
+        <object id="bi" data="https://caniuse.com/#search=columns"></object>
+        <a href="https://caniuse.com/#columns" target="play" title="open resource in new window"
+          class="objectlink">Open</a>
+      </div>
 
-<div class="slide" id="columnpage">
-          <header> <h1>Columns</h1>
-  </header>
-          <section class="content" style="margin-top:0">
+
+
+      <div class="slide" id="columnpage">
+        <header>
+          <h1>Columns</h1>
+        </header>
+        <section class="content" style="margin-top:0">
           <pre contenteditable>
 <u></u>column-count: <span id="colcnt">1</span>;      <input id="columncounts" type="range" min="1" max="6" value="2" onChange="changeColumnNoSlider(event)">
 <u></u>column-width: <span id="colwidth">10</span>em;   <input id="columnwidth" type="range" min="5" max="40" step="1" value="10" onChange="changeColumnNoSlider(event)">
 <u></u>column-rule: 1px solid #bbb;
 <u></u>column-gap: <span id="colgap">2</span>em;      <input id="columngaps" type="range" min="0" max="10" step="0.1" value="2" onChange="changeColumnNoSlider(event)"></pre>
 
-            <div id="columnsslide" class="example">
-              <p>Adipisicing rump nostrud exercitation turkey, bresaola deserunt ullamco beef ribs pork loin ball tip pig pork belly nisi. Cillum sunt officia deserunt, beef aliqua ham ut t-bone sed ut consequat shoulder. Nostrud excepteur biltong non, fatback salami incididunt beef cupidatat occaecat. </p>
-              <p>Reprehenderit ham hock labore tri-tip chuck, excepteur ut. Meatball sint enim beef ribs, mollit laborum flank commodo fatback pariatur tail rump eiusmod spare ribs dolore. Ut minim qui, tongue eu short ribs pancetta excepteur incididunt culpa consequat pastrami magna chuck. Flank sunt sint, occaecat ut adipisicing labore turkey laboris in magna.</p>
+          <div id="columnsslide" class="example">
+            <p>Adipisicing rump nostrud exercitation turkey, bresaola deserunt ullamco beef ribs pork loin ball tip pig
+              pork belly nisi. Cillum sunt officia deserunt, beef aliqua ham ut t-bone sed ut consequat shoulder.
+              Nostrud excepteur biltong non, fatback salami incididunt beef cupidatat occaecat. </p>
+            <p>Reprehenderit ham hock labore tri-tip chuck, excepteur ut. Meatball sint enim beef ribs, mollit laborum
+              flank commodo fatback pariatur tail rump eiusmod spare ribs dolore. Ut minim qui, tongue eu short ribs
+              pancetta excepteur incididunt culpa consequat pastrami magna chuck. Flank sunt sint, occaecat ut
+              adipisicing labore turkey laboris in magna.</p>
 
-<p>Chicken bacon meatloaf minim meatball salami sunt spare ribs.</p><p> Bacon sed tail, pork loin pariatur meatloaf hamburger exercitation corned beef shank ex esse sirloin qui beef ribs. Consectetur anim corned beef, cupidatat ex enim tempor. Pariatur consectetur ad, enim ut quis consequat aliquip exercitation jowl tenderloin ham dolore. </p><p>Fugiat excepteur aliqua, cow dolor swine shoulder elit tri-tip shankle. Irure consectetur cow labore, cupidatat exercitation ea jerky ham officia dolore tongue eu aliqua. Ham hock irure beef ribs non, flank sausage eiusmod ham short loin nostrud.
-</p>
-            </div>
-          </section>
+            <p>Chicken bacon meatloaf minim meatball salami sunt spare ribs.</p>
+            <p> Bacon sed tail, pork loin pariatur meatloaf hamburger exercitation corned beef shank ex esse sirloin qui
+              beef ribs. Consectetur anim corned beef, cupidatat ex enim tempor. Pariatur consectetur ad, enim ut quis
+              consequat aliquip exercitation jowl tenderloin ham dolore. </p>
+            <p>Fugiat excepteur aliqua, cow dolor swine shoulder elit tri-tip shankle. Irure consectetur cow labore,
+              cupidatat exercitation ea jerky ham officia dolore tongue eu aliqua. Ham hock irure beef ribs non, flank
+              sausage eiusmod ham short loin nostrud.
+            </p>
+          </div>
+        </section>
 
-          <script defer="">
+        <script defer="">
             function changeColumnNoSlider(event) {
 			  var columngaps = roundNumber(document.getElementById('columngaps').value, 1);
 			  var columnwidth = document.getElementById('columnwidth').value;
@@ -672,455 +822,645 @@ Pseudo-classes/-elements, e.g. a:hover</pre>
 				var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
 				return result;
 			}
-          </script>
-</div>
+        </script>
+      </div>
 
 
 
 
-<!-- columns -->
-<div class="slide">
-  <header>
-    <h1>Multi Column Layout Properties</h1>
-  </header>
-  <section class="content">
-<pre>column-count:
+      <!-- columns -->
+      <div class="slide">
+        <header>
+          <h1>Multi Column Layout Properties</h1>
+        </header>
+        <section class="content">
+          <pre>column-count:
 column-width:
 columns: &lt;min-column-width> &lt;max-column-cound></pre>
-<pre>column-fill: auto | balance;
+          <pre>column-fill: auto | balance;
 column-gap: normal | length;
 column-span: none | all;</pre>
-<pre>column-rule-color:
+          <pre>column-rule-color:
 column-rule-style: &lt;border-style>
 column-rule-width:
 column-rule:</pre>
-<pre>break-after
+          <pre>break-after
 break-before
 break-inside</pre>
-<pre>orphans
+          <pre>orphans
 widows</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<!-- column-count -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-count" target="resource">column-count</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>"max-count" for columns. Sets the maximum number of columns in a multi-column layout. </p>
-  <pre contenteditable>&lt;integer> | auto</pre>
-<p>The number of columns will not exceed the number listed, but may be fewer, if the width of each column would be less than the minimum width set by the <code>column-width</code> property</p>
-<style contenteditable class="editme">.cCount {column-count: 8;}</style>
-<div class="dream cCount"><p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
+      <!-- column-count -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-count" target="resource">column-count</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>"max-count" for columns. Sets the maximum number of columns in a multi-column layout. </p>
+          <pre contenteditable>&lt;integer> | auto</pre>
+          <p>The number of columns will not exceed the number listed, but may be fewer, if the width of each column
+            would be less than the minimum width set by the <code>column-width</code> property</p>
+          <style contenteditable class="editme">
+            .cCount {
+              column-count: 8;
+            }
+          </style>
+          <div class="dream cCount">
+            <p>I am happy to join with you today in what will go down in history as the greatest demonstration for
+              freedom in the history of our nation.</p>
 
-<p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of captivity.</p>
+            <p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation
+              Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who
+              had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night
+              of captivity.</p>
 
-<p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself in exile in his own land. So we have come here today to dramatize an shameful condition.</p>
+            <p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro
+              is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years
+              later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.
+              One hundred years later, the Negro is still languished in the corners of American society and finds
+              himself in exile in his own land. So we have come here today to dramatize an shameful condition.</p>
 
-<p>In a sense we've come to our nation's Capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir.</p></div>
-</section>
-</div>
-
-
-
-<!-- column-width -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" target="resource">column-width</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>"min-width" for columns. Sets the ideal or 'minimum' column width in a multi-column layout. </p>
-  <pre contenteditable>&lt;length> | auto</pre>
-  <p>If the container is narrower, the single column's width will be 100%. Otherwise, it will have up to the column-count number of columns, as long as each is at least column-width wide. </p>
-  <style contenteditable class="editme">.cWidth {column-width: 10em;}</style>
-  <div class="dream cWidth"><p>This note was a promise that all men, yes, black men as well as white men, would be guaranteed the unalienable rights of life, liberty, and the pursuit of happiness.</p>
-
-<p>It is obvious today that America has defaulted on this promissory note insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check; a check which has come back marked "insufficient funds."</p>
-
-<p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. So we have come to cash this check- a check that will give us upon demand the riches of freedom and the security of justice.</p>
-
-<p>We have also come to this hallowed spot to remind America of the fierce urgency of now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism.</p>
-
-<p>Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God's children.</p>
-</div>
-</section>
-</div>
-
-
-<!-- columns -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" target="resource">columns</a></code> shorthand property</h1>
-  </header>
-<section class="content">
-  <p>sets the column width and column count of an element.</p>
-  <pre contenteditable>&lt;max-column-count> &lt;min-column-width></pre>
-  <style contenteditable class="editme">.cColumns {columns: 6 12em;}</style>
-  <div class="dream cColumns"><p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro's legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. Those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. There will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.</p>
-
-<p>But there is something that I must say to my people who stand on the warm threshold which leads into the palace of justice. In the process of gaining our rightful place we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again we must rise to the majestic heights of meeting physical force with soul force.</p>
-
-<p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom. We cannot walk alone.</p>
-  </div>
-</section>
-</div>
+            <p>In a sense we've come to our nation's Capital to cash a check. When the architects of our republic wrote
+              the magnificent words of the Constitution and the Declaration of Independence, they were signing a
+              promissory note to which every American was to fall heir.</p>
+          </div>
+        </section>
+      </div>
 
 
 
-<!-- column-fill -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill" target="resource">column-fill</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets how the contents are balanced when broken into multiple columns. Does it make all the columns equally tall? Or fill the first column first.</p>
-  <pre contenteditable>auto | balance | balance-all</pre>
-  <p>When height limit is set, should it balance or fill column 1 first? If height is auto, will it ever fill up a second column?</p>
-  <dl>
-    <dt>auto</dt>
-    <dd>Columns are filled sequentially. Content takes up only the room it needs.</dd>
-    <dt>balance</dt>
-    <dd>Content is equally divided between columns. In paged media, only the last page is balanced.</dd>
-    <dt>balance-all</dt>
-    <dd>Content is equally divided between columns. In paged media, all pages are balanced.</dd>
-    </dl> </section>
-</div>
+      <!-- column-width -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" target="resource">column-width</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>"min-width" for columns. Sets the ideal or 'minimum' column width in a multi-column layout. </p>
+          <pre contenteditable>&lt;length> | auto</pre>
+          <p>If the container is narrower, the single column's width will be 100%. Otherwise, it will have up to the
+            column-count number of columns, as long as each is at least column-width wide. </p>
+          <style contenteditable class="editme">
+            .cWidth {
+              column-width: 10em;
+            }
+          </style>
+          <div class="dream cWidth">
+            <p>This note was a promise that all men, yes, black men as well as white men, would be guaranteed the
+              unalienable rights of life, liberty, and the pursuit of happiness.</p>
+
+            <p>It is obvious today that America has defaulted on this promissory note insofar as her citizens of color
+              are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check;
+              a check which has come back marked "insufficient funds."</p>
+
+            <p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are
+              insufficient funds in the great vaults of opportunity of this nation. So we have come to cash this check-
+              a check that will give us upon demand the riches of freedom and the security of justice.</p>
+
+            <p>We have also come to this hallowed spot to remind America of the fierce urgency of now. This is no time
+              to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism.</p>
+
+            <p>Now is the time to make real the promises of democracy. Now is the time to rise from the dark and
+              desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation
+              from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice
+              a reality for all of God's children.</p>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- columns -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" target="resource">columns</a></code>
+            shorthand property</h1>
+        </header>
+        <section class="content">
+          <p>sets the column width and column count of an element.</p>
+          <pre contenteditable>&lt;max-column-count> &lt;min-column-width></pre>
+          <style contenteditable class="editme">
+            .cColumns {
+              columns: 6 12em;
+            }
+          </style>
+          <div class="dream cColumns">
+            <p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the
+              Negro's legitimate discontent will not pass until there is an invigorating autumn of freedom and equality.
+              Nineteen sixty-three is not an end, but a beginning. Those who hope that the Negro needed to blow off
+              steam and will now be content will have a rude awakening if the nation returns to business as usual. There
+              will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The
+              whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice
+              emerges.</p>
+
+            <p>But there is something that I must say to my people who stand on the warm threshold which leads into the
+              palace of justice. In the process of gaining our rightful place we must not be guilty of wrongful deeds.
+              Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We
+              must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our
+              creative protest to degenerate into physical violence. Again and again we must rise to the majestic
+              heights of meeting physical force with soul force.</p>
+
+            <p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all
+              white people, for many of our white brothers, as evidenced by their presence here today, have come to
+              realize that their destiny is tied up with our destiny. And they have come to realize that their freedom
+              is inextricably bound to our freedom. We cannot walk alone.</p>
+          </div>
+        </section>
+      </div>
 
 
 
-<!-- column-fill -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill" target="resource">column-fill</a></code> property</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">.cFill {column-fill: balance;
-  height: 100vh;
-  columns: 6 12em;}</style>
-  <div class="dream cFill">
-<p>And as we walk, we must make the pledge that we shall march ahead. We cannot turn back. There are those who are asking the devotees of civil rights, "When will you be satisfied?"</p>
-
-<p>We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality.</p>
-
-<p>We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities.</p>
-
-<p>We cannot be satisfied as long as the Negro's basic mobility is from a smaller ghetto to a larger one.</p>
-
-<p>We can never be satisfied as long as our chlidren are stripped of their selfhood and robbed of their dignity by signs stating "for whites only."</p>
-  </div>
-</section>
-</div>
-
-
-<!-- column-gap -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap" target="resource">column-gap</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the size of the gap (gutter) between an element's columns.</p>
-  <pre contenteditable>normal | &lt;length-percentage></pre>
-  <p>Normal is 1em.</p>
-  <p>Column-gap is now specified in Box Alignment, it may be used in Multi-column, Flexible Box, and Grid layouts. (supported in FF)</p></section>
-</div>
-
-
-<!-- column-gap -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap" target="resource">column-gap</a></code> property</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">.cGap {
-  column-gap: 5em;
-  columns: 6 12em;
-}</style>
-  <div class="dream cGap">
-<p>We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote.</p>
-
-<p>No, no, we are not satisfied, and we will not be satisfied until justice rolls down like waters and righteousness like a mighty stream.</p>
-
-<p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. Some of you have come from areas where your quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive.</p>
-
-<p>Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed. Let us not wallow in the valley of despair.</p>
-
-<p>I say to you today, my friends, so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.</p>
-
-<p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: "We hold these truths to be self-evident; that all men are created equal."</p>
-</div>
-</section>
-</div>
-
-
-<!-- column-span -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-span" target="resource">column-span</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Makes it possible for an element to span across all columns when its value is set to <code>all</code>.</p>
-  <pre contenteditable>none | all</pre></pre>
-  <dl>
-    <dt>none</dt>
-    <dd>Deafault. The element does not span multiple columns.</dd>
-    <dt>all</dt>
-    <dd>The element spans across all columns. Content in the normal flow that appears before the element is automatically balanced across all columns before the element appears. The element establishes a new block formatting context. </dd>
-  </dl></section>
-</div>
-
-
-<!-- column-span -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-span" target="resource">column-span</a></code> property</h1>
-  </header>
-<section class="content">
-
-  <style contenteditable class="editme">.cSpan {columns: 6 12em;}
-.cSpan .spanner { 
-   column-span: all;
-   background: pink; 
-}</style>
-<div class="dream cSpan">
-<p>I have a dream that one day on the red hills of Georgia the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.</p>
-
-<p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p>
-
-<p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p>
-
-<p class="spanner">I have a dream today.</p>
-
-<p>I have a dream that one day down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of interposition and nullification, that one day right down in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p>
-
-<p class="spanner">I have a dream today.
-</p>
-<p>I have a dream that one day every valley shall be exhalted, every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight, and the glory of the Lord shall be revealed, and all flesh shall see it together.</p>
-</div>
-</section>
-</div>
+      <!-- column-fill -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill" target="resource">column-fill</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets how the contents are balanced when broken into multiple columns. Does it make all the columns equally
+            tall? Or fill the first column first.</p>
+          <pre contenteditable>auto | balance | balance-all</pre>
+          <p>When height limit is set, should it balance or fill column 1 first? If height is auto, will it ever fill up
+            a second column?</p>
+          <dl>
+            <dt>auto</dt>
+            <dd>Columns are filled sequentially. Content takes up only the room it needs.</dd>
+            <dt>balance</dt>
+            <dd>Content is equally divided between columns. In paged media, only the last page is balanced.</dd>
+            <dt>balance-all</dt>
+            <dd>Content is equally divided between columns. In paged media, all pages are balanced.</dd>
+          </dl>
+        </section>
+      </div>
 
 
 
-<!-- column-rule (and style, width, color) -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule" target="resource">column-rule</a></code> shorthand property</h1>
-  </header>
-<section class="content">
-  <p>sets the width, style, and color of the line drawn between columns in a multi-column layout.</p> 
-  <pre contenteditable>&lt;rule-width> &lt;rule-style> &lt;rule-color></pre>
-<p>Shorthand for <code>column-rule-width</code>, <code>column-rule-style</code>, and <code>column-rule-color</code></p>
+      <!-- column-fill -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill" target="resource">column-fill</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .cFill {
+              column-fill: balance;
+              height: 100vh;
+              columns: 6 12em;
+            }
+          </style>
+          <div class="dream cFill">
+            <p>And as we walk, we must make the pledge that we shall march ahead. We cannot turn back. There are those
+              who are asking the devotees of civil rights, "When will you be satisfied?"</p>
 
-<dl>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-width" target="resource">column-rule-width</a></dt>
-  <dd>Same sytnax as a single valued <code>border-width</code>, with values being <code class="pre">&lt;length> | thin | medium | thick</code>. Sets the width of the line drawn between columns.</dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-style" target="resource">column-rule-style</a></dt>
-  <dd>Same sytnax as a single valued <code>border-style</code>, with values being <code class="pre">none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</code>. Sets the style of the line drawn between columns</dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-color" target="resource">column-rule-color</a></dt>
-  <dd>Same sytnax as a single valued <code>border-color</code>, or just <code>color</code>, with values being any valid color.</dd>
-</dl>
-<pre contenteditable>column-rule-width: 45px;
+            <p>We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police
+              brutality.</p>
+
+            <p>We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in
+              the motels of the highways and the hotels of the cities.</p>
+
+            <p>We cannot be satisfied as long as the Negro's basic mobility is from a smaller ghetto to a larger one.
+            </p>
+
+            <p>We can never be satisfied as long as our chlidren are stripped of their selfhood and robbed of their
+              dignity by signs stating "for whites only."</p>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- column-gap -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap" target="resource">column-gap</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the size of the gap (gutter) between an element's columns.</p>
+          <pre contenteditable>normal | &lt;length-percentage></pre>
+          <p>Normal is 1em.</p>
+          <p>Column-gap is now specified in Box Alignment, it may be used in Multi-column, Flexible Box, and Grid
+            layouts. (supported in FF)</p>
+        </section>
+      </div>
+
+
+      <!-- column-gap -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap" target="resource">column-gap</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .cGap {
+              column-gap: 5em;
+              columns: 6 12em;
+            }
+          </style>
+          <div class="dream cGap">
+            <p>We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he
+              has nothing for which to vote.</p>
+
+            <p>No, no, we are not satisfied, and we will not be satisfied until justice rolls down like waters and
+              righteousness like a mighty stream.</p>
+
+            <p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have
+              come fresh from narrow jail cells. Some of you have come from areas where your quest for freedom left you
+              battered by the storms of persecution and staggered by the winds of police brutality. You have been the
+              veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive.</p>
+
+            <p>Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to
+              Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation
+              can and will be changed. Let us not wallow in the valley of despair.</p>
+
+            <p>I say to you today, my friends, so even though we face the difficulties of today and tomorrow, I still
+              have a dream. It is a dream deeply rooted in the American dream.</p>
+
+            <p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: "We hold
+              these truths to be self-evident; that all men are created equal."</p>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- column-span -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-span" target="resource">column-span</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Makes it possible for an element to span across all columns when its value is set to <code>all</code>.</p>
+          <pre contenteditable>none | all</pre>
+          </pre>
+          <dl>
+            <dt>none</dt>
+            <dd>Deafault. The element does not span multiple columns.</dd>
+            <dt>all</dt>
+            <dd>The element spans across all columns. Content in the normal flow that appears before the element is
+              automatically balanced across all columns before the element appears. The element establishes a new block
+              formatting context. </dd>
+          </dl>
+        </section>
+      </div>
+
+
+      <!-- column-span -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-span" target="resource">column-span</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+
+          <style contenteditable class="editme">
+            .cSpan {
+              columns: 6 12em;
+            }
+
+            .cSpan .spanner {
+              column-span: all;
+              background: pink;
+            }
+          </style>
+          <div class="dream cSpan">
+            <p>I have a dream that one day on the red hills of Georgia the sons of former slaves and the sons of former
+              slave owners will be able to sit down together at the table of brotherhood.</p>
+
+            <p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice,
+              sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p>
+
+            <p>I have a dream that my four little children will one day live in a nation where they will not be judged
+              by the color of their skin but by the content of their character.</p>
+
+            <p class="spanner">I have a dream today.</p>
+
+            <p>I have a dream that one day down in Alabama, with its vicious racists, with its governor having his lips
+              dripping with the words of interposition and nullification, that one day right down in Alabama little
+              black boys and black girls will be able to join hands with little white boys and white girls as sisters
+              and brothers.</p>
+
+            <p class="spanner">I have a dream today.
+            </p>
+            <p>I have a dream that one day every valley shall be exhalted, every hill and mountain shall be made low,
+              the rough places will be made plain, and the crooked places will be made straight, and the glory of the
+              Lord shall be revealed, and all flesh shall see it together.</p>
+          </div>
+        </section>
+      </div>
+
+
+
+      <!-- column-rule (and style, width, color) -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule" target="resource">column-rule</a></code>
+            shorthand property</h1>
+        </header>
+        <section class="content">
+          <p>sets the width, style, and color of the line drawn between columns in a multi-column layout.</p>
+          <pre contenteditable>&lt;rule-width> &lt;rule-style> &lt;rule-color></pre>
+          <p>Shorthand for <code>column-rule-width</code>, <code>column-rule-style</code>, and
+            <code>column-rule-color</code></p>
+
+          <dl>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-width"
+                target="resource">column-rule-width</a></dt>
+            <dd>Same sytnax as a single valued <code>border-width</code>, with values being <code
+                class="pre">&lt;length> | thin | medium | thick</code>. Sets the width of the line drawn between
+              columns.</dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-style"
+                target="resource">column-rule-style</a></dt>
+            <dd>Same sytnax as a single valued <code>border-style</code>, with values being <code
+                class="pre">none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</code>.
+              Sets the style of the line drawn between columns</dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-color"
+                target="resource">column-rule-color</a></dt>
+            <dd>Same sytnax as a single valued <code>border-color</code>, or just <code>color</code>, with values being
+              any valid color.</dd>
+          </dl>
+          <pre contenteditable>column-rule-width: 45px;
   column-rule-style: ridge;
   column-rule-color: var(--colorpop);</pre>
 
-<pre contenteditable>column-rule: 45px ridge var(--colorpop);</pre>
-</section>
-</div>
+          <pre contenteditable>column-rule: 45px ridge var(--colorpop);</pre>
+        </section>
+      </div>
 
 
 
-<!-- column-rule (and style, width, color) -->
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule" target="resource">column-rule</a></code> shorthand property</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">.cRule { columns: 6 12em;
-   column-rule: 45px ridge var(--colorpop); 
- }</style>
-  <div class="dream cRule">
+      <!-- column-rule (and style, width, color) -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule" target="resource">column-rule</a></code>
+            shorthand property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .cRule {
+              columns: 6 12em;
+              column-rule: 45px ridge var(--colorpop);
+            }
+          </style>
+          <div class="dream cRule">
 
 
-<p>This is our hope. This is the faith that I will go back to the South with. With this faith we will be able to hew out of the mountain of despair a stone of hope. With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.
-</p>
-<p>With this faith we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.
-</p>
-<p>This will be the day when all of God's children will be able to sing with new meaning, "My country 'tis of thee, sweet land of liberty, of thee I sing. Land where my fathers died, land of the Pilgrims' pride, from every mountainside, let freedom ring."
-</p>
-<p>And if America is to be a great nation, this must become true. So let freedom ring from the prodigious hilltops of New Hampshire. Let freedom ring from the mighty mountains of New York. Let freedom ring from the heightening Alleghenies of Pennsylvania.
-</p>
-<p>Let freedom ring from the snow-capped Rockies of Colorado. Let freedom ring from the curvaceous slopes of California. But not only that; let freedom ring from the Stone Mountain of Georgia. Let freedom ring from Lookout Mountain of Tennessee.
-</p>
-<p>Let freedom ring from every hill and molehill of Mississippi. From every mountainside, let freedom ring.
-</p>
-<p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God's children, black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual, "Free at last! Free at last! Thank God Almighty, we are free at last!"</p>
-<p><cite>Martin Luther King's "I have a dream speech: August 28 1963</cite>
-  </div>
-</section>
-</div>
+            <p>This is our hope. This is the faith that I will go back to the South with. With this faith we will be
+              able to hew out of the mountain of despair a stone of hope. With this faith we will be able to transform
+              the jangling discords of our nation into a beautiful symphony of brotherhood.
+            </p>
+            <p>With this faith we will be able to work together, to pray together, to struggle together, to go to jail
+              together, to stand up for freedom together, knowing that we will be free one day.
+            </p>
+            <p>This will be the day when all of God's children will be able to sing with new meaning, "My country 'tis
+              of thee, sweet land of liberty, of thee I sing. Land where my fathers died, land of the Pilgrims' pride,
+              from every mountainside, let freedom ring."
+            </p>
+            <p>And if America is to be a great nation, this must become true. So let freedom ring from the prodigious
+              hilltops of New Hampshire. Let freedom ring from the mighty mountains of New York. Let freedom ring from
+              the heightening Alleghenies of Pennsylvania.
+            </p>
+            <p>Let freedom ring from the snow-capped Rockies of Colorado. Let freedom ring from the curvaceous slopes of
+              California. But not only that; let freedom ring from the Stone Mountain of Georgia. Let freedom ring from
+              Lookout Mountain of Tennessee.
+            </p>
+            <p>Let freedom ring from every hill and molehill of Mississippi. From every mountainside, let freedom ring.
+            </p>
+            <p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every
+              hamlet, from every state and every city, we will be able to speed up that day when all of God's children,
+              black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing
+              in the words of the old Negro spiritual, "Free at last! Free at last! Thank God Almighty, we are free at
+              last!"</p>
+            <p><cite>Martin Luther King's "I have a dream speech: August 28 1963</cite>
+          </div>
+        </section>
+      </div>
 
 
-<!-- columns -->
-<div class="slide object">
-  <header>
-    <h1>columns</h1>
-  </header>
-  <object data="files/columns.html"></object>
-</div>
+      <!-- columns -->
+      <div class="slide object">
+        <header>
+          <h1>columns</h1>
+        </header>
+        <object data="files/columns.html"></object>
+      </div>
 
 
 
 
 
-<div class="slide">
-<header><h1>Column related properties</h1>
-  </header>
-<section class="content">
-  <p>Element boundaries are affected by three properties: the <code>break-after</code> value of the previous element, the <code>break-before</code> value of the next element, and it's own <code>break-inside</code> value.
+      <div class="slide">
+        <header>
+          <h1>Column related properties</h1>
+        </header>
+        <section class="content">
+          <p>Element boundaries are affected by three properties: the <code>break-after</code> value of the previous
+            element, the <code>break-before</code> value of the next element, and it's own <code>break-inside</code>
+            value.
           <ul>
-           <code> <li>break-after</li>
+            <code> <li>break-after</li>
             <li>break-before</li>
             <li>break-inside</li>
             <li>orphans</li>
             <li>widows</li></code>
           </ul>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <section class="content">
+      <div class="slide">
+        <section class="content">
 
-<h3><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after" target="resource">break-after</a></code> property</h3>
-  <p>Sets how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored.</p>
-  <pre contenteditable class="multi">auto | avoid | always | all | avoid-page | page | left 
+          <h3>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after" target="resource">break-after</a></code>
+            property</h3>
+          <p>Sets how page, column, or region breaks should behave after a generated box. If there is no generated box,
+            the property is ignored.</p>
+          <pre contenteditable class="multi">auto | avoid | always | all | avoid-page | page | left 
 right | recto | verso | avoid-column | column 
  avoid-region | region</pre>
 
-<h3><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-before" target="resource">break-before</a></code> property</h3>
-<section class="content">
-  <p>sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.</p>
-<pre contenteditable class="multi">auto | avoid | always | all | avoid-page 
+          <h3>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-before" target="resource">break-before</a></code>
+            property</h3>
+          <section class="content">
+            <p>sets how page, column, or region breaks should behave before a generated box. If there is no generated
+              box, the property is ignored.</p>
+            <pre contenteditable class="multi">auto | avoid | always | all | avoid-page 
 page | left | right | recto | verso 
 avoid-column | column | avoid-region | region</pre>
-<h3><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" target="resource">break-inside</a></code> property</h3>
-  <p>how page, column, or region breaks should behave inside a generated box. </p>
-  <pre contenteditable>auto | avoid | avoid-page | avoid-column | avoid-region</pre>
-<p>If there is no generated box, these properties are ignored.</p></section>
-</div>
+            <h3>
+              <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" target="resource">break-inside</a></code>
+              property</h3>
+            <p>how page, column, or region breaks should behave inside a generated box. </p>
+            <pre contenteditable>auto | avoid | avoid-page | avoid-column | avoid-region</pre>
+            <p>If there is no generated box, these properties are ignored.</p>
+          </section>
+      </div>
 
-<div class="slide">
-<header><h1>Values</h1>
-  </header>
-<section class="content">
-<h4 id="Generic_break_values">Generic break values</h4>
-<dl>
-  <dt>auto</dt>
-  <dd>Allows, but does not force, any break (page, column, or region) to be inserted right after the principal box.</dd>
-  <dt>avoid</dt>
-  <dd>Avoids any break (page, column, or region) from being inserted right after the principal box.</dd>
-  <dt>always</dt>
-  <dd>Forces a page break right after the principal box. The type of this  break is that of the immediately-containing fragmentation context. If  we are inside a multicol container then it would force a column break,  inside paged media (but not inside a multicol container) a page break.</dd>
-  <dt>all</dt>
-  <dd>Forces a page break right after the principal box. Breaking through  all possible fragmentation contexts. So a break inside a multicol  container, which was inside a page container would force a column and  page break.</dd>
-</dl>
-<h4 id="Page_break_values">Page break values</h4>
-<dl>
-  <dt>avoid-page</dt>
-  <dd>Avoids any page break right after the principal box.</dd>
-  <dt>page</dt>
-  <dd>Forces a page break right after the principal box.</dd>
-  <dt>left</dt>
-  <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a left page.</dd>
-  <dt>right</dt>
-  <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a right page.</dd>
-  <dt>recto</dt>
-  <dd>Forces one or two page breaks right after the principal box,  whichever will make the next page into a recto page. (A recto page is a  right page in a left-to-right spread or a left page in a right-to-left  spread.)</dd>
-  <dt>verso</dt>
-  <dd>Forces one or two page breaks right after the principal box,  whichever will make the next page into a verso page. (A verso page is a  left page in a left-to-right spread or a left right in a right-to-left  spread.)</dd>
-</dl>
-<h4 id="Column_break_values">Column break values</h4>
-<dl>
-  <dt>avoid-column</dt>
-  <dd>Avoids any column break right after the principal box.</dd>
-  <dt>column</dt>
-  <dd>Forces a column break right after the principal box.</dd>
-</dl>
-<h4 id="Region_break_values">Region break values</h4>
-<dl>
-  <dt>avoid-region</dt>
-  <dd>Avoids any region break right after the principal box.</dd>
-  <dt>region</dt>
-  <dd>Forces a region break right after the principal box.</dd>
-</dl>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Values</h1>
+        </header>
+        <section class="content">
+          <h4 id="Generic_break_values">Generic break values</h4>
+          <dl>
+            <dt>auto</dt>
+            <dd>Allows, but does not force, any break (page, column, or region) to be inserted right after the principal
+              box.</dd>
+            <dt>avoid</dt>
+            <dd>Avoids any break (page, column, or region) from being inserted right after the principal box.</dd>
+            <dt>always</dt>
+            <dd>Forces a page break right after the principal box. The type of this break is that of the
+              immediately-containing fragmentation context. If we are inside a multicol container then it would force a
+              column break, inside paged media (but not inside a multicol container) a page break.</dd>
+            <dt>all</dt>
+            <dd>Forces a page break right after the principal box. Breaking through all possible fragmentation contexts.
+              So a break inside a multicol container, which was inside a page container would force a column and page
+              break.</dd>
+          </dl>
+          <h4 id="Page_break_values">Page break values</h4>
+          <dl>
+            <dt>avoid-page</dt>
+            <dd>Avoids any page break right after the principal box.</dd>
+            <dt>page</dt>
+            <dd>Forces a page break right after the principal box.</dd>
+            <dt>left</dt>
+            <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a
+              left page.</dd>
+            <dt>right</dt>
+            <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a
+              right page.</dd>
+            <dt>recto</dt>
+            <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a
+              recto page. (A recto page is a right page in a left-to-right spread or a left page in a right-to-left
+              spread.)</dd>
+            <dt>verso</dt>
+            <dd>Forces one or two page breaks right after the principal box, whichever will make the next page into a
+              verso page. (A verso page is a left page in a left-to-right spread or a left right in a right-to-left
+              spread.)</dd>
+          </dl>
+          <h4 id="Column_break_values">Column break values</h4>
+          <dl>
+            <dt>avoid-column</dt>
+            <dd>Avoids any column break right after the principal box.</dd>
+            <dt>column</dt>
+            <dd>Forces a column break right after the principal box.</dd>
+          </dl>
+          <h4 id="Region_break_values">Region break values</h4>
+          <dl>
+            <dt>avoid-region</dt>
+            <dd>Avoids any region break right after the principal box.</dd>
+            <dt>region</dt>
+            <dd>Forces a region break right after the principal box.</dd>
+          </dl>
+        </section>
+      </div>
 
-<div class="slide"><section class="content">
-<h2><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/orphans" target="resource">orphans</a></code> property</h3>
+      <div class="slide">
+        <section class="content">
+          <h2>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/orphans" target="resource">orphans</a></code>
+            property</h3>
 
-  <p>Sets the minimum number of lines in a block container that must be shown at the bottom of a page, region, or column.</p>
-  <pre contenteditable>&lt;integer></pre>
+            <p>Sets the minimum number of lines in a block container that must be shown at the bottom of a page, region,
+              or column.</p>
+            <pre contenteditable>&lt;integer></pre>
 
-<h3><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/widows" target="resource">widows</a></code> property</h3>
-  <p>Sets the minimum number of lines in a block container that must be shown at the top of a page, region, or column.</p>
- <pre contenteditable>&lt;integer></pre>
-</section>
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>Exercise</h1>
-  </header>
-  <section class="content">
-
-    <p>Open the <a href="../ihaveadream.html">I have a Dream</a></p>
-    <p>Make the </p>
-    <ul>
-      <li>line height</li>
-      <li>font face</li>
-      <li>justification</li>
-      <li>spacing</li>
-      <li>Make the blockquotes and headings stand out.</li></ul>
-      <p>Try to do it without looking at the example a few slides back.</p>
-  </section>
-</div>
-
-
-
-
-
+            <h3>
+              <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/widows" target="resource">widows</a></code>
+              property</h3>
+            <p>Sets the minimum number of lines in a block container that must be shown at the top of a page, region, or
+              column.</p>
+            <pre contenteditable>&lt;integer></pre>
+        </section>
+      </div>
 
 
+      <div class="slide">
+        <header>
+          <h1>Exercise</h1>
+        </header>
+        <section class="content">
+
+          <p>Open the <a href="../ihaveadream.html">I have a Dream</a></p>
+          <p>Make the </p>
+          <ul>
+            <li>line height</li>
+            <li>font face</li>
+            <li>justification</li>
+            <li>spacing</li>
+            <li>Make the blockquotes and headings stand out.</li>
+          </ul>
+          <p>Try to do it without looking at the example a few slides back.</p>
+        </section>
+      </div>
 
 
 
-<!-- Lists -->
-<div class="slide intro">
-  <header>
-    <h1>Lists</h1>
-  </header>
-</div>
 
-<div class="slide">
-<header><h1>Related Properties</h1>
-  </header>
-<section class="content">
-<ul>
-  <li>unordered
-   <ol>
-     <li>ordered</li>
-     <li>ordered</li>
-   </ol>
-  </li>
-  <li>unordered</li>
-</ul>
-    <dl>
-      <dt><code>list-style-type</code></dt> <dd>Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered list, or numbers, letters or roman numerals for an ordered list.</dd>
-    <dt><code>list-style-position</code></dt> <dd>Sets whether the bullets appear inside the list items, or outside them before the start of each item.</dd>
-    <dt><code>list-style-image</code></dt> <dd>Allows you to use a custom image for the bullet, rather than a simple square or circle.</dd>
-  </dl>
 
-</section>
-</div>
 
-<div class="slide">
-<header><h1>The markup</h1>
-  </header>
-<section class="content">
-    <pre>&lt;ul>
+
+
+
+
+      <!-- Lists -->
+      <div class="slide intro">
+        <header>
+          <h1>Lists</h1>
+        </header>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Related Properties</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>unordered
+              <ol>
+                <li>ordered</li>
+                <li>ordered</li>
+              </ol>
+            </li>
+            <li>unordered</li>
+          </ul>
+          <dl>
+            <dt><code>list-style-type</code></dt>
+            <dd>Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered
+              list, or numbers, letters or roman numerals for an ordered list.</dd>
+            <dt><code>list-style-position</code></dt>
+            <dd>Sets whether the bullets appear inside the list items, or outside them before the start of each item.
+            </dd>
+            <dt><code>list-style-image</code></dt>
+            <dd>Allows you to use a custom image for the bullet, rather than a simple square or circle.</dd>
+          </dl>
+
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>The markup</h1>
+        </header>
+        <section class="content">
+          <pre>&lt;ul>
   &lt;li>
     unordered
     &lt;ol>
@@ -1130,59 +1470,126 @@ avoid-column | column | avoid-region | region</pre>
   &lt;/li>
   &lt;li>unordered&lt;/li>
 &lt;/ul></pre>
-</section>
-</div>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="resource">list-style-type</a></code></h1>
-  </header>
-<section class="content">
-  <p>Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered list, or numbers, letters or roman numerals for an ordered list.</p>
-  <pre contenteditable>&lt;counter-style> | &lt;string> | none</pre>
-<p>The <code>&lt;li></code> has a default value of <code>display: list-item</code>. The <code>list-style-type</code> property can be applied to all <code>display: list-item</code>.</p>
-<p>Inherited. Set on <code>&lt;li>, &lt;ol></code> or <code>&lt;ul>.</code>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="resource">list-style-type</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered list,
+            or numbers, letters or roman numerals for an ordered list.</p>
+          <pre contenteditable>&lt;counter-style> | &lt;string> | none</pre>
+          <p>The <code>&lt;li></code> has a default value of <code>display: list-item</code>. The
+            <code>list-style-type</code> property can be applied to all <code>display: list-item</code>.</p>
+          <p>Inherited. Set on <code>&lt;li>, &lt;ol></code> or <code>&lt;ul>.</code>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="resource">list-style-type</a></code></h1>
-  </header>
-<section class="content">
-  <p>For ordered lists (and counters)</p>
-  <ul class="col4"><li><code>decimal</code></li><li><code>cjk-decimal</code></li><li><code>decimal-leading-zero</code></li><li><code>lower-roman</code></li><li><code>upper-roman</code></li><li><code>lower-greek</code></li><li><code>lower-alpha</code></li><li><code>lower-latin</code></li><li><code>upper-alpha</code></li><li><code>upper-latin</code></li><li><code>arabic-indic</code></li><li><code>armenian</code></li><li><code>bengali</code></li><li><code>cambodian</code></li><li><code>cjk-earthly-branch</code></li><li><code>cjk-heavenly-stem</code></li><li><code>cjk-ideographic</code></li><li><code>devanagari</code></li><li><code>ethiopic-numeric</code></li><li><code>georgian</code></li><li><code>gujarati</code></li><li><code>gurmukhi</code></li><li><code>hebrew</code></li><li><code>hiragana</code></li><li><code>hiragana-iroha</code></li><li><code>japanese-formal</code></li><li><code>japanese-informal</code></li><li><code>kannada</code></li><li><code>katakana</code></li><li><code>katakana-iroha</code></li><li><code>khmer</code></li><li><code>korean-hangul-formal</code></li><li><code>korean-hanja-formal</code></li><li><code>korean-hanja-informal</code></li><li><code>lao</code></li><li><code>lower-armenian</code></li><li><code>malayalam</code></li><li><code>mongolian</code></li><li><code>myanmar</code></li><li><code>oriya</code></li><li><code>persian</code></li><li><code>simp-chinese-formal</code></li><li><code>simp-chinese-informal</code></li><li><code>tamil</code></li><li><code>telugu</code></li><li><code>thai</code></li><li><code>tibetan</code></li><li><code>trad-chinese-formal</code></li><li><code>trad-chinese-informal</code></li><li><code>upper-armenian</code></li></ul>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="resource">list-style-type</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>For ordered lists (and counters)</p>
+          <ul class="col4">
+            <li><code>decimal</code></li>
+            <li><code>cjk-decimal</code></li>
+            <li><code>decimal-leading-zero</code></li>
+            <li><code>lower-roman</code></li>
+            <li><code>upper-roman</code></li>
+            <li><code>lower-greek</code></li>
+            <li><code>lower-alpha</code></li>
+            <li><code>lower-latin</code></li>
+            <li><code>upper-alpha</code></li>
+            <li><code>upper-latin</code></li>
+            <li><code>arabic-indic</code></li>
+            <li><code>armenian</code></li>
+            <li><code>bengali</code></li>
+            <li><code>cambodian</code></li>
+            <li><code>cjk-earthly-branch</code></li>
+            <li><code>cjk-heavenly-stem</code></li>
+            <li><code>cjk-ideographic</code></li>
+            <li><code>devanagari</code></li>
+            <li><code>ethiopic-numeric</code></li>
+            <li><code>georgian</code></li>
+            <li><code>gujarati</code></li>
+            <li><code>gurmukhi</code></li>
+            <li><code>hebrew</code></li>
+            <li><code>hiragana</code></li>
+            <li><code>hiragana-iroha</code></li>
+            <li><code>japanese-formal</code></li>
+            <li><code>japanese-informal</code></li>
+            <li><code>kannada</code></li>
+            <li><code>katakana</code></li>
+            <li><code>katakana-iroha</code></li>
+            <li><code>khmer</code></li>
+            <li><code>korean-hangul-formal</code></li>
+            <li><code>korean-hanja-formal</code></li>
+            <li><code>korean-hanja-informal</code></li>
+            <li><code>lao</code></li>
+            <li><code>lower-armenian</code></li>
+            <li><code>malayalam</code></li>
+            <li><code>mongolian</code></li>
+            <li><code>myanmar</code></li>
+            <li><code>oriya</code></li>
+            <li><code>persian</code></li>
+            <li><code>simp-chinese-formal</code></li>
+            <li><code>simp-chinese-informal</code></li>
+            <li><code>tamil</code></li>
+            <li><code>telugu</code></li>
+            <li><code>thai</code></li>
+            <li><code>tibetan</code></li>
+            <li><code>trad-chinese-formal</code></li>
+            <li><code>trad-chinese-informal</code></li>
+            <li><code>upper-armenian</code></li>
+          </ul>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position" target="resource">list-style-position</a></code></h1>
-  </header>
-<section class="content">
-  <p>Sets whether the bullets appear inside the list items, or outside them before the start of each item.</p>
-  <pre contenteditable>inside | outside</pre>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position" target="resource">list-style-position</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets whether the bullets appear inside the list items, or outside them before the start of each item.</p>
+          <pre contenteditable>inside | outside</pre>
 
-<dl><dt>inside</dt>
-    <dd>The <code>::marker</code> is the first element among the list item's contents.</dd>
-<dt>outside</dt>
-    <dd>The <code>::marker</code> is outside the principal blockbox. </dd>
-  </dl>
-</section>
-</div>
+          <dl>
+            <dt>inside</dt>
+            <dd>The <code>::marker</code> is the first element among the list item's contents.</dd>
+            <dt>outside</dt>
+            <dd>The <code>::marker</code> is outside the principal blockbox. </dd>
+          </dl>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image" target="resource">list-style-image</a></code></h1>
-  </header>
-<section class="content">
-  <p>Allows you to use a custom image for the bullet, rather than a simple square or circle.</p>
-  <pre contenteditable>&lt;url> | none</pre>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image" target="resource">list-style-image</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Allows you to use a custom image for the bullet, rather than a simple square or circle.</p>
+          <pre contenteditable>&lt;url> | none</pre>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1>User Agent</h1>
-  </header>
-<section class="content">
-  <p></p>
-  <pre contenteditable>li {
+      <div class="slide">
+        <header>
+          <h1>User Agent</h1>
+        </header>
+        <section class="content">
+          <p></p>
+          <pre contenteditable>li {
     display: list-item;
     text-align: match-parent;
 }
@@ -1205,185 +1612,204 @@ ul, menu, dir {
     font-variant-numeric: tabular-nums;
 }
 </pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<!--  -->
-<div class="slide intro">
-  <header>
-    <h1>More art direction</h1>
-  </header>
-</div>
+      <!--  -->
+      <div class="slide intro">
+        <header>
+          <h1>More art direction</h1>
+        </header>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets how an element's background images should blend with each other and with the element's background color.</p>
-  <pre contenteditable class="multi">normal | multiply | screen | overlay | darken | lighten | color-dodge 
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets how an element's background images should blend with each other and with the element's background
+            color.</p>
+          <pre contenteditable class="multi">normal | multiply | screen | overlay | darken | lighten | color-dodge 
 color-burn | hard-light | soft-light | difference | exclusion
 hue | saturation | color | luminosity</pre>
-<p>Blending modes should be defined in the same order as the background-image property. If the blending modes' and background images' list lengths are not equal, it will be repeated and/or truncated until lengths match.</p>
-<pre contenteditable>background-blend-mode: screen, multiply;</pre>
-</section>
-</div>
+          <p>Blending modes should be defined in the same order as the background-image property. If the blending modes'
+            and background images' list lengths are not equal, it will be repeated and/or truncated until lengths match.
+          </p>
+          <pre contenteditable>background-blend-mode: screen, multiply;</pre>
+        </section>
+      </div>
 
 
-<div class="slide bbm">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code></h1>
-  </header>
-<style>
-.bbm ul {
-  display: flex;
-  gap: 1em;
-  flex-flow: row wrap;
-}
-.bbm li { 
-    flex: 200px;
-    list-style-type: none;
-    height: 200px;
-    background-repeat: no-repeat;
-}
-.bbm li span {background-color: rgba(255,255,255,0.8);}
-.bbm .magic {visibility: hidden;}
-</style>
-<section class="content">
-<ul>
-  <li style="background-blend-mode: color;"><span>color</span></li>
-  <li style="background-blend-mode: color-burn;"><span>color-burn</span></li>
-  <li style="background-blend-mode: color-dodge;"><span>color-dodge</span></li>
-  <li style="background-blend-mode: darken;"><span>darken</span></li>
-  <li style="background-blend-mode: difference;"><span>difference</span></li>
-  <li style="background-blend-mode: exclusion;"><span>exclusion</span></li>
-  <li style="background-blend-mode: hard-light;"><span>hard-light</span></li>
-  <li style="background-blend-mode: hue;"><span>hue</span></li>
-  <li style="background-blend-mode: lighten;"><span>lighten</span></li>
-  <li style="background-blend-mode: luminosity;"><span>luminosity</span></li>
-  <li style="background-blend-mode: multiply;"><span>multiply</span></li>
-  <li style="background-blend-mode: normal;"><span>normal</span></li>
-  <li style="background-blend-mode: overlay;"><span>overlay</span></li>
-  <li style="background-blend-mode: saturation;"><span>saturation</span></li>
-  <li style="background-blend-mode: screen;"><span>screen</span></li>
-  <li style="background-blend-mode: soft-light;"><span>soft-light</span></li>
+      <div class="slide bbm">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code>
+          </h1>
+        </header>
+        <style>
+          .bbm ul {
+            display: flex;
+            gap: 1em;
+            flex-flow: row wrap;
+          }
 
-  <li style="background-blend-mode: darken, multiply;"><span>darken, multiply</span></li>
-  <li style="background-blend-mode: difference, overlay;"><span>difference, overlay</span></li>
-  <li style="background-blend-mode: luminosity, saturation;"><span>luminosity, saturation</span></li>
-  <li style="background-blend-mode: hue, screen;"><span>hue, screen</span></li>
-  <li style="background-blend-mode: exclusion, soft-light;"><span>exclusion, soft-light</span></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-</ul>
-<style class="editme" contenteditable>.bbm li {
-  background-image: url(img/coffee.jpg), 
-  linear-gradient(yellow, red); 
-  background-position: center;
-  background-size:cover;
-}</style>
-</section>
-</div>
+          .bbm li {
+            flex: 200px;
+            list-style-type: none;
+            height: 200px;
+            background-repeat: no-repeat;
+          }
 
+          .bbm li span {
+            background-color: rgba(255, 255, 255, 0.8);
+          }
 
-<div class="slide object">
-<header><h1><code>background-blend-mode</code></h1>
-  </header>
-<object data="files/blendmode.html"></object>
-  <a href="files/blendmode.html" target="play" title="open code example in new window">↪</a>
-</div>
+          .bbm .magic {
+            visibility: hidden;
+          }
+        </style>
+        <section class="content">
+          <ul>
+            <li style="background-blend-mode: color;"><span>color</span></li>
+            <li style="background-blend-mode: color-burn;"><span>color-burn</span></li>
+            <li style="background-blend-mode: color-dodge;"><span>color-dodge</span></li>
+            <li style="background-blend-mode: darken;"><span>darken</span></li>
+            <li style="background-blend-mode: difference;"><span>difference</span></li>
+            <li style="background-blend-mode: exclusion;"><span>exclusion</span></li>
+            <li style="background-blend-mode: hard-light;"><span>hard-light</span></li>
+            <li style="background-blend-mode: hue;"><span>hue</span></li>
+            <li style="background-blend-mode: lighten;"><span>lighten</span></li>
+            <li style="background-blend-mode: luminosity;"><span>luminosity</span></li>
+            <li style="background-blend-mode: multiply;"><span>multiply</span></li>
+            <li style="background-blend-mode: normal;"><span>normal</span></li>
+            <li style="background-blend-mode: overlay;"><span>overlay</span></li>
+            <li style="background-blend-mode: saturation;"><span>saturation</span></li>
+            <li style="background-blend-mode: screen;"><span>screen</span></li>
+            <li style="background-blend-mode: soft-light;"><span>soft-light</span></li>
 
-
-<div class="slide object">
-     <header>
-    <h1>CSS Shapes</h1>
-  </header>
-
-    <object data="files/shapes_all.html"></object>
-  <a href="files/shapes_all.html" target="play" title="open code example in new window">↪</a>
-  <small>Photo: <a href="https://www.flickr.com/photos/kristinausk/4121781145">kristinausk</a></small>
- </div>
+            <li style="background-blend-mode: darken, multiply;"><span>darken, multiply</span></li>
+            <li style="background-blend-mode: difference, overlay;"><span>difference, overlay</span></li>
+            <li style="background-blend-mode: luminosity, saturation;"><span>luminosity, saturation</span></li>
+            <li style="background-blend-mode: hue, screen;"><span>hue, screen</span></li>
+            <li style="background-blend-mode: exclusion, soft-light;"><span>exclusion, soft-light</span></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+          </ul>
+          <style class="editme" contenteditable>
+            .bbm li {
+              background-image: url(img/coffee.jpg),
+                linear-gradient(yellow, red);
+              background-position: center;
+              background-size: cover;
+            }
+          </style>
+        </section>
+      </div>
 
 
-
-<div class="slide object">
-     <header>
-    <h1>CSS Shapes 2</h1>
-  </header>
-
-     <object data="files/shapes_all2.html"></object>
-  <a href="files/shapes_all2.html" target="play" title="open code example in new window">↪</a>
-</div>
+      <div class="slide object">
+        <header>
+          <h1><code>background-blend-mode</code></h1>
+        </header>
+        <object data="files/blendmode.html"></object>
+        <a href="files/blendmode.html" target="play" title="open code example in new window">↪</a>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>CSS Shapes with SVG Masking</h1>
-  </header>
-    <object data="files/shapes_heart.html"></object>
-  <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>CSS Shapes</h1>
+        </header>
 
-
-<div class="slide object">
-     <header>
-    <h1>CSS Shape Editor</h1>
-  </header>
-
-     <object data="files/shapes_poly.html"></object>
-  <a href="files/shapes_poly2.html" target="play" title="open code example in new window">↪</a>
- </div>
+        <object data="files/shapes_all.html"></object>
+        <a href="files/shapes_all.html" target="play" title="open code example in new window">↪</a>
+        <small>Photo: <a href="https://www.flickr.com/photos/kristinausk/4121781145">kristinausk</a></small>
+      </div>
 
 
 
-<!--  -->
-<div class="slide intro">
-  <header>
-    <h1>CSS as the Solution</h1>
-  </header>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>CSS Shapes 2</h1>
+        </header>
+
+        <object data="files/shapes_all2.html"></object>
+        <a href="files/shapes_all2.html" target="play" title="open code example in new window">↪</a>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1>CSS Shapes with SVG Masking</h1>
+        </header>
+        <object data="files/shapes_heart.html"></object>
+        <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1>CSS Shape Editor</h1>
+        </header>
+
+        <object data="files/shapes_poly.html"></object>
+        <a href="files/shapes_poly2.html" target="play" title="open code example in new window">↪</a>
+      </div>
 
 
 
-<div class="slide object">
-<object data="https://estelle.github.io/input-masking/indexcss.html"></object>
-<a href="https://estelle.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
-</div>
+      <!--  -->
+      <div class="slide intro">
+        <header>
+          <h1>CSS as the Solution</h1>
+        </header>
+      </div>
+
+
+
+      <div class="slide object">
+        <object data="https://rvsp.github.io/input-masking/indexcss.html"></object>
+        <a href="https://rvsp.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
+      </div>
 
 
 
 
 
-<div class="slide">
-<pre>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
+      <div class="slide">
+        <pre>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
   placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code"&gt;</pre>
-  <p>progressively enhanced with JS to: </p>
-<pre>&lt;label for="zip">Zip Code&lt;/label>
+        <p>progressively enhanced with JS to: </p>
+        <pre>&lt;label for="zip">Zip Code&lt;/label>
   &lt;span class="shell">
     &lt;span aria-hidden="true" id="zipMask">&lt;i>123&lt;/i>XX&lt;/span>
     &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
     class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
   &lt;/span></pre>
-<a href="https://estelle.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
+        <a href="https://rvsp.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
 
-</div>
-
-
-
-<div class="slide object">
-<object data="https://estelle.github.io/merry-go-round/"></object>
-<a href="https://estelle.github.io/merry-go-round/" class="pagelink">Github Repo</a>
-</div>
+      </div>
 
 
 
-<div class="slide">
-<pre style="overflow: scroll; height: 80vh;"><!--&lt;form action="index.html">
+      <div class="slide object">
+        <object data="https://rvsp.github.io/merry-go-round/"></object>
+        <a href="https://rvsp.github.io/merry-go-round/" class="pagelink">Github Repo</a>
+      </div>
+
+
+
+      <div class="slide">
+        <pre style="overflow: scroll; height: 80vh;"><!--&lt;form action="index.html">
 --><b>&lt;fieldset</b> class="mgr" id="address"&gt;
 <b>&lt;legend&gt;Select an address to edit:&lt;/legend&gt;</b>
 &lt;div&gt;
@@ -1418,189 +1844,208 @@ hue | saturation | color | luminosity</pre>
     &lt;/li&gt;...
   &lt;/ul&gt;
   &lt;/fieldset&gt;
-</pre></div>
+</pre>
+      </div>
 
 
 
 
-<div class="slide divider">
-<header><h1>Cursors</h1>
-  </header>
-<section class="content">
-</section>
-</div> 
+      <div class="slide divider">
+        <header>
+          <h1>Cursors</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="resource">cursor</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the type of cursor, if any, to show when the mouse pointer is over an element.</p>
-  <pre contenteditable class="multi">
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="resource">cursor</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the type of cursor, if any, to show when the mouse pointer is over an element.</p>
+          <pre contenteditable class="multi">
 auto | default | none | context-menu | help | pointer 
 progress | wait | cell | crosshair | text | vertical-text 
 alias | copy | move | no-drop | not-allowed | &lt;dir>-resize 
 col-resize | row-resize | all-scroll | zoom-in | zoom-out 
 grab | grabbing |  [ &lt;url> [ &lt;x> <&lt;y> ]? , ]* </pre>
 
-<p>Where <code>&lt;dir>-resize</code> can be <code>n-, ne-, nw-, s-, se-,
+          <p>Where <code>&lt;dir>-resize</code> can be <code>n-, ne-, nw-, s-, se-,
 sw-, w-, ew-, ns-, nesw-</code>, or <code>nwse-</code></p>
-<p>If importing an image via <code>url()</code> it takes comma-separated URLS followed by one of the keywords above. Optionally, followed by a pair of space-separated x- and y- coordinates setting the cursor's hotspot relative to the top-left corner of the image.</p>
-<pre>cursor: url(hat.svg), url(hat.cur) 2 5, grabbing;</pre>
-<p>That said, don't use custom cursors.</p>
-</section>
-</div>
+          <p>If importing an image via <code>url()</code> it takes comma-separated URLS followed by one of the keywords
+            above. Optionally, followed by a pair of space-separated x- and y- coordinates setting the cursor's hotspot
+            relative to the top-left corner of the image.</p>
+          <pre>cursor: url(hat.svg), url(hat.cur) 2 5, grabbing;</pre>
+          <p>That said, don't use custom cursors.</p>
+        </section>
+      </div>
 
 
-<div class="slide normal cursors" style="padding: 0">
-     <header>
-    <h1>Cursors</h1>
-  </header>
-  <section class="content">
-			<ul>
-				<li style="cursor:crosshair">crosshair</li>
-				<li  style="cursor:default">default</li>
-				<li  style="cursor:help">help</li>
-				<li  style="cursor:move">move</li>
-				<li  style="cursor:e-resize">e-resize</li>
-				<li  style="cursor:ne-resize">ne-resize</li>
-				<li  style="cursor:nw-resize">nw-resize</li>
-				<li  style="cursor:n-resize">n-resize</li>
-				<li  style="cursor:se-resize">se-resize</li>
-				<li  style="cursor:sw-resize">sw-resize</li>
-				<li  style="cursor:s-resize">s-resize</li>
-				<li  style="cursor:w-resize">w-resize</li>
-        <li  style="cursor:ns-resize">ns-resize</li>
-        <li  style="cursor:ew-resize">ew-resize</li>
-        <li  style="cursor:nesw-resize">nesw-resize</li>
-        <li  style="cursor:nwse-resize;">nwse-resize</li>
-				<li  style="cursor:text">text</li>
-				<li  style="cursor:wait">wait</li>
-				<li  style="cursor:progress">progress</li>
-			</ul>
-			<ul>
-				<li  style="cursor:none">none</li>
-				<li  style="cursor:context-menu">context-menu</li>
-				<li  style="cursor:cell">cell</li>
-				<li  style="cursor:vertical-text">vertical-text</li>
-				<li  style="cursor:alias">alias</li>
-				<li  style="cursor:copy">copy</li>
-				<li  style="cursor:no-drop">no-drop</li>
-				<li  style="cursor:not-allowed">not-allowed</li>
-				<li  style="cursor:col-resize">col-resize</li>
-				<li  style="cursor:row-resize">row-resize</li>
-				<li  style="cursor:all-scroll">all-scroll</li>
-				<li  style="cursor:zoom-in">zoom-in</li>
-        <li  style="cursor:zoom-out">zoom-out</li>
-        <li  style="cursor:grab">grab</li>
-        <li  style="cursor:grabbing">grabbing</li>
-			</ul>
-     </section>
- </div>
-
-
-
-
-<div class="slide">
-<header><h1>Cursors</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme thisStyleBlock">.thisStyleBlock {
-    cursor: url(images/plus.gif), 
-            url(images/cursor.cur) 5 5, 
-            help;
- }</style>
-</section>
-</div>
-
-
-
-<!--  -->
-<div class="slide intro">
-  <header>
-    <h1>Other Stuff</h1>
-  </header>
-</div>
+      <div class="slide normal cursors" style="padding: 0">
+        <header>
+          <h1>Cursors</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li style="cursor:crosshair">crosshair</li>
+            <li style="cursor:default">default</li>
+            <li style="cursor:help">help</li>
+            <li style="cursor:move">move</li>
+            <li style="cursor:e-resize">e-resize</li>
+            <li style="cursor:ne-resize">ne-resize</li>
+            <li style="cursor:nw-resize">nw-resize</li>
+            <li style="cursor:n-resize">n-resize</li>
+            <li style="cursor:se-resize">se-resize</li>
+            <li style="cursor:sw-resize">sw-resize</li>
+            <li style="cursor:s-resize">s-resize</li>
+            <li style="cursor:w-resize">w-resize</li>
+            <li style="cursor:ns-resize">ns-resize</li>
+            <li style="cursor:ew-resize">ew-resize</li>
+            <li style="cursor:nesw-resize">nesw-resize</li>
+            <li style="cursor:nwse-resize;">nwse-resize</li>
+            <li style="cursor:text">text</li>
+            <li style="cursor:wait">wait</li>
+            <li style="cursor:progress">progress</li>
+          </ul>
+          <ul>
+            <li style="cursor:none">none</li>
+            <li style="cursor:context-menu">context-menu</li>
+            <li style="cursor:cell">cell</li>
+            <li style="cursor:vertical-text">vertical-text</li>
+            <li style="cursor:alias">alias</li>
+            <li style="cursor:copy">copy</li>
+            <li style="cursor:no-drop">no-drop</li>
+            <li style="cursor:not-allowed">not-allowed</li>
+            <li style="cursor:col-resize">col-resize</li>
+            <li style="cursor:row-resize">row-resize</li>
+            <li style="cursor:all-scroll">all-scroll</li>
+            <li style="cursor:zoom-in">zoom-in</li>
+            <li style="cursor:zoom-out">zoom-out</li>
+            <li style="cursor:grab">grab</li>
+            <li style="cursor:grabbing">grabbing</li>
+          </ul>
+        </section>
+      </div>
 
 
 
 
+      <div class="slide">
+        <header>
+          <h1>Cursors</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme thisStyleBlock">
+            .thisStyleBlock {
+              cursor: url(images/plus.gif),
+                url(images/cursor.cur) 5 5,
+                help;
+            }
+          </style>
+        </section>
+      </div>
 
 
 
-<div class="slide normal">
-     <header>
-    <h1>pointer-events: none;</h1>
-  </header>
-  <section class="content">
-     <p>Can the element be clicked?!?!</p>
-     <pre class="contenteditable" style="font-size: 140%">.animatedElement {
+      <!--  -->
+      <div class="slide intro">
+        <header>
+          <h1>Other Stuff</h1>
+        </header>
+      </div>
+
+
+
+
+
+
+
+      <div class="slide normal">
+        <header>
+          <h1>pointer-events: none;</h1>
+        </header>
+        <section class="content">
+          <p>Can the element be clicked?!?!</p>
+          <pre class="contenteditable" style="font-size: 140%">.animatedElement {
   pointer-events: none;
 }</pre>
-<p>Did you note that you could change the transforms examples even when the example was covering the code?</p>
-     </section>
- </div>
+          <p>Did you note that you could change the transforms examples even when the example was covering the code?</p>
+        </section>
+      </div>
 
 
 
 
-<div class="slide normal">
-     <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-modify" target="resource">-webkit-user-modify</a></code></h1>
-  </header>
-  <section class="content">
-<p>Related to <em>contentEditable</em>: Determines whether content of an element is editable. Deprecated</p>
+      <div class="slide normal">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-modify" target="resource">-webkit-user-modify</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Related to <em>contentEditable</em>: Determines whether content of an element is editable. Deprecated</p>
 
-<pre contenteditable>
+          <pre contenteditable>
 -webkit-user-modify: read-only | read-write | read-write-plaintext-only;
 -moz-user-modify: read-only | read-write | write-only;</pre>
-<p>This deck used this for pasting without rich text features in -webkit- supporting browsers</p>
+          <p>This deck used this for pasting without rich text features in -webkit- supporting browsers</p>
 
-<style contenteditable class="editme">section pre, section style, section code {
-  -webkit-user-modify: read-write-plaintext-only;
-}</style>
-<dl>
-<dt>read-only</dt>
-<dd>The content is read-only.</dd>
+          <style contenteditable class="editme">
+            section pre,
+            section style,
+            section code {
+              -webkit-user-modify: read-write-plaintext-only;
+            }
+          </style>
+          <dl>
+            <dt>read-only</dt>
+            <dd>The content is read-only.</dd>
 
-<dt>read-write</dt>
-<dd>The content can be read and written.</dd>
-<dt>write-only (moz only)</dt>
-<dd>The user is able to edit the content, but not to read it.</dd>
+            <dt>read-write</dt>
+            <dd>The content can be read and written.</dd>
+            <dt>write-only (moz only)</dt>
+            <dd>The user is able to edit the content, but not to read it.</dd>
 
-<dt>read-write-plaintext-only (webkit)</dt>
-<dd>The content can be read and written, but any rich formatting of pasted text is lost.</dd>
-</dl>
+            <dt>read-write-plaintext-only (webkit)</dt>
+            <dd>The content can be read and written, but any rich formatting of pasted text is lost.</dd>
+          </dl>
 
-     </section>
- </div>
-
-
-
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN: CSS Filters</a></li>
-      <li><a href="https://css-tricks.com/almanac/properties/b/background-blend-mode/">CSS-Tricks: background-blend-mode</a></li>
-      <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside">shape-outside</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip-path</li>
-    </ul>
-  </section>
-</div>
-
-<div class="slide intro">
-     <header>
-    <h1>The End</h1>
-  </header>
-    <h1><a href="../index.html">Home ➹</a></h1>
-</div>
+        </section>
+      </div>
 
 
 
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN: CSS Filters</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/b/background-blend-mode/">CSS-Tricks:
+                background-blend-mode</a></li>
+            <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside">shape-outside</a> and <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip-path</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="slide intro">
+        <header>
+          <h1>The End</h1>
+        </header>
+        <h1><a href="../index.html">Home ➹</a></h1>
+      </div>
 
 
-  </div>
-  <script src="../slideshow.js"></script>
-  </body>
+
+
+
+    </div>
+    <script src="../slideshow.js"></script>
+</body>
+
 </html>

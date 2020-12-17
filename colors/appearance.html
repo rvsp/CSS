@@ -1,606 +1,634 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8" />
-    <title>Units and Values</title>
-<link rel="stylesheet" href="../intro/css/values.css"/>
-<style>
-style[class="editme" i]  {
-  padding: 20px; 
-  display: block;
-  font-size: 1.2em; 
-  font-family: monospace; 
-  white-space:pre; 
-  border-radius: 10px; 
-  border: 3px solid #aaa; 
-  background-color:#dedede; 
-  margin: 50px auto 20px;
-  width: 90vw;
-  font-family:"Courier New", Courier, monospace;
-}</style>
+  <meta charset="utf-8" />
+  <title>Units and Values</title>
+  <link rel="stylesheet" href="../intro/css/values.css" />
+  <style>
+    style[class="editme"i] {
+      padding: 20px;
+      display: block;
+      font-size: 1.2em;
+      font-family: monospace;
+      white-space: pre;
+      border-radius: 10px;
+      border: 3px solid #aaa;
+      background-color: #dedede;
+      margin: 50px auto 20px;
+      width: 90vw;
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
 </head>
 
 <body>
-<!-- Top instructions -->
-<div id="topinfo"></div>
-<!-- footer instructions -->
-<div id="info">
-    <p><a href="http://standardista.com">Estelle Weyl</a> | <a href="http://twitter.com/estellevw">@estellevw</a> | <a href="http://github.com/estelle">Github</a> | Press <span class="key">&rarr;</span> key to advance.</p>
-</div>
+  <!-- Top instructions -->
+  <div id="topinfo"></div>
+  <!-- footer instructions -->
+  <div id="info">
+  </div>
 
   <div id="presentation">
-   <div id="presentation-counter"></div>
-   <div id="slides">
+    <div id="presentation-counter"></div>
+    <div id="slides">
 
-<div class="slide intro">
-     <header>
-      <h1>Units &amp; Values</h1>
-     </header>
-     <section>
-     <p><a href="https://estelle.github.io/CSS/values/">estelle.github.io/CSS/values/</a></p>
-   </section>
-    </div>
+      <div class="slide intro">
+        <header>
+          <h1>Units &amp; Values</h1>
+        </header>
+        <section>
+          <p><a href="https://rvsp.github.io/CSS/values/">rvsp.github.io/CSS/values/</a></p>
+        </section>
+      </div>
 
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>Numeric data types</h1>
-  </header>
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>Numeric data types</h1>
+        </header>
 
-</div>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>Numeric data types</h1>
-  </header>
-  <section class="content">
-    <dl>
-    <dt><code>&lt;integer></code></dt>
-    <dd><code>0</code> to <code>9</code>, or lots of them. Optional <code>-</code> or <code>+</code></dd>
-    <dt>&lt;number></dt>
-    <dd>Float, with or without a decimal. Optional <code>-</code> or <code>+</code></dd>
-    <dt>&lt;percentage></dt>
-    <dd>A fraction of some other value, and relative to that value</dd>
-    <dt>&lt;dimension></dt>
-    <dd>
-</dd>
+      <div class="slide">
+        <header>
+          <h1>Numeric data types</h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt><code>&lt;integer></code></dt>
+            <dd><code>0</code> to <code>9</code>, or lots of them. Optional <code>-</code> or <code>+</code></dd>
+            <dt>&lt;number></dt>
+            <dd>Float, with or without a decimal. Optional <code>-</code> or <code>+</code></dd>
+            <dt>&lt;percentage></dt>
+            <dd>A fraction of some other value, and relative to that value</dd>
+            <dt>&lt;dimension></dt>
+            <dd>
+            </dd>
 
-    
-  </section>
-</div>
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;integer></code></h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li><code>0</code> to <code>9</code>, or lots of them.
-        <pre contenteditable>0
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1><code>&lt;integer></code></h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li><code>0</code> to <code>9</code>, or lots of them.
+              <pre contenteditable>0
 382</pre>
-      </li>
-      <li> Optional <code>-</code> or <code>+</code>        <pre contenteditable>+18
--1</pre></li>
-  </section>
-</div>
+            </li>
+            <li> Optional <code>-</code> or <code>+</code>
+              <pre contenteditable>+18
+-1</pre>
+            </li>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;number></code></h1>
-  </header>
-  <section class="content">
-    <ul>
-    <li>Float, with or without a decimal.
-        <pre contenteditable>0
+      <div class="slide">
+        <header>
+          <h1><code>&lt;number></code></h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Float, with or without a decimal.
+              <pre contenteditable>0
 3.82</pre>
-      </li>
-      <li> Optional <code>-</code> or <code>+</code>        <pre contenteditable>+10.8
--1.333</pre></li>
-</ul>
-  </section>
-</div>
+            </li>
+            <li> Optional <code>-</code> or <code>+</code>
+              <pre contenteditable>+10.8
+-1.333</pre>
+            </li>
+          </ul>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;percentage></code></h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>A fraction of some other value
-        <pre contenteditable style="line-height: 60%">line-height: 60%;</pre>
-        <pre contenteditable style="width: 60%">width: 60%;</pre></li>
-      <li  style="height: 300px;">Relative to that value
-      <pre contenteditable style="height: 33.33333333333%; box-sizing: border-box;">li {height: 300px;} 
-pre {height: 33.33%;}</pre></li>
-    </ul>
-    
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1><code>&lt;percentage></code></h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>A fraction of some other value
+              <pre contenteditable style="line-height: 60%">line-height: 60%;</pre>
+              <pre contenteditable style="width: 60%">width: 60%;</pre>
+            </li>
+            <li style="height: 300px;">Relative to that value
+              <pre contenteditable style="height: 33.33333333333%; box-sizing: border-box;">li {height: 300px;} 
+pre {height: 33.33%;}</pre>
+            </li>
+          </ul>
 
-
-
-<div class="slide">
-  <header>
-    <h1>Dimension</h1>
-  </header>
-  <section class="content">
-    <ul>
-     <li><code>&lt;length></code></li>
-    <li><code>&lt;angle></code></li>
-    <li><code>&lt;time></code></li>
-    <li><code>&lt;frequency></code></li>
-    <li><code>&lt;resolution></code></li>
-  </ul>
-  <p>&lt;number> with a dimensional unit.</p>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Length</h1>
-  </header>
-  <section class="content">
-    <h2>Absolute</h2>
-    <p>Actual physical measurements (that might not match a ruler)</p>
-    <h2>Relative</h2>
-    <p>Relative to some other measurement</p>
-    <p><code>px</code> v. <code>em</code></p>
-  </section>
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>Absolute units of length</h1>
-  </header>
-  <section class="content">
-
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Unit</th>
-   <th scope="col">Name</th>
-   <th scope="col">Equivalent to</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td><code>cm</code></td>
-   <td>Centimeters</td>
-   <td>1cm = 96px/2.54</td>
-  </tr>
-  <tr>
-   <td><code>mm</code></td>
-   <td>Millimeters</td>
-   <td>1mm = 1/10th of 1cm</td>
-  </tr>
-  <tr>
-   <td><code>Q</code></td>
-   <td>Quarter-millimeters</td>
-   <td>1Q = 1/40th of 1cm</td>
-  </tr>
-  <tr>
-   <td><code>in</code></td>
-   <td>Inches</td>
-   <td>1in = 2.54cm = 96px</td>
-  </tr>
-  <tr>
-   <td><code>pc</code></td>
-   <td>Picas</td>
-   <td>1pc = 1/16th of 1in</td>
-  </tr>
-  <tr>
-   <td><code>pt</code></td>
-   <td>Points</td>
-   <td>1pt = 1/72th of 1in</td>
-  </tr>
-  <tr>
-   <td><code>px</code></td>
-   <td>Pixels</td>
-   <td>1px* = 1/96th of 1in</td>
-  </tr>
- </tbody>
-</table>
-<small>One pixel. For screen displays, it traditionally represents one device pixel (dot). When hi-dpi (like printers and phones) <code>1px</code> = 1/96th of <code>1in</code>.</small>
-  </section>
-</div>
-
-<div class="slide">
-  <header>
-    <h1>Relative units of length</h1>
-  </header>
-  <section class="content">
-    <table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Unit</th>
-      <th scope="col">Relative to</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>em</code></td>
-      <td>Font size of the element.</td>
-    </tr>
-    <tr>
-      <td><code>ex</code></td>
-      <td>x-height of the element's font.</td>
-    </tr>
-    <tr>
-      <td><code>ch</code></td>
-      <td>Average character advance of a narrow glyph in the element’s font, as represented by the “0” (ZERO, U+0030) glyph.</td>
-    </tr>
-    <tr>
-      <td><code>rem</code></td>
-      <td>Font size of the root element.</td>
-    </tr>
-    <tr>
-      <td><code>vw</code></td>
-      <td>1% of viewport's width.</td>
-    </tr>
-    <tr>
-      <td><code>vh</code></td>
-      <td>1% of viewport's height.</td>
-    </tr>
-    <tr>
-      <td><code>vmin</code></td>
-      <td>1% of viewport's smaller dimension.</td>
-    </tr>
-    <tr>
-      <td><code>vmax</code></td>
-      <td>1% of viewport's larger dimension.</td>
-    </tr>
-  </tbody>
-</table>
-
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Dimension</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li><code>&lt;length></code></li>
+            <li><code>&lt;angle></code></li>
+            <li><code>&lt;time></code></li>
+            <li><code>&lt;frequency></code></li>
+            <li><code>&lt;resolution></code></li>
+          </ul>
+          <p>&lt;number> with a dimensional unit.</p>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Relative units of length</h1>
-  </header>
-  <section class="content">
-    <table class="standard-table">
-  <thead>
-    <tr>
-      <th scope="col">Unit</th>
-      <th scope="col">Relative to</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>cap</code></td>
-      <td>Cap height (the nominal height of capital letters) of the element's font.</td>
-    </tr>
-    <tr>
-      <td><code>ic</code></td>
-      <td>Average character advance of a full width glyph in the element’s font, as represented by the “水” (CJK water ideograph, U+6C34) glyph.</td>
-    </tr>
-    <tr>
-      <td><code>lh</code></td>
-      <td>Line height of the element.</td>
-    </tr>
-    <tr>
-      <td><code>rlh</code></td>
-      <td>Line height of the root element.</td>
-    </tr>
-    <tr>
-      <td><code>vi</code></td>
-      <td>1% of viewport's size in the root element's inline axis.</td>
-    </tr>
-    <tr>
-      <td><code>vb</code></td>
-      <td>1% of viewport's size in the root element's block axis.</td>
-    </tr>
-  </tbody>
-</table>
-
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Length</h1>
+        </header>
+        <section class="content">
+          <h2>Absolute</h2>
+          <p>Actual physical measurements (that might not match a ruler)</p>
+          <h2>Relative</h2>
+          <p>Relative to some other measurement</p>
+          <p><code>px</code> v. <code>em</code></p>
+        </section>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>Length Units</h1>
-  </header>
-  <object data="exercises/lengths.html"></object>
-  <a href="exercises/lengths.html" target="play" class="objectlink">Try it out</a>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Absolute units of length</h1>
+        </header>
+        <section class="content">
 
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Name</th>
+                <th scope="col">Equivalent to</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>cm</code></td>
+                <td>Centimeters</td>
+                <td>1cm = 96px/2.54</td>
+              </tr>
+              <tr>
+                <td><code>mm</code></td>
+                <td>Millimeters</td>
+                <td>1mm = 1/10th of 1cm</td>
+              </tr>
+              <tr>
+                <td><code>Q</code></td>
+                <td>Quarter-millimeters</td>
+                <td>1Q = 1/40th of 1cm</td>
+              </tr>
+              <tr>
+                <td><code>in</code></td>
+                <td>Inches</td>
+                <td>1in = 2.54cm = 96px</td>
+              </tr>
+              <tr>
+                <td><code>pc</code></td>
+                <td>Picas</td>
+                <td>1pc = 1/16th of 1in</td>
+              </tr>
+              <tr>
+                <td><code>pt</code></td>
+                <td>Points</td>
+                <td>1pt = 1/72th of 1in</td>
+              </tr>
+              <tr>
+                <td><code>px</code></td>
+                <td>Pixels</td>
+                <td>1px* = 1/96th of 1in</td>
+              </tr>
+            </tbody>
+          </table>
+          <small>One pixel. For screen displays, it traditionally represents one device pixel (dot). When hi-dpi (like
+            printers and phones) <code>1px</code> = 1/96th of <code>1in</code>.</small>
+        </section>
+      </div>
 
+      <div class="slide">
+        <header>
+          <h1>Relative units of length</h1>
+        </header>
+        <section class="content">
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Relative to</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>em</code></td>
+                <td>Font size of the element.</td>
+              </tr>
+              <tr>
+                <td><code>ex</code></td>
+                <td>x-height of the element's font.</td>
+              </tr>
+              <tr>
+                <td><code>ch</code></td>
+                <td>Average character advance of a narrow glyph in the element’s font, as represented by the “0” (ZERO,
+                  U+0030) glyph.</td>
+              </tr>
+              <tr>
+                <td><code>rem</code></td>
+                <td>Font size of the root element.</td>
+              </tr>
+              <tr>
+                <td><code>vw</code></td>
+                <td>1% of viewport's width.</td>
+              </tr>
+              <tr>
+                <td><code>vh</code></td>
+                <td>1% of viewport's height.</td>
+              </tr>
+              <tr>
+                <td><code>vmin</code></td>
+                <td>1% of viewport's smaller dimension.</td>
+              </tr>
+              <tr>
+                <td><code>vmax</code></td>
+                <td>1% of viewport's larger dimension.</td>
+              </tr>
+            </tbody>
+          </table>
 
-<div class="slide">
-  <header>
-    <h1>Angle Units</h1>
-  </header>
-  <section class="content">
-    <p>Angle values are represented by &lt;angle&gt; in the spec:</p>
-
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Unit</th>
-   <th scope="col">Name</th>
-   <th scope="col">Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td><code>deg</code></td>
-   <td>Degrees</td>
-   <td>There are 360 degrees in a full circle.</td>
-  </tr>
-  <tr>
-   <td><code>grad</code></td>
-   <td>Gradians</td>
-   <td>There are 400 gradians in a full circle.</td>
-  </tr>
-  <tr>
-   <td><code>rad</code></td>
-   <td>Radians</td>
-   <td>There are 2π radians in a full circle.</td>
-  </tr>
-  <tr>
-   <td><code>turn</code></td>
-   <td>Turns</td>
-   <td>There is 1 turn in a full circle.</td>
-  </tr>
- </tbody>
-</table>
-
-  </section>
-</div>
-
-
-<div class="slide object">
-  <header>
-    <h1>Angle Units</h1>
-  </header>
-  <object data="exercises/angle.html"></object>
-  <a href="exercises/angle.html" target="play" class="objectlink">Try it out</a>
-</div>
-
-<div class="slide">
-  <header>
-    <h1>Time units</h1>
-  </header>
-  <section class="content">
-    <p>Time values are represented by the type <code>&lt;time&gt;</code>. </p>
-
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Unit</th>
-   <th scope="col">Name</th>
-   <th scope="col">Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td><code>s</code></td>
-   <td>Seconds</td>
-   <td></td>
-  </tr>
-  <tr>
-   <td><code>ms</code></td>
-   <td>Milliseconds</td>
-   <td>There are 1,000 milliseconds in a second.</td>
-  </tr>
- </tbody>
-</table>
-<p>The unit identifier -- the <code>s</code> or <code>ms</code> -- is required.</p>
-  </section>
-</div>
-
-<div class="slide object">
-  <header>
-    <h1>Timing units</h1>
-  </header>
-  <object data="exercises/timing.html"></object>
-  <a href="exercises/timing.html" target="play" class="objectlink">Try it out</a>
-</div>
+        </section>
+      </div>
 
 
 
+      <div class="slide">
+        <header>
+          <h1>Relative units of length</h1>
+        </header>
+        <section class="content">
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Relative to</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>cap</code></td>
+                <td>Cap height (the nominal height of capital letters) of the element's font.</td>
+              </tr>
+              <tr>
+                <td><code>ic</code></td>
+                <td>Average character advance of a full width glyph in the element’s font, as represented by the “水”
+                  (CJK water ideograph, U+6C34) glyph.</td>
+              </tr>
+              <tr>
+                <td><code>lh</code></td>
+                <td>Line height of the element.</td>
+              </tr>
+              <tr>
+                <td><code>rlh</code></td>
+                <td>Line height of the root element.</td>
+              </tr>
+              <tr>
+                <td><code>vi</code></td>
+                <td>1% of viewport's size in the root element's inline axis.</td>
+              </tr>
+              <tr>
+                <td><code>vb</code></td>
+                <td>1% of viewport's size in the root element's block axis.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1>Length Units</h1>
+        </header>
+        <object data="exercises/lengths.html"></object>
+        <a href="exercises/lengths.html" target="play" class="objectlink">Try it out</a>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Angle Units</h1>
+        </header>
+        <section class="content">
+          <p>Angle values are represented by &lt;angle&gt; in the spec:</p>
+
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>deg</code></td>
+                <td>Degrees</td>
+                <td>There are 360 degrees in a full circle.</td>
+              </tr>
+              <tr>
+                <td><code>grad</code></td>
+                <td>Gradians</td>
+                <td>There are 400 gradians in a full circle.</td>
+              </tr>
+              <tr>
+                <td><code>rad</code></td>
+                <td>Radians</td>
+                <td>There are 2π radians in a full circle.</td>
+              </tr>
+              <tr>
+                <td><code>turn</code></td>
+                <td>Turns</td>
+                <td>There is 1 turn in a full circle.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1>Angle Units</h1>
+        </header>
+        <object data="exercises/angle.html"></object>
+        <a href="exercises/angle.html" target="play" class="objectlink">Try it out</a>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Time units</h1>
+        </header>
+        <section class="content">
+          <p>Time values are represented by the type <code>&lt;time&gt;</code>. </p>
+
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>s</code></td>
+                <td>Seconds</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>ms</code></td>
+                <td>Milliseconds</td>
+                <td>There are 1,000 milliseconds in a second.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>The unit identifier -- the <code>s</code> or <code>ms</code> -- is required.</p>
+        </section>
+      </div>
+
+      <div class="slide object">
+        <header>
+          <h1>Timing units</h1>
+        </header>
+        <object data="exercises/timing.html"></object>
+        <a href="exercises/timing.html" target="play" class="objectlink">Try it out</a>
+      </div>
 
 
 
 
 
-<div class="slide">
-  <header>
-    <h1>Frequency</h1>
-  </header>
-  <section class="content">
-    <p>Frequency values are represented by the type &lt;frequency&gt;. </p>
-
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Unit</th>
-   <th scope="col">Name</th>
-   <th scope="col">Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td><code>Hz</code></td>
-   <td>Hertz</td>
-   <td>Represents the number of occurances per second.</td>
-  </tr>
-  <tr>
-   <td><code>kHz</code></td>
-   <td>KiloHertz</td>
-   <td>A kiloHertz is 1000 Hertz.</td>
-  </tr>
- </tbody>
-</table>
-<p><code>1Hz</code>, which can also be written as <code>1hz</code> or <code>1HZ</code>, is one cycle per second.</p>
-
-  </section>
-</div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Resolution</h1>
-  </header>
-  <section class="content">
-    <p>Resolution units are represented by the type &lt;resolution&gt;. </p>
+      <div class="slide">
+        <header>
+          <h1>Frequency</h1>
+        </header>
+        <section class="content">
+          <p>Frequency values are represented by the type &lt;frequency&gt;. </p>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Unit</th>
-   <th scope="col">Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td><code>dpi</code></td>
-   <td>Dots per inch.</td>
-  </tr>
-  <tr>
-   <td><code>dpcm</code></td>
-   <td>Dots per centimetre.</td>
-  </tr>
-  <tr>
-   <td><code>dppx</code>, <code>x</code></td>
-   <td>Dots per px unit.</td>
-  </tr>
- </tbody>
-</table>
-<p>Represents the size of a single dot in a graphical representation, such as a screen, by indicating how many of these dots fit in a CSS inch, centimeter, or pixel.</p>
-  </section>
-</div>
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>Hz</code></td>
+                <td>Hertz</td>
+                <td>Represents the number of occurances per second.</td>
+              </tr>
+              <tr>
+                <td><code>kHz</code></td>
+                <td>KiloHertz</td>
+                <td>A kiloHertz is 1000 Hertz.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><code>1Hz</code>, which can also be written as <code>1hz</code> or <code>1HZ</code>, is one cycle per
+            second.</p>
 
-<div class="slide object">
-  <header>
-    <h1>Timing units</h1>
-  </header>
-  <object data="exercises/resolution.html"></object>
-  <a href="exercises/resolution.html" target="play" class="objectlink">Try it out</a>
-</div>
-
-
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>non-numeric data types</h1>
-  </header>
-
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide divider">
-  <header>
-    <h1>Keywords</h1>
-  </header>
-  <section class="content">
-    <p>
-    
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Resolution</h1>
+        </header>
+        <section class="content">
+          <p>Resolution units are represented by the type &lt;resolution&gt;. </p>
+
+          <table class="standard-table">
+            <thead>
+              <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>dpi</code></td>
+                <td>Dots per inch.</td>
+              </tr>
+              <tr>
+                <td><code>dpcm</code></td>
+                <td>Dots per centimetre.</td>
+              </tr>
+              <tr>
+                <td><code>dppx</code>, <code>x</code></td>
+                <td>Dots per px unit.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Represents the size of a single dot in a graphical representation, such as a screen, by indicating how many
+            of these dots fit in a CSS inch, centimeter, or pixel.</p>
+        </section>
+      </div>
+
+      <div class="slide object">
+        <header>
+          <h1>Timing units</h1>
+        </header>
+        <object data="exercises/resolution.html"></object>
+        <a href="exercises/resolution.html" target="play" class="objectlink">Try it out</a>
+      </div>
+
+
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>non-numeric data types</h1>
+        </header>
+
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Explicit Defaulting: CSS-wide property values</h1>
-  </header>
-  <section class="content">
-    <dl>
-    <dt>initial</dt> <dd>Sets property to its initial value.</dd>
-    <dt>inherit</dt> <dd>Makes element's property the same as its parent.</dd></dd>
-    <dt>unset</dt><dd>Resets to inherited value if it inherits from its parent. Otherwise, set to initial value.</dd>
-    
- </dl>
-    <p><code>all</code> property lets you reset all properties to their initial, inherited, reverted, or unset state at once.</p>
-<hr/>
-<dl><dt>none</dt> <dd>Not global, but fails if not understood, so behaves similarly</dd></dl>
-<hr />
-    <dl>
+      <div class="slide divider">
+        <header>
+          <h1>Keywords</h1>
+        </header>
+        <section class="content">
+          <p>
 
-    <dt>revert</dt> <dd>Resets property to UA stylesheet value (or user stylesheet, if any exist). (FF/Saf)
-    </dd>
-
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Keyword values</h1>
-  </header>
-  <section class="content">
-<h2><code>text-align</code> property</h2>
-<code>left | right | center | justify </code>
-    <pre contenteditable>/* Keyword values */         /* Global values */
+      <div class="slide">
+        <header>
+          <h1>Explicit Defaulting: CSS-wide property values</h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt>initial</dt>
+            <dd>Sets property to its initial value.</dd>
+            <dt>inherit</dt>
+            <dd>Makes element's property the same as its parent.</dd>
+            </dd>
+            <dt>unset</dt>
+            <dd>Resets to inherited value if it inherits from its parent. Otherwise, set to initial value.</dd>
+
+          </dl>
+          <p><code>all</code> property lets you reset all properties to their initial, inherited, reverted, or unset
+            state at once.</p>
+          <hr />
+          <dl>
+            <dt>none</dt>
+            <dd>Not global, but fails if not understood, so behaves similarly</dd>
+          </dl>
+          <hr />
+          <dl>
+
+            <dt>revert</dt>
+            <dd>Resets property to UA stylesheet value (or user stylesheet, if any exist). (FF/Saf)
+            </dd>
+
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Keyword values</h1>
+        </header>
+        <section class="content">
+          <h2><code>text-align</code> property</h2>
+          <code>left | right | center | justify </code>
+          <pre contenteditable>/* Keyword values */         /* Global values */
 text-align: left;            text-align: inherit;
 text-align: right;           text-align: initial;
 text-align: center;          text-align: unset;
 text-align: justify;</pre>
-<ul><li>appear literally, without quotes</li><li>case-insensitive</li><li>will review as we look at the property</li><li>Avoid in custom identifiers</li></ul>
-  </section>
-</div>
+          <ul>
+            <li>appear literally, without quotes</li>
+            <li>case-insensitive</li>
+            <li>will review as we look at the property</li>
+            <li>Avoid in custom identifiers</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;position></code></h1>
-  </header>
-  <section class="content">
-    <h2>Values</h2>
-    <pre>center | top | right | bottom | left </pre>
-    <ul>
-  <li>Specified with one or two keywords</li>
-  <li>Optional offsets on TRBL</li>
-</ul>
-    <h2>Offsets</h2>
-    <pre> &lt;percentage> | &lt;length></pre>
+      <div class="slide">
+        <header>
+          <h1><code>&lt;position></code></h1>
+        </header>
+        <section class="content">
+          <h2>Values</h2>
+          <pre>center | top | right | bottom | left </pre>
+          <ul>
+            <li>Specified with one or two keywords</li>
+            <li>Optional offsets on TRBL</li>
+          </ul>
+          <h2>Offsets</h2>
+          <pre> &lt;percentage> | &lt;length></pre>
 
-  </section>
-</div>
+        </section>
+      </div>
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;position></code></h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>background-position: bottom right;
+      <div class="slide">
+        <header>
+          <h1><code>&lt;position></code></h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>background-position: bottom right;
 background-position: bottom 40px right 60px;
 
 background-image: radial-gradient(ellipse at bottom left, red 50%, blue 50%);
 background-image: radial-gradient(ellipse at bottom left, red 50%, blue 50%);
 </pre>
 
-    <ul><li>position can be outside the parent</li></ul>
-  </section>
-</div>
+          <ul>
+            <li>position can be outside the parent</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Mixed values</h1>
-  </header>
-  <section class="content">
+      <div class="slide">
+        <header>
+          <h1>Mixed values</h1>
+        </header>
+        <section class="content">
 
-<h2><code>border-width </code> property</h2>
-    <code> [ &lt;length> | thick | medium | thin ]{1,4} </code>
-    <pre contenteditable>/* Keyword values */
+          <h2><code>border-width </code> property</h2>
+          <code> [ &lt;length> | thick | medium | thin ]{1,4} </code>
+          <pre contenteditable>/* Keyword values */
 border-width: 1px thin;
 border-width: thick thin thin thick;
 border-width: medium;
@@ -610,105 +638,112 @@ border-width: 5px 10px thin thick;
 border-width: inherit;
 border-width: initial;
 border-width: unset;</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide divider">
-  <header>
-    <h1>Strings</h1>
-  </header>
-  <section class="content">
-    
-  </section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>Strings</h1>
+        </header>
+        <section class="content">
+
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;string></code></h1>
-  </header>
-  <section class="content">
-    <h2>&lt;string></h2>
-    <ul>
+      <div class="slide">
+        <header>
+          <h1><code>&lt;string></code></h1>
+        </header>
+        <section class="content">
+          <h2>&lt;string></h2>
+          <ul>
 
-    <li>Quoted string of characters</li>
-    <li>Double or single quotes</li>
-    <li>Case-sensitive</li>
-    <li>HTML entities (like &amp;amp;) won't be parsed</li>
-    <li>Unicode characters start with a \, or correct charset</li>
-    <li>Not parsed</li>
-</ul>
-<pre contenteditable>content: ' (pdf)';
+            <li>Quoted string of characters</li>
+            <li>Double or single quotes</li>
+            <li>Case-sensitive</li>
+            <li>HTML entities (like &amp;amp;) won't be parsed</li>
+            <li>Unicode characters start with a \, or correct charset</li>
+            <li>Not parsed</li>
+          </ul>
+          <pre contenteditable>content: ' (pdf)';
 font-family: "myAwesomeFont", serif;
 quotes: "«" '»' "‹" '›';</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide object">
-     <header>
-    <h1>Special Character</h1>
-  </header>
-  <section class="content">
-     
- <style class="editme" contenteditable>#a2603::after {content: "\2603";}</style>
- <p id="a2603"></p>
-     </section>
-<object data="https://estelle.github.io/CSS-JS-Entity-Calculator/"></object>
- <a class="objectlink" href="https://estelle.github.io/CSS-JS-Entity-Calculator/" target="resource">Calculator</a>
- </div>
+      <div class="slide object">
+        <header>
+          <h1>Special Character</h1>
+        </header>
+        <section class="content">
+
+          <style class="editme" contenteditable>
+            #a2603::after {
+              content: "\2603";
+            }
+          </style>
+          <p id="a2603"></p>
+        </section>
+        <object data="https://rvsp.github.io/CSS-JS-Entity-Calculator/"></object>
+        <a class="objectlink" href="https://rvsp.github.io/CSS-JS-Entity-Calculator/" target="resource">Calculator</a>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>&lt;ident></h1>
-  </header>
-  <section class="content">
-    <h2><code>&lt;ident></code> or <code>&lt;custom-ident></code></h2>
-    <ul>
-      <li>idents, or custom identifiers, are unquoted</li>
-      <li>case-sensitive</li>
-      <li>can contain [A-Za-z0-9], hyphen (-), underscore (_), escaped character preceded by a backslash (\), unicode characters (\123)</li>
-      <li>can NOT start with a digit, two hyphens, a hyphen+digit</li>
-      <li>can NOT be <code>unset</code>, <code>initial</code>, <code>reset</code>, <code>inherit</code>, or <code>none</code></li>
-      <li>Should not be a property name or keyword value used elsewhere in CSS</li>
-    </ul>
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>&lt;ident></h1>
+        </header>
+        <section class="content">
+          <h2><code>&lt;ident></code> or <code>&lt;custom-ident></code></h2>
+          <ul>
+            <li>idents, or custom identifiers, are unquoted</li>
+            <li>case-sensitive</li>
+            <li>can contain [A-Za-z0-9], hyphen (-), underscore (_), escaped character preceded by a backslash (\),
+              unicode characters (\123)</li>
+            <li>can NOT start with a digit, two hyphens, a hyphen+digit</li>
+            <li>can NOT be <code>unset</code>, <code>initial</code>, <code>reset</code>, <code>inherit</code>, or
+              <code>none</code>
+            </li>
+            <li>Should not be a property name or keyword value used elsewhere in CSS</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;custom-ident></code> use cases</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>counter-reset: yourCounter;
+      <div class="slide">
+        <header>
+          <h1><code>&lt;custom-ident></code> use cases</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>counter-reset: yourCounter;
 counter-increment: myCounter;
 
 grid-row-start: someGridArea;
 grid-row-end: someOtherGridArea;
 grid-column-start: anotherArea;
 grid-column-end: oneMore;</pre>
-<h2>Property names as values == <code>&lt;custom-ident></code></h2>
-<pre contenteditable>will-change: transform;
+          <h2>Property names as values == <code>&lt;custom-ident></code></h2>
+          <pre contenteditable>will-change: transform;
 transition-property: opacity;</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;custom-ident> | &lt;string></code></h1>
-  </header>
-  <section class="content">
-<pre contenteditable>animation-name: myAnimation; 
+      <div class="slide">
+        <header>
+          <h1><code>&lt;custom-ident> | &lt;string></code></h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>animation-name: myAnimation; 
 
 @keyframes 'myAnimation' {
     0% {transform: translatex(0);}
@@ -717,46 +752,46 @@ transition-property: opacity;</pre>
 
 font-family:  Helvetica Neue;
 font-family: "Helvetica Neue";</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide divider">
-  <header>
-    <h1>CSS Functions</h1>
-  </header>
-  <section class="content">
-    
-  </section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>CSS Functions</h1>
+        </header>
+        <section class="content">
+
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;url></code> function</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>/* Simple usage */
+      <div class="slide">
+        <header>
+          <h1><code>&lt;url></code> function</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>/* Simple usage */
 url(https://example.com/images/myImg.jpg);
 url(data:image/png;base64,iRxVB0…);
 url(myFont.woff);
 url(#IDofSVGpath);</pre>
 
-<pre contenteditable>/* at-rules */
+          <pre contenteditable>/* at-rules */
 @document url("https://www.example.com/") { ... }  
 @import url("https://www.example.com/style.css");
 @namespace url(http://www.w3.org/1999/xhtml);</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;url></code> function</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>background-image: url("https://mdn.mozillademos.org/files/16761/star.gif");
+      <div class="slide">
+        <header>
+          <h1><code>&lt;url></code> function</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>background-image: url("https://mdn.mozillademos.org/files/16761/star.gif");
 list-style-image: url('../images/bullet.jpg');
 
 content: url("pdficon.jpg");
@@ -767,16 +802,16 @@ src: url('fantasticfont.woff');
 
 offset-path: url(#path);
 mask-image: url("masks.svg#mask1");</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;url></code> function</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>background: url('https://mdn.mozillademos.org/files/16761/star.gif') bottom right repeat-x blue;
+      <div class="slide">
+        <header>
+          <h1><code>&lt;url></code> function</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>background: url('https://mdn.mozillademos.org/files/16761/star.gif') bottom right repeat-x blue;
 
 border-image: url("/media/diamonds.png") 30 fill / 30px / 30px space;
 
@@ -785,16 +820,16 @@ background-image: cross-fade(url(first.png) 20%, url(second.png));
 mask-image: image(url(mask.png), skyblue, linear-gradient(rgba(0, 0, 0, 1.0), transparent);
 
 content: url(star.svg) url(star.svg) url(star.svg) url(star.svg) url(star.svg); </pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1><code>&lt;image></code> functions</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>url(test.jpg)
+      <div class="slide">
+        <header>
+          <h1><code>&lt;image></code> functions</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>url(test.jpg)
 linear-gradient(blue, red)
 radial-gradient(blue, red)
 conic-gradient()
@@ -806,183 +841,186 @@ image(ltr 'arrow.png#xywh=0,0,16,16', red)
 cross-fade(20% url(twenty.png), url(eighty.png)) 
 image-set('test.jpg' 1x, 'test-2x.jpg' 2x)
 paint(worklet)</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>Other CSS Functions</h1>
-  </header>
-  <section class="content">
-  <article class="col3"><p style="margin-top: 0"><code>transform:</code></p>
-<ul>
-<li>rotate()</li>
-<li>rotate3d()</li>
-<li>rotateX()</li>
-<li>rotateY()</li>
-<li>rotateZ()</li>
-<li>saturate()</li>
-<li>matrix()</li>
-<li>matrix3d()</li>
-<li>scale()</li>
-<li>scale3d()</li>
-<li>scaleX()</li>
-<li>scaleY()</li>
-<li>scaleZ()</li>
-<li>skew()</li>
-<li>skewX()</li>
-<li>skewY()</li>
-<li>translate()</li>
-<li>translate3d()</li>
-<li>translateX()</li>
-<li>translateY()</li>
-<li>translateZ()</li>
-<li>perspective()</li>
-</ul><p>variables</p>
-<ul>
-<li>env()</li>
-<li>var()</li>
-<!--<li>format()</li>
+      <div class="slide">
+        <header>
+          <h1>Other CSS Functions</h1>
+        </header>
+        <section class="content">
+          <article class="col3">
+            <p style="margin-top: 0"><code>transform:</code></p>
+            <ul>
+              <li>rotate()</li>
+              <li>rotate3d()</li>
+              <li>rotateX()</li>
+              <li>rotateY()</li>
+              <li>rotateZ()</li>
+              <li>saturate()</li>
+              <li>matrix()</li>
+              <li>matrix3d()</li>
+              <li>scale()</li>
+              <li>scale3d()</li>
+              <li>scaleX()</li>
+              <li>scaleY()</li>
+              <li>scaleZ()</li>
+              <li>skew()</li>
+              <li>skewX()</li>
+              <li>skewY()</li>
+              <li>translate()</li>
+              <li>translate3d()</li>
+              <li>translateX()</li>
+              <li>translateY()</li>
+              <li>translateZ()</li>
+              <li>perspective()</li>
+            </ul>
+            <p>variables</p>
+            <ul>
+              <li>env()</li>
+              <li>var()</li>
+              <!--<li>format()</li>
 <li>leader()</li>
 <li>local()</li>
 <li>selector()</li>-->
-</ul> 
-<p><code>content:</code></p>
-<ul>
-<li>attr()</li>
-<li>counter()</li>
-<li>counters()</li>
-<li>target-counter()</li>
-<li>target-counters()</li>
-<li>target-text()</li>
-</ul>
-<p><code>filter:</code></p>
-<ul>
-<li>blur()</li>
-<li>brightness()</li>
-<li>contrast()</li>
-<li>drop-shadow()</li>
-<li>grayscale()</li>
-<li>hue-rotate()</li>
-<li>invert()</li>
-<li>opacity()</li>
-<li>sepia()</li>
-</ul>
-<p><code>font-variant-alternates:</code></p>
-<ul>
-<li>annotation()</li>
-<li>character-variant()</li>
-<li>ornaments()</li>
-<li>styleset()</li>
-<li>stylistic()</li>
-<li>swash()</li>
-</ul>
-<p><code>list-style:</code> symbols()</p>
-<p><code>width/grid-template-rows:</code></p>
-<ul>
-<li>calc()</li>
-<li>clamp()</li>
-<li>max()</li>
-<li>min()</li>
-<li>minmax()</li>
-<li>fit-content()</li>
-<li>repeat()</li>
-</ul>
-<p><code>clip-path/shape-outside:</code></p>
-<ul>
-<li>cirlcle()</li>
-<li>ellipse()</li>
-<li>inset()</li>
-<li>path()</li>
-<li>polygon()</li>
-<li>rect()</li>
-</ul>
-<p><code>color:</code></p>
-<ul>
-<li>hsl()</li>
-<li>hsla()</li>
-<li>rgb()</li>
-<li>rgba()</li>
-</ul>
+            </ul>
+            <p><code>content:</code></p>
+            <ul>
+              <li>attr()</li>
+              <li>counter()</li>
+              <li>counters()</li>
+              <li>target-counter()</li>
+              <li>target-counters()</li>
+              <li>target-text()</li>
+            </ul>
+            <p><code>filter:</code></p>
+            <ul>
+              <li>blur()</li>
+              <li>brightness()</li>
+              <li>contrast()</li>
+              <li>drop-shadow()</li>
+              <li>grayscale()</li>
+              <li>hue-rotate()</li>
+              <li>invert()</li>
+              <li>opacity()</li>
+              <li>sepia()</li>
+            </ul>
+            <p><code>font-variant-alternates:</code></p>
+            <ul>
+              <li>annotation()</li>
+              <li>character-variant()</li>
+              <li>ornaments()</li>
+              <li>styleset()</li>
+              <li>stylistic()</li>
+              <li>swash()</li>
+            </ul>
+            <p><code>list-style:</code> symbols()</p>
+            <p><code>width/grid-template-rows:</code></p>
+            <ul>
+              <li>calc()</li>
+              <li>clamp()</li>
+              <li>max()</li>
+              <li>min()</li>
+              <li>minmax()</li>
+              <li>fit-content()</li>
+              <li>repeat()</li>
+            </ul>
+            <p><code>clip-path/shape-outside:</code></p>
+            <ul>
+              <li>cirlcle()</li>
+              <li>ellipse()</li>
+              <li>inset()</li>
+              <li>path()</li>
+              <li>polygon()</li>
+              <li>rect()</li>
+            </ul>
+            <p><code>color:</code></p>
+            <ul>
+              <li>hsl()</li>
+              <li>hsla()</li>
+              <li>rgb()</li>
+              <li>rgba()</li>
+            </ul>
 
-<p><code>animation-timing-function:</code></p>
-<ul>
-<li>cubic-bezier()</li>
-<li>steps()</li>
-</ul>
+            <p><code>animation-timing-function:</code></p>
+            <ul>
+              <li>cubic-bezier()</li>
+              <li>steps()</li>
+            </ul>
 
-</article>
-  </section>
-</div>
+          </article>
+        </section>
+      </div>
 
 
 
-<!--NEXT-->
-<div class="slide">
-   <header>
-    <h1>Colors &amp; Transparency</h1>
-  </header>
-  <section class="content">
-    <h1><a href="../colors/index.html">Next ➹</a></h1></section>
-</div>
+      <!--NEXT-->
+      <div class="slide">
+        <header>
+          <h1>Colors &amp; Transparency</h1>
+        </header>
+        <section class="content">
+          <h1><a href="../colors/index.html">Next ➹</a></h1>
+        </section>
+      </div>
 
-<div class="slide dots">
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
+
+            <p>
+          </ol>
+        </section>
+      </div>
+      <!-- TOC -->
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+          </ul>
+        </section>
+      </div>
+
+
+    </div>
+
+
+  </div>
   <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
-
-<p></ol>
-  </section>
-</div>
-<!-- TOC -->
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-    <section class="content">
-      <ul>
-      </ul>
-    </section>
-</div>
-
-
-   </div>
-
-
-</div>
-<header>
     <nav>
-        <ul>
-            <li><button class="button cancel" id="back">&laquo; Back</button></li>
-            <li><button class="button done" id="next">Next &raquo; </button></li>
-        </ul>
+      <ul>
+        <li><button class="button cancel" id="back">&laquo; Back</button></li>
+        <li><button class="button done" id="next">Next &raquo; </button></li>
+      </ul>
     </nav>
-</header>
-<script src="../slideshow.js"></script>
-  </body>
+  </header>
+  <script src="../slideshow.js"></script>
+</body>
 
 </html>
-

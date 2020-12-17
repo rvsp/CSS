@@ -1,1257 +1,1550 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Transforms</title>
-    <link rel="stylesheet" href="../intro/css/main.css"/>
-    <link rel="stylesheet" href="../intro/css/transforms.css"/>
-    <link rel="stylesheet" href="transforms.css"/>
-    <style>
-      :root { 
-        --splashcolor: #CC0000;
-        --lightsplash: #c003;
-        --dark_bg: #770000;
-        --colorpop: #CC0000;
-        --transform_bg: #dedede;
-        --offshadows: #c72b50;
-        --love: #c06;
-      }
-      .letters i {font-style: normal;}
-      
-    </style>
-    <style id="tempstyle">/* keep this here as a hook for js */</style>
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Transforms</title>
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <link rel="stylesheet" href="../intro/css/transforms.css" />
+  <link rel="stylesheet" href="transforms.css" />
+  <style>
+    :root {
+      --splashcolor: #CC0000;
+      --lightsplash: #c003;
+      --dark_bg: #770000;
+      --colorpop: #CC0000;
+      --transform_bg: #dedede;
+      --offshadows: #c72b50;
+      --love: #c06;
+    }
+
+    .letters i {
+      font-style: normal;
+    }
+  </style>
+  <style id="tempstyle">
+    /* keep this here as a hook for js */
+  </style>
+</head>
+
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><button class="button cancel" id="back">Back</button></li>
-            <li><button class="button done" id="next">Next</button></li>
-        </ul>
-    </nav>
-</header>
-
-<div id="presentation">
-<div id="presentation-counter"></div>
-
-<div id="slides">
-
-
-<!-- Title Slide -->
-<div class="slide intro">
-     <header>
-    <h1>Transforms</h1>
-  </header>
-  <section class="content">
-       https://estelle.github.io/CSS/transforms
-     </section>
-</div>
-
-
-<div class="slide">
-   <header>
-    <h1>Transforms</h1>
-  </header>
-  <section class="content"><ul class="col2">
-<li>2D Transform Functions</li>
-<li>Transform syntax</li>
-<li>translate()</li>
-<li>rotate()</li>
-<li><code>transform-origin</code></li>
-<li>scale()</code></li>
-<li><code>skew()</code></li>
-<li>Multiple Tranforms</li>
-<li>matrix()</li>
-<li>Transform function order</li>
-<li>3D Transform Functions</li>
-<li>3d Transforms</li>
-<li>translateZ()</li>
-<li>perspective()</li>
-<li>translate3d()</li>
-<li>rotate3d()</li>
-<li><code>matrix3d()</code></li>
-<li>3D Transform Related Properties</li>
-<li><code>perspective</code> Property</li>
-<li>DevTools</li>
-<li><code>perspective()</code> function v. <code>perspective</code> property</li>
-<li>perspective-origin</li>
-<li><code>transform-origin</code> property</li>
-<li><code>transform-style</code> Property</li>
-<li><code>backface-visibility</code> Property</li>
-<li>Exercise</li>
-<li><code>transform-box</code> property</li>
-</ul>
-</section>
-</div>
-
-<!-- DIVIDER -->
-<div class="slide divider">
   <header>
-    <h1>2D Transform Functions</h1>
+    <nav>
+      <ul>
+        <li><button class="button cancel" id="back">Back</button></li>
+        <li><button class="button done" id="next">Next</button></li>
+      </ul>
+    </nav>
   </header>
-</div>
 
-<style>
+  <div id="presentation">
+    <div id="presentation-counter"></div>
 
-</style>
+    <div id="slides">
 
-<!-- Title Slide -->
-<div class="slide">
-   <header>
-    <h1>Transforming Elements</h1>
-  </header>
-  <section class="content"><b class="letters letters_01">LOVE<i>LOVE</i></b>
-     <style class="editme" contenteditable>.letters_01 i {
-transform:
-   translate(300px, 90px) rotate(50deg) 
-   scale(0.7, 0.9) skewX(15deg);
-}</style>
-</section>
-</div>
 
-<div class="slide">
-   <header>
-    <h1>Transform: syntax</h1>
-  </header>
-  <section class="content">
-<pre>transform: none | &lt;transFunc()&gt; [&lt;transFunc()&gt;];</pre>
-<pre contenteditable>transform:
+      <!-- Title Slide -->
+      <div class="slide intro">
+        <header>
+          <h1>Transforms</h1>
+        </header>
+        <section class="content">
+          https://rvsp.github.io/CSS/transforms
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Transforms</h1>
+        </header>
+        <section class="content">
+          <ul class="col2">
+            <li>2D Transform Functions</li>
+            <li>Transform syntax</li>
+            <li>translate()</li>
+            <li>rotate()</li>
+            <li><code>transform-origin</code></li>
+            <li>scale()</code></li>
+            <li><code>skew()</code></li>
+            <li>Multiple Tranforms</li>
+            <li>matrix()</li>
+            <li>Transform function order</li>
+            <li>3D Transform Functions</li>
+            <li>3d Transforms</li>
+            <li>translateZ()</li>
+            <li>perspective()</li>
+            <li>translate3d()</li>
+            <li>rotate3d()</li>
+            <li><code>matrix3d()</code></li>
+            <li>3D Transform Related Properties</li>
+            <li><code>perspective</code> Property</li>
+            <li>DevTools</li>
+            <li><code>perspective()</code> function v. <code>perspective</code> property</li>
+            <li>perspective-origin</li>
+            <li><code>transform-origin</code> property</li>
+            <li><code>transform-style</code> Property</li>
+            <li><code>backface-visibility</code> Property</li>
+            <li>Exercise</li>
+            <li><code>transform-box</code> property</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>2D Transform Functions</h1>
+        </header>
+      </div>
+
+      <style>
+
+      </style>
+
+      <!-- Title Slide -->
+      <div class="slide">
+        <header>
+          <h1>Transforming Elements</h1>
+        </header>
+        <section class="content"><b class="letters letters_01">LOVE<i>LOVE</i></b>
+          <style class="editme" contenteditable>
+            .letters_01 i {
+              transform:
+                translate(300px, 90px) rotate(50deg) scale(0.7, 0.9) skewX(15deg);
+            }
+          </style>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform: syntax</h1>
+        </header>
+        <section class="content">
+          <pre>transform: none | &lt;transFunc()&gt; [&lt;transFunc()&gt;];</pre>
+          <pre contenteditable>transform:
    translate(300px, 90px) rotate(50deg) 
    scale(0.7, 0.9) skewX(15deg);
 </pre>
-     </section>
-</div>
-
-
-
-
-
-
-<div class="slide">
-   <header>
-    <h1>2D Transform Functions</h1>
-  </header>
-  <section class="content">
-   <dl class="deprecated listed wide">
-
-  <dt><strong>translate</strong>(&lt;length&gt;[, &lt;length&gt;])</dt>
-  <dd>specifies a 2D translation by the vector [x, y], where x is the  translation-value parameter for the x axis and y  is the optional translation value along the y axis. parameter. If <em>y</em> is not provided, y==0.</dd>
-  <dt><strong>translateX</strong>(&lt;length&gt;)</dt>
-  <dd>specifies a translation by the given amount in the X direction.</dd>
-  <dt><strong>translateY</strong>(&lt;length&gt;)</dt>
-  <dd>specifies a translation by the given amount in the Y direction.</dd>
-  <dt><strong>scale</strong>(&lt;number&gt;[, &lt;number&gt;])</dt>
-  <dd>specifies 2D scaling operation by the [sx,sy]. If sy  is not provided, sy will equal sx (growsing or shrinking with the same scale). Scale(1, 1)  or scale(1) leaves an element in it's default state. Scale(2, 2) or scale(2)  causes the element to appear twice as wide and twice as tall as its default size, taking up 4-times the original area.</dd>
-  <dt><strong>scaleX</strong>(&lt;number&gt;)</dt>
-  <dd>specifies a scale operation using the [sx, 1] scaling vector, where sx is given as the parameter.</dd>
-  <dt><strong>scaleY</strong>(&lt;number&gt;)</dt>
-  <dd>specifies a scale operation using the [1, sy] scaling vector, where sy is given as the parameter.</dd>
-  <dt><strong>rotate</strong>(&lt;angle&gt;)</dt>
-  <dd>Rotates an element around a fixed point on the 2D plane. specifies a 2D rotation by the angle specified in the parameter about the origin of the element, as defined by the <em>transform-origin</em> property. For example, rotate(90deg) would cause elements to appear rotated one-quarter of a turn in the clockwise direction.</dd>
-  <dt><strong>rotateX</strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along the horizontal or X-axis, as defined by the <em>transform-origin</em> property. For example, rotateX(90deg) would cause elements to disappear, and rotateX(180deg) would cause elements to flip horizontally around the x-axis, appearing upside down and viewed from the back.</dd>
-  <dt><strong>rotateY</strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along the vertical or Y-axis, as defined by the <em>transform-origin</em> property. For example, rotateY(90deg) would cause elements to disappear, and rotateY(180deg) would cause elements to flip vertically around the x-axis, appearing backwards and viewed from the back.</dd>
-  <dt><strong>skew</strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a skew transformation along the the 2D plane.</dd>
-     
-  <dt><strong>skewX</strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a skew transformation along the X axis by the given angle.</dd>
-  <dt><strong>skewY</strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a skew transformation along the Y axis by the given angle.</dd>
-    <dt><strong>matrix</strong>(&lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;)</dt>
-  <dd>Generally machine generated, specifies a 2D transformation in the form of a transformation matrix of six values. matrix(a,b,c,d,e,f) is equivalent to applying the transformation matrix <strong>[a b c d e f]</strong>.</dd>
-</dl>
-<p>We'll cover more in a bit....</p>
-     </section>
- </div>
-
-
-
-
-<div class="slide object">
-<object data="https://caniuse.com/#search=transforms"></object>
-  <a href="http://caniuse.com/#search=transforms" target="play" title="open resource in new window">➹</a>
-
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>Limitations</h1>
-  </header>
-  <section class="content">
-    <p>Only transformable elements can be transformed.</p>
-    <ul>
-      <li>all elements whose layout is governed by the CSS box model, except for: non-replaced inline boxes, table-column boxes, and table-column-group boxes.</li>
-      <li>Fix: set <code>display: inline-block;</code> on inline elements</li>
-      <li>Fix: position generated content</li>
-    </ul>
-  </section>
-</div>
-
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: Translate</h1>
-  </header>
-  <section class="content">
-   <dl>
-
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="resource">translate</a></strong>(&lt;length&gt;[, &lt;length&gt;])</dt>
-  <dd>specifies a 2D translation by the vector [x, y], where x is the  translation-value parameter for the x axis and y  is the optional translation value along the y axis. parameter. If <em>y</em> is not provided, y==0.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatex" target="resource">translateX</a></strong>(&lt;length&gt;)</dt>
-  <dd>specifies a translation by the given amount in the X direction.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatey" target="resource">translateY</a></strong>(&lt;length&gt;)</dt>
-  <dd>specifies a translation by the given amount in the Y direction.</dd>
-</dl>
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: Translating</h1>
-  </header>
-     <b class="letters letters_02">LOVE<i>LOVE</i></b>
-  <section class="content">
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translate(100px, 100px)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translateX(100px)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translateY(100px)</span>;</pre>
-     <p>Edit a value to set it. Mouse out of a value to see it.</p>
-
-     </section>
- </div>
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="resource">transform: translate()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters love02">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .love02 i {
-    transform: translate(100px, 100px);
-   _transform: translateX(100px);
-   _transform: translateY(100px);
-   _transform: translateX(100px) translateY(100px);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-
-
-<div class="slide">
-   <header>
-    <h1>Transform Functions: Rotations</h1>
-  </header>
-  <section class="content">
-    <dl><dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">rotate</a></strong>(&lt;angle&gt;)</dt>
-  <dd>Rotates an element around a fixed point on the 2D plane. specifies a 2D rotation by the angle specified in the parameter about the origin of the element, as defined by the <em>transform-origin</em> property. For example, rotate(90deg) would cause elements to appear rotated one-quarter of a turn in the clockwise direction.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex" target="resource">rotateX</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along the horizontal or X-axis, as defined by the <em>transform-origin</em> property. For example, rotateX(90deg) would cause elements to disappear, and rotateX(180deg) would cause elements to flip horizontally around the x-axis, appearing upside down and viewed from the back.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY" target="resource">rotateY</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along the vertical or Y-axis, as defined by the <em>transform-origin</em> property. For example, rotateY(90deg) would cause elements to disappear, and rotateY(180deg) would cause elements to flip vertically around the x-axis, appearing backwards and viewed from the back.</dd>
-    </dl>
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">rotate()</a></code></h1>
-  </header>
-  <section class="content"> <b class="letters letters_03">LOVE<i>LOVE</i></b>
-
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03', this.innerHTML)">rotate(90deg)</span>;</pre>
-     <p>Edit the value to set it. Mouse out to see it.</p>
-
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: Rotate</h1>
-  </header>
-  <section class="content"> <b class="letters letters_03b">LOVE<i>LOVE</i></b>
-
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotate(90deg)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotateX(90deg)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotateY(90deg)</span>;</pre>
-     <p>Edit the value to set it. Mouse out to see it.</p>
-
-     </section>
- </div>
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">transform: rotate()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters love03">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .love03 i {
-   transform: rotate(100deg);
-   _transform: rotateY(100deg);
-   _transform: rotate(100deg, 100deg);        /* not valid */
-   _transform: rotateX(100deg) rotateY(100deg);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-<div class="slide">
-   <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre>transform-origin: &lt;x-offset> [ &lt;y-offset>? ] [ &lt;z> ]?;</pre>
-    <ul>
-      <li>The point around which a transformation is applied.</li>
-      <li>Default: <code>transform-origin: 50% 50% 0;</code></li>
-      <li>offsets for X are <code>&lt;length>, &lt;percentage></code> or the <br/>keywords <code> left | center | right </code></li>
-      <li>offsets for X are <code>&lt;length>, &lt;percentage></code> or the <br/>keywords <code>  top | center | bottom</code></li>
-      <li>If 2 or 3 values and either no value is a keyword, the first value is the X-offset (horizontal) and the second is the Y-offset (vertical).</li><li>If only one keyterm, the other defaults to <code>center</code>, and <code>Z = 0</code>.</li>
-      <li>If only one length, that is the x-offset, <code>y = center</code> and <code>Z = 0</code>.</li>
-      <li><code>&lt;Z></code> can only be a length, defaulting to 0 if omitted.</li>
-    </ul>
-     </section>
- </div>
-
-
-
-<div class="slide">
-   <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code> property</h1>
-  </header>
-  <section class="content"><b class="letters love04">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .love04 i {
-   transform-origin: top left;
-   transform: rotate(100deg);
-   _transform: rotateY(100deg);
-   _transform: rotateX(100deg);
-}</style>
-<p>Remove the underscores to activate. Change the transform-origin value</p>
-</section>
-</div>
-
-
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: Scaling</h1>
-  </header>
-  <section class="content">
-   <dl>
-     <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="resource">scale</a></strong>(&lt;number&gt;[, &lt;number&gt;])</dt>
-  <dd>specifies 2D scaling operation by the [sx,sy]. If sy  is not provided, sy will equal sx (growsing or shrinking with the same scale). Scale(1, 1)  or scale(1) leaves an element in it's default state. Scale(2, 2) or scale(2)  causes the element to appear twice as wide and twice as tall as its default size, taking up 4-times the original area.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalex" target="resource">scaleX</a></strong>(&lt;number&gt;)</dt>
-  <dd>specifies a scale operation using the [sx, 1] scaling vector, where sx is given as the parameter.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaley" target="resource">scaleY</a></strong>(&lt;number&gt;)</dt>
-  <dd>specifies a scale operation using the [1, sy] scaling vector, where sy is given as the parameter.</dd>
-   </dl>
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="resource">scale()</a></code></h1>
-  </header>
-  <section class="content"><b class="letters letters_04">LOVE<i>LOVE</i></b>
-
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scale(0.25, 0.75)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scale(0.75)</span>;</pre> <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scaleX(0.25)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scaleY(0.75)</span>;</pre>
-     <p>Edit a value to set it. Mouse out of a value to see it.</p>
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="resource">transform: scale()</a></code> &amp; <code>transform-origin</code> </h1>
-  </header>
-  <section class="content"><b class="letters love05">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .love05 i {
-   transform-origin: top left;
-   transform: scale(2);
-   _transform: scaleX(2);
-   _transform: scaleY(0.5);
-   _transform: scale(0.5, 2);
-}</style>
-<p>Remove the underscores to activate. Change the transform-origin value</p>
-</section>
-</div>
-
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code></h1>
-  </header>
-  <section class="content">
-    <dl>
-      <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew</strong>(&lt;angle&gt;)</a></dt>
-  <dd>specifies a skew transformation along the the 2D plane.</dd>
-      <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewx" target="resource">skewX</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a skew transformation along the X axis by the given angle.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewy" target="resource">skewY</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a skew transformation along the Y axis by the given angle.</dd>
-    </dl>
-     </section>
- </div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code></h1>
-  </header>
-  <section class="content">
-     <b class="letters letters_05">LOVE<i>LOVE</i></b>
-
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewX(5deg)</span>;</pre>
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewY(5deg)</span>;</pre> <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewX(5deg) skewY(5deg)</span>;</pre> <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skew(5deg,5deg)</span>;</pre>
-<p>Edit a value to set it. Mouse out of a value to see it.</p>
-     </section>
- </div>
-
-
-
-<div class="slide" id="redo">
-     <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code></h1>
-  </header>
-  <section class="content">
-     <b class="letters letters_05b">LOVE<i>LOVE</i></b>
-     <style class="editme" contenteditable>#redo .letters i {
-  transform: skewX(15deg);
-  _transform: skew(15deg);
-  _transform: skew(15deg, 15deg);
-  _transform: skewX(15deg) skewY(15deg);
-}</style>
-<p>Remove the underscore to activate the CSS</p>
-     </section>
- </div>
-
-
-
-<div class="slide">
-   <header>
-    <h1><code>transform: skew()</code> &amp; <code>transform-origin</code></h1>
-  </header>
-  <section class="content">
-     <b class="letters love06">LOVE<i>LOVE</i></b>
-     <style class="editme" contenteditable>.love06 i {
-  transform-origin: top left;
-  transform: skewX(15deg);
-  _transform: skewY(15deg);
-  _transform: skew(15deg, 15deg);
-  _transform: skewX(15deg) skewY(15deg);
-}</style>
-<p>Remove the underscore to activate the CSS</p>
-     </section>
- </div>
-
-<div class="slide">
-<header><h1>Multiple Tranforms</h1>
-  </header>
-<section class="content transform"><b class="letters letters_06">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .letters_06 i {
-   transform: translate(200px, -80px);
-   transform: rotate(15deg);
-   transform: scale(1.5, 2);
-   transform: skewX(-8deg);
-}</style>
-</section>
-</div>
-
-
-
-
-<script>
-// make the above text editors work
- var temporaryStyleSheet = document.getElementById('tempstyle');
-
- function setTempStyle(thisclass, change){
-   var temporaryStyleSheet = document.getElementById('tempstyle');
-   temporaryStyleSheet.innerHTML = '.slide .' + thisclass + ' i  {transform: '+ change +';}';
- }
-
- var transformSpans = document.getElementById('ABTrasform').getElementsByTagName('span');
- </script>
-
-
-
-<div class="slide">
-<header><h1>Multiple Tranforms</h1>
-  </header>
-<section class="content transform"><b class="letters letters_06b">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .letters_06b i {
-   transform: translate(200px, -80px) 
-              rotate(15deg)
-              scale(1.5, 2)
-              skewX(-8deg);
-}</style>
-</section>
-</div>
-
-
-<div class="slide">
-<header><h1>Multiple Tranforms with <code>transform-origin</code></h1>
-  </header>
-<section class="content transform"><b class="letters letters_06c">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .letters_06c i {
-   transform-origin: -100px -100px;
-   transform: translate(200px, -80px) 
-              rotate(15deg)
-              scale(1.5, 2)
-              skewX(-8deg);
-}</style>
-</section>
-</div>
-
-
-
-<div class="slide">
-<header><h1>Developer Tools</h1>
-  </header>
-<section class="content transform"><b class="letters letters_06d">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .letters_06d i {
-   transform: translate(200px, -80px) 
-              rotate(15deg) /* developer tools */
-              scale(1.5, 2)
-              skewX(-8deg);
-}</style>
-</section>
-</div>
-
-
-
-<div class="slide object">
-  <header>
-    <h1>Check it out</h1>
-  </header>
-  <object data="https://css-transform.moro.es/"></object>
-  <a href="https://css-transform.moro.es/" class="objectlink">Go</a>
-</div>
-
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">matrix()</a></code></h1>
-  </header>
-  <section class="content">
-    <p><code>matrix(a, b, c, d, tx, ty)</code><br/>shorthand for<br/><code>matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, tx, ty, 0, 1)</code><br/>(which makes no sense).</p>
-    <p>Computer generated transform.</p>
-     </section>
- </div>
-
-
-<div class="slide">
-<header><h1><code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">matrix(a, b, c, d, tx, ty)</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters love_08">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .love_08 i {
-   transform-origin: center center;
-   _transform: matrix(1, 2, -1, 1, 80, 80);
-   _transform: matrix(-0.5, 1, 1, -0.5, 0, 0);
-   _transform: matrix(-0.5, 1, 1, -0.5, 80, 80) rotate(-15deg);
-}</style>
-</section>
-</div>
-
-
-<div class="slide object">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">transform: matrix()</a></code></h1>
-  </header>
-  <object data="https://css-transform.moro.es/"></object>
-  <a href="https://css-transform.moro.es/" class="objectlink">Go</a>
-</div>
-
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>function order</h1>
-  </header>
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>Transform Order</h1>
-  </header>
-    <section class="content">
-      <p>Order of transform functions matters: if you rotate first, your translate direction will be on the rotated axis!</p>
-
-      <div id="transformorder"><b class="line1"></b><b class="line2"></b></div>
-      <code style="position: absolute; bottom: 20px">translateX(200px)<br>rotate(135deg)</code>
-    </section>
-</div>
-
-
-<div class="slide">
-<header><h1>transforms</h1>
-  </header>
-<section class="content">
-
-        
-<li>Take advantage of <code>transform-origin</code></li>
-<li>Multiple values are SPACE separated (no commas)</li>
-<li>The order of the values matters</li>
-<li><a href="http://westciv.com/tools/3Dtransforms/index.html">3D transforms</a> are hardware accelerated</li>
-<li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li>
-<li><a href="http://meyerweb.com/eric/tools/matrix/">Matrix</a> is another syntax</li>
-<li>More about <a href="http://www.standardista.com/css3/css3-transform-property-and-the-various-transform-functions">transforms</a></li>
-</section>
-</div>
-
-<div class="slide object">
-  <header>
-    <h1>Funtion Order</h1>
-  </header>
-<object data="exercises/tOrder.html"></object>
-  <a href="exercises/transforms/tOrder.html" target="play" title="open resource in reused window">➹</a>
-
-</div>
-
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>3D Transform Functions</h1>
-  </header>
-</div>
-
-
-<!-- 3d Transforms -->
-<div class="slide">
-   <header>
-    <h1>3d Transforms</h1>
-  </header>
-  <section class="content">
-     <dl  class="deprecated listed wide">
-
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez" target="resource">translateZ</a></strong>(&lt;z-value&gt;)</dt>
-  <dd>specifies a translation by the given amount in the Z direction. Note that percentage values are not allowed in the translateZ translation-value, and if present are evaluated as 0.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d" target="resource">translate3d</a></strong>(&lt;x&gt;, &lt;y&gt;, &lt;z&gt;)</dt>
-  <dd>specifies a 3D translation by the vector [tx,ty,tz], with tx, ty and tz being the first, second and third translation-value parameters respectively.</dd>
-
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalez" target="resource">scaleZ</a></strong>(&lt;number&gt;)</dt>
-  <dd>specifies a scale operation using the [1,1,sz] scaling vector, where sz is given as the parameter.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d" target="resource">scale3d</a></strong>(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;)</dt>
-  <dd>specifies a 3D scale operation by the [sx,sy,sz] scaling vector described by the 3 parameters.</dd>
-
-
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">rotate</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a&nbsp;2D rotation&nbsp;by the angle specified in the parameter about the origin of the element, as defined by the&nbsp;<em>transform-origin</em>&nbsp;property.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="resource">rotate3d</a></strong>(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;angle&gt;)</dt>
-  <dd>specifies a clockwise 3D rotation by the angle specified in last parameter about the [x,y,z] direction vector described by the first 3 parameters. If the direction vector is not of unit length, it will be normalized. A direction vector that cannot be normalized, such as [0, 0, 0], will cause the rotation to not be applied. This function is equivalent to matrix3d(1 + (1-cos(angle))*(x*x-1), -z*sin(angle)+(1-cos(angle))*x*y, y*sin(angle)+(1-cos(angle))*x*z, 0, z*sin(angle)+(1-cos(angle))*x*y, 1 + (1-cos(angle))*(y*y-1), -x*sin(angle)+(1-cos(angle))*y*z, 0, -y*sin(angle)+(1-cos(angle))*x*z, x*sin(angle)+(1-cos(angle))*y*z, 1 + (1-cos(angle))*(z*z-1), 0, 0, 0, 0, 1).</dd>
-
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex" target="resource">rotateX</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a clockwise rotation by the given angle about the X axis.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatey" target="resource">rotateY</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a clockwise rotation by the given angle about the Y axis.</dd>
-<dt><strong class="imp"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatez" target="resource">rotateZ</a></strong>(&lt;angle&gt;)</dt>
-  <dd>specifies a clockwise rotation by the given angle about the Z axis.</dd>
-
-
-    <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">matrix</a></strong>(&lt;number&gt;{6})</dt>
-  <dd>specifies a 2D transformation in the form of a transformation matrix of six  comma separated values. matrix(a,b,c,d,e,f) is equivalent to matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, e, f, 0, 1).</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d" target="resource">matrix3d</a></strong>(&lt;number&gt;{15})</dt>
-  <dd>specifies a 3D transformation as a 4x4 homogeneous matrix of 16 comma separated values in column-major order.</dd>
-  <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective</a></strong>(&lt;number&gt;)</dt>
-  <dd>specifies a perspective projection matrix. This matrix maps a <em>viewing cube</em> onto a pyramid whose base is infinitely far away from the viewer and whose peak represents the viewer's position. The viewable area is the region bounded by the four edges of the viewport (the portion of the browser window used for rendering the webpage between the viewer's position and a point at a distance of infinity from the viewer). The <em>depth</em>, given as the parameter to the function, represents the distance of the z=0 letters from the viewer. Lower values give a more flattened pyramid and therefore a more pronounced perspective effect. The value is given in pixels, so a value of 1000 gives a moderate amount of foreshortening and a value of 200 gives an extreme amount. The matrix is computed by starting with an identity matrix and replacing the value at row 3, column 4 with the value -1/depth. The value for depth must be greater than zero, otherwise the function is invalid.</dd>
-</dl>
-     </section>
- </div>
-
-
-
-<div class="slide object">
-<object data="https://caniuse.com/#search=3d%20transforms"></object>
-  <a href="http://caniuse.com/#search=3d%20transforms" target="play" title="open resource in new window">➹</a>
-
-</div>
-
-
-<div class="slide">
-<header><h1><code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez" target="resource">translateZ()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters D301">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D301 i {
-   transform: translateZ(100px);
-   transform: perspective(500px) translateZ(100px);
-   _transform: translate3d(0, 0, 100px);
-   _transform: perspective(500px) translate3d(0, 0, 100px);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-
-<div class="slide">
-<header><h1><code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective()</a></code></h1>
-  </header>
-<section class="content">
-<h2><strong>perspective</strong>(&lt;number&gt;)</h2>
-  <ul><li>specifies a perspective projection.</li><li> Parameter is the <em>depth</em>, represents the distance of the viewer: <ul><li> Lower values are closer, more pronounced perspective effect</li><li>Larger values are further, less pronounced persepective</li> </ul>
-</li>
-  <li>depth must be greater than zero, otherwise invalid</li>
-  <li>depth must be greater than translateZ, or the element is behind the viewer</li>
-  <li>perspective() must be the first transform function of the list of functions</li>
-</ul>
-</section>
-</div>
-
-
-
-<div class="slide">
-<header><h1><code>transform: perspective()</code> &amp; <code>translateZ()</code></h1>
-  </header>
-<section class="content transform"><b class="letters D302">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D302 i {
-   transform: perspective(500px) translateZ(100px);
-   _transform: perspective(200px) translateZ(100px);
-   _transform: perspective(99px)  translateZ(100px);
-   _transform: perspective(101px) translateZ(100px);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-
-
-
-
-<div class="slide">
-<header><h1><code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d" target="resource">translate3d()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters D303">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D303 i {
-   transform: perspective(200px) translateZ(100px);
-   _transform: perspective(200px) translate3d(0, 0, 100px);
-   _transform: perspective(200px) translate(0, 0) translate3d(100px);
-   _transform: perspective(200px) translate3d(100px, 100px, 100px);
-   _transform: perspective(200px) translate3d(100px, 100px, -100px);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>3D Translating</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>translateZ( &lt;length> )</pre>
-    <p>Specifies a 3D translation by the vector [0, 0, tz].</p>
-    <pre contenteditable>translate3d( &lt;length-percent> , &lt;length-percent> , &lt;length> )</pre>
-    <p>Specifies a 3D translation by the vector [tx, ty, tz], in that order.</p><hr/>
-    <pre contenteditable> translateZ( 200px ) == translate3d( 0, 0, 200px )</pre>
-  </section>
-</div>
-
-
-
-<div class="slide">
-  <header>
-    <h1>3D Scaling</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>scaleZ( &lt;number> )</pre>
-    <p>Specifies a 3D scale operation using the [1, 1, sz] scaling vector, where sZ is the parameter.</p>
-    <pre contenteditable>scale3d( &lt;number> , &lt;number>, &lt;number> )</pre>
-    <p>Specifies a 3D scale operation by the [sx, sy, sz] scaling vector described by the 3 parameters.</p>
-<hr/>
-    <pre contenteditable>scaleZ( 0.7 ) == scale3d( 1, 1, 0.7 )</pre>
-  </section>
-</div>
-
-
-
-
-<div class="slide">
-  <header>
-    <h1>3D Rotation</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>rotate3d( &lt;number> , &lt;number> , &lt;number> , &lt;angle> )</pre>
-
-   <p>Specifies a 3D rotation by the angle specified in last parameter about the [x,y,z] direction vector described by the first three parameters. The angle can be zero.</p>
-
-<pre contenteditable style="float: left; margin-right: 1em">rotateX( &lt;angle> )</pre> <pre contenteditable style="float: left; margin-right: 1em">rotateY( &lt;angle> ) </pre>
-
-   <p style="clear: both;">Same as <code>rotate3d(1, 0, 0, &lt;angle>)</code> or <code>rotate3d(0, 1, 0, &lt;angle>)</code>, respectively. Angle can be zero.</p>
-
-<pre contenteditable>rotateZ( &lt;angle> )</pre>
-
-   <p> same as <code>rotate3d(0, 0, 1, &lt;angle>)</code>, which is a 3d transform equivalent to the 2d transform <code>rotate(&lt;angle>)</code>.  Angle can be zero.</p>
-
-  </section>
-</div>
-
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="resource">transform: rotate3d()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters D307">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D307 i {
-   transform: perspective(200px) rotate(40deg);
-   _transform: perspective(200px) rotateZ(40deg);
-   _transform: perspective(200px) rotate3d(0, 0, 1, 40deg);
-   _transform: perspective(200px) rotateX(40deg);
-   _transform: perspective(200px) rotateY(40deg);
-   _transform: perspective(200px) rotateX(40deg) rotateY(40deg);
-}</style>
-<p>Remove the underscores to activate.</p>
-</section>
-</div>
-
-
-
-<div class="slide">
-  <header>
-    <h1>3D Matrix</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>matrix3d( &lt;number>#{16} )</pre>
-    <p>specifies a 3D transformation as a matrix of 16 values </p>
-    <p><code>matrix(a, b, c, d, tx, ty)</code> is a shorthand for <br/><code>matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, tx, ty, 0, 1)</code>.
-      <hr>
-      <pre contenteditable>matrix(-0.5, 1, 1, -0.5, 20, 20)
+        </section>
+      </div>
+
+
+
+
+
+
+      <div class="slide">
+        <header>
+          <h1>2D Transform Functions</h1>
+        </header>
+        <section class="content">
+          <dl class="deprecated listed wide">
+
+            <dt><strong>translate</strong>(&lt;length&gt;[, &lt;length&gt;])</dt>
+            <dd>specifies a 2D translation by the vector [x, y], where x is the translation-value parameter for the x
+              axis and y is the optional translation value along the y axis. parameter. If <em>y</em> is not provided,
+              y==0.</dd>
+            <dt><strong>translateX</strong>(&lt;length&gt;)</dt>
+            <dd>specifies a translation by the given amount in the X direction.</dd>
+            <dt><strong>translateY</strong>(&lt;length&gt;)</dt>
+            <dd>specifies a translation by the given amount in the Y direction.</dd>
+            <dt><strong>scale</strong>(&lt;number&gt;[, &lt;number&gt;])</dt>
+            <dd>specifies 2D scaling operation by the [sx,sy]. If sy is not provided, sy will equal sx (growsing or
+              shrinking with the same scale). Scale(1, 1) or scale(1) leaves an element in it's default state. Scale(2,
+              2) or scale(2) causes the element to appear twice as wide and twice as tall as its default size, taking up
+              4-times the original area.</dd>
+            <dt><strong>scaleX</strong>(&lt;number&gt;)</dt>
+            <dd>specifies a scale operation using the [sx, 1] scaling vector, where sx is given as the parameter.</dd>
+            <dt><strong>scaleY</strong>(&lt;number&gt;)</dt>
+            <dd>specifies a scale operation using the [1, sy] scaling vector, where sy is given as the parameter.</dd>
+            <dt><strong>rotate</strong>(&lt;angle&gt;)</dt>
+            <dd>Rotates an element around a fixed point on the 2D plane. specifies a 2D rotation by the angle specified
+              in the parameter about the origin of the element, as defined by the <em>transform-origin</em> property.
+              For example, rotate(90deg) would cause elements to appear rotated one-quarter of a turn in the clockwise
+              direction.</dd>
+            <dt><strong>rotateX</strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along
+              the horizontal or X-axis, as defined by the <em>transform-origin</em> property. For example,
+              rotateX(90deg) would cause elements to disappear, and rotateX(180deg) would cause elements to flip
+              horizontally around the x-axis, appearing upside down and viewed from the back.</dd>
+            <dt><strong>rotateY</strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along
+              the vertical or Y-axis, as defined by the <em>transform-origin</em> property. For example, rotateY(90deg)
+              would cause elements to disappear, and rotateY(180deg) would cause elements to flip vertically around the
+              x-axis, appearing backwards and viewed from the back.</dd>
+            <dt><strong>skew</strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a skew transformation along the the 2D plane.</dd>
+
+            <dt><strong>skewX</strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a skew transformation along the X axis by the given angle.</dd>
+            <dt><strong>skewY</strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a skew transformation along the Y axis by the given angle.</dd>
+            <dt><strong>matrix</strong>(&lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;, &lt;num&gt;)
+            </dt>
+            <dd>Generally machine generated, specifies a 2D transformation in the form of a transformation matrix of six
+              values. matrix(a,b,c,d,e,f) is equivalent to applying the transformation matrix <strong>[a b c d e
+                f]</strong>.</dd>
+          </dl>
+          <p>We'll cover more in a bit....</p>
+        </section>
+      </div>
+
+
+
+
+      <div class="slide object">
+        <object data="https://caniuse.com/#search=transforms"></object>
+        <a href="http://caniuse.com/#search=transforms" target="play" title="open resource in new window">➹</a>
+
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Limitations</h1>
+        </header>
+        <section class="content">
+          <p>Only transformable elements can be transformed.</p>
+          <ul>
+            <li>all elements whose layout is governed by the CSS box model, except for: non-replaced inline boxes,
+              table-column boxes, and table-column-group boxes.</li>
+            <li>Fix: set <code>display: inline-block;</code> on inline elements</li>
+            <li>Fix: position generated content</li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function: Translate</h1>
+        </header>
+        <section class="content">
+          <dl>
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate"
+                  target="resource">translate</a></strong>(&lt;length&gt;[, &lt;length&gt;])</dt>
+            <dd>specifies a 2D translation by the vector [x, y], where x is the translation-value parameter for the x
+              axis and y is the optional translation value along the y axis. parameter. If <em>y</em> is not provided,
+              y==0.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatex"
+                  target="resource">translateX</a></strong>(&lt;length&gt;)</dt>
+            <dd>specifies a translation by the given amount in the X direction.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatey"
+                  target="resource">translateY</a></strong>(&lt;length&gt;)</dt>
+            <dd>specifies a translation by the given amount in the Y direction.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function: Translating</h1>
+        </header>
+        <b class="letters letters_02">LOVE<i>LOVE</i></b>
+        <section class="content">
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translate(100px, 100px)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translateX(100px)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_02', this.innerHTML)">translateY(100px)</span>;</pre>
+          <p>Edit a value to set it. Mouse out of a value to see it.</p>
+
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="resource">transform: translate()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters love02">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .love02 i {
+              transform: translate(100px, 100px);
+              _transform: translateX(100px);
+              _transform: translateY(100px);
+              _transform: translateX(100px) translateY(100px);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Functions: Rotations</h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate"
+                  target="resource">rotate</a></strong>(&lt;angle&gt;)</dt>
+            <dd>Rotates an element around a fixed point on the 2D plane. specifies a 2D rotation by the angle specified
+              in the parameter about the origin of the element, as defined by the <em>transform-origin</em> property.
+              For example, rotate(90deg) would cause elements to appear rotated one-quarter of a turn in the clockwise
+              direction.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex"
+                  target="resource">rotateX</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along
+              the horizontal or X-axis, as defined by the <em>transform-origin</em> property. For example,
+              rotateX(90deg) would cause elements to disappear, and rotateX(180deg) would cause elements to flip
+              horizontally around the x-axis, appearing upside down and viewed from the back.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY"
+                  target="resource">rotateY</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a 2D rotation by the angle specified in the parameter about the origin of the element along
+              the vertical or Y-axis, as defined by the <em>transform-origin</em> property. For example, rotateY(90deg)
+              would cause elements to disappear, and rotateY(180deg) would cause elements to flip vertically around the
+              x-axis, appearing backwards and viewed from the back.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">rotate()</a></code>
+          </h1>
+        </header>
+        <section class="content"> <b class="letters letters_03">LOVE<i>LOVE</i></b>
+
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03', this.innerHTML)">rotate(90deg)</span>;</pre>
+          <p>Edit the value to set it. Mouse out to see it.</p>
+
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function: Rotate</h1>
+        </header>
+        <section class="content"> <b class="letters letters_03b">LOVE<i>LOVE</i></b>
+
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotate(90deg)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotateX(90deg)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_03b', this.innerHTML)">rotateY(90deg)</span>;</pre>
+          <p>Edit the value to set it. Mouse out to see it.</p>
+
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="resource">transform: rotate()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters love03">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .love03 i {
+              transform: rotate(100deg);
+              _transform: rotateY(100deg);
+              _transform: rotate(100deg, 100deg);
+              /* not valid */
+              _transform: rotateX(100deg) rotateY(100deg);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre>transform-origin: &lt;x-offset> [ &lt;y-offset>? ] [ &lt;z> ]?;</pre>
+          <ul>
+            <li>The point around which a transformation is applied.</li>
+            <li>Default: <code>transform-origin: 50% 50% 0;</code></li>
+            <li>offsets for X are <code>&lt;length>, &lt;percentage></code> or the <br />keywords
+              <code> left | center | right </code></li>
+            <li>offsets for X are <code>&lt;length>, &lt;percentage></code> or the <br />keywords
+              <code>  top | center | bottom</code></li>
+            <li>If 2 or 3 values and either no value is a keyword, the first value is the X-offset (horizontal) and the
+              second is the Y-offset (vertical).</li>
+            <li>If only one keyterm, the other defaults to <code>center</code>, and <code>Z = 0</code>.</li>
+            <li>If only one length, that is the x-offset, <code>y = center</code> and <code>Z = 0</code>.</li>
+            <li><code>&lt;Z></code> can only be a length, defaulting to 0 if omitted.</li>
+          </ul>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code>
+            property</h1>
+        </header>
+        <section class="content"><b class="letters love04">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .love04 i {
+              transform-origin: top left;
+              transform: rotate(100deg);
+              _transform: rotateY(100deg);
+              _transform: rotateX(100deg);
+            }
+          </style>
+          <p>Remove the underscores to activate. Change the transform-origin value</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function: Scaling</h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale"
+                  target="resource">scale</a></strong>(&lt;number&gt;[, &lt;number&gt;])</dt>
+            <dd>specifies 2D scaling operation by the [sx,sy]. If sy is not provided, sy will equal sx (growsing or
+              shrinking with the same scale). Scale(1, 1) or scale(1) leaves an element in it's default state. Scale(2,
+              2) or scale(2) causes the element to appear twice as wide and twice as tall as its default size, taking up
+              4-times the original area.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalex"
+                  target="resource">scaleX</a></strong>(&lt;number&gt;)</dt>
+            <dd>specifies a scale operation using the [sx, 1] scaling vector, where sx is given as the parameter.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaley"
+                  target="resource">scaleY</a></strong>(&lt;number&gt;)</dt>
+            <dd>specifies a scale operation using the [1, sy] scaling vector, where sy is given as the parameter.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="resource">scale()</a></code>
+          </h1>
+        </header>
+        <section class="content"><b class="letters letters_04">LOVE<i>LOVE</i></b>
+
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scale(0.25, 0.75)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scale(0.75)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scaleX(0.25)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_04', this.innerHTML)">scaleY(0.75)</span>;</pre>
+          <p>Edit a value to set it. Mouse out of a value to see it.</p>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="resource">transform: scale()</a></code>
+            &amp; <code>transform-origin</code> </h1>
+        </header>
+        <section class="content"><b class="letters love05">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .love05 i {
+              transform-origin: top left;
+              transform: scale(2);
+              _transform: scaleX(2);
+              _transform: scaleY(0.5);
+              _transform: scale(0.5, 2);
+            }
+          </style>
+          <p>Remove the underscores to activate. Change the transform-origin value</p>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew"
+                  target="resource">skew</strong>(&lt;angle&gt;)</a></dt>
+            <dd>specifies a skew transformation along the the 2D plane.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewx"
+                  target="resource">skewX</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a skew transformation along the X axis by the given angle.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewy"
+                  target="resource">skewY</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a skew transformation along the Y axis by the given angle.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <b class="letters letters_05">LOVE<i>LOVE</i></b>
+
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewX(5deg)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewY(5deg)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skewX(5deg) skewY(5deg)</span>;</pre>
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_05', this.innerHTML)">skew(5deg,5deg)</span>;</pre>
+          <p>Edit a value to set it. Mouse out of a value to see it.</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide" id="redo">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="resource">skew()</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <b class="letters letters_05b">LOVE<i>LOVE</i></b>
+          <style class="editme" contenteditable>
+            #redo .letters i {
+              transform: skewX(15deg);
+              _transform: skew(15deg);
+              _transform: skew(15deg, 15deg);
+              _transform: skewX(15deg) skewY(15deg);
+            }
+          </style>
+          <p>Remove the underscore to activate the CSS</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1><code>transform: skew()</code> &amp; <code>transform-origin</code></h1>
+        </header>
+        <section class="content">
+          <b class="letters love06">LOVE<i>LOVE</i></b>
+          <style class="editme" contenteditable>
+            .love06 i {
+              transform-origin: top left;
+              transform: skewX(15deg);
+              _transform: skewY(15deg);
+              _transform: skew(15deg, 15deg);
+              _transform: skewX(15deg) skewY(15deg);
+            }
+          </style>
+          <p>Remove the underscore to activate the CSS</p>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Multiple Tranforms</h1>
+        </header>
+        <section class="content transform"><b class="letters letters_06">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .letters_06 i {
+              transform: translate(200px, -80px);
+              transform: rotate(15deg);
+              transform: scale(1.5, 2);
+              transform: skewX(-8deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+
+      <script>
+        // make the above text editors work
+        var temporaryStyleSheet = document.getElementById('tempstyle');
+
+        function setTempStyle(thisclass, change) {
+          var temporaryStyleSheet = document.getElementById('tempstyle');
+          temporaryStyleSheet.innerHTML = '.slide .' + thisclass + ' i  {transform: ' + change + ';}';
+        }
+
+        var transformSpans = document.getElementById('ABTrasform').getElementsByTagName('span');
+      </script>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Multiple Tranforms</h1>
+        </header>
+        <section class="content transform"><b class="letters letters_06b">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .letters_06b i {
+              transform: translate(200px, -80px) rotate(15deg) scale(1.5, 2) skewX(-8deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Multiple Tranforms with <code>transform-origin</code></h1>
+        </header>
+        <section class="content transform"><b class="letters letters_06c">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .letters_06c i {
+              transform-origin: -100px -100px;
+              transform: translate(200px, -80px) rotate(15deg) scale(1.5, 2) skewX(-8deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Developer Tools</h1>
+        </header>
+        <section class="content transform"><b class="letters letters_06d">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .letters_06d i {
+              transform: translate(200px, -80px) rotate(15deg)
+                /* developer tools */
+                scale(1.5, 2) skewX(-8deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <div class="slide object">
+        <header>
+          <h1>Check it out</h1>
+        </header>
+        <object data="https://css-transform.moro.es/"></object>
+        <a href="https://css-transform.moro.es/" class="objectlink">Go</a>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">matrix()</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p><code>matrix(a, b, c, d, tx, ty)</code><br />shorthand
+            for<br /><code>matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, tx, ty, 0, 1)</code><br />(which makes no
+            sense).</p>
+          <p>Computer generated transform.</p>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">matrix(a, b, c, d, tx, ty)</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters love_08">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .love_08 i {
+              transform-origin: center center;
+              _transform: matrix(1, 2, -1, 1, 80, 80);
+              _transform: matrix(-0.5, 1, 1, -0.5, 0, 0);
+              _transform: matrix(-0.5, 1, 1, -0.5, 80, 80) rotate(-15deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="resource">transform: matrix()</a></code>
+          </h1>
+        </header>
+        <object data="https://css-transform.moro.es/"></object>
+        <a href="https://css-transform.moro.es/" class="objectlink">Go</a>
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>function order</h1>
+        </header>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Transform Order</h1>
+        </header>
+        <section class="content">
+          <p>Order of transform functions matters: if you rotate first, your translate direction will be on the rotated
+            axis!</p>
+
+          <div id="transformorder"><b class="line1"></b><b class="line2"></b></div>
+          <code style="position: absolute; bottom: 20px">translateX(200px)<br>rotate(135deg)</code>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>transforms</h1>
+        </header>
+        <section class="content">
+
+
+          <li>Take advantage of <code>transform-origin</code></li>
+          <li>Multiple values are SPACE separated (no commas)</li>
+          <li>The order of the values matters</li>
+          <li><a href="http://westciv.com/tools/3Dtransforms/index.html">3D transforms</a> are hardware accelerated</li>
+          <li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li>
+          <li><a href="http://meyerweb.com/eric/tools/matrix/">Matrix</a> is another syntax</li>
+          <li>More about <a
+              href="http://www.standardista.com/css3/css3-transform-property-and-the-various-transform-functions">transforms</a>
+          </li>
+        </section>
+      </div>
+
+      <div class="slide object">
+        <header>
+          <h1>Funtion Order</h1>
+        </header>
+        <object data="exercises/tOrder.html"></object>
+        <a href="exercises/transforms/tOrder.html" target="play" title="open resource in reused window">➹</a>
+
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>3D Transform Functions</h1>
+        </header>
+      </div>
+
+
+      <!-- 3d Transforms -->
+      <div class="slide">
+        <header>
+          <h1>3d Transforms</h1>
+        </header>
+        <section class="content">
+          <dl class="deprecated listed wide">
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez"
+                  target="resource">translateZ</a></strong>(&lt;z-value&gt;)</dt>
+            <dd>specifies a translation by the given amount in the Z direction. Note that percentage values are not
+              allowed in the translateZ translation-value, and if present are evaluated as 0.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d"
+                  target="resource">translate3d</a></strong>(&lt;x&gt;, &lt;y&gt;, &lt;z&gt;)</dt>
+            <dd>specifies a 3D translation by the vector [tx,ty,tz], with tx, ty and tz being the first, second and
+              third translation-value parameters respectively.</dd>
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalez"
+                  target="resource">scaleZ</a></strong>(&lt;number&gt;)</dt>
+            <dd>specifies a scale operation using the [1,1,sz] scaling vector, where sz is given as the parameter.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d"
+                  target="resource">scale3d</a></strong>(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;)</dt>
+            <dd>specifies a 3D scale operation by the [sx,sy,sz] scaling vector described by the 3 parameters.</dd>
+
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate"
+                  target="resource">rotate</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a&nbsp;2D rotation&nbsp;by the angle specified in the parameter about the origin of the
+              element, as defined by the&nbsp;<em>transform-origin</em>&nbsp;property.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d"
+                  target="resource">rotate3d</a></strong>(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;angle&gt;)
+            </dt>
+            <dd>specifies a clockwise 3D rotation by the angle specified in last parameter about the [x,y,z] direction
+              vector described by the first 3 parameters. If the direction vector is not of unit length, it will be
+              normalized. A direction vector that cannot be normalized, such as [0, 0, 0], will cause the rotation to
+              not be applied. This function is equivalent to matrix3d(1 + (1-cos(angle))*(x*x-1),
+              -z*sin(angle)+(1-cos(angle))*x*y, y*sin(angle)+(1-cos(angle))*x*z, 0, z*sin(angle)+(1-cos(angle))*x*y, 1 +
+              (1-cos(angle))*(y*y-1), -x*sin(angle)+(1-cos(angle))*y*z, 0, -y*sin(angle)+(1-cos(angle))*x*z,
+              x*sin(angle)+(1-cos(angle))*y*z, 1 + (1-cos(angle))*(z*z-1), 0, 0, 0, 0, 1).</dd>
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex"
+                  target="resource">rotateX</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a clockwise rotation by the given angle about the X axis.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatey"
+                  target="resource">rotateY</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a clockwise rotation by the given angle about the Y axis.</dd>
+            <dt><strong class="imp"><a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatez"
+                  target="resource">rotateZ</a></strong>(&lt;angle&gt;)</dt>
+            <dd>specifies a clockwise rotation by the given angle about the Z axis.</dd>
+
+
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix"
+                  target="resource">matrix</a></strong>(&lt;number&gt;{6})</dt>
+            <dd>specifies a 2D transformation in the form of a transformation matrix of six comma separated
+              values. matrix(a,b,c,d,e,f) is equivalent to matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, e, f, 0, 1).
+            </dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d"
+                  target="resource">matrix3d</a></strong>(&lt;number&gt;{15})</dt>
+            <dd>specifies a 3D transformation as a 4x4 homogeneous matrix of 16 comma separated values in column-major
+              order.</dd>
+            <dt><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective"
+                  target="resource">perspective</a></strong>(&lt;number&gt;)</dt>
+            <dd>specifies a perspective projection matrix. This matrix maps a <em>viewing cube</em> onto a pyramid whose
+              base is infinitely far away from the viewer and whose peak represents the viewer's position. The viewable
+              area is the region bounded by the four edges of the viewport (the portion of the browser window used for
+              rendering the webpage between the viewer's position and a point at a distance of infinity from the
+              viewer). The <em>depth</em>, given as the parameter to the function, represents the distance of the z=0
+              letters from the viewer. Lower values give a more flattened pyramid and therefore a more pronounced
+              perspective effect. The value is given in pixels, so a value of 1000 gives a moderate amount of
+              foreshortening and a value of 200 gives an extreme amount. The matrix is computed by starting with an
+              identity matrix and replacing the value at row 3, column 4 with the value -1/depth. The value for depth
+              must be greater than zero, otherwise the function is invalid.</dd>
+          </dl>
+        </section>
+      </div>
+
+
+
+      <div class="slide object">
+        <object data="https://caniuse.com/#search=3d%20transforms"></object>
+        <a href="http://caniuse.com/#search=3d%20transforms" target="play" title="open resource in new window">➹</a>
+
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez" target="resource">translateZ()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters D301">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D301 i {
+              transform: translateZ(100px);
+              transform: perspective(500px) translateZ(100px);
+              _transform: translate3d(0, 0, 100px);
+              _transform: perspective(500px) translate3d(0, 0, 100px);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective()</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <h2><strong>perspective</strong>(&lt;number&gt;)</h2>
+          <ul>
+            <li>specifies a perspective projection.</li>
+            <li> Parameter is the <em>depth</em>, represents the distance of the viewer: <ul>
+                <li> Lower values are closer, more pronounced perspective effect</li>
+                <li>Larger values are further, less pronounced persepective</li>
+              </ul>
+            </li>
+            <li>depth must be greater than zero, otherwise invalid</li>
+            <li>depth must be greater than translateZ, or the element is behind the viewer</li>
+            <li>perspective() must be the first transform function of the list of functions</li>
+          </ul>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1><code>transform: perspective()</code> &amp; <code>translateZ()</code></h1>
+        </header>
+        <section class="content transform"><b class="letters D302">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D302 i {
+              transform: perspective(500px) translateZ(100px);
+              _transform: perspective(200px) translateZ(100px);
+              _transform: perspective(99px) translateZ(100px);
+              _transform: perspective(101px) translateZ(100px);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code>transform: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d" target="resource">translate3d()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters D303">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D303 i {
+              transform: perspective(200px) translateZ(100px);
+              _transform: perspective(200px) translate3d(0, 0, 100px);
+              _transform: perspective(200px) translate(0, 0) translate3d(100px);
+              _transform: perspective(200px) translate3d(100px, 100px, 100px);
+              _transform: perspective(200px) translate3d(100px, 100px, -100px);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Translating</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>translateZ( &lt;length> )</pre>
+          <p>Specifies a 3D translation by the vector [0, 0, tz].</p>
+          <pre contenteditable>translate3d( &lt;length-percent> , &lt;length-percent> , &lt;length> )</pre>
+          <p>Specifies a 3D translation by the vector [tx, ty, tz], in that order.</p>
+          <hr />
+          <pre contenteditable> translateZ( 200px ) == translate3d( 0, 0, 200px )</pre>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Scaling</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>scaleZ( &lt;number> )</pre>
+          <p>Specifies a 3D scale operation using the [1, 1, sz] scaling vector, where sZ is the parameter.</p>
+          <pre contenteditable>scale3d( &lt;number> , &lt;number>, &lt;number> )</pre>
+          <p>Specifies a 3D scale operation by the [sx, sy, sz] scaling vector described by the 3 parameters.</p>
+          <hr />
+          <pre contenteditable>scaleZ( 0.7 ) == scale3d( 1, 1, 0.7 )</pre>
+        </section>
+      </div>
+
+
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Rotation</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>rotate3d( &lt;number> , &lt;number> , &lt;number> , &lt;angle> )</pre>
+
+          <p>Specifies a 3D rotation by the angle specified in last parameter about the [x,y,z] direction vector
+            described by the first three parameters. The angle can be zero.</p>
+
+          <pre contenteditable style="float: left; margin-right: 1em">rotateX( &lt;angle> )</pre>
+          <pre contenteditable style="float: left; margin-right: 1em">rotateY( &lt;angle> ) </pre>
+
+          <p style="clear: both;">Same as <code>rotate3d(1, 0, 0, &lt;angle>)</code> or
+            <code>rotate3d(0, 1, 0, &lt;angle>)</code>, respectively. Angle can be zero.</p>
+
+          <pre contenteditable>rotateZ( &lt;angle> )</pre>
+
+          <p> same as <code>rotate3d(0, 0, 1, &lt;angle>)</code>, which is a 3d transform equivalent to the 2d transform
+            <code>rotate(&lt;angle>)</code>. Angle can be zero.</p>
+
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="resource">transform: rotate3d()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters D307">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D307 i {
+              transform: perspective(200px) rotate(40deg);
+              _transform: perspective(200px) rotateZ(40deg);
+              _transform: perspective(200px) rotate3d(0, 0, 1, 40deg);
+              _transform: perspective(200px) rotateX(40deg);
+              _transform: perspective(200px) rotateY(40deg);
+              _transform: perspective(200px) rotateX(40deg) rotateY(40deg);
+            }
+          </style>
+          <p>Remove the underscores to activate.</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Matrix</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>matrix3d( &lt;number>#{16} )</pre>
+          <p>specifies a 3D transformation as a matrix of 16 values </p>
+          <p><code>matrix(a, b, c, d, tx, ty)</code> is a shorthand for
+            <br /><code>matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, tx, ty, 0, 1)</code>.
+            <hr>
+          <pre contenteditable>matrix(-0.5, 1, 1, -0.5, 20, 20)
 matrix(-0.5, 1, 0, 0, 1, -0.5, 0, 0, 0, 0, 1, 0, 20, 20, 0, 1)</pre>
-  </section>
-</div>
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d" target="resource">transform: matrix3d()</a></code></h1>
-  </header>
-<section class="content transform"><b class="letters D308">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D308 i {
-   transform-origin: center center;
-   _transform: matrix(-0.5, 1, 1, -0.5, 20, 20);
-   _transform: matrix(-0.5, 1, 0, 0, 1, -0.5, 0, 0, 0, 0, 1, 0, 20, 20, 0, 1)
-}</style>
-</section>
-</div>
-
-
-
-<div class="slide">
-  <header>
-    <h1>3D Transforms: Perspective</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>perspective( &lt;length> )</pre>
-   <ul>
-    <li>Positive Z values moves away from the origin and toward the user.</li> 
-    <li>The greater the value, the further away from the z=0 plane</li>
-    <li>Lower values have a more pronounced perspective effect.</li>
-     </ul>
-    <p>The parameter is the distance of the z=0 plane from the viewer. </p>
-   <p>Must be greater than zero!</p>
-  </section>
-</div>
-
-
-
-<div class="slide divider">
-  <header>
-    <h1>This page intentionally<br/> left blank</h1>
-  </header>
-</div>
-
-
-
-
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>3D Transform Related Properties</h1>
-  </header>
-</div>
-
-
-<div class="slide">
-   <header>
-    <h1>3D Transform related Properties</h1>
-  </header>
-  <section class="content">
-<dl  class="deprecated listed wide">
-    <dt>perspective: none | length</dt>
-    <dd>Same as <code>transforms: perspective(value)</code>  except it applies to the positioned or transformed children of the element, not  the element itself.</dd>
-	<dt>transform-origin: length | keyterm {1,3}</dt>
-    <dd>The centerpoint of the transform
-	<dt>transform-style: flat | preserve-3d</dt>
-    <dd>How to handle nested elements are rendered in 3D space.</dd>
-    <dt>perspective-origin: pos relative to parent</dt>
-    <dd>Defines the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.
-	<dt>backface-visibility: visible | hidden</dt>
-    <dd>When an element is flipped, is the content that is flipped away from user visible or not.</dd>
-</dl>
-     </section>
- </div>
-
-
-<!-- Perspective -->
-<div class="slide divider">
-  <header>
-    <h1>Perspective</h1>
-  </header>
-</div>
-
-
-<!-- 3D -->
-<div class="slide">
-  <header>
-    <h1>Perspective</h1>
-  </header>
-  <section class="content">
-Screens are flat. 3D requires perspective. 
-
-<ol>
-  <li><code>transform: perspective(100) ...</code></li>
-  <li><code>perspective: 100</code>
-  </li>
-</ol>
-<p>Difference: with the parent property, all the transformed elements share the same perspective. with the function, each transformed element has it's own perspective.
-  </section>
-</div>
-
-<div class="slide">
-   <header>
-    <h1>Transform Function: <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective()</a></code></h1>
-  </header>
-     <b class="letters letters_07">LOVE<i>LOVE</i></b>
-  <section class="content">
-     <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_07', this.innerHTML)"> perspective(40px) rotateX(10deg)</span>;</pre>
-     <p>The <code>perspective()</code> function must come first</p>
-     <p>Smaller numbers have a bigger impact</p>
-     </section>
- </div>
-
-
-
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective</a></code> Property</h1>
-  </header>
-<section class="content transform">
-  <div class="initial parent">LOVE<b class="child">LOVE</b></div>
-
-<style class="editme" contenteditable>.child {
-  transform: rotateX(10deg);
-}
-.parent {
-   perspective: 40px;
-}</style>
-<p>Edit the above to see what happens.</p>
-</section>
-</div>
-
-
-<div class="slide">
-  <header>
-    <h1>DevTools</h1>
-  </header>
-<section class="content transform">
-  
-<p>Edit the previous slide via devTools</p>
-<p>Click 'shift' on angles to change the format.</p>
-<p>Hover over a transform property in the Rules view to see the transformation overlaid on the page (note: this doesn't work quite right on generated content)</p>
-
-</section>
-</div>
-
-
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code>transform: perspective(400px)</code> v. <code>perspective: 400px</code></h1>
-  </header>
-  <section class="content perspective">
-    <p><code>transform: perspective(400px)</code> on children</p>
-    <article><div>1</div><div>2</div><div>3</div></article>
-    <p><code>perspective: 400px</code> on parent</p>
-    <article><div>1</div><div>2</div><div>3</div></article>
-
-  </section>
-</div>
-
-
-
-
-<!-- Perspective -->
-<div class="slide divider">
-  <header>
-    <h1>perspective-origin</h1>
-  </header>
-</div>
-
-
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" target="resource">perspective-origin</a></code></h1>
-  </header>
-  <section class="content"><p><code>perspective-origin: x y</code></p>
-   <ul>
-    <li>Property on parent element</li>
-    <li>Positions the perspective relative to parent, defining the origin for the <code>perspective</code> property. </li>
-    <li>Sets the X and Y position at which the viewer appears to be looking at the children of the element.</li>
-    <li>Determines the position at which the viewer is looking.</li>
-    <li>Used as the vanishing point by the <code>perspective</code> property</li>
-  </section>
-</div>
-
-
-
-<div class="slide pO">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" target="resource">perspective-origin</a></code> Property</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme mini">.one, .two { perspective: 100px; }
-.one i, .two i { transform: rotateX(45deg); }
-.one { perspective-origin: top left; }
-.two { perspective-origin: top right; }</style>
-
-<div>
-<b class="one letters">LOVE<i>LOVE</i></b></div>
-<div><b class="two letters">LOVE<i>LOVE</i></b></div>
-</section>
-</div>
-
-
-
-<div class="slide perspective pOrigin">
-<header><h1><code>perspective-origin</code> with <code>perspective: 400px</code></h1>
-  </header>
-  <section class="content perspective">
-    <p><code>perspective-origin: 0 0</code> on parent</p>
-    <article><div>1</div><div>2</div><div>3</div></article>
-    <article><div>1</div><div>2</div><div>3</div></article>
-<p>only works if <code>perspective</code> is on that parent!</p>
-  </section>
-</div>
-
-
-<div class="slide object">
-  <header>
-    <h1><code>perspective-origin</code> Property</h1>
-  </header>
-    <object data="https://codepen.io/estelle/pen/RXLGRg"></object>
-<a href="https://codepen.io/estelle/pen/RXLGRg" target="play" class="objectlink">➹</a>
-</div>
-
-
-
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>transform-origin</h1>
-  </header>
-</div>
-
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code> property</h1>
-  </header>
-  <section class="content">
-    <p>Specifies the x and y position of the origin, relative to the transform object.</p>
-  <ul>
-    <li>Keyword positions: left, right, bottom, top, center</li>
-    <li>Length values</li>
-    <li>Percentage values </li>
-    <li>default is 50% 50% (or center center)</li>
-    <li>Supported in all browsers that support transform. Prefixed if transform is prefixed</li>
-  </ul>
-    </section>
-</div>
-
-<div class="slide">
-  <header>
-    <h1><code>transform-origin</code> property</h1>
-  </header>
-<section class="content">
-  <b class="letters D310">LOVE<i>LOVE</i></b>
-
-<style class="editme" contenteditable> .D310 i {
-  transform: rotate(90deg);
-  transform-origin:  top left;
-}</style>
-<p>change the values</p>
-</section>
-</div>
-
-
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>transform-style</h1>
-  </header>
-</div>
-
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code></h1>
-  </header>
-  <section class="content">
-    <dl>
-    <dt>transform-style: flat | preserve-3d</dt>
-    <dd>How to handle nested elements are rendered in 3D space.</dd>
-  </dl>
-  <ul>
-      <li>Default is flat</li>
-      <li>Set on parent element</li>
-      <li>Only works if the following are set to their default values:
-        <ul class="col2" style="display: inline-block; column-rule: none;"><li>overflow</li>
-          <li>clip</li>
-          <li>clip-path</li>
-          <li>filter</li>
-          <li>mask-border-source</li>
-          <li>mask-image</li>
-          <li>mix-blend-mode</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-</div>
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code> Property</h1>
-  </header>
-<section class="content">
-<style contenteditable class="editme mini">.parent1 {
-    transform: perspective(400px) rotateX(15deg) rotateY(-15deg);
-    transform-style: preserve-3d;
-}
-.child1 {
-    transform: perspective(400px) translateZ(90px) rotate(20deg); 
-}</style>
-<div class="parent1">Parent <p class="child1">Child</p></div>
-<style>
-.parent1 {width: 40vw; height: 40vh;}
-.parent1, 
-.parent1 .child1 {
-    font-size: 50px;
-    color: var(--love);
-    box-shadow: 5px 5px 0 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid #aeaeae;
-    background-color: #FFF;
-    margin: 10px auto;
-    opacity: 0.9;
-}
-.child1 {width: 4em;}
-</style>
-</section>
-</div>
-
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code> Property</h1>
-  </header>
-<section class="content">
-<style contenteditable class="editme mini">.first, .second {
-    transform: rotateY(245deg);
-    transform-style: flat; }
-.first i, .second i {
-    transform: translateZ(50px) rotateX(20deg); }
-.second {
-    transform-style: preserve-3d; }</style>
-
-<article>
-<b class="letters first">LOVE<i>LOVE</i></b></article>
-<article><b class="letters second">LOVE<i>LOVE</i></b></article>
-</section>
-</div>
-
-
-
-
-<div class="slide object">
-  <header>
-    <h1><code>transform-style</code> Property</h1>
-  </header>
-    <object data="https://codepen.io/estelle/pen/RXLGRg"></object>
-<a href="https://codepen.io/estelle/pen/RXLGRg" target="play" class="objectlink">➹</a>
-</div>
-
-
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>backface-visibility</h1>
-  </header>
-</div>
-
-
-
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility" target="resource">backface-visibility</a></code> Property</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme" style="margin: 30px auto">._1st i, ._2nd i { transform: rotateX(180deg); }
-         ._1st i { backface-visibility: visible; }
-         ._2nd i { backface-visibility: hidden; }</style>
-</style>
-<article>
-<b class="letters _1st">LOVE<i>LOVE</i></b></article>
-<article><b class="letters _2nd">LOVE<i>LOVE</i></b></article>
-</section>
-</div>
-
-
-
-<div class="slide">
-  <header>
-    <h1>Exercise</h1>
-  </header>
-  <section class="content">
-    <p>Here's where all the magic happens! Let's make all the cards slightly off-center so each can be hovered individually. We hide the face of the cards, making the card flip, making the face visible on hover but the back disappear. </p>
-    <ol>
-      <li>Add a fairly distant perspective to each card.</li>
-      <li>Flip just the face of each card, ensuring the children are flipped too, and we don't see 'thru' the back of the front of the card.</li>
-      <li>When the card is hovered, flip it back so we see the face.</li>
-      <li>The back of the card should be visible when not hovered, but rotated to the back when the card is flipped, so we see the face of the card only at that point.</li>
-      <li>Move each card a little bit so we can see the top card as well as a bit of the 2nd and third card in the default state, seeing a bit more of the 2nd and 3rd cards when they're flipped.</li>
-    </ol>
-    <p>In the next section, we'll and a transition, to make the flip / motion visible.</p>
-    <a href="exercises/cards.html" target="exercise">HTML</a> | <a href="exercises/style.css" target="css">CSS</a>
-  </section>
-</div>
-
-<div class="slide">
-  <header>
-    <h1>Solution</h1>
-  </header>
-  <section class="content">
-    <a href="exercises/answer.html" target="exercise">HTML</a> | <a href="exercises/answer.css" target="css">CSS</a>
-  </section>
-</div>
-
-<div class="slide">
-  <header>
-    <h1>Solution</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>.card {
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d" target="resource">transform: matrix3d()</a></code>
+          </h1>
+        </header>
+        <section class="content transform"><b class="letters D308">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D308 i {
+              transform-origin: center center;
+              _transform: matrix(-0.5, 1, 1, -0.5, 20, 20);
+              _transform: matrix(-0.5, 1, 0, 0, 1, -0.5, 0, 0, 0, 0, 1, 0, 20, 20, 0, 1)
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Transforms: Perspective</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>perspective( &lt;length> )</pre>
+          <ul>
+            <li>Positive Z values moves away from the origin and toward the user.</li>
+            <li>The greater the value, the further away from the z=0 plane</li>
+            <li>Lower values have a more pronounced perspective effect.</li>
+          </ul>
+          <p>The parameter is the distance of the z=0 plane from the viewer. </p>
+          <p>Must be greater than zero!</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide divider">
+        <header>
+          <h1>This page intentionally<br /> left blank</h1>
+        </header>
+      </div>
+
+
+
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>3D Transform Related Properties</h1>
+        </header>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>3D Transform related Properties</h1>
+        </header>
+        <section class="content">
+          <dl class="deprecated listed wide">
+            <dt>perspective: none | length</dt>
+            <dd>Same as <code>transforms: perspective(value)</code> except it applies to the positioned or transformed
+              children of the element, not the element itself.</dd>
+            <dt>transform-origin: length | keyterm {1,3}</dt>
+            <dd>The centerpoint of the transform
+            <dt>transform-style: flat | preserve-3d</dt>
+            <dd>How to handle nested elements are rendered in 3D space.</dd>
+            <dt>perspective-origin: pos relative to parent</dt>
+            <dd>Defines the origin for the perspective property. It effectively sets the X and Y position at which the
+              viewer appears to be looking at the children of the element.
+            <dt>backface-visibility: visible | hidden</dt>
+            <dd>When an element is flipped, is the content that is flipped away from user visible or not.</dd>
+          </dl>
+        </section>
+      </div>
+
+
+      <!-- Perspective -->
+      <div class="slide divider">
+        <header>
+          <h1>Perspective</h1>
+        </header>
+      </div>
+
+
+      <!-- 3D -->
+      <div class="slide">
+        <header>
+          <h1>Perspective</h1>
+        </header>
+        <section class="content">
+          Screens are flat. 3D requires perspective.
+
+          <ol>
+            <li><code>transform: perspective(100) ...</code></li>
+            <li><code>perspective: 100</code>
+            </li>
+          </ol>
+          <p>Difference: with the parent property, all the transformed elements share the same perspective. with the
+            function, each transformed element has it's own perspective.
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Transform Function:
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective()</a></code>
+          </h1>
+        </header>
+        <b class="letters letters_07">LOVE<i>LOVE</i></b>
+        <section class="content">
+          <pre>transform: <span contenteditable onmouseout="setTempStyle('letters_07', this.innerHTML)"> perspective(40px) rotateX(10deg)</span>;</pre>
+          <p>The <code>perspective()</code> function must come first</p>
+          <p>Smaller numbers have a bigger impact</p>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="resource">perspective</a></code>
+            Property</h1>
+        </header>
+        <section class="content transform">
+          <div class="initial parent">LOVE<b class="child">LOVE</b></div>
+
+          <style class="editme" contenteditable>
+            .child {
+              transform: rotateX(10deg);
+            }
+
+            .parent {
+              perspective: 40px;
+            }
+          </style>
+          <p>Edit the above to see what happens.</p>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>DevTools</h1>
+        </header>
+        <section class="content transform">
+
+          <p>Edit the previous slide via devTools</p>
+          <p>Click 'shift' on angles to change the format.</p>
+          <p>Hover over a transform property in the Rules view to see the transformation overlaid on the page (note:
+            this doesn't work quite right on generated content)</p>
+
+        </section>
+      </div>
+
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1><code>transform: perspective(400px)</code> v. <code>perspective: 400px</code></h1>
+        </header>
+        <section class="content perspective">
+          <p><code>transform: perspective(400px)</code> on children</p>
+          <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </article>
+          <p><code>perspective: 400px</code> on parent</p>
+          <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </article>
+
+        </section>
+      </div>
+
+
+
+
+      <!-- Perspective -->
+      <div class="slide divider">
+        <header>
+          <h1>perspective-origin</h1>
+        </header>
+      </div>
+
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" target="resource">perspective-origin</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p><code>perspective-origin: x y</code></p>
+          <ul>
+            <li>Property on parent element</li>
+            <li>Positions the perspective relative to parent, defining the origin for the <code>perspective</code>
+              property. </li>
+            <li>Sets the X and Y position at which the viewer appears to be looking at the children of the element.</li>
+            <li>Determines the position at which the viewer is looking.</li>
+            <li>Used as the vanishing point by the <code>perspective</code> property</li>
+        </section>
+      </div>
+
+
+
+      <div class="slide pO">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" target="resource">perspective-origin</a></code>
+            Property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme mini">
+            .one,
+            .two {
+              perspective: 100px;
+            }
+
+            .one i,
+            .two i {
+              transform: rotateX(45deg);
+            }
+
+            .one {
+              perspective-origin: top left;
+            }
+
+            .two {
+              perspective-origin: top right;
+            }
+          </style>
+
+          <div>
+            <b class="one letters">LOVE<i>LOVE</i></b>
+          </div>
+          <div><b class="two letters">LOVE<i>LOVE</i></b></div>
+        </section>
+      </div>
+
+
+
+      <div class="slide perspective pOrigin">
+        <header>
+          <h1><code>perspective-origin</code> with <code>perspective: 400px</code></h1>
+        </header>
+        <section class="content perspective">
+          <p><code>perspective-origin: 0 0</code> on parent</p>
+          <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </article>
+          <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </article>
+          <p>only works if <code>perspective</code> is on that parent!</p>
+        </section>
+      </div>
+
+
+      <div class="slide object">
+        <header>
+          <h1><code>perspective-origin</code> Property</h1>
+        </header>
+        <object data="https://codepen.io/estelle/pen/RXLGRg"></object>
+        <a href="https://codepen.io/estelle/pen/RXLGRg" target="play" class="objectlink">➹</a>
+      </div>
+
+
+
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>transform-origin</h1>
+        </header>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="resource">transform-origin</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Specifies the x and y position of the origin, relative to the transform object.</p>
+          <ul>
+            <li>Keyword positions: left, right, bottom, top, center</li>
+            <li>Length values</li>
+            <li>Percentage values </li>
+            <li>default is 50% 50% (or center center)</li>
+            <li>Supported in all browsers that support transform. Prefixed if transform is prefixed</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1><code>transform-origin</code> property</h1>
+        </header>
+        <section class="content">
+          <b class="letters D310">LOVE<i>LOVE</i></b>
+
+          <style class="editme" contenteditable>
+            .D310 i {
+              transform: rotate(90deg);
+              transform-origin: top left;
+            }
+          </style>
+          <p>change the values</p>
+        </section>
+      </div>
+
+
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>transform-style</h1>
+        </header>
+      </div>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt>transform-style: flat | preserve-3d</dt>
+            <dd>How to handle nested elements are rendered in 3D space.</dd>
+          </dl>
+          <ul>
+            <li>Default is flat</li>
+            <li>Set on parent element</li>
+            <li>Only works if the following are set to their default values:
+              <ul class="col2" style="display: inline-block; column-rule: none;">
+                <li>overflow</li>
+                <li>clip</li>
+                <li>clip-path</li>
+                <li>filter</li>
+                <li>mask-border-source</li>
+                <li>mask-image</li>
+                <li>mix-blend-mode</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code>
+            Property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme mini">
+            .parent1 {
+              transform: perspective(400px) rotateX(15deg) rotateY(-15deg);
+              transform-style: preserve-3d;
+            }
+
+            .child1 {
+              transform: perspective(400px) translateZ(90px) rotate(20deg);
+            }
+          </style>
+          <div class="parent1">Parent <p class="child1">Child</p>
+          </div>
+          <style>
+            .parent1 {
+              width: 40vw;
+              height: 40vh;
+            }
+
+            .parent1,
+            .parent1 .child1 {
+              font-size: 50px;
+              color: var(--love);
+              box-shadow: 5px 5px 0 5px rgba(0, 0, 0, 0.2);
+              border: 1px solid #aeaeae;
+              background-color: #FFF;
+              margin: 10px auto;
+              opacity: 0.9;
+            }
+
+            .child1 {
+              width: 4em;
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="resource">transform-style</a></code>
+            Property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme mini">
+            .first,
+            .second {
+              transform: rotateY(245deg);
+              transform-style: flat;
+            }
+
+            .first i,
+            .second i {
+              transform: translateZ(50px) rotateX(20deg);
+            }
+
+            .second {
+              transform-style: preserve-3d;
+            }
+          </style>
+
+          <article>
+            <b class="letters first">LOVE<i>LOVE</i></b>
+          </article>
+          <article><b class="letters second">LOVE<i>LOVE</i></b></article>
+        </section>
+      </div>
+
+
+
+
+      <div class="slide object">
+        <header>
+          <h1><code>transform-style</code> Property</h1>
+        </header>
+        <object data="https://codepen.io/estelle/pen/RXLGRg"></object>
+        <a href="https://codepen.io/estelle/pen/RXLGRg" target="play" class="objectlink">➹</a>
+      </div>
+
+
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>backface-visibility</h1>
+        </header>
+      </div>
+
+
+
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility" target="resource">backface-visibility</a></code>
+            Property</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme" style="margin: 30px auto">
+            ._1st i,
+            ._2nd i {
+              transform: rotateX(180deg);
+            }
+
+            ._1st i {
+              backface-visibility: visible;
+            }
+
+            ._2nd i {
+              backface-visibility: hidden;
+            }
+          </style>
+          </style>
+          <article>
+            <b class="letters _1st">LOVE<i>LOVE</i></b>
+          </article>
+          <article><b class="letters _2nd">LOVE<i>LOVE</i></b></article>
+        </section>
+      </div>
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Exercise</h1>
+        </header>
+        <section class="content">
+          <p>Here's where all the magic happens! Let's make all the cards slightly off-center so each can be hovered
+            individually. We hide the face of the cards, making the card flip, making the face visible on hover but the
+            back disappear. </p>
+          <ol>
+            <li>Add a fairly distant perspective to each card.</li>
+            <li>Flip just the face of each card, ensuring the children are flipped too, and we don't see 'thru' the back
+              of the front of the card.</li>
+            <li>When the card is hovered, flip it back so we see the face.</li>
+            <li>The back of the card should be visible when not hovered, but rotated to the back when the card is
+              flipped, so we see the face of the card only at that point.</li>
+            <li>Move each card a little bit so we can see the top card as well as a bit of the 2nd and third card in the
+              default state, seeing a bit more of the 2nd and 3rd cards when they're flipped.</li>
+          </ol>
+          <p>In the next section, we'll and a transition, to make the flip / motion visible.</p>
+          <a href="exercises/cards.html" target="exercise">HTML</a> | <a href="exercises/style.css" target="css">CSS</a>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Solution</h1>
+        </header>
+        <section class="content">
+          <a href="exercises/answer.html" target="exercise">HTML</a> | <a href="exercises/answer.css"
+            target="css">CSS</a>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Solution</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>.card {
   perspective: 600px;
 }
 .card .front {
@@ -1288,133 +1581,149 @@ Screens are flat. 3D requires perspective.
     transform: rotateY(180deg);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
-<!-- transform box -->
-<div class="slide">
-  <header>
-    <h1><code>transform-box</code> property</h1>
-  </header>
-  <section class="content">
-    <p>Defines the layout box, to which the <code>transform</code> and <code>transform-origin</code> properties relate to.</p>
-    <pre contenteditable>content-box | border-box | fill-box | stroke-box | view-box</pre>
-    <dl style="height: 53vh; overflow-y: scroll;">
-<dt><code>content-box</code>
-  <dd>content box as reference box</dd>
-<dt><code>border-box</code></dt>
-  <dd>border box as reference box.</dd>
-<dt><code>fill-box</code></dt>
-  <dd>Uses the object bounding box as reference box.</dd>
-<dt><code>stroke-box</code></dt>
-  <dd>stroke bounding box as reference box.</dd>
-<dt><code>view-box</code></dt>
-  <dd>Nearest SVG viewport as reference box. If <code>viewBox</code> attribute exists, the reference box is at the <code>viewBox</code> 0 0, and the width and height are those of the <code>viewBox</code> attribute.</dd>
-</dl>
-  </section>
-</div>
+      <!-- transform box -->
+      <div class="slide">
+        <header>
+          <h1><code>transform-box</code> property</h1>
+        </header>
+        <section class="content">
+          <p>Defines the layout box, to which the <code>transform</code> and <code>transform-origin</code> properties
+            relate to.</p>
+          <pre contenteditable>content-box | border-box | fill-box | stroke-box | view-box</pre>
+          <dl style="height: 53vh; overflow-y: scroll;">
+            <dt><code>content-box</code>
+            <dd>content box as reference box</dd>
+            <dt><code>border-box</code></dt>
+            <dd>border box as reference box.</dd>
+            <dt><code>fill-box</code></dt>
+            <dd>Uses the object bounding box as reference box.</dd>
+            <dt><code>stroke-box</code></dt>
+            <dd>stroke bounding box as reference box.</dd>
+            <dt><code>view-box</code></dt>
+            <dd>Nearest SVG viewport as reference box. If <code>viewBox</code> attribute exists, the reference box is at
+              the <code>viewBox</code> 0 0, and the width and height are those of the <code>viewBox</code> attribute.
+            </dd>
+          </dl>
+        </section>
+      </div>
 
 
 
 
-<div class="slide">
-  <header>
-    <h1><code>transform-box</code> property</h1>
-  </header>
-<section class="content">
-  <pre contenteditable style="float: right;">content-box | border-box | fill-box | 
+      <div class="slide">
+        <header>
+          <h1><code>transform-box</code> property</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable style="float: right;">content-box | border-box | fill-box | 
   stroke-box | view-box </pre>
-  <style>.transformbox  {
-    position: relative;
-    fill: white;
-    border: 1px solid;
-    padding: 10px;
-    background-clip: content-box;
-    box-sizing: border-box;
-    margin: auto; width: 200px; height: 200px; }
+          <style>
+            .transformbox {
+              position: relative;
+              fill: white;
+              border: 1px solid;
+              padding: 10px;
+              background-clip: content-box;
+              box-sizing: border-box;
+              margin: auto;
+              width: 200px;
+              height: 200px;
+            }
 
-  rect {    width: 100px;
-    height: 100px;
-  }
-  rect.transformed {
-    fill: pink;
-  }
-  </style>
-  <svg class="transformbox">
-  <g>
-    <rect class="basic" />
-    <rect class="transformed" />
-  </g>
-</svg>
+            rect {
+              width: 100px;
+              height: 100px;
+            }
 
-<style class="editme" contenteditable>.transformed {
-  transform-box: fill-box;
-  transform: rotate(60deg);
-  transform-origin: center center;}
-g {
-  transform: translate3d(50px, 50px, 50px);}</style>
-<p>change the values</p>
-</section>
-</div>
+            rect.transformed {
+              fill: pink;
+            }
+          </style>
+          <svg class="transformbox">
+            <g>
+              <rect class="basic" />
+              <rect class="transformed" />
+            </g>
+          </svg>
 
-<!-- NEXT -->
-<div class="slide divider">
-     <header>
-    <h1>Transitions &amp; Animation</h1>
-  </header>
-    <h1><a href="../animations/index.html">Next ➹</a></h1>
+          <style class="editme" contenteditable>
+            .transformed {
+              transform-box: fill-box;
+              transform: rotate(60deg);
+              transform-origin: center center;
+            }
+
+            g {
+              transform: translate3d(50px, 50px, 50px);
+            }
+          </style>
+          <p>change the values</p>
+        </section>
+      </div>
+
+      <!-- NEXT -->
+      <div class="slide divider">
+        <header>
+          <h1>Transitions &amp; Animation</h1>
+        </header>
+        <h1><a href="../animations/index.html">Next ➹</a></h1>
+      </div>
+
+
+
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
+
+            <p>
+          </ol>
+        </section>
+      </div>
+
+
+      <!-- TOC -->
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+          </ul>
+        </section>
+      </div>
+
     </div>
-
-
-
-<div class="slide dots">
-  <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
-
-<p></ol>
-  </section>
-</div>
-
-
-<!-- TOC -->
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-    <section class="content">
-      <ul>
-      </ul>
-    </section>
-</div>
-
-  </div>
 
 
   </div>
 
   <script src="../selectors/selectors.js"></script>
-  </body>
+</body>
+
 </html>

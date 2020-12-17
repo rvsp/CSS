@@ -1,270 +1,311 @@
 <!doctype html>
 <html>
-  <head>
 
-    <meta charset="utf-8" />
-    <title>Transitions &amp; Animations</title>
-<!--
+<head>
 
-Author: Estelle Weyl
-Contact: firstName @ lastName dot ORG
-Twitter: @estellevw
+  <meta charset="utf-8" />
+  <title>Transitions &amp; Animations</title>
 
--->
-     
-   <link rel="stylesheet" href="../intro/css/main.css"/>
-   <link rel="stylesheet" href="static/css/animation.css"/>
-<style>
-:root { 
-  --splashcolor: #e359dc;
-  --lightsplash: rebeccapurple;
-  --dark_bg: #434;
-  --colorpop: #e359dc;
-}
 
-</style>
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <link rel="stylesheet" href="static/css/animation.css" />
+  <style>
+    :root {
+      --splashcolor: #e359dc;
+      --lightsplash: rebeccapurple;
+      --dark_bg: #434;
+      --colorpop: #e359dc;
+    }
+  </style>
 
-  </head>
-  <body> <header>
+</head>
+
+<body>
+  <header>
     <nav>
-        <ul>
-            <li> <button class="button cancel" id="back">Back</button></li>
-            <li> <button class="button done" id="next">Next</button></li>
-        </ul>
+      <ul>
+        <li> <button class="button cancel" id="back">Back</button></li>
+        <li> <button class="button done" id="next">Next</button></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
   <div id="presentation">
-   <div id="presentation-counter"></div>
-   <div id="slides">
+    <div id="presentation-counter"></div>
+    <div id="slides">
 
 
 
-<!-- Title Slide -->
-<div class="slide intro">
-     <header>
-     	<h1>Animations &amp; Transitions</h1>
-     </header>
+      <!-- Title Slide -->
+      <div class="slide intro">
+        <header>
+          <h1>Animations &amp; Transitions</h1>
+        </header>
 
-      <h2><a href="https://estelle.github.io/CSS/animations">estelle.github.io/CSS/animations/</a></h2>
-      <div class="homepencil">✎</div>
-</div>
+        <h2><a href="https://rvsp.github.io/CSS/animations">rvsp.github.io/CSS/animations/</a></h2>
+        <div class="homepencil">✎</div>
+      </div>
 
 
-<!-- TOC -->
-<div class="slide">
-   <header>
-      <h1>Animations &amp; Transitions</h1>
-     </header>
-     <section class="content col3" style="padding-top: 1em; column-fill: auto; height: 88vh">
-<h3 style="margin: 0 auto -0.75em">Transitions</h3>
-<ul style="padding-left: 0"><li>Transitions overview</li>
-<li>Transitions Properties</li>
-<li><code>transition</code></li>
-<li><code>transition-property</code></li>
-<li><code>transition-duration</code></li>
-<li><code>transition-timing-function</code></li>
-<li><code>transition-delay</code></li>
-<li>Animatable Properties</li>
-<li>Tips and Events</li>
-</ul>
+      <!-- TOC -->
+      <div class="slide">
+        <header>
+          <h1>Animations &amp; Transitions</h1>
+        </header>
+        <section class="content col3" style="padding-top: 1em; column-fill: auto; height: 88vh">
+          <h3 style="margin: 0 auto -0.75em">Transitions</h3>
+          <ul style="padding-left: 0">
+            <li>Transitions overview</li>
+            <li>Transitions Properties</li>
+            <li><code>transition</code></li>
+            <li><code>transition-property</code></li>
+            <li><code>transition-duration</code></li>
+            <li><code>transition-timing-function</code></li>
+            <li><code>transition-delay</code></li>
+            <li>Animatable Properties</li>
+            <li>Tips and Events</li>
+          </ul>
 
-<h3 style="margin: 0 auto  -0.75em">Animations</h3>
-<ul style="padding-left: 0">
-<li>Overview</li>
-<li>Animation Essentials</h1>
-<li>@Keyframes
- <ul style="padding-left: 0">
-  <li>Naming</li>
-  <li>Keyframes</li>
-  <li>Declaration Lists</li>
- </ul>
-</li>
-<li>Animation properties
-<ul style="padding-left: 0">
-<li><code>animation-name</code></li>
-<li><code>animation-duration</code></li>
-<li><code>animation-timing-function</code></li>
-<li>Steps and bezier curves</li>
-<li><code>animation-iteration-count</code></li>
-<li><code>animation-delay</code></li>
-<li><code>animation-direction</code></li>
-<li><code>animation</code> shorthand</li>
-<li><code>animation-fill-mode</code></li>
-<li><code>animation-play-state</code></li>
-</ul>
-</li>
-<li>Developer Tools</li>
-<li>Animation Events</li>
-</ul>
-     </section>
-</div>
+          <h3 style="margin: 0 auto  -0.75em">Animations</h3>
+          <ul style="padding-left: 0">
+            <li>Overview</li>
+            <li>Animation Essentials</h1>
+            <li>@Keyframes
+              <ul style="padding-left: 0">
+                <li>Naming</li>
+                <li>Keyframes</li>
+                <li>Declaration Lists</li>
+              </ul>
+            </li>
+            <li>Animation properties
+              <ul style="padding-left: 0">
+                <li><code>animation-name</code></li>
+                <li><code>animation-duration</code></li>
+                <li><code>animation-timing-function</code></li>
+                <li>Steps and bezier curves</li>
+                <li><code>animation-iteration-count</code></li>
+                <li><code>animation-delay</code></li>
+                <li><code>animation-direction</code></li>
+                <li><code>animation</code> shorthand</li>
+                <li><code>animation-fill-mode</code></li>
+                <li><code>animation-play-state</code></li>
+              </ul>
+            </li>
+            <li>Developer Tools</li>
+            <li>Animation Events</li>
+          </ul>
+        </section>
+      </div>
 
-<!-- Overview -->
-<div class="slide divider">
-  <header>
-    <h1>Transitions</h1>
-  </header>
-  <section class="content">
-     </section>
-</div>
+      <!-- Overview -->
+      <div class="slide divider">
+        <header>
+          <h1>Transitions</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
-<!-- Simplest Transition -->
-<div class="slide normal">
-     <header>
-    <h1>Simplest Transition</h1>
-  </header>
-  <section class="content">
+      <!-- Simplest Transition -->
+      <div class="slide normal">
+        <header>
+          <h1>Simplest Transition</h1>
+        </header>
+        <section class="content">
 
-     <pre style="font-size:140%;">a {
+          <pre style="font-size:140%;">a {
   color: green;
 }
 a:hover {
   color: orange;
 }</pre>
-     <p class="hoverme h1">Hover Over Me</p>
-     </section>
- </div>
+          <p class="hoverme h1">Hover Over Me</p>
+        </section>
+      </div>
 
 
-<!-- CSS3 Transition -->
-<div class="slide normal">
-     <header>
-    <h1>CSS Transition</h1>
-  </header>
-  <section class="content">
-     <pre style="font-size:140%;">a {
+      <!-- CSS3 Transition -->
+      <div class="slide normal">
+        <header>
+          <h1>CSS Transition</h1>
+        </header>
+        <section class="content">
+          <pre style="font-size:140%;">a {
   color: green;
   transition: 1s;
 }
 a:hover {
   color: orange;
 }</pre>
-     <p class="hoverme h1 simptrans">Hover Over Me</p>
-     </section>
- </div>
+          <p class="hoverme h1 simptrans">Hover Over Me</p>
+        </section>
+      </div>
 
 
-<!-- Properties -->
-<div class="slide divider">
-  <header>
-    <h1>Transitions Properties</h1>
-  </header>
-</div>
+      <!-- Properties -->
+      <div class="slide divider">
+        <header>
+          <h1>Transitions Properties</h1>
+        </header>
+      </div>
 
 
- <!-- property overview -->
-<div class="slide">
-<header><h1>Transitions Properties</h1>
-  </header>
-<section class="content">
-<p>Pprovide a way to control the animation when changing CSS property values. Instead of instaneous changes from one value to the next, the value can transition over a period of time, following an acceleration curve, the start of which can be delayed. </p>
-<ul>
-<li><code class="pre">transition-property:</code> properties that transition</li>
-<li><code class="pre">transition-duration:</code> time it takes to transition</li>
-<li><code class="pre">transition-timing-function:</code> bezier curve or steps of transition</li>
-<li><code class="pre">transition-delay:</code> time delay before transition starts</li>
-<li><code class="pre">transition:</code> shorthand for the four transition properties</li>
-</ul>
-<p>These enable customization of the delay, timing, and duration of the transition between the two values of the property that is being changed.</p>
-</section>
-</div>
+      <!-- property overview -->
+      <div class="slide">
+        <header>
+          <h1>Transitions Properties</h1>
+        </header>
+        <section class="content">
+          <p>Pprovide a way to control the animation when changing CSS property values. Instead of instaneous changes
+            from one value to the next, the value can transition over a period of time, following an acceleration curve,
+            the start of which can be delayed. </p>
+          <ul>
+            <li><code class="pre">transition-property:</code> properties that transition</li>
+            <li><code class="pre">transition-duration:</code> time it takes to transition</li>
+            <li><code class="pre">transition-timing-function:</code> bezier curve or steps of transition</li>
+            <li><code class="pre">transition-delay:</code> time delay before transition starts</li>
+            <li><code class="pre">transition:</code> shorthand for the four transition properties</li>
+          </ul>
+          <p>These enable customization of the delay, timing, and duration of the transition between the two values of
+            the property that is being changed.</p>
+        </section>
+      </div>
 
 
 
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="resource">transition</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Shorthand property for <code>transition-property, transition-duration, transition-timing-function</code>, and <code>transition-delay</code>.</p>
-  <pre contenteditable> none | [ &lt;property> ] || &lt;duration> || &lt;timing-function> || &lt;delay> ]#</pre>
-  <p>One or more single-property transitions, separated by commas.</p>
-  <pre contenteditable>li ul:hover {
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="resource">transition</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Shorthand property for <code>transition-property, transition-duration, transition-timing-function</code>,
+            and <code>transition-delay</code>.</p>
+          <pre contenteditable> none | [ &lt;property> ] || &lt;duration> || &lt;timing-function> || &lt;delay> ]#</pre>
+          <p>One or more single-property transitions, separated by commas.</p>
+          <pre contenteditable>li ul:hover {
      transition: transform 200ms ease-in 50ms,
                  color 50ms linear;
   }</pre>
-  <p>Transition between two states of an element, like default and :hover or :invalid, or between a JS toggling of a class name.</p>
-</section>
-</div>
+          <p>Transition between two states of an element, like default and :hover or :invalid, or between a JS toggling
+            of a class name.</p>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property" target="resource">transition-property</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>CSS properties to which a transition effect should be applied</p>
-  <pre contenteditable>none | all | &lt;custom-ident>#</pre>
-  <p>Either <code>none</code>, or <code>all</code> and / or a comma-separated list</p>
-  <dl>
-    <dt>none</dt>
-    <dd>No properties will transition.</dd>
-    <dt>all</dt>
-    <dd>All properties that can transition will.</dd>
-    <dt>&lt;custom-ident></dt>
-    <dd>The comma-separated properties to which a transition effect should be applied</dd>
-  </dl><pre contenteditable>transition-duration: transform, color;</pre>
-  <p>If using all with other properties, define <code>all</code> first.</p>
-  <p>If a property is the list is invalid, but the syntax is correct, the property will be kept in the list so other properties align correctly</p>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property" target="resource">transition-property</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>CSS properties to which a transition effect should be applied</p>
+          <pre contenteditable>none | all | &lt;custom-ident>#</pre>
+          <p>Either <code>none</code>, or <code>all</code> and / or a comma-separated list</p>
+          <dl>
+            <dt>none</dt>
+            <dd>No properties will transition.</dd>
+            <dt>all</dt>
+            <dd>All properties that can transition will.</dd>
+            <dt>&lt;custom-ident></dt>
+            <dd>The comma-separated properties to which a transition effect should be applied</dd>
+          </dl>
+          <pre contenteditable>transition-duration: transform, color;</pre>
+          <p>If using all with other properties, define <code>all</code> first.</p>
+          <p>If a property is the list is invalid, but the syntax is correct, the property will be kept in the list so
+            other properties align correctly</p>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration" target="resource">transition-duration</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the length of time a transition animation should take to complete.</p>
-  <pre contenteditable>&lt;time>#</pre>
-  <dl><dt>&lt;time></dt>
-    <dd>In s for seconds or ms for milliseconds, set the amount of time the transition will take to go from the old value of a property to the new value should take, after it starts. A time of 0s indicates that no transition will happen, that is the switch between the two states will be instantaneous. Negative values are invalid.</dd>
-    </dl> 
-    <pre contenteditable>transition-duration: 200ms, 50ms;</pre>
-  <p>Each duration is applied to the corresponding property as specified by the <code>transition-property</code> property. If there are fewer durations than properties the duration list is repeated. Too many is OK too.</p>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration" target="resource">transition-duration</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets the length of time a transition animation should take to complete.</p>
+          <pre contenteditable>&lt;time>#</pre>
+          <dl>
+            <dt>&lt;time></dt>
+            <dd>In s for seconds or ms for milliseconds, set the amount of time the transition will take to go from the
+              old value of a property to the new value should take, after it starts. A time of 0s indicates that no
+              transition will happen, that is the switch between the two states will be instantaneous. Negative values
+              are invalid.</dd>
+          </dl>
+          <pre contenteditable>transition-duration: 200ms, 50ms;</pre>
+          <p>Each duration is applied to the corresponding property as specified by the <code>transition-property</code>
+            property. If there are fewer durations than properties the duration list is repeated. Too many is OK too.
+          </p>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function" target="resource">transition-timing-function</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Provide an acceleration curve to control the speed of the transition over its duration.</p>
-  <pre contenteditable class="multi">linear | ease | ease-in | ease-out | ease-in-out | start | end
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function" target="resource">transition-timing-function</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Provide an acceleration curve to control the speed of the transition over its duration.</p>
+          <pre contenteditable class="multi">linear | ease | ease-in | ease-out | ease-in-out | start | end
 cubic-bezier( n1, n2, n3, n4 ) | step-start | step-end  
 steps(&lt;int>, &lt;pos>) | jump-start | jump-end | jump-none | jump-both </pre>
-  <p>These will be described in huge detail in the animation section</p>
-     <pre contenteditable>transition-timing-function: ease-in, linear;</pre>
-   <p>Each timing function is applied to the corresponding property as specified by the <code>transition-property</code> property. If there are fewer timing functions than properties the timing function list is repeated. </p>
-</section>
-</div>
+          <p>These will be described in huge detail in the animation section</p>
+          <pre contenteditable>transition-timing-function: ease-in, linear;</pre>
+          <p>Each timing function is applied to the corresponding property as specified by the
+            <code>transition-property</code> property. If there are fewer timing functions than properties the timing
+            function list is repeated.
+          </p>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay" target="resource">transition-delay</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Specifies the time to wait before starting a property's transition effect when its value changes.</p>
-  
-  <pre contenteditable>&lt;time>#</pre>
-  <p>Specifies the amount of time to wait between a property's value changing and the start of the transition effect.</p> <ul><li>The value can be negative.</li> 
-    <li>If negative the transition starts part of the way thru the transition. </li><li>There will be no visible transition if the delay is longer than the duration.</li></ul>
-        <pre contenteditable>transition-duration: 50ms, 0ms;</pre>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay" target="resource">transition-delay</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Specifies the time to wait before starting a property's transition effect when its value changes.</p>
 
-   <p>Each delay is applied to the corresponding property as specified by the <code>transition-property</code> property. If there are fewer delays than properties, the delay list is repeated.</p>
-</section>
-</div>
+          <pre contenteditable>&lt;time>#</pre>
+          <p>Specifies the amount of time to wait between a property's value changing and the start of the transition
+            effect.</p>
+          <ul>
+            <li>The value can be negative.</li>
+            <li>If negative the transition starts part of the way thru the transition. </li>
+            <li>There will be no visible transition if the delay is longer than the duration.</li>
+          </ul>
+          <pre contenteditable>transition-duration: 50ms, 0ms;</pre>
+
+          <p>Each delay is applied to the corresponding property as specified by the <code>transition-property</code>
+            property. If there are fewer delays than properties, the delay list is repeated.</p>
+        </section>
+      </div>
 
 
 
 
-<!-- font transition example -->
-<div class="slide">
-<header><h1>transitions</h1>
-  </header>
-<section class="content">
-<pre contenteditable class="code">code {
+      <!-- font transition example -->
+      <div class="slide">
+        <header>
+          <h1>transitions</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable class="code">code {
    color: black;
    font-size: 85%;
    background-color: rgba(255,255,255,0.9);
@@ -276,20 +317,21 @@ code:hover {
    background-color: rgba(255,255,255,0.8);
 }
 </pre>
-<pre contenteditable class="code">code {
+          <pre contenteditable class="code">code {
    transition:
       color, font-size, background-color 2s ease-in 50ms;
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<!-- font transition example -->
-<div class="slide">
-<header><h1>transitions</h1>
-  </header>
-<section class="content">
-<pre contenteditable class="code code2">code {
+      <!-- font transition example -->
+      <div class="slide">
+        <header>
+          <h1>transitions</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable class="code code2">code {
    color: black;
    font-size: 85%;
    background-color: rgba(255,255,255,0.9);
@@ -302,27 +344,27 @@ code:hover {
    background-color: rgba(255,255,255,0.8);
 }
 </pre>
-<pre contenteditable class="code code2">code {
+          <pre contenteditable class="code code2">code {
    transition: transform 2s ease-in 50ms;
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>Animatable Properties</h1>
-  </header>
-</div>
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>Animatable Properties</h1>
+        </header>
+      </div>
 
-<!-- what can be transitioned? -->
-<div class="slide normal">
-     <header>
-    <h1>What can be transitioned?</h1>
-  </header>
-  <section class="content">
-     <p>Anything that has intermediate values</p>
-     <pre style="width: 40%; float:left;" class="yes">code {
+      <!-- what can be transitioned? -->
+      <div class="slide normal">
+        <header>
+          <h1>What can be transitioned?</h1>
+        </header>
+        <section class="content">
+          <p>Anything that has intermediate values</p>
+          <pre style="width: 40%; float:left;" class="yes">code {
   opacity: 1;
 }
 code:halfway {
@@ -331,7 +373,7 @@ code:halfway {
 code:hover {
   opacity: 0;
 }</pre>
-     <pre style="width: 40%; float:right;" class="no">code {
+          <pre style="width: 40%; float:right;" class="no">code {
   display: block;
 }
 code:halfway {
@@ -342,20 +384,20 @@ code:hover {
 }</pre>
 
 
-     </section>
- </div>
+        </section>
+      </div>
 
 
 
 
-<!-- what can be transitioned2? -->
-<div class="slide normal">
-     <header>
-    <h1>What can be transitioned?</h1>
-  </header>
-  <section class="content">
-     <p>2 values that have REAL intermediary values</p>
-     <pre style="width: 40%; float:left;" class="yes">code {
+      <!-- what can be transitioned2? -->
+      <div class="slide normal">
+        <header>
+          <h1>What can be transitioned?</h1>
+        </header>
+        <section class="content">
+          <p>2 values that have REAL intermediary values</p>
+          <pre style="width: 40%; float:left;" class="yes">code {
   font-size: 100%;
 }
 code:halfway {
@@ -364,7 +406,7 @@ code:halfway {
 code:hover {
   font-size: 120%;
 }</pre>
-     <pre style="width: 40%; float:right;" class="no">code {
+          <pre style="width: 40%; float:right;" class="no">code {
   height: auto;
 }
 code:halfway {
@@ -374,186 +416,194 @@ code:hover {
   height: 1000px;
 }</pre>
 
-     </section>
- </div>
+        </section>
+      </div>
 
-<!-- list of tranisitionable properties -->
-<div class="slide normal">
-     <header>
-    <h1><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="resource">Transitionable Properties</a></h1>
-  </header>
-     <section class="content" style="display: flex; flex-flow: wrap column; max-height: 85vh;list-style-type: none; margin-left: -10px; gap: 0 10px; font-family: monospace; font-size: 1.2rem;">
-    <span>all</span>
-    <span>backdrop-filter</span>
-    <span>background-color</span>
-    <span>background-position</span>
-    <span>background-size</span>
-    <span>border-color</span>
-    <span>border-radius</span>
-    <span>border-width</span>
-    <span>bottom</span>
-    <span>box-shadow</span>
-    <span>caret-color</span>
-    <span>clip</span>
-    <span>clip-path</span>
-    <span>color</span>
-    <span>column-count</span>
-    <span>column-gap</span>
-    <span>column-rule-color</span>
-    <span>column-rule-width</span>
-    <span>column-width</span>
-    <span>filter</span>
-    <span>flex-basis</span>
-    <span>flex-grow</span>
-    <span>flex-shrink</span>
-    <span>font-size</span>
-    <span>font-size-adjust</span>
-    <span>font-stretch</span>
-    <span>font-variation-settings</span>
-    <span>font-weight</span>
-    <span>gap</span>
-    <span>grid-column-gap</span>
-    <span>grid-gap</span>
-    <span>grid-row-gap</span>
-    <span>grid-template-columns</span>
-    <span>grid-template-rows</span>
-    <span>height</span>
-    <span>inset</span>
-    <span>inset-block</span>
-    <span>inset-block-end</span>
-    <span>inset-block-start</span>
-    <span>inset-inline</span>
-    <span>inset-inline-end</span>
-    <span>inset-inline-start</span>
-    <span>left</span>
-    <span>letter-spacing</span>
-    <span>line-clamp</span>
-    <span>line-height</span>
-    <span>margin</span>
-    <span>mask</span>
-    <span>mask-border</span>
-    <span>mask-position</span>
-    <span>mask-size</span>
-    <span>max-height</span>
-    <span>max-lines</span>
-    <span>max-width</span>
-    <span>min-height</span>
-    <span>min-width</span>
-    <span>object-position</span>
-    <span>offset-anchor</span>
-    <span>offset-distance</span>
-    <span>offset-path</span>
-    <span>offset-position</span>
-    <span>offset-rotate</span>
-    <span>opacity</span>
-    <span>order</span>
-    <span>outline-color</span>
-    <span>outline-offset</span>
-    <span>outline-width</span>
-    <span>padding</span>
-    <span>perspective</span>
-    <span>perspective-origin</span>
-    <span>right</span>
-    <span>rotate</span>
-    <span>row-gap</span>
-    <span>scale</span>
-    <span>scroll-margin</span>
-    <span>scroll-padding</span>
-    <span>scroll-snap-coordinate</span>
-    <span>scroll-snap-destination</span>
-    <span>scrollbar-color</span>
-    <span>shape-image-threshold</span>
-    <span>shape-margin</span>
-    <span>shape-outside</span>
-    <span>tab-size</span>
-    <span>text-decoration-color</span>
-    <span>text-emphasis-color</span>
-    <span>text-indent</span>
-    <span>text-shadow</span>
-    <span>top</span>
-    <span>transform</span>
-    <span>transform-origin</span>
-    <span>translate</span>
-    <span>vertical-align</span>
-    <span>visibility</span>
-    <span>width</span>
-    <span>word-spacing</span>
-    <span>z-index</span>
-    <span>zoom</span>
-     </section>
- </div>
-
-
-
-<!-- Tranform Features (or Limitations) -->
-<div class="slide normal">
-     <header>
-    <h1>Notes</h1>
-  </header>
-  <section class="content">
-<h3>Transition Features (or Limitations)</h3>
-<ul>
-  <li>Single Iteration</li>
-    <li>Reverse goes to initial state</li>
-    <li>No granular control</li>
-    <li>Limited methods of initiation</li>
-    <li>Can't force them to finish</li>
-</ul>
-<h3>Tips</h3>
-<p>If a property is the list is invalid, but the syntax is correct, the property will be kept in the list so other properties align correctly.</p>
-<p>Use <code>transition-delay</code> to chain transitions</p>
-<p>The order is important: The duration must come before the delay!</p>
-<p>Avoid transitioning to <code>auto</code></p>
-     </section>
- </div>
-
-<div class="slide">
-<header><h1>Discrete</h1>
-  </header>
-<section class="content"><code>visibility</code>
-</section>
-</div>
-
-<div class="slide">
-<section class="content" style="max-height: unset">
- <style contenteditable class="editme">input:valid {
-    background-color: green;
-}
-input:invalid {
-    background-color: red;
-    transition: 3s steps(3, end);
-}
-input:focus {   
-    background-color: yellow;
-}</style>
-<div><label>Number: <input type="number" min="0" max="10" step="2"></label></div>
-<pre>&lt;input type=number min=0 max=10 step=2></pre>
-</section>
-</div>
+      <!-- list of tranisitionable properties -->
+      <div class="slide normal">
+        <header>
+          <h1><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+              target="resource">Transitionable Properties</a></h1>
+        </header>
+        <section class="content"
+          style="display: flex; flex-flow: wrap column; max-height: 85vh;list-style-type: none; margin-left: -10px; gap: 0 10px; font-family: monospace; font-size: 1.2rem;">
+          <span>all</span>
+          <span>backdrop-filter</span>
+          <span>background-color</span>
+          <span>background-position</span>
+          <span>background-size</span>
+          <span>border-color</span>
+          <span>border-radius</span>
+          <span>border-width</span>
+          <span>bottom</span>
+          <span>box-shadow</span>
+          <span>caret-color</span>
+          <span>clip</span>
+          <span>clip-path</span>
+          <span>color</span>
+          <span>column-count</span>
+          <span>column-gap</span>
+          <span>column-rule-color</span>
+          <span>column-rule-width</span>
+          <span>column-width</span>
+          <span>filter</span>
+          <span>flex-basis</span>
+          <span>flex-grow</span>
+          <span>flex-shrink</span>
+          <span>font-size</span>
+          <span>font-size-adjust</span>
+          <span>font-stretch</span>
+          <span>font-variation-settings</span>
+          <span>font-weight</span>
+          <span>gap</span>
+          <span>grid-column-gap</span>
+          <span>grid-gap</span>
+          <span>grid-row-gap</span>
+          <span>grid-template-columns</span>
+          <span>grid-template-rows</span>
+          <span>height</span>
+          <span>inset</span>
+          <span>inset-block</span>
+          <span>inset-block-end</span>
+          <span>inset-block-start</span>
+          <span>inset-inline</span>
+          <span>inset-inline-end</span>
+          <span>inset-inline-start</span>
+          <span>left</span>
+          <span>letter-spacing</span>
+          <span>line-clamp</span>
+          <span>line-height</span>
+          <span>margin</span>
+          <span>mask</span>
+          <span>mask-border</span>
+          <span>mask-position</span>
+          <span>mask-size</span>
+          <span>max-height</span>
+          <span>max-lines</span>
+          <span>max-width</span>
+          <span>min-height</span>
+          <span>min-width</span>
+          <span>object-position</span>
+          <span>offset-anchor</span>
+          <span>offset-distance</span>
+          <span>offset-path</span>
+          <span>offset-position</span>
+          <span>offset-rotate</span>
+          <span>opacity</span>
+          <span>order</span>
+          <span>outline-color</span>
+          <span>outline-offset</span>
+          <span>outline-width</span>
+          <span>padding</span>
+          <span>perspective</span>
+          <span>perspective-origin</span>
+          <span>right</span>
+          <span>rotate</span>
+          <span>row-gap</span>
+          <span>scale</span>
+          <span>scroll-margin</span>
+          <span>scroll-padding</span>
+          <span>scroll-snap-coordinate</span>
+          <span>scroll-snap-destination</span>
+          <span>scrollbar-color</span>
+          <span>shape-image-threshold</span>
+          <span>shape-margin</span>
+          <span>shape-outside</span>
+          <span>tab-size</span>
+          <span>text-decoration-color</span>
+          <span>text-emphasis-color</span>
+          <span>text-indent</span>
+          <span>text-shadow</span>
+          <span>top</span>
+          <span>transform</span>
+          <span>transform-origin</span>
+          <span>translate</span>
+          <span>vertical-align</span>
+          <span>visibility</span>
+          <span>width</span>
+          <span>word-spacing</span>
+          <span>z-index</span>
+          <span>zoom</span>
+        </section>
+      </div>
 
 
 
-<!-- divider -->
-<div class="slide divider">
-  <header>
-    <h1>Events</h1>
-  </header>
-</div>
+      <!-- Tranform Features (or Limitations) -->
+      <div class="slide normal">
+        <header>
+          <h1>Notes</h1>
+        </header>
+        <section class="content">
+          <h3>Transition Features (or Limitations)</h3>
+          <ul>
+            <li>Single Iteration</li>
+            <li>Reverse goes to initial state</li>
+            <li>No granular control</li>
+            <li>Limited methods of initiation</li>
+            <li>Can't force them to finish</li>
+          </ul>
+          <h3>Tips</h3>
+          <p>If a property is the list is invalid, but the syntax is correct, the property will be kept in the list so
+            other properties align correctly.</p>
+          <p>Use <code>transition-delay</code> to chain transitions</p>
+          <p>The order is important: The duration must come before the delay!</p>
+          <p>Avoid transitioning to <code>auto</code></p>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>Discrete</h1>
+        </header>
+        <section class="content"><code>visibility</code>
+        </section>
+      </div>
+
+      <div class="slide">
+        <section class="content" style="max-height: unset">
+          <style contenteditable class="editme">
+            input:valid {
+              background-color: green;
+            }
+
+            input:invalid {
+              background-color: red;
+              transition: 3s steps(3, end);
+            }
+
+            input:focus {
+              background-color: yellow;
+            }
+          </style>
+          <div><label>Number: <input type="number" min="0" max="10" step="2"></label></div>
+          <pre>&lt;input type=number min=0 max=10 step=2></pre>
+        </section>
+      </div>
 
 
-<!-- Tranform Features (or Limitations) -->
-<div class="slide normal">
-     <header>
-    <h1><code>transitionend</code> event</h1>
-  </header>
-  <section class="content">
-<ul>
-  <li>Event thrown only when transition completes</li>
-    <li><code>transitionend</code> for EVERY property</li>
-    <li><code>transitionend</code> for each long-hand property within a shorthand</li>
-</ul>
 
-<pre contenteditable>table {
+      <!-- divider -->
+      <div class="slide divider">
+        <header>
+          <h1>Events</h1>
+        </header>
+      </div>
+
+
+      <!-- Tranform Features (or Limitations) -->
+      <div class="slide normal">
+        <header>
+          <h1><code>transitionend</code> event</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Event thrown only when transition completes</li>
+            <li><code>transitionend</code> for EVERY property</li>
+            <li><code>transitionend</code> for each long-hand property within a shorthand</li>
+          </ul>
+
+          <pre contenteditable>table {
   border: 1px black solid;
   transition: border 1s linear 50ms;
 }
@@ -561,70 +611,73 @@ table:hover {
   border: 5px red solid;
 }</pre>
 
-<ul style="column-count: 2;">
-  <li>border-top-color</li>
-  <li>border-right-color</li>
-  <li>border-bottom-color</li>
-  <li>border-left-color</li>
+          <ul style="column-count: 2;">
+            <li>border-top-color</li>
+            <li>border-right-color</li>
+            <li>border-bottom-color</li>
+            <li>border-left-color</li>
 
-  <li>border-top-width</li>
-  <li>border-right-width</li>
-  <li>border-bottom-width</li>
-  <li>border-left-width</li>
-</ul>
-</section>
- </div>
+            <li>border-top-width</li>
+            <li>border-right-width</li>
+            <li>border-bottom-width</li>
+            <li>border-left-width</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- Properties -->
-<div class="slide divider">
-  <header>
-    <h1>Examples</h1>
-  </header>
-</div>
+      <!-- Properties -->
+      <div class="slide divider">
+        <header>
+          <h1>Examples</h1>
+        </header>
+      </div>
 
-<!-- Useful example -->
-<div class="slide normal">
-     <header>
-    <h1>Putting it together in the Real World</h1>
-  </header>
-     <section class="content" style="min-height: 400px;">
+      <!-- Useful example -->
+      <div class="slide normal">
+        <header>
+          <h1>Putting it together in the Real World</h1>
+        </header>
+        <section class="content" style="min-height: 400px;">
 
-<nav>
-  <ul>
-      <li>About
-        <ul>
-            <li>Me</li>
-            <li>You</li>
-            <li>Them</li>
-            <li>Nobody</li>
-       </ul>
-        </li>
-        <li>Posts
-        <ul>
-            <li>Door Post</li>
-            <li>Wall hanging</li>
-            <li>Stair Banister</li>
-            <li>Washington</li>
-       </ul></li>
-        <li>Topics
-        <ul>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>SEO</li>
-       </ul></li>
-        <li>Events
-        <ul>
-            <li>Party</li>
-            <li>Dinner</li>
-            <li>Hike</li>
-            <li>Foo Camp</li>
-       </ul></li>
-   </ul>
-</nav>
- <pre contenteditable>nav ul li {
+          <nav>
+            <ul>
+              <li>About
+                <ul>
+                  <li>Me</li>
+                  <li>You</li>
+                  <li>Them</li>
+                  <li>Nobody</li>
+                </ul>
+              </li>
+              <li>Posts
+                <ul>
+                  <li>Door Post</li>
+                  <li>Wall hanging</li>
+                  <li>Stair Banister</li>
+                  <li>Washington</li>
+                </ul>
+              </li>
+              <li>Topics
+                <ul>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>SEO</li>
+                </ul>
+              </li>
+              <li>Events
+                <ul>
+                  <li>Party</li>
+                  <li>Dinner</li>
+                  <li>Hike</li>
+                  <li>Foo Camp</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <pre contenteditable>nav ul li {
   list-style-type: none;
 }
 nav > ul > li {
@@ -641,34 +694,35 @@ nav ul ul {
 nav li:hover ul {
   transform: scale(1,1);
 }</pre>
-     </section>
- </div>
+        </section>
+      </div>
 
 
-<div class="slide divider">
-  <header>
-    <h1>Exercise</h1>
-  </header>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>Exercise</h1>
+        </header>
+      </div>
 
- <!-- card flip --> 
-<div class="slide normal">
-<header><h1>Pick a card</h1>
-  </header>
-<section class="content">
-    <div class="card">
-        <div class="front"></div>
-        <div class="back">♥</div>
-    </div>
-    <div class="card">
-        <div class="front"></div>
-        <div class="back" style="color: black">♣</div>
-    </div>
-    <div class="card">
-        <div class="front"></div>
-        <div class="back">♦</div>
-    </div>
-    <pre contenteditable style="height:500px; overflow:scroll; float: right;">.card {
+      <!-- card flip -->
+      <div class="slide normal">
+        <header>
+          <h1>Pick a card</h1>
+        </header>
+        <section class="content">
+          <div class="card">
+            <div class="front"></div>
+            <div class="back">♥</div>
+          </div>
+          <div class="card">
+            <div class="front"></div>
+            <div class="back" style="color: black">♣</div>
+          </div>
+          <div class="card">
+            <div class="front"></div>
+            <div class="back">♦</div>
+          </div>
+          <pre contenteditable style="height:500px; overflow:scroll; float: right;">.card {
   position: absolute;
   perspective: 600px;
 }
@@ -706,47 +760,47 @@ nav li:hover ul {
   transform: rotate(10deg) translatey(180px);
 }
 </pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
 
 
-<div class="slide intro">
-     <header>
-    <h1>Animations</h1>
-  </header>
-  <section class="content">
-     </section>
- </div>
+      <div class="slide intro">
+        <header>
+          <h1>Animations</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
 
 
-<div class="slide normal">
-     <header>
-    <h1>Animation Features (or limitations)</h1>
-  </header>
-  <section class="content">
- <ul>
-	<li>Single, many or infinite iterations</li>
-	<li>Single or bi-directional</li>
-    <li>Granular control</li>
-    <li>Can be initiated on page load</li>
-    <li>Has more robust JS Hooks</li>
-    <li>Can be paused</li>
-    <li>Lowest priority in UI Thread</li>
-</ul>
-     </section>
- </div>
+      <div class="slide normal">
+        <header>
+          <h1>Animation Features (or limitations)</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Single, many or infinite iterations</li>
+            <li>Single or bi-directional</li>
+            <li>Granular control</li>
+            <li>Can be initiated on page load</li>
+            <li>Has more robust JS Hooks</li>
+            <li>Can be paused</li>
+            <li>Lowest priority in UI Thread</li>
+          </ul>
+        </section>
+      </div>
 
 
-<div class="slide normal">
- <header>
-    <h1>Animation Essentials</h1>
- </header>
- <section class="content"><code>
+      <div class="slide normal">
+        <header>
+          <h1>Animation Essentials</h1>
+        </header>
+        <section class="content"><code>
      <ul>
         <li>@keyframes</li>
         <li>animation-name</li>
@@ -758,146 +812,171 @@ nav li:hover ul {
         <li>animation-delay</li>
         <li>animation-fill-mode</li>
         <li>animation </code>(shorthand)</li>
-      </ul>
- </section>
-</div>
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- Keyframes -->
-<div class="slide divider">
-  <header>
-    <h1>Keyframes</h1>
-  </header>
-</div>
+      <!-- Keyframes -->
+      <div class="slide divider">
+        <header>
+          <h1>Keyframes</h1>
+        </header>
+      </div>
 
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="resource">@keyframes</a></code> at-rule</h1>
-  </header>
-<section class="content">
-  <p>An at-rule that controls the intermediate steps in a CSS animation sequence by defining styles for keyframes along the animation sequence. </p>
-  <pre contenteditable>@keyframes &lt;name> {
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="resource">@keyframes</a></code>
+            at-rule
+          </h1>
+        </header>
+        <section class="content">
+          <p>An at-rule that controls the intermediate steps in a CSS animation sequence by defining styles for
+            keyframes along the animation sequence. </p>
+          <pre contenteditable>@keyframes &lt;name> {
   [ &lt;keyframe-selector># {
     &lt;property-value-list>
   }]#
 }</pre>
-<p>JavaScript can access via the <code>CSSKeyframesRule</code> interface.</p>
-  <p>Provides more control over transitions: alllow for intermediate steps</p>
-</section>
-</div>
+          <p>JavaScript can access via the <code>CSSKeyframesRule</code> interface.</p>
+          <p>Provides more control over transitions: alllow for intermediate steps</p>
+        </section>
+      </div>
 
 
-<div class="slide intro">
-     <header>
-    <h1>@Keyframes</h1>
-  </header>
-  <section class="content">
-      <pre contenteditable><b>@keyframes</b> ...</pre>
-     </section>
- </div>
+      <div class="slide intro">
+        <header>
+          <h1>@Keyframes</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable><b>@keyframes</b> ...</pre>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-  <header>
-    <h1>Name your keyframe animation</h1>
-  </header>
-    <section class="content">
-    <pre contenteditable>@keyframes <b>clever_name_here</b> ...
+      <div class="slide">
+        <header>
+          <h1>Name your keyframe animation</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>@keyframes <b>clever_name_here</b> ...
 </pre>
-      <ul>
-        <li>Identifier or string</li>
-        <li><strike>Unquoted</strike> Can now be!</li>
-        <li>If unquoted:
-  <ul>        <li>Characters [a-zA-Z0-9], -, _ and ISO 10646 characters U+00A0 and higher</li>
-        <li>ISO 10646 = Universal Character Set = Unicode standard</li>
-        <li>[-_a-zA-Z0-9\u00A0-\u10FFFF]</li>
-        <li>Can't start [0-9], -- , or hyphen+digit</li>
-        <li>Can contain escaped: <br/>Q&A! may be written as Q\&A\! or Q\26 A\21</li></ul></li><li>Avoid using CSS property names or keyword values</li>
-        <li>Each animation should have a different name!</li>
-      </ul>
-    </section>
-</div>
+          <ul>
+            <li>Identifier or string</li>
+            <li><strike>Unquoted</strike> Can now be!</li>
+            <li>If unquoted:
+              <ul>
+                <li>Characters [a-zA-Z0-9], -, _ and ISO 10646 characters U+00A0 and higher</li>
+                <li>ISO 10646 = Universal Character Set = Unicode standard</li>
+                <li>[-_a-zA-Z0-9\u00A0-\u10FFFF]</li>
+                <li>Can't start [0-9], -- , or hyphen+digit</li>
+                <li>Can contain escaped: <br />Q&A! may be written as Q\&A\! or Q\26 A\21</li>
+              </ul>
+            </li>
+            <li>Avoid using CSS property names or keyword values</li>
+            <li>Each animation should have a different name!</li>
+          </ul>
+        </section>
+      </div>
 
-<div class="slide">
-  <header>
-    <h1>What's in a name?</h1>
-  </header>
-  <section class="content"><style contenteditable class="editme">.keyframeName {
-  animation: ✎🥳 infinite 3s alternate;
-}
-@keyframes ✎🥳 {
-  from, 30% { background-color: #030; }
-  to { background-color: #393; }
-}</style>
-    <div class="keyframeName">Identifier: unquoted characters [a-zA-Z0-9] and ISO 10646 characters U+00A0 and higher, plus the hyphen (-) and the underscore (_). Try name, paused, Q&A!, Q\&A\!, Q\26 A\21 and âœŽ</div>
-<style>
-.keyframeName {
-  padding: 20px; margin: 20px;
-  border: 5px black solid !important;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 2rem;
-}
-</style>
-  </section>
-    </div>
+      <div class="slide">
+        <header>
+          <h1>What's in a name?</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .keyframeName {
+              animation: ✎🥳 infinite 3s alternate;
+            }
+
+            @keyframes ✎🥳 {
+
+              from,
+              30% {
+                background-color: #030;
+              }
+
+              to {
+                background-color: #393;
+              }
+            }
+          </style>
+          <div class="keyframeName">Identifier: unquoted characters [a-zA-Z0-9] and ISO 10646 characters U+00A0 and
+            higher, plus the hyphen (-) and the underscore (_). Try name, paused, Q&A!, Q\&A\!, Q\26 A\21 and âœŽ</div>
+          <style>
+            .keyframeName {
+              padding: 20px;
+              margin: 20px;
+              border: 5px black solid !important;
+              color: white;
+              font-family: sans-serif;
+              text-align: center;
+              font-size: 2rem;
+            }
+          </style>
+        </section>
+      </div>
 
 
-<div class="slide">
-   <header>
-    <h1>at-rule</h1>
-  </header>
-  <section class="content">
-      <pre contenteditable>@keyframes slides <b>{</b>
+      <div class="slide">
+        <header>
+          <h1>at-rule</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>@keyframes slides <b>{</b>
 
 <b>}</b></pre>
-     </section>
- </div>
+        </section>
+      </div>
 
 
 
 
-<div class="slide divider">
-<header><h1>Keyframe Selectors</h1>
-  </header>
-<section class="content">
-</section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>Keyframe Selectors</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1>Keyframe Selectors</h1>
-  </header>
-<section class="content">
-  <p>Specifies percentages along the animation when the keyframe occurs.</p>
-  <pre contenteditable>[ from | to | &lt;percentage> ]</pre>
-  <dl>
-    <dt>from</dt>
-    <dd>0%</dd>
-    <dt>to</dt>
-    <dd>100%</dd>
-    <dt>&lt;percentage></dt>
-    <dd>A percentage of the time through the animation sequence at which the specified keyframe should occur.</dd>
-  </dl>
-  <ul>
-  <li>Multiple percentage values for a keyframe block are separated by commas</li>
-  <li>They don't have to be in ascending order, but it helps make it more readable</li>
-  <li>Cascades like the rest of CSS</li>
-</ul>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Keyframe Selectors</h1>
+        </header>
+        <section class="content">
+          <p>Specifies percentages along the animation when the keyframe occurs.</p>
+          <pre contenteditable>[ from | to | &lt;percentage> ]</pre>
+          <dl>
+            <dt>from</dt>
+            <dd>0%</dd>
+            <dt>to</dt>
+            <dd>100%</dd>
+            <dt>&lt;percentage></dt>
+            <dd>A percentage of the time through the animation sequence at which the specified keyframe should occur.
+            </dd>
+          </dl>
+          <ul>
+            <li>Multiple percentage values for a keyframe block are separated by commas</li>
+            <li>They don't have to be in ascending order, but it helps make it more readable</li>
+            <li>Cascades like the rest of CSS</li>
+          </ul>
+        </section>
+      </div>
 
-<div class="slide">
-   <header>
-    <h1>Keyframes</h1>
-  </header>
-  <section class="content">
-     <b class="pencil pencil_01">✎</b>
-     <pre contenteditable>@keyframes writing {
+      <div class="slide">
+        <header>
+          <h1>Keyframes</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_01">✎</b>
+          <pre contenteditable>@keyframes writing {
     <b>from</b> {
       <i>left: 0;</i>
     }
@@ -905,18 +984,18 @@ nav li:hover ul {
       <i>left: 100%;</i>
     }
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-    <header>
-    <h1>Keyframes</h1>
-  </header>
-    <section class="content">
-     <b class="pencil pencil_01">✎</b>
-    <pre contenteditable>@keyframes writing {
+      <div class="slide">
+        <header>
+          <h1>Keyframes</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_01">✎</b>
+          <pre contenteditable>@keyframes writing {
     <b>0%</b> {
       left: 0;
     }
@@ -926,45 +1005,57 @@ nav li:hover ul {
     }
 }</pre>
 
-	<p>Don't forget the <b class="imp" style="border-bottom:double 3px;">%</b></p>
-    <p>Quote on the animation name are optional in most cases</p>
-     </section>
-</div>
+          <p>Don't forget the <b class="imp" style="border-bottom:double 3px;">%</b></p>
+          <p>Quote on the animation name are optional in most cases</p>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1>No 0% or 100%</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme mini">.no0or100 {
-  animation: no0or100 infinite 10s alternate;
-  background-color: red;  border: 1px black solid;
-}
-@keyframes no0or100 {
-  45% { background-color: green; border-width: 10px;}
-  55% { background-color: blue; border-width: 20px;}
-}</style>
-<pre class="no0or100" style="color: var(--invertedtext)">@keyframes no0or100 {
+      <div class="slide">
+        <header>
+          <h1>No 0% or 100%</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme mini">
+            .no0or100 {
+              animation: no0or100 infinite 10s alternate;
+              background-color: red;
+              border: 1px black solid;
+            }
+
+            @keyframes no0or100 {
+              45% {
+                background-color: green;
+                border-width: 10px;
+              }
+
+              55% {
+                background-color: blue;
+                border-width: 20px;
+              }
+            }
+          </style>
+          <pre class="no0or100" style="color: var(--invertedtext)">@keyframes no0or100 {
   0% { background-color: red; border-width: 1px;}
   45% { background-color: green; border-width: 10px; }
   55% { background-color: blue;  border-width: 20px;}
   100% { background-color: red; border-width: 1px;}
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
 
-<!-- writing while tired -->
-<div class="slide">
-    <header>
-    	<h1>Granular animation control</h1>
-    </header>
-    <section class="content">
-     <b class="pencil pencil_03">✎</b>
-    <pre contenteditable>@keyframes writingWhileTired {
+      <!-- writing while tired -->
+      <div class="slide">
+        <header>
+          <h1>Granular animation control</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_03">✎</b>
+          <pre contenteditable>@keyframes writingWhileTired {
     <b>0%</b> {
       left: 0;
     }
@@ -978,49 +1069,68 @@ nav li:hover ul {
       left: 100%;
     }
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1>Duplicate Keyframes?</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme">.duplicatesNoProblem {
-  animation: duplicate infinite 7s alternate;
-  background-color: red; opacity: 1;
-}
-@keyframes duplicate {
-  45% { background-color: green; }
-  45% { opacity: .5;}
-  55% { background-color: blue; }
-  55% { opacity: .7;}
-  }</style>
-</section>
-<pre class="duplicatesNoProblem" style="color: var(--invertedtext);" contenteditable>@keyframes duplicate {
+      <div class="slide">
+        <header>
+          <h1>Duplicate Keyframes?</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .duplicatesNoProblem {
+              animation: duplicate infinite 7s alternate;
+              background-color: red;
+              opacity: 1;
+            }
+
+            @keyframes duplicate {
+              45% {
+                background-color: green;
+              }
+
+              45% {
+                opacity: .5;
+              }
+
+              55% {
+                background-color: blue;
+              }
+
+              55% {
+                opacity: .7;
+              }
+            }
+          </style>
+        </section>
+        <pre class="duplicatesNoProblem" style="color: var(--invertedtext);" contenteditable>@keyframes duplicate {
   45% { background-color: green; 
         opacity: .5; }
   55% { background-color: blue; 
         opacity: .7; }
   }</pre>
-</div>
+      </div>
 
 
-<div class="slide divider">
-<header><h1>Properties</h1>
-  </header>
-<section class="content">
-</section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>Properties</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1>Declarating List</h1>
-  </header>
-<section class="content">
-  <p>Every keyframe selector list has an associated &lt;property-value-list>, better known as the declaration list</p>
-  <pre contenteditable>@keyframes 'myUniqueAnimation' {
+      <div class="slide">
+        <header>
+          <h1>Declarating List</h1>
+        </header>
+        <section class="content">
+          <p>Every keyframe selector list has an associated &lt;property-value-list>, better known as the declaration
+            list</p>
+          <pre contenteditable>@keyframes 'myUniqueAnimation' {
   from {        <i>/* 0% property: values */</i>
     opacity: 1.0; color: red;     
   }
@@ -1034,18 +1144,18 @@ nav li:hover ul {
     opacity: 0.9; color: orange;  
   }
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<!-- making a W -->
-<div class="slide">
-   <header>
-     	<h1>Animating multiple properties</h1>
-     </header>
-  <section class="content">
-     <b class="pencil pencil_04">✎</b>
-     <pre contenteditable>@keyframes <b>W</b> {
+      <!-- making a W -->
+      <div class="slide">
+        <header>
+          <h1>Animating multiple properties</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_04">✎</b>
+          <pre contenteditable>@keyframes <b>W</b> {
     0% {
       <b>left:</b> 0;
       <b>top:</b> 0;
@@ -1061,18 +1171,18 @@ nav li:hover ul {
       <b>top:</b> 0;
     }
 }</pre>
-     </section>
-</div>
+        </section>
+      </div>
 
 
-<!-- 3d transofmr -->
-<div class="slide" id="acsst">
-    <header>
-    	<h1>Animating CSS Transforms</h1>
-    </header>
-    <section class="content">
-     <b class="pencil pencil_05">✎</b>
-    <pre contenteditable>@<u></u>keyframes gettingThePencil {
+      <!-- 3d transofmr -->
+      <div class="slide" id="acsst">
+        <header>
+          <h1>Animating CSS Transforms</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_05">✎</b>
+          <pre contenteditable>@<u></u>keyframes gettingThePencil {
   0%{
     <u></u>transform:
       translate3d(0, 0, 0)
@@ -1088,40 +1198,51 @@ nav li:hover ul {
   }
 }
 </pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code>!important</code> it isn't</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme mini">.notImportant {
-  animation: important infinite 10s alternate;
-  background: red;   border: 5px black solid;
-}
-@keyframes important {
-  45% { background: green; }
-  55% { background: blue !important; border-width: 20px !important;
-  }
-}</style>
+      <div class="slide">
+        <header>
+          <h1><code>!important</code> it isn't</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme mini">
+            .notImportant {
+              animation: important infinite 10s alternate;
+              background: red;
+              border: 5px black solid;
+            }
 
-<pre class="notImportant mini" style="color: var(--invertedtext)"> @keyframes important {
+            @keyframes important {
+              45% {
+                background: green;
+              }
+
+              55% {
+                background: blue !important;
+                border-width: 20px !important;
+              }
+            }
+          </style>
+
+          <pre class="notImportant mini" style="color: var(--invertedtext)"> @keyframes important {
   0% { background-color: red;}
   45% { background-color: green; }
   100% { background-color: red;}
 }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
-<!-- HEADING SLIDE -->
-<div class="slide intro">
-     <header style="margin-top: 25%; box-shadow: -1px -1px 1px rgba(0,0,0,0.2), 1px 1px 1px rgba(0,0,0,0.2)"><h1>But nothing is <br>
-animated yet!</h1>
-  </header>
- </div>
+      <!-- HEADING SLIDE -->
+      <div class="slide intro">
+        <header style="margin-top: 25%; box-shadow: -1px -1px 1px rgba(0,0,0,0.2), 1px 1px 1px rgba(0,0,0,0.2)">
+          <h1>But nothing is <br>
+            animated yet!</h1>
+        </header>
+      </div>
 
 
 
@@ -1129,13 +1250,14 @@ animated yet!</h1>
 
 
 
-<!-- base CSS -->
-<div class="slide normal">
-     <header>
-    <h1>Base CSS</h1>
-  </header>
-  <section class="content"><div class="pencilanim pencil" style="position: absolute;"></div>
-<pre contenteditable style="line-height: 1.1"><b>.pencil {
+      <!-- base CSS -->
+      <div class="slide normal">
+        <header>
+          <h1>Base CSS</h1>
+        </header>
+        <section class="content">
+          <div class="pencilanim pencil" style="position: absolute;"></div>
+          <pre contenteditable style="line-height: 1.1"><b>.pencil {
     width:100px;
     text-align: right;
     border-bottom: 10px solid;
@@ -1146,7 +1268,7 @@ animated yet!</h1>
   	bottom: -20px;
   	right: -10px;
 }</b></pre>
-<pre contenteditable>@keyframes drawALine {
+          <pre contenteditable>@keyframes drawALine {
   0%{
     width:0;
     color:green;
@@ -1156,393 +1278,475 @@ animated yet!</h1>
     color:blue;
   }
 }</pre>
-</section>
- </div>
+        </section>
+      </div>
 
 
-<div class="slide divider">
-  <header>
-      <h1>Minimum requirements: <br/>name and duration</h1>
-    </header>
-  </div>
+      <div class="slide divider">
+        <header>
+          <h1>Minimum requirements: <br />name and duration</h1>
+        </header>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name" target="resource">animation-name</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets one or more animations to apply to an element.</p>
-  <pre contenteditable>[ none | &lt;keyframes-name> ]#</pre>
-  <p>Each name is an <code>@keyframes</code> at-rule that sets the property values for the animation sequence.</p>
-  <pre contenteditable>animation-name: red, blue, green, green, green;}</pre>
-  <ul>
-  <li>You can set the same animation on an element more than once</li>
-  <li>Comma separate the animation names</li>
-  <li>If "none" or no animation name is set, there will be no animation</li>
-  <li>You can quote the names, but if it is a valid &lt;ident>, you don't have to.</li>
-</ul>
-</section>
-</div>
-
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration" target="resource">animation-duration</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the length of time that an animation takes to complete one cycle.</p>
-  <pre contenteditable>&lt;time>#</pre>
-  <p>A comma separated list of times in seconds (s) or milliseconds (ms).</p>
-  <pre contenteditable>animation-duration: 200ms, 300ms, 2s, 200ms, 200ms;</pre>
-  <p>If there are more animation names than durations, the list will repeat. If there are more durations than animation, the extra durations will be ignored.</p>
-  <p>Negative values are ignored.</p>
-  <p>You must include the unit, even if the value is zero.</p>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name" target="resource">animation-name</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets one or more animations to apply to an element.</p>
+          <pre contenteditable>[ none | &lt;keyframes-name> ]#</pre>
+          <p>Each name is an <code>@keyframes</code> at-rule that sets the property values for the animation sequence.
+          </p>
+          <pre contenteditable>animation-name: red, blue, green, green, green;}</pre>
+          <ul>
+            <li>You can set the same animation on an element more than once</li>
+            <li>Comma separate the animation names</li>
+            <li>If "none" or no animation name is set, there will be no animation</li>
+            <li>You can quote the names, but if it is a valid &lt;ident>, you don't have to.</li>
+          </ul>
+        </section>
+      </div>
 
 
-<!-- Name and duration -->
-<div class="slide" id="animdur">
 
-	<header>
-     	<h1><code>animation-name</code> and <code>animation-duration</code></h1>
-    </header>
-    <section class="content"><div id="animationduration" class="pencil pencilanim"></div>
-	<pre contenteditable>.pencil { <input type="range" value="3" min="1" max="15" step="1" id="speedrange"/>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration" target="resource">animation-duration</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets the length of time that an animation takes to complete one cycle.</p>
+          <pre contenteditable>&lt;time>#</pre>
+          <p>A comma separated list of times in seconds (s) or milliseconds (ms).</p>
+          <pre contenteditable>animation-duration: 200ms, 300ms, 2s, 200ms, 200ms;</pre>
+          <p>If there are more animation names than durations, the list will repeat. If there are more durations than
+            animation, the extra durations will be ignored.</p>
+          <p>Negative values are ignored.</p>
+          <p>You must include the unit, even if the value is zero.</p>
+        </section>
+      </div>
+
+
+      <!-- Name and duration -->
+      <div class="slide" id="animdur">
+
+        <header>
+          <h1><code>animation-name</code> and <code>animation-duration</code></h1>
+        </header>
+        <section class="content">
+          <div id="animationduration" class="pencil pencilanim"></div>
+          <pre contenteditable>.pencil { <input type="range" value="3" min="1" max="15" step="1" id="speedrange"/>
    <b><u></u>animation-name: drawALine;
 <u></u>animation-duration: <span class="changer">3</span>s;</b>
   }</pre>
-</section>
-<script defer>
- function changeDuration(){
-   var speed = document.getElementById('speedrange').value;
-   var el = document.getElementById('animationduration');
-   el.style.animation =  'drawALine ' + speed + 's';
-   var seconds = document.querySelectorAll("#animdur span.changer");
-   for(var i = 0, j = seconds.length; i < j; i++){
-     seconds[i].innerHTML = speed;
-   }
- }
- document.getElementById('speedrange').addEventListener('change', function() {
-    changeDuration();
-    setTimeout(function(){
-        document.getElementById('animationduration').setAttribute('style', '');
-      },
-      document.getElementById('speedrange').value*1000);
-  });
-</script>
-</div>
+        </section>
+        <script defer>
+          function changeDuration() {
+            var speed = document.getElementById('speedrange').value;
+            var el = document.getElementById('animationduration');
+            el.style.animation = 'drawALine ' + speed + 's';
+            var seconds = document.querySelectorAll("#animdur span.changer");
+            for (var i = 0, j = seconds.length; i < j; i++) {
+              seconds[i].innerHTML = speed;
+            }
+          }
+          document.getElementById('speedrange').addEventListener('change', function () {
+            changeDuration();
+            setTimeout(function () {
+              document.getElementById('animationduration').setAttribute('style', '');
+            },
+              document.getElementById('speedrange').value * 1000);
+          });
+        </script>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>Order of Precedence</h1>
-  </header>
-<section class="content">
- <style contenteditable class="editme">.order {
-  animation:5s 1 forwards;
-  animation-name: red, green, blue;
- }</style>
-<div class="order"><p>Whichever animation happens last is the background-color I will permanently be</p></div>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Order of Precedence</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            .order {
+              animation: 5s 1 forwards;
+              animation-name: red, green, blue;
+            }
+          </style>
+          <div class="order">
+            <p>Whichever animation happens last is the background-color I will permanently be</p>
+          </div>
+        </section>
+      </div>
 
-<style>
-.order {
-  padding: 20px;
-  border: 5px var(--colorpop) solid;
-  color: var(--invertedtext);
-  text-align: center;
-}
+      <style>
+        .order {
+          padding: 20px;
+          border: 5px var(--colorpop) solid;
+          color: var(--invertedtext);
+          text-align: center;
+        }
 
-#blue {
-  float: right;
-  width: 20%;
-  margin-right: 20px; 
-  padding: 20px;
-}
+        #blue {
+          float: right;
+          width: 20%;
+          margin-right: 20px;
+          padding: 20px;
+        }
 
-@keyframes red {
-  from, 30%{
-    background-color: #fdd;
-  }
-  to {
-    background-color: #f33;
-  }
-}
+        @keyframes red {
 
-@keyframes green {
-  from, 30%{
-    background-color: #dfd;
-  }
-  to {
-    background-color: #393;
-  }
-}
+          from,
+          30% {
+            background-color: #fdd;
+          }
 
-@keyframes blue {
-  from, 30%{
-    background-color: #ddf;
-  }
-  to {
-    background-color: #33f;
-  }
-}</style>
+          to {
+            background-color: #f33;
+          }
+        }
 
+        @keyframes green {
 
-<div class="slide">
-<header><h1>Specificity</h1>
-  </header>
-<section class="content" style="display: flex; justify-content: space-around; align-items: flex-start; padding-top: 1em">
+          from,
+          30% {
+            background-color: #dfd;
+          }
 
+          to {
+            background-color: #393;
+          }
+        }
 
-<style contenteditable class="editme">#blue {
-  background-color: #9999ff;
-  color: var(--invertedtext);
-}
-[id="blue"] {
-  border: 5px black solid !important;
-  background-color: var(--colorpop) !important;
-  animation: 3s 1 green forwards;
-}</style>
-<div id="blue"><p>Based on important, I should be the same color as the header. Based on ID I should be blue. Based on animation, green. </p>
-<p>Some browsers override erroneously override !important. This is against the specification</p>
-<p>Based on the spec I should be the !important color from the non-animated state. If no important is set, I should be the animation's color.</div>
-</section>
-</div>
+        @keyframes blue {
 
-<div class="slide divider">
-<header><h1><code>animation-timing-function</code></h1>
-  </header>
-</div>
+          from,
+          30% {
+            background-color: #ddf;
+          }
+
+          to {
+            background-color: #33f;
+          }
+        }
+      </style>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets how the animation progresses through the duration of a full animation iteration.</p>
-  <pre contenteditable class="multi">linear | ease | ease-in | ease-out | ease-in-out | start | end
+      <div class="slide">
+        <header>
+          <h1>Specificity</h1>
+        </header>
+        <section class="content"
+          style="display: flex; justify-content: space-around; align-items: flex-start; padding-top: 1em">
+
+
+          <style contenteditable class="editme">
+            #blue {
+              background-color: #9999ff;
+              color: var(--invertedtext);
+            }
+
+            [id="blue"] {
+              border: 5px black solid !important;
+              background-color: var(--colorpop) !important;
+              animation: 3s 1 green forwards;
+            }
+          </style>
+          <div id="blue">
+            <p>Based on important, I should be the same color as the header. Based on ID I should be blue. Based on
+              animation, green. </p>
+            <p>Some browsers override erroneously override !important. This is against the specification</p>
+            <p>Based on the spec I should be the !important color from the non-animated state. If no important is set, I
+              should be the animation's color.
+          </div>
+        </section>
+      </div>
+
+      <div class="slide divider">
+        <header>
+          <h1><code>animation-timing-function</code></h1>
+        </header>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets how the animation progresses through the duration of a full animation iteration.</p>
+          <pre contenteditable class="multi">linear | ease | ease-in | ease-out | ease-in-out | start | end
 cubic-bezier( n1, n2, n3, n4 ) | step-start | step-end  
 steps(&lt;int>, &lt;pos>) | jump-start | jump-end | jump-none | jump-both </pre>
-   <p>The non-step keyword values are actually cubic Bézier curves with predefined four point values. Use the <code>cubic-bezier()</code> function for non-predefined values.</p><p> The step timing functions divide the input time into a specified number of intervals that are equal in length, with a number of steps and a step position.</p>
+          <p>The non-step keyword values are actually cubic Bézier curves with predefined four point values. Use the
+            <code>cubic-bezier()</code> function for non-predefined values.
+          </p>
+          <p> The step timing functions divide the input time into a specified number of intervals that are equal in
+            length, with a number of steps and a step position.</p>
 
 
-     <pre contenteditable="">animation-timing-function: ease-in, linear;</pre>
-     <p>Each timing function is applied to the corresponding animation as specified by the <code>animation-name</code> property. If there are fewer timing functions than animations the timing function list is repeated. </p>
-</section>
-</div>
-
-
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code> bezier curves</h1>
-  </header>
-<section class="content">
-<dl>
-  <dt>ease</dt>
-    <dd>Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity towards the middle of the animation, slowing back down at the end.</dd>
-<dt>linear</dt>
-    <dd>Equal to cubic-bezier(0.0, 0.0, 1.0, 1.0), animates at an even speed.</dd>
-<dt>ease-in</dt>
-    <dd>Equal to cubic-bezier(0.42, 0, 1.0, 1.0), starts off slowly, with the speed of the transition of the animating properting increasing until complete.</dd>
-<dt>ease-out</dt>
-    <dd>Equal to cubic-bezier(0, 0, 0.58, 1.0), starts quickly, slowing down the animation continues.</dd>
-<dt>ease-in-out</dt>
-    <dd>Equal to cubic-bezier(0.42, 0, 0.58, 1.0), with the animating properties slowly transitioning, speeding up, and then slowing down again.</dd>
-<dt>cubic-bezier(p1, p2, p3, p4)</dt>
-    <dd>An author defined cubic-bezier curve, where the p1 and p3 values must be in the range of 0 to 1.</dd>
-</dl>
-</section>
-</div>
-
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code> non-bezier values</h1>
-  </header>
-<section class="content">
-
-<dl>
-<dt>steps(n, &lt;jumpterm>)</dt>
-    <dd>Displays an animation iteration along n stops along the transition, displaying each stop for equal lengths of time. For example, if n is 5,  there are 5 steps. Whether the animation holds temporarily at 0%, 20%, 40%, 60% and 80%, on the 20%, 40%, 60%, 80% and 100%, or makes 5 stops between the 0% and 100% along the animation, or makes 5 stops including the 0% and 100% marks (on the 0%, 25%, 50%, 75%, and 100%) depends on which of the following jump terms is used:</dd>
-    <dl>
-    <dt>jump-start</dt>
-        <dd>Denotes a left-continuous function, so that the first jump happens when the animation begins;</dd>
-    <dt>jump-end</dt>
-        <dd>Denotes a right-continuous function, so that the last jump happens when the animation ends;</dd>
-    <dt>jump-none</dt>
-        <dd>There is no jump on either end. Instead, holding at both the 0% mark and the 100% mark, each for 1/n of the duration.</dd>
-    <dt>jump-both</dt>
-        <dd>Includes pauses at both the 0% and 100% marks, effectively adding a step during the animation iteration.</dd>
-    <dt>start</dt>
-        <dd>Same as jump-start.</dd>
-    <dt>end</dt>
-        <dd>Same as jump-end.</dd>
-    </dl>
-  </dd>
-<dt>step-start</dt>
-    <dd>Equal to steps(1, jump-start)</dd>
-<dt>step-end</dt>
-    <dd>Equal to steps(1, jump-end)</dd>
-</dl>
-
-</section>
-</div>
+          <pre contenteditable="">animation-timing-function: ease-in, linear;</pre>
+          <p>Each timing function is applied to the corresponding animation as specified by the
+            <code>animation-name</code> property. If there are fewer timing functions than animations the timing
+            function list is repeated.
+          </p>
+        </section>
+      </div>
 
 
 
- <!-- timing function -->
-<div class="slide" id="animtf">
-    <header style="position:absolute; width: 100%;">
-    	<h1>&lsquo;animation-timing-function&rsquo;</h1>
-    </header>
-    <section class="content">
-    <b id="animationtimingfunc" class="pencil pencilanim"></b>
-    <pre contenteditable>.pencil { 
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code>
+            bezier curves
+          </h1>
+        </header>
+        <section class="content">
+          <dl>
+            <dt>ease</dt>
+            <dd>Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity towards the middle
+              of the animation, slowing back down at the end.</dd>
+            <dt>linear</dt>
+            <dd>Equal to cubic-bezier(0.0, 0.0, 1.0, 1.0), animates at an even speed.</dd>
+            <dt>ease-in</dt>
+            <dd>Equal to cubic-bezier(0.42, 0, 1.0, 1.0), starts off slowly, with the speed of the transition of the
+              animating properting increasing until complete.</dd>
+            <dt>ease-out</dt>
+            <dd>Equal to cubic-bezier(0, 0, 0.58, 1.0), starts quickly, slowing down the animation continues.</dd>
+            <dt>ease-in-out</dt>
+            <dd>Equal to cubic-bezier(0.42, 0, 0.58, 1.0), with the animating properties slowly transitioning, speeding
+              up, and then slowing down again.</dd>
+            <dt>cubic-bezier(p1, p2, p3, p4)</dt>
+            <dd>An author defined cubic-bezier curve, where the p1 and p3 values must be in the range of 0 to 1.</dd>
+          </dl>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="resource">animation-timing-function</a></code>
+            non-bezier values
+          </h1>
+        </header>
+        <section class="content">
+
+          <dl>
+            <dt>steps(n, &lt;jumpterm>)</dt>
+            <dd>Displays an animation iteration along n stops along the transition, displaying each stop for equal
+              lengths of time. For example, if n is 5, there are 5 steps. Whether the animation holds temporarily at 0%,
+              20%, 40%, 60% and 80%, on the 20%, 40%, 60%, 80% and 100%, or makes 5 stops between the 0% and 100% along
+              the animation, or makes 5 stops including the 0% and 100% marks (on the 0%, 25%, 50%, 75%, and 100%)
+              depends on which of the following jump terms is used:</dd>
+            <dl>
+              <dt>jump-start</dt>
+              <dd>Denotes a left-continuous function, so that the first jump happens when the animation begins;</dd>
+              <dt>jump-end</dt>
+              <dd>Denotes a right-continuous function, so that the last jump happens when the animation ends;</dd>
+              <dt>jump-none</dt>
+              <dd>There is no jump on either end. Instead, holding at both the 0% mark and the 100% mark, each for 1/n
+                of the duration.</dd>
+              <dt>jump-both</dt>
+              <dd>Includes pauses at both the 0% and 100% marks, effectively adding a step during the animation
+                iteration.</dd>
+              <dt>start</dt>
+              <dd>Same as jump-start.</dd>
+              <dt>end</dt>
+              <dd>Same as jump-end.</dd>
+            </dl>
+            </dd>
+            <dt>step-start</dt>
+            <dd>Equal to steps(1, jump-start)</dd>
+            <dt>step-end</dt>
+            <dd>Equal to steps(1, jump-end)</dd>
+          </dl>
+
+        </section>
+      </div>
+
+
+
+      <!-- timing function -->
+      <div class="slide" id="animtf">
+        <header style="position:absolute; width: 100%;">
+          <h1>&lsquo;animation-timing-function&rsquo;</h1>
+        </header>
+        <section class="content">
+          <b id="animationtimingfunc" class="pencil pencilanim"></b>
+          <pre contenteditable>.pencil { 
   <u></u>animation-name: drawALine;
   <u></u>animation-duration: 5s;
   <b><u></u>animation-timing-function: <span class="changer">ease-in-out</span>;</b>
 }</pre><select id="tfselect">
-    <option value="linear">linear</option>
-    <option value="ease">ease</option>
-    <option value="ease-in">ease-in</option>
-    <option value="ease-out">ease-out</option>
-    <option value="ease-in-out" selected>ease-in-out</option>
-    <option value="step-start">step-start</option>
-    <option value="step-end">step-end</option>
-    <option value="steps(5, start)">steps(5, start)</option>
-    <option value="steps(5, end)">steps(5, end)</option>
-    </select>
+            <option value="linear">linear</option>
+            <option value="ease">ease</option>
+            <option value="ease-in">ease-in</option>
+            <option value="ease-out">ease-out</option>
+            <option value="ease-in-out" selected>ease-in-out</option>
+            <option value="step-start">step-start</option>
+            <option value="step-end">step-end</option>
+            <option value="steps(5, start)">steps(5, start)</option>
+            <option value="steps(5, end)">steps(5, end)</option>
+          </select>
 
-<pre contenteditable><strong>ease</strong>           linear
+          <pre contenteditable><strong>ease</strong>           linear
 ease-in        ease-out
 ease-in-out    cubic-bezier(x1, y1, x2, y2)
 step-start <span class="notes">/* same as steps(1, start) */</span>
 step-end <span class="notes">/* same as steps(1, end) */</span>
 steps( X, start|<strong>end</strong>) <span class="notes">/* X = # of steps + when change of value occurs */</span>
 </pre>
-</section>
+        </section>
 
-<script defer>
- function changeTimingFunction(event){
-	 var speed = event.target.value;
-	 console.log(speed)
-	 var seconds = document.querySelectorAll("#animtf span.changer");
-	 for(var i = 0, j = seconds.length; i < j; i++){
-		 seconds[i].innerHTML = speed;
-	 }
-	 var el = document.getElementById('animationtimingfunc');
-		el.style.animation = 'drawALine 5s ' + speed;
- }
+        <script defer>
+          function changeTimingFunction(event) {
+            var speed = event.target.value;
+            console.log(speed)
+            var seconds = document.querySelectorAll("#animtf span.changer");
+            for (var i = 0, j = seconds.length; i < j; i++) {
+              seconds[i].innerHTML = speed;
+            }
+            var el = document.getElementById('animationtimingfunc');
+            el.style.animation = 'drawALine 5s ' + speed;
+          }
 
-  document.getElementById('tfselect').addEventListener('change', function(e) {
-    changeTimingFunction(e);
-    setTimeout(function(){
-        document.getElementById('animationtimingfunc').setAttribute('style', '');
-      },
-      6000);
-  });
-</script>
-    </div>
-
-
-<div class="slide object">
-  <header>
-    <h1>Cubic Bezier</h1>
-  </header>
-    <object data="files/cubicbezier.html"></object>
-<a href="files/cubicbezier.html" target="play" class="objectlink">Try it out!</a>
-</div>
-
-<div class="slide object">
-  <header>
-    <h1>Cubic Bezier</h1>
-  </header>
-    <object data="files/cubicbezierprint.html"></object>
-<a href="files/cubicbezierprint.html" target="play" class="objectlink">Try it out!</a>
-</div>
+          document.getElementById('tfselect').addEventListener('change', function (e) {
+            changeTimingFunction(e);
+            setTimeout(function () {
+              document.getElementById('animationtimingfunc').setAttribute('style', '');
+            },
+              6000);
+          });
+        </script>
+      </div>
 
 
+      <div class="slide object">
+        <header>
+          <h1>Cubic Bezier</h1>
+        </header>
+        <object data="files/cubicbezier.html"></object>
+        <a href="files/cubicbezier.html" target="play" class="objectlink">Try it out!</a>
+      </div>
+
+      <div class="slide object">
+        <header>
+          <h1>Cubic Bezier</h1>
+        </header>
+        <object data="files/cubicbezierprint.html"></object>
+        <a href="files/cubicbezierprint.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>Steps()</h1>
-  </header>
-    <object data="files/steps.html"></object>
-<a href="files/steps.html" target="play" class="objectlink">Try it out!</a>
-</div>
-
-<div class="slide object">
-  <header>
-    <h1>Steps()</h1>
-  </header>
-    <object data="files/file_steps.html"></object>
-<a href="files/file_steps.html" target="play" class="objectlink">Try it out!</a>
-</div>
 
 
-<div class="slide">
-  <header>
-    <h1>steps(4, end)</h1>
-  </header>
-    <section class="content">
-<ul class="stepsexplain">
-    <li><div></div>0%   </li>
-    <li><div></div>25%  </li>
-    <li><div></div>50%  </li>
-    <li><div></div>75%  </li>
-    <li><div></div>100% </li>
-</ul>
-    </section>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Steps()</h1>
+        </header>
+        <object data="files/steps.html"></object>
+        <a href="files/steps.html" target="play" class="objectlink">Try it out!</a>
+      </div>
+
+      <div class="slide object">
+        <header>
+          <h1>Steps()</h1>
+        </header>
+        <object data="files/file_steps.html"></object>
+        <a href="files/file_steps.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>Steps(4, end)</h1>
-  </header>
-    <object data="files/bike.html"></object>
-<a href="files/bike.html" target="play" class="objectlink">Try it out!</a>
-</div>
+      <div class="slide">
+        <header>
+          <h1>steps(4, end)</h1>
+        </header>
+        <section class="content">
+          <ul class="stepsexplain">
+            <li>
+              <div></div>0%
+            </li>
+            <li>
+              <div></div>25%
+            </li>
+            <li>
+              <div></div>50%
+            </li>
+            <li>
+              <div></div>75%
+            </li>
+            <li>
+              <div></div>100%
+            </li>
+          </ul>
+        </section>
+      </div>
 
 
-<div class="slide divider">
-    <header>
-      <h1>animation-iteration-count</h1>
-    </header>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Steps(4, end)</h1>
+        </header>
+        <object data="files/bike.html"></object>
+        <a href="files/bike.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count" target="resource">animation-iteration-count</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the number of times an animation cycle should be played before ending the animation.</p>
-  <pre contenteditable>[ infinite | &lt;number> ]#</pre>
-  <p>A comma-seperated list of interations, where the value is <code>infinite</code> or a number greater than or equal to zero. Doesn't need to be an interger.</p>
-  <dl><dt>infinite</dt>
-    <dd>Animation repeats forever</dd>
-<dt>&lt;number></dt>
-    <dd>Default is 1. The number of times the animation will repeat. Non-integers mean "play part of an animation cycle. 1.5 will play the animation one and a half times (unless the delay is negative). Negative values are not valid.</dd>
-    </dl> 
-  <pre contenteditable>animation-iteration-count: infinite, 3, 3, 1, 1, 1;</pre>
-  <p>Each entry is matched up with an animation name. If there are too few, the list repeats, if there are too many, the last ones are ignored.</p>
-  <p>If 0, the animation still happens. Goes directly to the end.</p>
-</section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>animation-iteration-count</h1>
+        </header>
+      </div>
 
 
- <!-- count -->
-<div class="slide" id="animic">
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count" target="resource">animation-iteration-count</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets the number of times an animation cycle should be played before ending the animation.</p>
+          <pre contenteditable>[ infinite | &lt;number> ]#</pre>
+          <p>A comma-seperated list of interations, where the value is <code>infinite</code> or a number greater than or
+            equal to zero. Doesn't need to be an interger.</p>
+          <dl>
+            <dt>infinite</dt>
+            <dd>Animation repeats forever</dd>
+            <dt>&lt;number></dt>
+            <dd>Default is 1. The number of times the animation will repeat. Non-integers mean "play part of an
+              animation cycle. 1.5 will play the animation one and a half times (unless the delay is negative). Negative
+              values are not valid.</dd>
+          </dl>
+          <pre contenteditable>animation-iteration-count: infinite, 3, 3, 1, 1, 1;</pre>
+          <p>Each entry is matched up with an animation name. If there are too few, the list repeats, if there are too
+            many, the last ones are ignored.</p>
+          <p>If 0, the animation still happens. Goes directly to the end.</p>
+        </section>
+      </div>
 
-    <header style="position:absolute; width: 100%;">
-    	<h1>&lsquo;animation-iteration-count&rsquo;</h1>
-    </header>
-    <section class="content">
 
-  	<div class="pencil pencilanim pencilanim_01"></div>
-    <pre contenteditable>
+      <!-- count -->
+      <div class="slide" id="animic">
+
+        <header style="position:absolute; width: 100%;">
+          <h1>&lsquo;animation-iteration-count&rsquo;</h1>
+        </header>
+        <section class="content">
+
+          <div class="pencil pencilanim pencilanim_01"></div>
+          <pre contenteditable>
 .pencil {
   ...
   <u></u>animation-name: drawALine;
@@ -1550,61 +1754,73 @@ steps( X, start|<strong>end</strong>) <span class="notes">/* X = # of steps + wh
   <u></u>animation-timing-function: ease-in-out;
   <b><u></u>animation-iteration-count: 3;</b>
 }</pre>
-<p>&lsquo;infinite&rsquo; or number. Default is &lsquo;1&rsquo;.</p>
+          <p>&lsquo;infinite&rsquo; or number. Default is &lsquo;1&rsquo;.</p>
 
 
-</section>
-</div>
+        </section>
+      </div>
 
-<div class="slide object">
-  <header>
-    <h1>Partial Iteration?</h1>
-  </header>
-    <object data="files/odditeration.html"></object>
-<a href="files/odditeration.html" target="play" class="objectlink">Try it out!</a>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Partial Iteration?</h1>
+        </header>
+        <object data="files/odditeration.html"></object>
+        <a href="files/odditeration.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
-<div class="slide object">
-  <header>
-    <h1>No Iteration?</h1>
-  </header>
-    <object data="files/nointerations.html"></object>
-<a href="files/nointerations.html" target="play" class="objectlink">Try it out!</a>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>No Iteration?</h1>
+        </header>
+        <object data="files/nointerations.html"></object>
+        <a href="files/nointerations.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
-<div class="slide divider">
-<header><h1><code>animation-delay</code></h1>
-  </header>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1><code>animation-delay</code></h1>
+        </header>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay" target="resource">animation-delay</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets when an animation starts. The animation can start immediately from its beginning or midway thru, or it can wait until a timer expires before starting from the beginning.</p>
-  <pre contenteditable>&lt;time>#</pre>
-  <p>A comma-seperated list of times, where each time is matched with an animation name. If there aren't enough delays listed, the list repeats. Extra are ignored</p>
-  <pre contenteditable>animation-delay: 0, 0, 0, 200ms, 2500ms, 5000ms;</pre>
-  <ul>
-    <li>The delay clock starts counting down when the animation is applied to the element. </li>
-    <li>The unit is required; specified in seconds (s) or milliseconds (ms).</li> 
-    <li>The default is 0, meaning the animation should start immediately.</li>
-    <li>Negative values cause the animation to begin immediately, partway through an iteration. If an animation is 4second, occurs 3 times, if the delay is -6s, the animation will start immediately, half way thru the second iteration.</li>
-    <li>A positive value indicates that the animation should begin after the specified amount of time has elapsed. </li>
-    <li>If the delays have elapsed before the page has finished loading, while the main thread is occupied, the animations will start when they can.</li></ul>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay" target="resource">animation-delay</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets when an animation starts. The animation can start immediately from its beginning or midway thru, or it
+            can wait until a timer expires before starting from the beginning.</p>
+          <pre contenteditable>&lt;time>#</pre>
+          <p>A comma-seperated list of times, where each time is matched with an animation name. If there aren't enough
+            delays listed, the list repeats. Extra are ignored</p>
+          <pre contenteditable>animation-delay: 0, 0, 0, 200ms, 2500ms, 5000ms;</pre>
+          <ul>
+            <li>The delay clock starts counting down when the animation is applied to the element. </li>
+            <li>The unit is required; specified in seconds (s) or milliseconds (ms).</li>
+            <li>The default is 0, meaning the animation should start immediately.</li>
+            <li>Negative values cause the animation to begin immediately, partway through an iteration. If an animation
+              is 4second, occurs 3 times, if the delay is -6s, the animation will start immediately, half way thru the
+              second iteration.</li>
+            <li>A positive value indicates that the animation should begin after the specified amount of time has
+              elapsed. </li>
+            <li>If the delays have elapsed before the page has finished loading, while the main thread is occupied, the
+              animations will start when they can.</li>
+          </ul>
 
-    
 
-</section>
-</div>
 
-<!-- animation delay -->
-<div class="slide" id="animdelay">
-    <header style="position:absolute; width:100%;">
-    	<h1>&lsquo;animation-delay&rsquo;</h1>
-    </header>
-    <section class="content">  <b id="animationdelayi" class="pencil pencilanim"></b>
-    <pre contenteditable>.pencil { <input type="range" value="2" min="-10" max="10" step="0.5" id="delayrange" onChange="changeTime()" /><input type="button" onClick="changeDelay();" value="Start">
+        </section>
+      </div>
+
+      <!-- animation delay -->
+      <div class="slide" id="animdelay">
+        <header style="position:absolute; width:100%;">
+          <h1>&lsquo;animation-delay&rsquo;</h1>
+        </header>
+        <section class="content"> <b id="animationdelayi" class="pencil pencilanim"></b>
+          <pre contenteditable>.pencil { <input type="range" value="2" min="-10" max="10" step="0.5" id="delayrange" onChange="changeTime()" /><input type="button" onClick="changeDelay();" value="Start">
   <u></u>animation-name: drawALine;
   <u></u>animation-duration: 8s;
   <u></u>animation-timing-function: ease-in-out;
@@ -1612,65 +1828,76 @@ steps( X, start|<strong>end</strong>) <span class="notes">/* X = # of steps + wh
   <b><u></u>animation-delay: <span class="changer">2</span>s;</b>
 }</pre>
 
-</section><script defer>
- function changeTime(){
-	 var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
-	 var seconds = document.querySelectorAll("#animdelay span.changer");
-	  for(var i = 0, j = seconds.length; i < j; i++){
-		 seconds[i].innerHTML = speed;
-     var el = document.getElementById('animationdelayi');
-     el.setAttribute('style', '');
-	 }
- }
- function changeDelay(){
-	 var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
-	 var el = document.getElementById('animationdelayi');
-		el.style.animation  = "drawALine 8s ease-in-out " + speed + 's 2';
-    el.style.animationDelay = speed+'s';
-	 var seconds = document.querySelectorAll("#animdelay span.changer");
-	 for(var i = 0, j = seconds.length; i < j; i++){
-		 seconds[i].innerHTML = speed;
-	 }
- }
-</script>
-</div>
+        </section>
+        <script defer>
+          function changeTime() {
+            var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
+            var seconds = document.querySelectorAll("#animdelay span.changer");
+            for (var i = 0, j = seconds.length; i < j; i++) {
+              seconds[i].innerHTML = speed;
+              var el = document.getElementById('animationdelayi');
+              el.setAttribute('style', '');
+            }
+          }
+          function changeDelay() {
+            var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
+            var el = document.getElementById('animationdelayi');
+            el.style.animation = "drawALine 8s ease-in-out " + speed + 's 2';
+            el.style.animationDelay = speed + 's';
+            var seconds = document.querySelectorAll("#animdelay span.changer");
+            for (var i = 0, j = seconds.length; i < j; i++) {
+              seconds[i].innerHTML = speed;
+            }
+          }
+        </script>
+      </div>
 
-<div class="slide divider">
-<header><h1>animation-direction</h1>
-  </header>
-<section class="content">
-</section>
-</div>
+      <div class="slide divider">
+        <header>
+          <h1>animation-direction</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" target="resource">animation-direction</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets whether an animation should play forwards, backwards, or alternating back and forth.</p>
-  <pre contenteditable>normal | reverse | alternate | alternate-reverse</pre>
-  <dl>
-<dt>normal</dt>
-    <dd>The animation plays forwards each cycle. In other words, each time the animation cycles, the animation will reset to the beginning state and start over again. This is the default value.</dd>
-<dt>reverse</dt>
-    <dd>The animation plays backwards each cycle. In other words, each time the animation cycles, the animation will reset to the end state and start over again. Animation steps are performed backwards, and timing functions are also reversed. For example, an ease-in timing function becomes ease-out.</dd>
-<dt>alternate</dt>
-    <dd>The animation reverses direction each cycle, with the first iteration being played forwards. The count to determine if a cycle is even or odd starts at one.</dd>
-<dt>alternate-reverse</dt>
-    <dd>The animation reverses direction each cycle, with the first iteration being played backwards. The count to determinate if a cycle is even or odd starts at one. </dd>
-  </dl>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" target="resource">animation-direction</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets whether an animation should play forwards, backwards, or alternating back and forth.</p>
+          <pre contenteditable>normal | reverse | alternate | alternate-reverse</pre>
+          <dl>
+            <dt>normal</dt>
+            <dd>The animation plays forwards each cycle. In other words, each time the animation cycles, the animation
+              will reset to the beginning state and start over again. This is the default value.</dd>
+            <dt>reverse</dt>
+            <dd>The animation plays backwards each cycle. In other words, each time the animation cycles, the animation
+              will reset to the end state and start over again. Animation steps are performed backwards, and timing
+              functions are also reversed. For example, an ease-in timing function becomes ease-out.</dd>
+            <dt>alternate</dt>
+            <dd>The animation reverses direction each cycle, with the first iteration being played forwards. The count
+              to determine if a cycle is even or odd starts at one.</dd>
+            <dt>alternate-reverse</dt>
+            <dd>The animation reverses direction each cycle, with the first iteration being played backwards. The count
+              to determinate if a cycle is even or odd starts at one. </dd>
+          </dl>
+        </section>
+      </div>
 
 
-<!-- animation direction -->
-<div class="slide" id="animdir"> <i></i>
+      <!-- animation direction -->
+      <div class="slide" id="animdir"> <i></i>
 
-    <header>
-    	<h1>&lsquo;animation-direction&rsquo;</h1>
-    </header>
-    <section class="content">
-    <b id="animationdir" class="pencil pencilanim"></b>
-    <pre contenteditable>.pencil {
+        <header>
+          <h1>&lsquo;animation-direction&rsquo;</h1>
+        </header>
+        <section class="content">
+          <b id="animationdir" class="pencil pencilanim"></b>
+          <pre contenteditable>.pencil {
   ...
   <u></u>animation-name: drawALine;
   <u></u>animation-duration: 5s;
@@ -1678,71 +1905,84 @@ steps( X, start|<strong>end</strong>) <span class="notes">/* X = # of steps + wh
   <u></u>animation-iteration-count: 5;
   <b><u></u>animation-direction: <span id="dir_direction" class="linky">normal</span></b>
 }</pre>
-<p>values: <code> <span data-dir="normal" class="directionChanger">normal</span> | <span class="directionChanger" data-dir="alternate">alternate</span> | <span class="directionChanger" data-dir="reverse">reverse</span> | <span class="directionChanger" data-dir="alternate-reverse">alternate-reverse</span>; </code>  </p>
-<pre contenteditable><b><u></u>animation-direction: <span  class="linky directionChanger">alternate</span>;</b></pre>
+          <p>values:
+            <code> <span data-dir="normal" class="directionChanger">normal</span> | <span class="directionChanger" data-dir="alternate">alternate</span> | <span class="directionChanger" data-dir="reverse">reverse</span> | <span class="directionChanger" data-dir="alternate-reverse">alternate-reverse</span>; </code>
+          </p>
+          <pre
+            contenteditable><b><u></u>animation-direction: <span  class="linky directionChanger">alternate</span>;</b></pre>
 
-</section>
-<script>
+        </section>
+        <script>
 
-var _directionChangers = document.querySelectorAll('.directionChanger');
-var _direction;
-for (var q = 0; q < _directionChangers.length; q++){
-  _directionChangers[q].addEventListener('click', function(e){
+          var _directionChangers = document.querySelectorAll('.directionChanger');
+          var _direction;
+          for (var q = 0; q < _directionChangers.length; q++) {
+            _directionChangers[q].addEventListener('click', function (e) {
 
-  var el = document.getElementById('animationdir');
-  _direction = e.target.getAttribute('data-dir');
-  document.getElementById('dir_direction').innerHTML = _direction;
+              var el = document.getElementById('animationdir');
+              _direction = e.target.getAttribute('data-dir');
+              document.getElementById('dir_direction').innerHTML = _direction;
 
-  el.style.animation = 'none';
+              el.style.animation = 'none';
 
-  setTimeout(function() {
-    var text = "drawALine 5s ease-in-out 0.1s 5 "+ _direction;
-    el.style.animation = text;
-    console.log(text);
-  }, 100);
+              setTimeout(function () {
+                var text = "drawALine 5s ease-in-out 0.1s 5 " + _direction;
+                el.style.animation = text;
+                console.log(text);
+              }, 100);
 
-  })
-}
-</script>
-</div>
-
-
-
-<div class="slide divider">
-<header><h1><code>animation</code> shorthand</h1>
-  </header>
-<section class="content">
-</section>
-</div>
+            })
+          }
+        </script>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="resource">animation</a></code> shorthand property</h1>
-  </header>
-<section class="content">
-  <p>Shorthand for <code>animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode</code>, and <code>animation-play-state</code>. Well cover teh last two in a few minutes.</p>
-  <pre contenteditable>&lt;time-duration> &lt;timing-function> &lt;time-delay> &lt;iteration-count> 
+
+      <div class="slide divider">
+        <header>
+          <h1><code>animation</code> shorthand</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="resource">animation</a></code>
+            shorthand property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Shorthand for
+            <code>animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode</code>,
+            and <code>animation-play-state</code>. Well cover teh last two in a few minutes.
+          </p>
+          <pre contenteditable>&lt;time-duration> &lt;timing-function> &lt;time-delay> &lt;iteration-count> 
     &lt;direction> &lt;fill-mode> &lt;play-state> &lt;keyframes-name> | none</pre>
-<p>A comma separated list of any or all those values.</p>
-<pre contenteditable>animation: 200ms ease-in 100ms alternate infinite red,
+          <p>A comma separated list of any or all those values.</p>
+          <pre contenteditable>animation: 200ms ease-in 100ms alternate infinite red,
            300ms linear 2s reverse 3 blue;</pre>
-<p>Order of properties matters to some extent:</p>
-  <ul>
-    <li>ALWAYS put the duration before the delay.</li>
-    <li>First time a value makes sense as a longhand value, it will be used, so good idea to put the <code>animation-name</code> value last.</li>
-    <li>If you omit values, they default.</li>
-  </ul>
-</section>
-</div>
+          <p>Order of properties matters to some extent:</p>
+          <ul>
+            <li>ALWAYS put the duration before the delay.</li>
+            <li>First time a value makes sense as a longhand value, it will be used, so good idea to put the
+              <code>animation-name</code> value last.
+            </li>
+            <li>If you omit values, they default.</li>
+          </ul>
+        </section>
+      </div>
 
 
-<!-- shorthand -->
-<div class="slide" id="animsh">
-    <header>
-    	<h1>&lsquo;animation&rsquo; (shorthand)</h1>
-    </header>
-    <section class="content">
-   <pre contenteditable>.pencil {
+      <!-- shorthand -->
+      <div class="slide" id="animsh">
+        <header>
+          <h1>&lsquo;animation&rsquo; (shorthand)</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>.pencil {
   <u></u>animation-name: drawALine;
   <u></u>animation-duration: 5s;
   <u></u>animation-delay: 100ms;
@@ -1750,42 +1990,43 @@ for (var q = 0; q < _directionChangers.length; q++){
   <u></u>animation-iteration-count: 5;
   <del><u></u>animation-direction: normal;</del>
 }</pre>
-<p>. . . can also be written as . . .</p>
-<pre contenteditable>
+          <p>. . . can also be written as . . .</p>
+          <pre contenteditable>
 .pencil {
   <b><u></u>animation: drawALine 5s ease-in-out 100ms 5</b>;
 }</pre>
 
 
-</section>
-</div>
+        </section>
+      </div>
 
 
 
 
- <!-- card flip -->
-<div class="slide normal">
-<header><h1>Pick a card </h1>
-  </header>
-<section class="content">
-    <div class="carda">
-        <div class="front"></div>
-        <div class="back">♥</div>
-    </div>
-    <div class="carda">
-        <div class="front"></div>
-        <div class="back" style="color: black">♣</div>
-    </div>
-    <div class="carda">
-        <div class="front"></div>
-        <div class="back">♦</div>
-    </div>
-<select onChange="changeOrigin(this.value,'.carda .front, .carda .back')">
-      <option value="0 50%">Top left</option>
-      <option value="50% 50%">center</option>
-      <option value="100% 50%">bottom right</option>
-    </select>
-    <pre contenteditable style="height:500px; overflow:scroll; float: right;">.carda.flipped .front,
+      <!-- card flip -->
+      <div class="slide normal">
+        <header>
+          <h1>Pick a card </h1>
+        </header>
+        <section class="content">
+          <div class="carda">
+            <div class="front"></div>
+            <div class="back">♥</div>
+          </div>
+          <div class="carda">
+            <div class="front"></div>
+            <div class="back" style="color: black">♣</div>
+          </div>
+          <div class="carda">
+            <div class="front"></div>
+            <div class="back">♦</div>
+          </div>
+          <select onChange="changeOrigin(this.value,'.carda .front, .carda .back')">
+            <option value="0 50%">Top left</option>
+            <option value="50% 50%">center</option>
+            <option value="100% 50%">bottom right</option>
+          </select>
+          <pre contenteditable style="height:500px; overflow:scroll; float: right;">.carda.flipped .front,
 .carda.unflipped .back {
   animation: flipme 1s linear forwards;
 }
@@ -1811,77 +2052,91 @@ for (var q = 0; q < _directionChangers.length; q++){
   0% {transform: rotatey(180deg)}
   100% {transform: rotateY(0deg);}
 }</pre>
-</section>
-</div>
-<script defer>
-  var cardas = document.querySelectorAll('.carda');
-  for (var q=0; q<cardas.length; q++){
-	cardas[q].addEventListener('click', function(){
-		if(this.classList.contains('flipped')){
-			this.classList.remove('flipped');
-			this.classList.add('unflipped');
-		} else {
-			this.classList.remove('unflipped');
-			this.classList.add('flipped');
-		}
-     });
-  }
+        </section>
+      </div>
+      <script defer>
+        var cardas = document.querySelectorAll('.carda');
+        for (var q = 0; q < cardas.length; q++) {
+          cardas[q].addEventListener('click', function () {
+            if (this.classList.contains('flipped')) {
+              this.classList.remove('flipped');
+              this.classList.add('unflipped');
+            } else {
+              this.classList.remove('unflipped');
+              this.classList.add('flipped');
+            }
+          });
+        }
 
-  var changeOrigin = function(origin, els){
-	  var elements = document.querySelectorAll(els);
-	  console.dir(elements)
-	  for(var i = 0; i < elements.length; i++){
-		
-		elements[i].style.transformOrigin  = origin;
-	  }
+        var changeOrigin = function (origin, els) {
+          var elements = document.querySelectorAll(els);
+          console.dir(elements)
+          for (var i = 0; i < elements.length; i++) {
 
-
-  }
-</script>
+            elements[i].style.transformOrigin = origin;
+          }
 
 
-
-<div class="slide divider">
-<header><h1>Before and After</h1>
-  </header>
-<section class="content">
-</section>
-</div> 
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode" target="resource">animation-fill-mode</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets how a CSS animation applies the keyframe styles to the animated element before the animation starts and after it ends.</p>
-  <pre contenteditable><strong>none</strong> | forwards | backwards | both #</pre>
-  <dl>
-    <dt>none</dt>
-    <dd>Default. No keyframe styles are applied while the animation is not executing. The element will instead be displayed using any other CSS rules applied to it. </dd>
-    <dt>forwards</dt>
-    <dd>The computed values at the keyframe when the animation ended is maintained. The relevant keyframe depends on the value of <code>animation-direction</code> and <code>animation-iteration-count</code></dd>
-    <dt>backwards</dt>
-    <dd>The properties as defined in the 0% keyframe in the case of <code>animation-direction: normal</code> or <code>alternate</code> and the properties defined in the 100% keyframe in the case of <code>animation-direction: reverse</code> or <code>alternate-reverse</code> will be applied from the moment the animation is applied to an element until the delay expires an the animation starts iterating.</dd>
-    <dt>both</dt>
-    <dd>both <code>forwards</code> and <code>backwards</code> are applied</dd>
-    </dl> 
-</section>
-</div>
+        }
+      </script>
 
 
 
+      <div class="slide divider">
+        <header>
+          <h1>Before and After</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
-<div class="slide" id="animfm">
-<header  style="position:absolute; width:100%;"><h1>&lsquo;animation-fill-mode&rsquo;</h1>
-  </header>
-<b id="animationfm" class="pencil pencilanim"></b>
-<section class="content">
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode" target="resource">animation-fill-mode</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets how a CSS animation applies the keyframe styles to the animated element before the animation starts
+            and after it ends.</p>
+          <pre contenteditable><strong>none</strong> | forwards | backwards | both #</pre>
+          <dl>
+            <dt>none</dt>
+            <dd>Default. No keyframe styles are applied while the animation is not executing. The element will instead
+              be displayed using any other CSS rules applied to it. </dd>
+            <dt>forwards</dt>
+            <dd>The computed values at the keyframe when the animation ended is maintained. The relevant keyframe
+              depends on the value of <code>animation-direction</code> and <code>animation-iteration-count</code></dd>
+            <dt>backwards</dt>
+            <dd>The properties as defined in the 0% keyframe in the case of <code>animation-direction: normal</code> or
+              <code>alternate</code> and the properties defined in the 100% keyframe in the case of
+              <code>animation-direction: reverse</code> or <code>alternate-reverse</code> will be applied from the
+              moment the animation is applied to an element until the delay expires an the animation starts iterating.
+            </dd>
+            <dt>both</dt>
+            <dd>both <code>forwards</code> and <code>backwards</code> are applied</dd>
+          </dl>
+        </section>
+      </div>
 
-<pre contenteditable onMouseDown="document.getElementById('animationfm').style.animation = 'none';">values: <span onClick="changeFillMode(this.innerHTML)">none</span> | <span onClick="changeFillMode(this.innerHTML)">forwards</span> | <span onClick="changeFillMode(this.innerHTML)">backwards</span> | <span onClick="changeFillMode(this.innerHTML)">both</span></pre>
-<pre contenteditable>
+
+
+
+      <div class="slide" id="animfm">
+        <header style="position:absolute; width:100%;">
+          <h1>&lsquo;animation-fill-mode&rsquo;</h1>
+        </header>
+        <b id="animationfm" class="pencil pencilanim"></b>
+        <section class="content">
+
+          <pre contenteditable
+            onMouseDown="document.getElementById('animationfm').style.animation = 'none';">values: <span onClick="changeFillMode(this.innerHTML)">none</span> | <span onClick="changeFillMode(this.innerHTML)">forwards</span> | <span onClick="changeFillMode(this.innerHTML)">backwards</span> | <span onClick="changeFillMode(this.innerHTML)">both</span></pre>
+          <pre contenteditable>
 .pencil {
   animation: gettingThePencil 3s ease-in-out 1s <b id="fmitcountres"></b> <b id="fmsh">forwards</b>;
 }</pre>
-<pre contenteditable>.pencil {
+          <pre contenteditable>.pencil {
  <b><u></u>animation-fill-mode: <span id="oobey">forwards</span>;</b>
   <u></u>animation-name: gettingThePencil;
   <u></u>animation-duration: 3s;
@@ -1891,100 +2146,109 @@ for (var q = 0; q < _directionChangers.length; q++){
 }</pre>
 
 
-</section>
-<script>
-	function changeFillMode(fillMode){
-		var iteration = document.getElementById('fmitcount').innerHTML;
-		console.log(iteration);
-    document.getElementById('fmsh').innerHTML = fillMode;
-    document.getElementById('oobey').innerHTML = fillMode;
+        </section>
+        <script>
+          function changeFillMode(fillMode) {
+            var iteration = document.getElementById('fmitcount').innerHTML;
+            console.log(iteration);
+            document.getElementById('fmsh').innerHTML = fillMode;
+            document.getElementById('oobey').innerHTML = fillMode;
 
-		var el = document.getElementById('animationfm');
-		
-		el.style.animation = "drawALine 5s ease-in-out 2s " + iteration + "  "+ fillMode;
-	}
+            var el = document.getElementById('animationfm');
 
-</script>
-</div>
+            el.style.animation = "drawALine 5s ease-in-out 2s " + iteration + "  " + fillMode;
+          }
+
+        </script>
+      </div>
 
 
 
-<div class="slide" id="animfillmodeall4" onClick="this.classList.toggle('animationon');">
-<header><h1>Animation Fill Mode (again)</h1>
-  </header>
-<section class="content">
-	<div class="box">animation-fill-mode: none; <span class="afmnone"></span></div>
-	<div class="box">animation-fill-mode: forwards;<span class="afmforwards"></span></div>
-	<div class="box">animation-fill-mode: backwards;<span class="afmbackwards"></span></div>
-    <div class="box">animation-fill-mode: both;<span class="afmboth"></span></div>
-    <pre>.box { animation: showme 5s linear 5s 1;}
+      <div class="slide" id="animfillmodeall4" onClick="this.classList.toggle('animationon');">
+        <header>
+          <h1>Animation Fill Mode (again)</h1>
+        </header>
+        <section class="content">
+          <div class="box">animation-fill-mode: none; <span class="afmnone"></span></div>
+          <div class="box">animation-fill-mode: forwards;<span class="afmforwards"></span></div>
+          <div class="box">animation-fill-mode: backwards;<span class="afmbackwards"></span></div>
+          <div class="box">animation-fill-mode: both;<span class="afmboth"></span></div>
+          <pre>.box { animation: showme 5s linear 5s 1;}
 @keyframes showme {
 	0% {left: 200px; background-color:blue;}
 	50% {background-color:green;}
 	100% {left: 600px; background-color: yellow;}
 }</pre>
-<p><a href="file_fillmode.html">Test page</a></p>
-</section>
-</div>
+          <p><a href="file_fillmode.html">Test page</a></p>
+        </section>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>Animation Fill Mode</h1>
-  </header>
-    <object data="file_fillmode.html"></object>
-<a href="file_fillmode.html" target="play" class="objectlink">Try it out!</a>
-</div>
-
-
-
-<div class="slide divider">
-<header><h1>animation-play-state</h1>
-  </header>
-<section class="content">
-</section>
-</div> 
+      <div class="slide object">
+        <header>
+          <h1>Animation Fill Mode</h1>
+        </header>
+        <object data="file_fillmode.html"></object>
+        <a href="file_fillmode.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
 
 
+      <div class="slide divider">
+        <header>
+          <h1>animation-play-state</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1>Can you stop an animation?</h1>
-  </header>
-<section class="content">
-
-</section>
-</div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" target="resource">animation-play-state</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets whether an animation is running or paused.</p>
-  <pre contenteditable>running | paused #</pre>
-  <p>Resuming a paused animation will start the animation from where it left off at the time it was paused, rather than starting over from the beginning of the animation sequence.</p>
-<pre contenteditable>animation-play-state: play, play, pause;</pre>
-<dl>
-<dt>running</dt>
-<dd>    The animation is currently playing.</dd>
-<dt>paused</dt>
-<dd>    The animation is currently paused. </dd>
-</dl>
-<p>While paused, the delay does not count down</p>
-</section>
-</div>
+
+      <div class="slide">
+        <header>
+          <h1>Can you stop an animation?</h1>
+        </header>
+        <section class="content">
+
+        </section>
+      </div>
 
 
-<div class="slide" id="animps">
-<header><h1>&lsquo;animation-play-state&rsquo;</h1>
-  </header>
-<section class="content">
-<b class="pencil pencil_pausing">✎</b>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" target="resource">animation-play-state</a></code>
+            property
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets whether an animation is running or paused.</p>
+          <pre contenteditable>running | paused #</pre>
+          <p>Resuming a paused animation will start the animation from where it left off at the time it was paused,
+            rather than starting over from the beginning of the animation sequence.</p>
+          <pre contenteditable>animation-play-state: play, play, pause;</pre>
+          <dl>
+            <dt>running</dt>
+            <dd> The animation is currently playing.</dd>
+            <dt>paused</dt>
+            <dd> The animation is currently paused. </dd>
+          </dl>
+          <p>While paused, the delay does not count down</p>
+        </section>
+      </div>
 
-<pre contenteditable><u></u>animation-play-state: paused | running</pre>
-<pre contenteditable>.pencil {
+
+      <div class="slide" id="animps">
+        <header>
+          <h1>&lsquo;animation-play-state&rsquo;</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_pausing">✎</b>
+
+          <pre contenteditable><u></u>animation-play-state: paused | running</pre>
+          <pre contenteditable>.pencil {
 	<u></u>transform-origin: center 300px;
 	<u></u>animation: writingInCircles 3s linear infinite;
  }
@@ -1992,81 +2256,86 @@ for (var q = 0; q < _directionChangers.length; q++){
 	<u></u>animation-play-state:paused;
  }</pre>
 
-<pre contenteditable>@<u></u>keyframes writingInCircles {
+          <pre contenteditable>@<u></u>keyframes writingInCircles {
   100% {
     <u></u>transform:
       rotate(360deg);
   }
 }</pre>
 
-</section>
-</div>
+        </section>
+      </div>
 
 
 
 
 
-<div class="slide">
-<header><h1>&lsquo;animation-play-state&rsquo;</h1>
-  </header>
-<section class="content">
-<b class="pencil pencil_pausing outlined">✎</b>
-<pre contenteditable>animation-play-state: paused | running</pre>
-<pre contenteditable>.pencil<b>:hover</b> {
+      <div class="slide">
+        <header>
+          <h1>&lsquo;animation-play-state&rsquo;</h1>
+        </header>
+        <section class="content">
+          <b class="pencil pencil_pausing outlined">✎</b>
+          <pre contenteditable>animation-play-state: paused | running</pre>
+          <pre contenteditable>.pencil<b>:hover</b> {
   <b>animation-play-state: paused;</b>
   }</pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1>Developer Tools</h1>
-  </header>
-<section class="content">
-  <p>Check out the animation inspector</p>
-</section>
-</div> 
+      <div class="slide">
+        <header>
+          <h1>Developer Tools</h1>
+        </header>
+        <section class="content">
+          <p>Check out the animation inspector</p>
+        </section>
+      </div>
 
-<div class="slide divider">
-<header><h1>Events</h1>
-  </header>
-<section class="content">
-</section>
-</div> 
+      <div class="slide divider">
+        <header>
+          <h1>Events</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1>What happens at animation end?</h1>
-  </header>
-<section class="content">
-<ul>
-	<li>animationstart</li>
-	<li>animationend</li>
-	<li>animationiteration</li>
-</ul>
-<pre contenteditable>
+      <div class="slide">
+        <header>
+          <h1>What happens at animation end?</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>animationstart</li>
+            <li>animationend</li>
+            <li>animationiteration</li>
+          </ul>
+          <pre contenteditable>
 el.addEventListener( <b>'animationend'</b>,
     function( event ) {
         console.log('Animation Ended');
     }, false );
 </pre>
 
-</section>
-</div>
+        </section>
+      </div>
 
 
 
 
 
 
-<div class="slide">
-<header><h1>Starting next animation at end of previous</h1>
-  </header>
-<section class="content">
+      <div class="slide">
+        <header>
+          <h1>Starting next animation at end of previous</h1>
+        </header>
+        <section class="content">
 
-<pre contenteditable>el.addEventListener( <b>'animationend'</b>,
+          <pre contenteditable>el.addEventListener( <b>'animationend'</b>,
     function( event ) {
         el.removeClassName('newClass');
         setTimeout("el.addClassName('newClass')", 100ms)
@@ -2074,77 +2343,77 @@ el.addEventListener( <b>'animationend'</b>,
     false );
 </pre>
 
-<pre contenteditable>
+          <pre contenteditable>
 animationend
 </pre>
-</section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide object">
-  <header>
-    <h1>Events: start, lots 'o iterations, end</h1>
-  </header>
-    <object data="files/events.html"></object>
-<a href="files/events.html" target="play" class="objectlink">Try it out!</a>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Events: start, lots 'o iterations, end</h1>
+        </header>
+        <object data="files/events.html"></object>
+        <a href="files/events.html" target="play" class="objectlink">Try it out!</a>
+      </div>
 
 
-<!-- NEXT -->
-<div class="slide divider">
-     <header>
-    <h1>Other Stuff</h1>
-  </header>
-    <h1><a href="../other/index.html">Next ➹</a></h1>
+      <!-- NEXT -->
+      <div class="slide divider">
+        <header>
+          <h1>Other Stuff</h1>
+        </header>
+        <h1><a href="../other/index.html">Next ➹</a></h1>
+      </div>
+
+
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
+
+            <p>
+          </ol>
+        </section>
+      </div>
+      <!-- TOC -->
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+          </ul>
+        </section>
+      </div>
+
+
+
     </div>
-    
-
-<div class="slide dots">
-  <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
-
-<p></ol>
-  </section>
-</div>
-<!-- TOC -->
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-    <section class="content">
-      <ul>
-      </ul>
-    </section>
-</div>
-
-
-
-  </div>
-<script src="static/js/slides.js"></script>
-  </body>
+    <script src="static/js/slides.js"></script>
+</body>
 
 </html>
-

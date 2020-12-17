@@ -1,454 +1,474 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>CSS Gradients </title>
-<!--
 
-Author: Estelle Weyl
-Contact: firstName @ lastName dot ORG
-Twitter: @estellevw
+<head>
+  <meta charset="utf-8" />
+  <title>CSS Gradients </title>
+  <!--
+
+
 
 -->
-   <link rel="stylesheet" href="../intro/css/main.css"/>
-   <link rel="stylesheet" href="../intro/css/gradients.css"/>
-   <link rel="stylesheet" href="examples.css"/>
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <link rel="stylesheet" href="../intro/css/gradients.css" />
+  <link rel="stylesheet" href="examples.css" />
 
- </head>
+</head>
+
 <body>
 
 
   <div id="presentation">
-   <div id="presentation-counter"></div>
-   <div id="slides">
-
-
-       
-
-                 
-<!--  -->
-<div class="slide intro">
-     <header>
-    <h1>CSS Gradients </h1>
-  </header>
-  <section class="content">
-   
-     </section>
- </div>
-
-
-<!--  -->
-<div class="slide">
-   <header>
-    <h1>CSS Gradients </h1>
-  </header>
-  <section class="content">
-   
-<ul class="col2">
-<li>CSS Gradients </li>
-<li>Intro to gradients</li>
-<li>Global gradient syntax features <ul>
-  <li>Color Stops</li>
-  <li>Syntax elements</li>
-  <li>Hard stops</li>
-  <li>Color Hints</li> </ul>
-</li>
-<li>Linear Gradients <ul>
-  <li>Angles &amp; Keyterms</li> </ul>
-</li>
-<li>Repeating Linear Gradients</li>
-<li>Repeating syntax</li>
-<li>Radial Gradients <ul>
-  <li>Radial Gradient Syntax</li>
-  <li>Radial Gradients position</li>
-  <li>Shape &amp; Size</li>
-  <li>Shapes</li>
-  <li>Sizing With Keywords</li>
-  <li>Keyterms</li>
-  <li>color-stops &amp; color-hints</li> </ul>
-</li>
-<li>Repeating Radial Gradient</li>
-<li>Conic gradients <ul>
-  <li>Syntax</li>
-  <li>position</li>
-  <li>start angle</li>
-  <li>color-stops &amp; color-hints</li> </ul>
-</li>  
-<li>Repeating Conic Gradient</li>
-<li>Exercise</li> 
-</ul>
-</section>
-</div>
-
-
-<!-- 4 kind of radients -->
-<div class="slide">
-   <header>
-    <h1>Gradients</h1>
-  </header>
-  <section class="content">
-     <ul>
-     <li>Anywhere an image can be used (theoretically)
-     	<ul><li>background-image, list-style-type, border-image, content, cursor</li></ul>
-     </li>
-     <li>6 Gradient Types
-     <ul class="medexampleshell" id="lgresize">
-     	<li class="medexample linear">linear-gradient();</li>
-      <li class="medexample radial">radial-gradient();</li>
-      <li class="medexample conic">conic-gradient();</li>
-     	<li class="medexample linrepeat">repeating-linear-gradient()</li>
-      <li class="medexample radrepeat">repeating-radial-gradient()</li>
-      <li class="medexample conrepeat">repeating-conic-gradient()</li>
-     </ul>
-     </li>
-     </ul>
-     </section>
- </div>
+    <div id="presentation-counter"></div>
+    <div id="slides">
 
 
 
-<!--  -->
-<div class="slide object">
-  <header>
-    <h1>Basic Gradient</h1>
-  </header>
-
-  <object data="files/base.html"></object>
-  <a href="files/base.html" class="objectlink" target="play">Try it out</a>
-</div>
 
 
+      <!--  -->
+      <div class="slide intro">
+        <header>
+          <h1>CSS Gradients </h1>
+        </header>
+        <section class="content">
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Linear Gradient Syntax</h1>
-  </header>
-  <section class="content">
-      <pre contenteditable>linear-gradient( [ <em>&lt;angle></em> | to <em>&lt;side-or-corner></em> ,]? <em>&lt;color-stop-list></em> )</pre>
-     <pre contenteditable>linear-gradient( [<em>&lt;angle&gt;</em> | to <em>&lt;side-or-corner&gt;</em>, ] ?  
+        </section>
+      </div>
+
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>CSS Gradients </h1>
+        </header>
+        <section class="content">
+
+          <ul class="col2">
+            <li>CSS Gradients </li>
+            <li>Intro to gradients</li>
+            <li>Global gradient syntax features <ul>
+                <li>Color Stops</li>
+                <li>Syntax elements</li>
+                <li>Hard stops</li>
+                <li>Color Hints</li>
+              </ul>
+            </li>
+            <li>Linear Gradients <ul>
+                <li>Angles &amp; Keyterms</li>
+              </ul>
+            </li>
+            <li>Repeating Linear Gradients</li>
+            <li>Repeating syntax</li>
+            <li>Radial Gradients <ul>
+                <li>Radial Gradient Syntax</li>
+                <li>Radial Gradients position</li>
+                <li>Shape &amp; Size</li>
+                <li>Shapes</li>
+                <li>Sizing With Keywords</li>
+                <li>Keyterms</li>
+                <li>color-stops &amp; color-hints</li>
+              </ul>
+            </li>
+            <li>Repeating Radial Gradient</li>
+            <li>Conic gradients <ul>
+                <li>Syntax</li>
+                <li>position</li>
+                <li>start angle</li>
+                <li>color-stops &amp; color-hints</li>
+              </ul>
+            </li>
+            <li>Repeating Conic Gradient</li>
+            <li>Exercise</li>
+          </ul>
+        </section>
+      </div>
+
+
+      <!-- 4 kind of radients -->
+      <div class="slide">
+        <header>
+          <h1>Gradients</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Anywhere an image can be used (theoretically)
+              <ul>
+                <li>background-image, list-style-type, border-image, content, cursor</li>
+              </ul>
+            </li>
+            <li>6 Gradient Types
+              <ul class="medexampleshell" id="lgresize">
+                <li class="medexample linear">linear-gradient();</li>
+                <li class="medexample radial">radial-gradient();</li>
+                <li class="medexample conic">conic-gradient();</li>
+                <li class="medexample linrepeat">repeating-linear-gradient()</li>
+                <li class="medexample radrepeat">repeating-radial-gradient()</li>
+                <li class="medexample conrepeat">repeating-conic-gradient()</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+
+      <!--  -->
+      <div class="slide object">
+        <header>
+          <h1>Basic Gradient</h1>
+        </header>
+
+        <object data="files/base.html"></object>
+        <a href="files/base.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Linear Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre
+            contenteditable>linear-gradient( [ <em>&lt;angle></em> | to <em>&lt;side-or-corner></em> ,]? <em>&lt;color-stop-list></em> )</pre>
+          <pre contenteditable>linear-gradient( [<em>&lt;angle&gt;</em> | to <em>&lt;side-or-corner&gt;</em>, ] ?  
    [ <em>&lt;color-stop&gt;</em> [ , <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;color-stop&gt;</em> )</pre>
-     <p>Things to remember:</p>
-     <ol>
-      <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;length-percentage></code></li>
-      <li>Use 'to' with keyterms</li>
-      <li>0deg is to top </li>
-      <li>Angles go clockwise</li>
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;length-percentage></code></li>
+            <li>Use 'to' with keyterms</li>
+            <li>0deg is to top </li>
+            <li>Angles go clockwise</li>
+          </ol>
+        </section>
+      </div>
 
 
 
 
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Radial Gradient Syntax</h1>
-  </header>
-  <section class="content">
-      <pre contenteditable>radial-gradient( [ <em>&lt;ending-shape></em> || <em>&lt;size></em> ]? [ at <em>&lt;position></em> ]? ,
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Radial Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>radial-gradient( [ <em>&lt;ending-shape></em> || <em>&lt;size></em> ]? [ at <em>&lt;position></em> ]? ,
   <em>&lt;color-stop-list></em> )</pre>
-     <pre contenteditable>radial-gradient( [ <em>&lt;shape&gt;</em> || <em>&lt;size&gt;</em> ]? [ at <em>&lt;position&gt;</em> ]? 
+          <pre contenteditable>radial-gradient( [ <em>&lt;shape&gt;</em> || <em>&lt;size&gt;</em> ]? [ at <em>&lt;position&gt;</em> ]? 
    [ <em>&lt;color-stop&gt;</em> [, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;color-stop&gt;</em> )</pre>
 
-     <p>Things to remember:</p>
-     <ol>
-      <li>Shape is circle or default ellipse</li>
-      <li>Use 'at' with position</li>
-      <li>position places center of gradient</li>
-      <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
-      <li>gradient line starts from center</li>
-      <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;length-percentage></code></li>
-      
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>Shape is circle or default ellipse</li>
+            <li>Use 'at' with position</li>
+            <li>position places center of gradient</li>
+            <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
+            <li>gradient line starts from center</li>
+            <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;length-percentage></code></li>
+
+          </ol>
+        </section>
+      </div>
 
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Conic Gradient Syntax</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable>conic-gradient( 
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Conic Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>conic-gradient( 
       [ [ from <em>&lt;angle></em> ]? 
         [ at <em>&lt;position></em> ]?, ]
       <em>&lt;angular-color-stop-list></em> )</pre>
-      <ol>
-        <li>not fully supported in August 2019.</li>
-        <li>angle is the start -> rotates clockwise</li>
-        <li>position is center of gradient</li>
-        <li>gradient line in an arc circumference</li>
-        <li>color stops are angles, not lengths</li>
-        <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;angles></code></li>
-      </ol> 
-    </section>
-  </div>
+          <ol>
+            <li>not fully supported in August 2019.</li>
+            <li>angle is the start -> rotates clockwise</li>
+            <li>position is center of gradient</li>
+            <li>gradient line in an arc circumference</li>
+            <li>color stops are angles, not lengths</li>
+            <li><code>&lt;color-stop&gt;</code> includes color and 0, 1, or 2 <code>&lt;angles></code></li>
+          </ol>
+        </section>
+      </div>
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Color Stops</h1>
-  </header>
-</div>
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Color Stops</h1>
+        </header>
+      </div>
 
-<!-- color-stop details -->
-<div class="slide">
-  <header>
-    <h1>color-stop</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>&lt;color&gt; [ &lt;length> || &lt;percentage> ]{0, 2}</pre>
-    <ul>
-      <li>Color? See <a href="../colors/index.html#slide14">Colors</a></li>
-      <li>Length? Any length unit</li>
-      <li>Percent? relative to gradient line which is relative to image size</li>
-      <li>Omitted? 0%, 100%, or evenly distibuted in between</li>
-      <li>Duplicate? Hard color stop</li>
-      <li>Out of Order? previous declared value</li>
-      <li>Only 1 color stop? Solid color box.</li></ul>
-  </section>
-</div>
-
-
-<!-- Length Units -->
-<div class="slide object">
-  <header>
-    <h1>Length Units</h1>
-  </header>
-
-  <object data="files/colorstop1.html"></object>
-  <a href="files/colorstop1.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-<!-- Percentages-->
-<div class="slide object">
-  <header>
-    <h1>Percentages</h1>
-  </header>
-
-  <object data="files/colorstop2.html"></object>
-  <a href="files/colorstop2.html" class="objectlink" target="play">Try it out</a>
-</div>
+      <!-- color-stop details -->
+      <div class="slide">
+        <header>
+          <h1>color-stop</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>&lt;color&gt; [ &lt;length> || &lt;percentage> ]{0, 2}</pre>
+          <ul>
+            <li>Color? See <a href="../colors/index.html#slide14">Colors</a></li>
+            <li>Length? Any length unit</li>
+            <li>Percent? relative to gradient line which is relative to image size</li>
+            <li>Omitted? 0%, 100%, or evenly distibuted in between</li>
+            <li>Duplicate? Hard color stop</li>
+            <li>Out of Order? previous declared value</li>
+            <li>Only 1 color stop? Solid color box.</li>
+          </ul>
+        </section>
+      </div>
 
 
-<!-- No 0% of 100% -->
-<div class="slide object">
-  <header>
-    <h1>End points: No 0% of 100%</h1>
-  </header>
+      <!-- Length Units -->
+      <div class="slide object">
+        <header>
+          <h1>Length Units</h1>
+        </header>
 
-  <object data="files/colorstop3.html"></object>
-  <a href="files/colorstop3.html" class="objectlink" target="play">Try it out</a>
-</div>
-<!-- No 0% of 100% -->
-<div class="slide object">
-  <header>
-    <h1>End points: No 0% of 100%</h1>
-  </header>
+        <object data="files/colorstop1.html"></object>
+        <a href="files/colorstop1.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
-  <object data="files/colorstop3radial.html"></object>
-  <a href="files/colorstop3radial.html" class="objectlink" target="play">Try it out</a>
-</div>
-<!-- No 0% of 100% -->
-<div class="slide object">
-  <header>
-    <h1>End points: No 0% of 100%</h1>
-  </header>
+      <!-- Percentages-->
+      <div class="slide object">
+        <header>
+          <h1>Percentages</h1>
+        </header>
 
-  <object data="files/colorstop3conic.html"></object>
-  <a href="files/colorstop3conic.html" class="objectlink" target="play">Try it out</a>
-</div>
+        <object data="files/colorstop2.html"></object>
+        <a href="files/colorstop2.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
-<!-- Overlapping -->
-<div class="slide object">
-  <header>
-    <h1>Duplicate / Hard stops</h1>
-  </header>
+      <!-- No 0% of 100% -->
+      <div class="slide object">
+        <header>
+          <h1>End points: No 0% of 100%</h1>
+        </header>
 
-  <object data="files/colorstop4.html"></object>
-  <a href="files/colorstop4.html" class="objectlink" target="play">Try it out</a>
-</div>
+        <object data="files/colorstop3.html"></object>
+        <a href="files/colorstop3.html" class="objectlink" target="play">Try it out</a>
+      </div>
+      <!-- No 0% of 100% -->
+      <div class="slide object">
+        <header>
+          <h1>End points: No 0% of 100%</h1>
+        </header>
 
-<!-- Duplicate values -->
-<div class="slide object">
-  <header>
-    <h1>Duplicate / Hard stops</h1>
-  </header>
+        <object data="files/colorstop3radial.html"></object>
+        <a href="files/colorstop3radial.html" class="objectlink" target="play">Try it out</a>
+      </div>
+      <!-- No 0% of 100% -->
+      <div class="slide object">
+        <header>
+          <h1>End points: No 0% of 100%</h1>
+        </header>
 
-  <object data="files/colorstop5.html"></object>
-  <a href="files/colorstop5.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-<!-- Duplicate values -->
-<div class="slide object">
-  <header>
-    <h1>Duplicate / Hard stops</h1>
-  </header>
-
-  <object data="files/colorstopradial5.html"></object>
-  <a href="files/colorstopradial5.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-<!-- Duplicate values -->
-<div class="slide object">
-  <header>
-    <h1>Duplicate / Hard stops</h1>
-  </header>
-
-  <object data="files/colorstopconic5.html"></object>
-  <a href="files/colorstopconic5.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-<!-- Color stops that overlap -->
-<div class="slide object">
-  <header>
-    <h1>Should be Sequential</h1>
-  </header>
-
-  <object data="files/colorstop6.html"></object>
-  <a href="files/colorstop6.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-<!-- Negative value for color stops -->
-<div class="slide object">
-  <header>
-    <h1>Negative Values</h1>
-  </header>
-
-  <object data="files/colorstop8.html"></object>
-  <a href="files/colorstop8.html" class="objectlink" target="play">Try it out</a>
-</div>
+        <object data="files/colorstop3conic.html"></object>
+        <a href="files/colorstop3conic.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Double position color stops</h1>
-  </header>
-  <section class="content">
-    <p>Create a band of non-transitioning solid color between two transitions, include two positions for the color stop. </p>
-  </section>
-</div>
+      <!-- Overlapping -->
+      <div class="slide object">
+        <header>
+          <h1>Duplicate / Hard stops</h1>
+        </header>
+
+        <object data="files/colorstop4.html"></object>
+        <a href="files/colorstop4.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+      <!-- Duplicate values -->
+      <div class="slide object">
+        <header>
+          <h1>Duplicate / Hard stops</h1>
+        </header>
+
+        <object data="files/colorstop5.html"></object>
+        <a href="files/colorstop5.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+      <!-- Duplicate values -->
+      <div class="slide object">
+        <header>
+          <h1>Duplicate / Hard stops</h1>
+        </header>
+
+        <object data="files/colorstopradial5.html"></object>
+        <a href="files/colorstopradial5.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+      <!-- Duplicate values -->
+      <div class="slide object">
+        <header>
+          <h1>Duplicate / Hard stops</h1>
+        </header>
+
+        <object data="files/colorstopconic5.html"></object>
+        <a href="files/colorstopconic5.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+      <!-- Color stops that overlap -->
+      <div class="slide object">
+        <header>
+          <h1>Should be Sequential</h1>
+        </header>
+
+        <object data="files/colorstop6.html"></object>
+        <a href="files/colorstop6.html" class="objectlink" target="play">Try it out</a>
+      </div>
+
+      <!-- Negative value for color stops -->
+      <div class="slide object">
+        <header>
+          <h1>Negative Values</h1>
+        </header>
+
+        <object data="files/colorstop8.html"></object>
+        <a href="files/colorstop8.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
-<!-- Color Hints Explained -->
-<div class="slide">
-  <header>
-    <h1>Double position color stops</h1>
-  </header>
-  <section class="content">
-    <pre style="background: linear-gradient(to right, red, purple, magenta); line-height: 2.5; color: white;">linear-gradient(red, purple, magenta);</pre>
-    <pre style="background: linear-gradient(to right, red 10%, purple 30% 70%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 10%, purple 30% 70%, magenta 90%);</pre>
-    <pre style="background: linear-gradient(to right, red 10%, purple 30% 70%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 0 10%, purple 30% 70%, magenta 90% 100%);</pre> 
-    <pre style="background: linear-gradient(to right, red 10%, purple 10% 90%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 10%, purple 10% 90%, magenta 90%);</pre>
-    <pre style="background: linear-gradient(to right, red 10%, purple 10% 90%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 0 10%, purple 10% 90%, magenta 90% 100%);</pre>
-  </section>
-</div>
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Color Hints</h1>
-  </header>
-</div>
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Double position color stops</h1>
+        </header>
+        <section class="content">
+          <p>Create a band of non-transitioning solid color between two transitions, include two positions for the color
+            stop. </p>
+        </section>
+      </div>
 
 
-<!-- Color Hints Explained -->
-<div class="slide">
-  <header>
-    <h1>color-hint</h1>
-  </header>
-  <section class="content">
-  
-    <ul>  <li>Midpoint of transition between 2 stops</li>
-      <li>Length? Any length unit</li>
-      <li>Percent? relative to gradient line which is relative to image size</li>
-      <li>Hard Stop? Use 0%, the next position, or use 2 positions on the previous color stop</li>
-      <li>Point is relative to the 0 (zero) mark, not from the previous color stop</li>
-    </ul>
-  </section>
-</div>
+      <!-- Color Hints Explained -->
+      <div class="slide">
+        <header>
+          <h1>Double position color stops</h1>
+        </header>
+        <section class="content">
+          <pre
+            style="background: linear-gradient(to right, red, purple, magenta); line-height: 2.5; color: white;">linear-gradient(red, purple, magenta);</pre>
+          <pre
+            style="background: linear-gradient(to right, red 10%, purple 30% 70%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 10%, purple 30% 70%, magenta 90%);</pre>
+          <pre
+            style="background: linear-gradient(to right, red 10%, purple 30% 70%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 0 10%, purple 30% 70%, magenta 90% 100%);</pre>
+          <pre
+            style="background: linear-gradient(to right, red 10%, purple 10% 90%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 10%, purple 10% 90%, magenta 90%);</pre>
+          <pre
+            style="background: linear-gradient(to right, red 10%, purple 10% 90%, magenta 90%);line-height: 2.5; color: white;">linear-gradient(red 0 10%, purple 10% 90%, magenta 90% 100%);</pre>
+        </section>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Color Hints</h1>
+        </header>
+      </div>
 
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>color-hint</h1>
-  </header>
-  <section class="content">
-    <pre style="background: linear-gradient(to right, rebeccapurple, magenta); line-height: 2.5; color: white;">linear-gradient(rebeccapurple, magenta);</pre>
-    <pre style="background: linear-gradient(to right, rebeccapurple, 50%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 50%, magenta);</pre>
-    <pre style="background: linear-gradient(to right, rebeccapurple, 70%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 70%, magenta);</pre>
-    <pre style="background: linear-gradient(to right, rebeccapurple, 90%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 90%, magenta);</pre>
+      <!-- Color Hints Explained -->
+      <div class="slide">
+        <header>
+          <h1>color-hint</h1>
+        </header>
+        <section class="content">
+
+          <ul>
+            <li>Midpoint of transition between 2 stops</li>
+            <li>Length? Any length unit</li>
+            <li>Percent? relative to gradient line which is relative to image size</li>
+            <li>Hard Stop? Use 0%, the next position, or use 2 positions on the previous color stop</li>
+            <li>Point is relative to the 0 (zero) mark, not from the previous color stop</li>
+          </ul>
+        </section>
+      </div>
 
 
-    <pre style="background: linear-gradient(to right, rebeccapurple, 100%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 100%, magenta);</pre>
-  </section>
-</div>
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>color-hint</h1>
+        </header>
+        <section class="content">
+          <pre
+            style="background: linear-gradient(to right, rebeccapurple, magenta); line-height: 2.5; color: white;">linear-gradient(rebeccapurple, magenta);</pre>
+          <pre
+            style="background: linear-gradient(to right, rebeccapurple, 50%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 50%, magenta);</pre>
+          <pre
+            style="background: linear-gradient(to right, rebeccapurple, 70%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 70%, magenta);</pre>
+          <pre
+            style="background: linear-gradient(to right, rebeccapurple, 90%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 90%, magenta);</pre>
+
+
+          <pre
+            style="background: linear-gradient(to right, rebeccapurple, 100%, magenta);line-height: 2.5; color: white;">linear-gradient(rebeccapurple, 100%, magenta);</pre>
+        </section>
+      </div>
 
 
 
-<!-- Overlapping -->
-<div class="slide object">
-  <header>
-    <h1>Color Hint</h1>
-  </header>
+      <!-- Overlapping -->
+      <div class="slide object">
+        <header>
+          <h1>Color Hint</h1>
+        </header>
 
-  <object data="files/colorhint1.html"></object>
-  <a href="files/colorhint1.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-
-
-<!-- Overlapping -->
-<div class="slide object">
-  <header>
-    <h1>Color Hint</h1>
-  </header>
-
-  <object data="files/colorhintconic.html"></object>
-  <a href="files/colorhintconic.html" class="objectlink" target="play">Try it out</a>
-</div>
+        <object data="files/colorhint1.html"></object>
+        <a href="files/colorhint1.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
-<!-- DIVIDER -->
-<div class="slide intro">
-  <header>
-    <h1>Linear Gradients</h1>
-  </header>
-</div>
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Direction</h1>
-  </header>
-</div>
+      <!-- Overlapping -->
+      <div class="slide object">
+        <header>
+          <h1>Color Hint</h1>
+        </header>
+
+        <object data="files/colorhintconic.html"></object>
+        <a href="files/colorhintconic.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Keyterm Directions</h1>
-  </header>
-</div>
+      <!-- DIVIDER -->
+      <div class="slide intro">
+        <header>
+          <h1>Linear Gradients</h1>
+        </header>
+      </div>
 
-<!-- Corners and sides -->
-<div class="slide">
-  <header>
-    <h1>to &lt;side-or-corner&gt;</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>linear-gradient( [&lt;angle&gt; | to <em>&lt;side-or-corner&gt;</em>, ]? 
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Direction</h1>
+        </header>
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Keyterm Directions</h1>
+        </header>
+      </div>
+
+      <!-- Corners and sides -->
+      <div class="slide">
+        <header>
+          <h1>to &lt;side-or-corner&gt;</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>linear-gradient( [&lt;angle&gt; | to <em>&lt;side-or-corner&gt;</em>, ]? 
    [ &lt;color-stop&gt; [, &lt;color-hint&gt; ]?, ]# &lt;color-stop&gt; )</pre>
-   <p>Gradient progresses toward the declared side or corner.</code></p>
-   <pre style="float: left; margin-right: 1em;">to [left | right] || [top | bottom]</pre>
-   <pre style="float: left" contenteditable>  to top
+          <p>Gradient progresses toward the declared side or corner.</code></p>
+          <pre style="float: left; margin-right: 1em;">to [left | right] || [top | bottom]</pre>
+          <pre style="float: left" contenteditable>  to top
   <em>to bottom</em>
   to left
   to right
@@ -456,31 +476,32 @@ Twitter: @estellevw
   to top right
   to bottom left
   to bottom right</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
- <!-- keyterm values -->
-<div class="slide dark object linear50" id="basiclinear">
-     <header>
-    <h1>Linear Gradient: Gradient Directions</h1>
-  </header>
-     <section class="content" style="margin-top:100px;">
-     
-      <select style="font-size: 1em;" onChange="basicGradientChange();" id="slct_basicgradient">
-   		<option value=""></option>
-        <option value="to top">to top</option>
-        <option value="to bottom">to bottom</option>
-        <option valut="to left">to left</option>
-        <option value="to right">to right</option>
-        <option value="to top left">to top left</option>
-        <option value="to top right">to top right</option>
-        <option value="to bottom left">to bottom left</option>
-        <option value="to bottom right">to bottom right</option>
-   </select>
-   <pre contenteditable>background: linear-gradient(<span id="basicgradient"></span> rebeccapurple 50%, magenta 50%);</pre>
+      <!-- keyterm values -->
+      <div class="slide dark object linear50" id="basiclinear">
+        <header>
+          <h1>Linear Gradient: Gradient Directions</h1>
+        </header>
+        <section class="content" style="margin-top:100px;">
 
-   		<pre style="float: left" contenteditable>&lt;side-or-corner&gt;
+          <select style="font-size: 1em;" onChange="basicGradientChange();" id="slct_basicgradient">
+            <option value=""></option>
+            <option value="to top">to top</option>
+            <option value="to bottom">to bottom</option>
+            <option valut="to left">to left</option>
+            <option value="to right">to right</option>
+            <option value="to top left">to top left</option>
+            <option value="to top right">to top right</option>
+            <option value="to bottom left">to bottom left</option>
+            <option value="to bottom right">to bottom right</option>
+          </select>
+          <pre
+            contenteditable>background: linear-gradient(<span id="basicgradient"></span> rebeccapurple 50%, magenta 50%);</pre>
+
+          <pre style="float: left" contenteditable>&lt;side-or-corner&gt;
   to top
   <em>to bottom</em>
   to left
@@ -490,102 +511,79 @@ Twitter: @estellevw
   to bottom left
   to bottom right</pre>
 
-        
-     <script defer="">
-			function basicGradientChange(event) {
-				var value = document.getElementById('slct_basicgradient').value, invertvalue;
-				switch (value) {
 
-					case "to top":
-					case "to bottom":
-						 invertvalue = 'to left';
-						 break;
+          <script defer="">
+            function basicGradientChange(event) {
+              var value = document.getElementById('slct_basicgradient').value, invertvalue;
+              switch (value) {
 
-					case "to left":
-					case "to right":
-						 invertvalue = 'to top';
-						 break;
-					case "top left":
-					case "bottom right":
-						 invertvalue = 'to bottom left';
-						 break;
+                case "to top":
+                case "to bottom":
+                  invertvalue = 'to left';
+                  break;
 
-					case "bottom left":
-					case "top right":
-						 invertvalue = 'to bottom right';
-						 break;
-				}
-                document.getElementsByClassName('basiclinearslide')[0].style.background =
-                     'linear-gradient(' + value + ', transparent 49.95%, black 49.95%, black 50%, transparent 50%)';
-				document.getElementById('basiclinear').style.background =
-					 'linear-gradient(' + value + ', rebeccapurple 50%, magenta 50%)';
+                case "to left":
+                case "to right":
+                  invertvalue = 'to top';
+                  break;
+                case "top left":
+                case "bottom right":
+                  invertvalue = 'to bottom left';
+                  break;
 
-				if(value) {
-                	document.getElementById('basicgradient').innerHTML = value + ", ";
-				} else {
-					document.getElementById('basicgradient').innerHTML = "";
-				}
+                case "bottom left":
+                case "top right":
+                  invertvalue = 'to bottom right';
+                  break;
               }
-	</script>
-     </section>
-     <div class="basiclinearslide gradientpoop"></div>
- </div>
+              document.getElementsByClassName('basiclinearslide')[0].style.background =
+                'linear-gradient(' + value + ', transparent 49.95%, black 49.95%, black 50%, transparent 50%)';
+              document.getElementById('basiclinear').style.background =
+                'linear-gradient(' + value + ', rebeccapurple 50%, magenta 50%)';
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Magic Corners</h1>
-  </header>
-  <section class="content">
-  <svg style="width: 600px; height: 600px"><defs>
-      <linearGradient id="Gradient1" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(0)">
-        <stop offset="48%" stop-color="magenta"/>
-        <stop offset="52%" stop-color="rebeccapurple"/>
-      </linearGradient>
-</defs>
-  <rect
-     stroke="black"
-     fill="url(#Gradient1)"
-     width="450"
-     height="250"
-     x="100"
-     y="100" />
-  <circle
-     cx="325"
-     cy="225"
-     r="3" />
-  <g transform="matrix(0.22561138,-0.97421738,0.97421738,0.22561138,39.550239,495.54834)">
-    <line
-       x1="521"
-       y1="101"
-       x2="387"
-       y2="-45"
-       style="stroke:#000000;stroke-width:2" />
-    <line
-       x1="297"
-       y1="514"
-       x2="119"
-       y2="316"
-       style="stroke:#000000;stroke-width:2" />
-    <line
-       x1="164"
-       y1="370"
-       x2="490"
-       y2="65"
-       style="stroke:#000000;stroke-width:4" />
-  </g>  
-</svg>
-  </section>
-</div>
+              if (value) {
+                document.getElementById('basicgradient').innerHTML = value + ", ";
+              } else {
+                document.getElementById('basicgradient').innerHTML = "";
+              }
+            }
+          </script>
+        </section>
+        <div class="basiclinearslide gradientpoop"></div>
+      </div>
 
-<div class="slide object">
-  <object data="files/sidecorner1.html"></object>
-  <a href="files/sidecorner1.html" class="objectlink" target="_new">Try it out</a>
- </div>
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Magic Corners</h1>
+        </header>
+        <section class="content">
+          <svg style="width: 600px; height: 600px">
+            <defs>
+              <linearGradient id="Gradient1" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(0)">
+                <stop offset="48%" stop-color="magenta" />
+                <stop offset="52%" stop-color="rebeccapurple" />
+              </linearGradient>
+            </defs>
+            <rect stroke="black" fill="url(#Gradient1)" width="450" height="250" x="100" y="100" />
+            <circle cx="325" cy="225" r="3" />
+            <g transform="matrix(0.22561138,-0.97421738,0.97421738,0.22561138,39.550239,495.54834)">
+              <line x1="521" y1="101" x2="387" y2="-45" style="stroke:#000000;stroke-width:2" />
+              <line x1="297" y1="514" x2="119" y2="316" style="stroke:#000000;stroke-width:2" />
+              <line x1="164" y1="370" x2="490" y2="65" style="stroke:#000000;stroke-width:4" />
+            </g>
+          </svg>
+        </section>
+      </div>
+
+      <div class="slide object">
+        <object data="files/sidecorner1.html"></object>
+        <a href="files/sidecorner1.html" class="objectlink" target="_new">Try it out</a>
+      </div>
 
 
 
- <!-- angle values
+      <!-- angle values
 <div class="slide dark object basiclinear" id="slide_basiclinearangles">
      <header>
     <h1>Linear Gradient Angles</h1>
@@ -623,150 +621,153 @@ background: linear-gradient(<span id="basiclinearangles"></span>rebeccapurple, m
  </div>
  -->
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Linear Gradient Angles</h1>
-  </header>
-</div>
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Linear Gradient Angles</h1>
+        </header>
+      </div>
 
-<!-- Corners and sides -->
-<div class="slide">
-  <header>
-    <h1>Keyterm Directions</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>linear-gradient([<em>&lt;angle&gt;</em>| to &lt;side-or-corner&gt;,]? 
+      <!-- Corners and sides -->
+      <div class="slide">
+        <header>
+          <h1>Keyterm Directions</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>linear-gradient([<em>&lt;angle&gt;</em>| to &lt;side-or-corner&gt;,]? 
    [&lt;color-stop&gt;[, &lt;color-hint&gt;]?, ]# &lt;color-stop&gt;)</pre>
-   <ul>
-   <li>Gradient progresses the declared angle.</li>
-   <li>Degrees go clockwise, starting at 12:00
-      <ul>
-        <li>top: 0%;</li>
-        <li>right: 90%;</li>
-        <li>bottom: 180%;</li>
-        <li>left: 270%;</li>
-      </ul>
-    </li>
-   <li>0deg is the same as <code>to top</code></li>
-    <li><code>45%</code> is NOT the same as <code>to top right</code></li>
-    <li><code>deg</code> is required</li>
-  </ul>
+          <ul>
+            <li>Gradient progresses the declared angle.</li>
+            <li>Degrees go clockwise, starting at 12:00
+              <ul>
+                <li>top: 0%;</li>
+                <li>right: 90%;</li>
+                <li>bottom: 180%;</li>
+                <li>left: 270%;</li>
+              </ul>
+            </li>
+            <li>0deg is the same as <code>to top</code></li>
+            <li><code>45%</code> is NOT the same as <code>to top right</code></li>
+            <li><code>deg</code> is required</li>
+          </ul>
 
-   
 
-  </section>
-</div>
-<!-- angle values -->
-<div class="slide dark object linear50" id="slide_basiclinearangles2">
-     <header>
-    <h1>W3C Linear Gradient Angles</h1>
-  </header>
-     <section class="content" style="margin-top:100px;">
-     <pre contenteditable>
+
+        </section>
+      </div>
+      <!-- angle values -->
+      <div class="slide dark object linear50" id="slide_basiclinearangles2">
+        <header>
+          <h1>W3C Linear Gradient Angles</h1>
+        </header>
+        <section class="content" style="margin-top:100px;">
+          <pre contenteditable>
 
 background: linear-gradient(<span id="basiclinearangles2"></span>
              rebeccapurple 50%, magenta 50%);
 
      </pre>
-   <input type="range" min="0" max="360" onChange="angleGradientChange2();" id="slct_basiclinearangles2" />
+          <input type="range" min="0" max="360" onChange="angleGradientChange2();" id="slct_basiclinearangles2" />
 
-     <script defer="">
-      function angleGradientChange2(event) {
-        var value = document.getElementById('slct_basiclinearangles2').value || 270;
-        var degvalue = value + "deg";
-        var invertvalue = value - 90;
+          <script defer="">
+            function angleGradientChange2(event) {
+              var value = document.getElementById('slct_basiclinearangles2').value || 270;
+              var degvalue = value + "deg";
+              var invertvalue = value - 90;
 
-                document.getElementsByClassName('slide_basiclinearangles2')[0].style.background =
-                    'linear-gradient(' + value + 'deg, transparent 49.85%, black 49.85%, black 50%, transparent 50%)'
-        document.getElementById('slide_basiclinearangles2').style.background =
-          'linear-gradient(' + degvalue + ', rebeccapurple 50%, magenta 50%)';
+              document.getElementsByClassName('slide_basiclinearangles2')[0].style.background =
+                'linear-gradient(' + value + 'deg, transparent 49.85%, black 49.85%, black 50%, transparent 50%)'
+              document.getElementById('slide_basiclinearangles2').style.background =
+                'linear-gradient(' + degvalue + ', rebeccapurple 50%, magenta 50%)';
 
-        if(value) {
-                  document.getElementById('basiclinearangles2').innerHTML = "<b>" + degvalue + "</b>, ";
-        } else {
-          document.getElementById('basiclinearangles2').innerHTML = "";
-        }
+              if (value) {
+                document.getElementById('basiclinearangles2').innerHTML = "<b>" + degvalue + "</b>, ";
+              } else {
+                document.getElementById('basiclinearangles2').innerHTML = "";
               }
-  </script>
-     </section>
-<div class="slide_basiclinearangles2 gradientpoop"></div>
- </div>
+            }
+          </script>
+        </section>
+        <div class="slide_basiclinearangles2 gradientpoop"></div>
+      </div>
 
 
 
 
 
- <!-- angels != keyterms -->
-<div class="slide dark object linear50" id="slide_anglevkeyterm">
-     <header>
-    <h1>Angles ≠ Keyterms</h1>
-  </header>
-     <section class="content" style="margin-top:100px;">
-     <pre contenteditable>
+      <!-- angels != keyterms -->
+      <div class="slide dark object linear50" id="slide_anglevkeyterm">
+        <header>
+          <h1>Angles ≠ Keyterms</h1>
+        </header>
+        <section class="content" style="margin-top:100px;">
+          <pre contenteditable>
 
 background: linear-gradient(<span id="anglevkeyterm"></span>rebeccapurple 50%, magenta 50%);
 
      </pre>
-   <button onClick="angleNotEqual('45deg')">45deg</button> <button onClick="angleNotEqual('to top right')"> to top right</button>
+          <button onClick="angleNotEqual('45deg')">45deg</button> <button onClick="angleNotEqual('to top right')"> to
+            top right</button>
 
 
-     <script defer="">
-			function angleNotEqual(angle) {
+          <script defer="">
+            function angleNotEqual(angle) {
 
-                document.getElementsByClassName('slide_anglevkeyterm')[0].style.background =
-                    'linear-gradient(' + angle + ', transparent 49%, black 49 51%, transparent 51%)';
-				document.getElementById('slide_anglevkeyterm').style.background =
-					'linear-gradient(' + angle + ', rebeccapurple 50%, magenta 50%)';
-                document.getElementById('anglevkeyterm').innerHTML = "<b>" + angle + "</b>, ";
-              }
-	</script>
-     </section>
-<div class="slide_anglevkeyterm gradientpoop"></div></div>
+              document.getElementsByClassName('slide_anglevkeyterm')[0].style.background =
+                'linear-gradient(' + angle + ', transparent 49%, black 49 51%, transparent 51%)';
+              document.getElementById('slide_anglevkeyterm').style.background =
+                'linear-gradient(' + angle + ', rebeccapurple 50%, magenta 50%)';
+              document.getElementById('anglevkeyterm').innerHTML = "<b>" + angle + "</b>, ";
+            }
+          </script>
+        </section>
+        <div class="slide_anglevkeyterm gradientpoop"></div>
+      </div>
 
-<!-- angels != keyterms 2 -->
-<div class="slide">
-   <header>
-    <h1>Angles ≠ Keyterms</h1>
-  </header>
-  <section class="content">
-     <div class="comparegrad comparegradkeyterm" id="comparegrad1"><span class="button">to top right</span>
-     	<div class="comparegrad1 gradientpoop"></div>
-     </div>
-     <div class="comparegrad comparegradangle" id="comparegrad2"><span class="button">45deg</span>
-     	<div class="comparegrad2 gradientpoop"></div>
-     </div>
-     <input type="range" onChange="heightChange(this);" min="100" max="450" style="transform: rotate(90deg); position:absolute; right:10px; top: 200px;">
-     </section>
+      <!-- angels != keyterms 2 -->
+      <div class="slide">
+        <header>
+          <h1>Angles ≠ Keyterms</h1>
+        </header>
+        <section class="content">
+          <div class="comparegrad comparegradkeyterm" id="comparegrad1"><span class="button">to top right</span>
+            <div class="comparegrad1 gradientpoop"></div>
+          </div>
+          <div class="comparegrad comparegradangle" id="comparegrad2"><span class="button">45deg</span>
+            <div class="comparegrad2 gradientpoop"></div>
+          </div>
+          <input type="range" onChange="heightChange(this);" min="100" max="450"
+            style="transform: rotate(90deg); position:absolute; right:10px; top: 200px;">
+        </section>
 
-     <script defer>
-	 function heightChange(val){
-		var height = val.value + 'px';
-		var divs = document.querySelectorAll('.comparegrad');
-		for(var i=0, count = divs.length; count > i; i++){
-			divs[i].style.height = height;
-		}
-	 }
-	 </script>
- </div>
+        <script defer>
+          function heightChange(val) {
+            var height = val.value + 'px';
+            var divs = document.querySelectorAll('.comparegrad');
+            for (var i = 0, count = divs.length; count > i; i++) {
+              divs[i].style.height = height;
+            }
+          }
+        </script>
+      </div>
 
- <!-- DIVIDER -->
-<div class="slide divider">
-   <header>
-    <h1>Examples</h1>
-  </header>
-   <section class="content">
-   </section>
- </div>
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Examples</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
 
-<!-- table cloth -->
-<div class="slide object angledStripes" id="tablecloth">
-     <header>
-    <h1>Multiple with background-size</h1>
-  </header>
-  <section class="content">&nbsp;<br/>&nbsp;
-<pre style="background-color: rgba(255,255,255,0.7)">background-color: <span id="feature04" style="color: white; background: rebeccapurple; padding: 0 5px" onKeyUp="changeFeature('backgroundColor', 'feature04', 'tablecloth')" contenteditable>rebeccapurple</span>;
+      <!-- table cloth -->
+      <div class="slide object angledStripes" id="tablecloth">
+        <header>
+          <h1>Multiple with background-size</h1>
+        </header>
+        <section class="content">&nbsp;<br />&nbsp;
+          <pre style="background-color: rgba(255,255,255,0.7)">background-color: <span id="feature04" style="color: white; background: rebeccapurple; padding: 0 5px" onKeyUp="changeFeature('backgroundColor', 'feature04', 'tablecloth')" contenteditable>rebeccapurple</span>;
 
 background-image:
     linear-gradient(
@@ -777,904 +778,946 @@ background-image:
       rgba(255, 255, 255, 0) 50%);
 background-size: <span id="feature05" onKeyUp="changeFeature('backgroundSize', 'feature05', 'tablecloth')" contenteditable>100px 100px, 100px 100px</span>;
 </pre>
-<small>Change the color above</small>
-     </section>
- </div>
+          <small>Change the color above</small>
+        </section>
+      </div>
 
 
-<!-- color me instructions -->
-<div class="slide">
-   <header>
-    <h1>Edit the backgrounds</h1>
-  </header>
-  <section class="content">
-     <p style="text-align:center">In the next slide edit the code to<br>
-     make a background gradients.</p>
-     <ul>
-      <li>Change the direction: both magic corners and angles </li>
-      <li>create effects with color stops at same location</li>
-      <li>test out color hints</li>
-      <li>create effects by adding multiple gradients, playing with position and size</li>
-      <li>See more examples: <a href="https://leaverou.github.io/css3patterns/">Lea Verou's Patterns</a> and <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a></li>
-     </ul>
-     <p>Would this be an effective background image for content?</p>
-     </section>
- </div>
+      <!-- color me instructions -->
+      <div class="slide">
+        <header>
+          <h1>Edit the backgrounds</h1>
+        </header>
+        <section class="content">
+          <p style="text-align:center">In the next slide edit the code to<br>
+            make a background gradients.</p>
+          <ul>
+            <li>Change the direction: both magic corners and angles </li>
+            <li>create effects with color stops at same location</li>
+            <li>test out color hints</li>
+            <li>create effects by adding multiple gradients, playing with position and size</li>
+            <li>See more examples: <a href="https://leaverou.github.io/css3patterns/">Lea Verou's Patterns</a> and <a
+                href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a></li>
+          </ul>
+          <p>Would this be an effective background image for content?</p>
+        </section>
+      </div>
 
-<!-- play time -->
-<div class="slide object">
-  <header>
-    <h1>Play Time</h1>
-  </header>
- <object data="files/play1.html"></object>
-  <a href="files/play1.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-
-<!-- angled stripes -->
-<div class="slide object angledStripes" id="angledStripes">
-     <header>
-    <h1>Stripes with background-size</h1>
-  </header>
-  <section class="content">
-<style  contenteditable class="editme">#angledStripes { 
-  background-color: rebeccapurple;
-  background-image: linear-gradient(135deg,
-    rgba(255, 255, 255, 0.2) 0 25%,
-    rgba(255, 255, 255, 0) 25%  50%,
-    rgba(255, 255, 255, 0.2) 50%  75%,
-    rgba(255, 255, 255, 0) 75% 100%
-  );
-  background-size: 100px 100px;
-  background-repeat: repeat;
-</style>
-     </section>
- </div>
-
-<div class="slide object rainbow2" id="rainbow5">
-     <header>
-    <h1>Stripes</h1>
-  </header>
-  <section class="content">
-<style contenteditable class="editme">#rainbow5 {
-  background-image:
-    repeating-linear-gradient(145deg,
-      red 0 20px,
-      orange 20px 40px,
-      yellow 40px 60px,
-      green 60px 80px,
-      blue 80px 100px,
-      purple 100px 120px
-    );
-}</style>
-     </section></div>
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Repeating Linear Gradients</h1>
-  </header>
-</div>
-
-<div class="slide object" id="rainbow6">
-     <header>
-    <h1>Stripes</h1>
-  </header>
-  <section class="content">
-      <style contenteditable class="editme">#rainbow6 {
-  background-image: repeating-linear-gradient(135deg,
-      red 0 20px,
-      orange 20px 40px,
-      yellow 40px 60px,
-      green 60px 80px,
-      blue 80px 100px,
-      purple 100px 120px
-    );
-}</style>
-     </section></div>
+      <!-- play time -->
+      <div class="slide object">
+        <header>
+          <h1>Play Time</h1>
+        </header>
+        <object data="files/play1.html"></object>
+        <a href="files/play1.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
+      <!-- angled stripes -->
+      <div class="slide object angledStripes" id="angledStripes">
+        <header>
+          <h1>Stripes with background-size</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #angledStripes {
+              background-color: rebeccapurple;
+              background-image: linear-gradient(135deg,
+                  rgba(255, 255, 255, 0.2) 0 25%,
+                  rgba(255, 255, 255, 0) 25% 50%,
+                  rgba(255, 255, 255, 0.2) 50% 75%,
+                  rgba(255, 255, 255, 0) 75% 100%);
+              background-size: 100px 100px;
+              background-repeat: repeat;
+          </style>
+        </section>
+      </div>
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Repeating Linear Gradient Syntax</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable>repeating-linear-gradient([<em>&lt;angle&gt;</em>| to <em>&lt;side-or-corner&gt;</em>,]? 
+      <div class="slide object rainbow2" id="rainbow5">
+        <header>
+          <h1>Stripes</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #rainbow5 {
+              background-image:
+                repeating-linear-gradient(145deg,
+                  red 0 20px,
+                  orange 20px 40px,
+                  yellow 40px 60px,
+                  green 60px 80px,
+                  blue 80px 100px,
+                  purple 100px 120px);
+            }
+          </style>
+        </section>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Repeating Linear Gradients</h1>
+        </header>
+      </div>
+
+      <div class="slide object" id="rainbow6">
+        <header>
+          <h1>Stripes</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #rainbow6 {
+              background-image: repeating-linear-gradient(135deg,
+                  red 0 20px,
+                  orange 20px 40px,
+                  yellow 40px 60px,
+                  green 60px 80px,
+                  blue 80px 100px,
+                  purple 100px 120px);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Repeating Linear Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>repeating-linear-gradient([<em>&lt;angle&gt;</em>| to <em>&lt;side-or-corner&gt;</em>,]? 
    [<em>&lt;color-stop&gt;</em>[, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;color-stop&gt;</em>)</pre>
-     <p>Things to remember:</p>
-     <ol>
-      <li>Use 'to' with keyterms</li>
-      <li>Angles go counter clockwise</li>
-      <li>0deg is from left </li>
-      <li>Width is last specified color-stop's position minus the first specified color-stop's position</li>
-      <li>Color stops repeat indefinitely</li>
-      <li>border color-stops will create hard transitions if gradient doesn't start and end with the same color.</li>
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>Use 'to' with keyterms</li>
+            <li>Angles go counter clockwise</li>
+            <li>0deg is from left </li>
+            <li>Width is last specified color-stop's position minus the first specified color-stop's position</li>
+            <li>Color stops repeat indefinitely</li>
+            <li>border color-stops will create hard transitions if gradient doesn't start and end with the same color.
+            </li>
+          </ol>
+        </section>
+      </div>
 
-<!-- play time -->
-<div class="slide object">
-  <header>
-    <h1>width or repeating gradient</h1>
-  </header>
- <object data="files/repeat1.html"></object>
-  <a href="files/repeat1.html" class="objectlink" target="play">Try it out</a>
-</div>
-
-
-
- <!-- radial gradients title-->
-<div class="slide divider">
-     <header>
-    <h1>Radial Gradients</h1>
-  </header>
- </div>
+      <!-- play time -->
+      <div class="slide object">
+        <header>
+          <h1>width or repeating gradient</h1>
+        </header>
+        <object data="files/repeat1.html"></object>
+        <a href="files/repeat1.html" class="objectlink" target="play">Try it out</a>
+      </div>
 
 
- <!-- radial gradients title-->
-<div class="slide divider">
-     <header>
-    <h1>Radial Gradient: Syntax</h1>
-  </header>
- </div>
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Radial Gradient Syntax</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable>radial-gradient([<em>&lt;shape&gt;</em> || <em>&lt;size&gt;{0,2}</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
+      <!-- radial gradients title-->
+      <div class="slide divider">
+        <header>
+          <h1>Radial Gradients</h1>
+        </header>
+      </div>
+
+
+      <!-- radial gradients title-->
+      <div class="slide divider">
+        <header>
+          <h1>Radial Gradient: Syntax</h1>
+        </header>
+      </div>
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Radial Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>radial-gradient([<em>&lt;shape&gt;</em> || <em>&lt;size&gt;{0,2}</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
    [<em>&lt;color-stop&gt;</em>[, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;color-stop&gt;</em>)</pre>
-     <p>Things to remember:</p>
-     <ol><li>Use 'at' with position</li>
-      <li>position defaults to center center</li>
-      <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
-      <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
-      <li>Shape OR size, not both</li>
-      <li><code><em>&lt;size&gt;</em> == [ &lt;width-height> ] || [ &lt;width> &lt;height> ]</code><br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;         ⬆︎circle    &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    ⬆︎ellipse</li>
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>Use 'at' with position</li>
+            <li>position defaults to center center</li>
+            <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
+            <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
+            <li>Shape OR size, not both</li>
+            <li><code><em>&lt;size&gt;</em> == [ &lt;width-height> ] || [ &lt;width> &lt;height> ]</code><br /> &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; ⬆︎circle &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ⬆︎ellipse</li>
+          </ol>
+        </section>
+      </div>
 
 
- <!-- radial gradients -->
-<div class="slide" id="radial1">
-     <header>
-    <h1>Radial Gradients</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial1 {
-  background-image:
-    radial-gradient(ellipse at center, 
-      magenta 0%,
-      rebeccapurple 100%
-    );
-}</style>
-</section>
-</div>
-
-
-
-
- <!-- radial gradients title-->
-<div class="slide divider">
-     <header>
-    <h1>Radial Gradients: position</h1>
-  </header>
- </div>
-
-<!-- position -->
-<div class="slide">
-  <header>
-    <h1>position</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>same values as <code>background-position</code></li>
-      <li>include 'at'</li>
-
-      <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
-
-      <li>location of gradient center point</li>
-      <li>Start of gradient ray (not angled gradient line)</li>
-    </ul>
-  </section>
-</div>
-
- <!-- radial gradients -->
-<div class="slide" id="radial2">
-     <header>
-    <h1>Radial Gradients: position</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial2 {
-  background-image:
-    radial-gradient(ellipse at 75% 95%,
-      black  10px, 
-      magenta 10px,
-      rebeccapurple 100%);
-}</style>
-</section>
-</div>
-
-
- <!-- radial gradients -->
-<div class="slide" id="radial3">
-     <header>
-    <h1>Radial Gradients: position</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial3 {
-  background-image:
-    radial-gradient(ellipse at right 20px bottom 50px,
-      black  10px, 
-      magenta 10px,
-      rebeccapurple 100%);
-}</style>
-</section>
-</div>
-
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Radial Gradient: <br/>Shape &amp; Size</h1>
-  </header>
-</div>
-
-<!-- radial shape -->
-<div class="slide">
-   <header>
-    <h1>Shapes</h1>
-  </header>
-  <section class="content">
-<p>Two options: </p>
-<ul>
-	<li>circle</li>
-  <li class="imp">ellipse</li>
-</ul>
-<p>declared explicitly, or implied via size declaration</p>
-<ul>
-  <li>circle: single length value: radius</li>
-  <li>ellipse: two length values: width height</li>
-  <li>percentage size only for ellipses, so you have to declare two.</li>
-</ul>
-     </section>
- </div>
-
-
-
- <!-- radial gradients -->
-<div class="slide" id="radial4">
-     <header>
-    <h1>Radial Gradients: shape keyterms</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial4 {
-  background-image:
-    radial-gradient(ellipse,
-      black 10px, 
-      magenta 10px 50%,
-      rebeccapurple 50%);
-}</style>
-<pre>&lt;shape> == <b>ellipse</b> || circle </pre>
-</section>
-</div>
-
-
- <!-- radial gradients -->
-<div class="slide" id="radial5">
-     <header>
-    <h1>Radial Gradients: shape with lengths</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial5 {
-background-image:
-    radial-gradient(640px 490px,
-      black 10px, 
-      magenta 10px 50%,
-      rebeccapurple 50%);</style>
-</section>
-</div>
-
-
-
- <!-- radial gradients -->
-<div class="slide" id="radial6">
-     <header>
-    <h1>Percentage only works for ellipses</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial6 {
-  background-image:
-    radial-gradient(10% 50%,
-      black 10px, 
-      magenta 10px 50%,
-      rebeccapurple 50%);
-}</style>
-</section>
-</div>
-
-
-
-<!-- radial size -->
-<div class="slide object" id="radial05">
-     <header>
-    <h1>Sizing With Keywords</h1>
-  </header>
-  <section class="content">
-      <br/><br/>
-<ul style="background: #ffffffcc; padding: 20px 30px; border-radius: 10px; border: 1px solid; float: left">
-	<li>closest-side</li>
-<li>closest-corner</li>
-<li>farthest-side</li>
-<li><strong>farthest-corner</strong></li>
-<li><strike>contain (same as closest-side)</strike></li>
-<li><strike>cover (same as farthest-corner)</strike></li>
-</ul>
-     </section>
- </div>
+      <!-- radial gradients -->
+      <div class="slide" id="radial1">
+        <header>
+          <h1>Radial Gradients</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial1 {
+              background-image:
+                radial-gradient(ellipse at center,
+                  magenta 0%,
+                  rebeccapurple 100%);
+            }
+          </style>
+        </section>
+      </div>
 
 
 
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Keyterms</h1>
-  </header>
-  <section class="content">
-    <dl style="height: 75vh; overflow-y: scroll">
-      <dt>closest-side</dt>
-      <dd>circle: gradient ray end touches closest side.<br/>ellipse: vertical ray touches closest of top or bottom edge. horizontal ray touchest closest of right or left side.</dd>
-      <dt>farthest-side</dt>
-      <dd>circle: gradient ray end touches furthest side.<br/>ellipse: vertical ray touches furthest of top or bottom edge. horizontal ray touchest furthest of right or left side.</dd>
-      <dt>closest-corner</dt>
-      <dd>circle: radius is length from center of circle (position) to closest corner.<br/>ellipse: gradient ray touches corner closest to center while maintaining aspect ratio.</dd>
-      <dt class="imp">farthest-corner</dt>
-      <dd>Default!<br/>circle: radius is length from center of circle (position) to furthest corner.<br/>ellipse: gradient ray touches corner furthest from center while maintaining aspect ratio.</dd>
-    </dl>
-  </section>
-</div>
+      <!-- radial gradients title-->
+      <div class="slide divider">
+        <header>
+          <h1>Radial Gradients: position</h1>
+        </header>
+      </div>
+
+      <!-- position -->
+      <div class="slide">
+        <header>
+          <h1>position</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>same values as <code>background-position</code></li>
+            <li>include 'at'</li>
+
+            <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
+
+            <li>location of gradient center point</li>
+            <li>Start of gradient ray (not angled gradient line)</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- radial gradients -->
+      <div class="slide" id="radial2">
+        <header>
+          <h1>Radial Gradients: position</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial2 {
+              background-image:
+                radial-gradient(ellipse at 75% 95%,
+                  black 10px,
+                  magenta 10px,
+                  rebeccapurple 100%);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <!-- radial gradients -->
+      <div class="slide" id="radial3">
+        <header>
+          <h1>Radial Gradients: position</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial3 {
+              background-image:
+                radial-gradient(ellipse at right 20px bottom 50px,
+                  black 10px,
+                  magenta 10px,
+                  rebeccapurple 100%);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Radial Gradient: <br />Shape &amp; Size</h1>
+        </header>
+      </div>
+
+      <!-- radial shape -->
+      <div class="slide">
+        <header>
+          <h1>Shapes</h1>
+        </header>
+        <section class="content">
+          <p>Two options: </p>
+          <ul>
+            <li>circle</li>
+            <li class="imp">ellipse</li>
+          </ul>
+          <p>declared explicitly, or implied via size declaration</p>
+          <ul>
+            <li>circle: single length value: radius</li>
+            <li>ellipse: two length values: width height</li>
+            <li>percentage size only for ellipses, so you have to declare two.</li>
+          </ul>
+        </section>
+      </div>
 
 
 
- <!-- radial gradients -->
-<div class="slide" id="radial7">
-     <header>
-    <h1>Size with KeyTerms</h1>
-  </header>
-<section class="content">
-<style contenteditable class="editme">#radial7 {
-  background-image:
-    radial-gradient(circle farthest-corner 
-      at 40px 50px, 
-      black 10px, 
-      magenta 10px 99%,
-      rebeccapurple 99%);
-}</style>
-  <pre>closest-side | closest-corner | farthest-side | <strong>farthest-corner</strong></pre> 
-</section>
-</div>
-
-<!-- effects1 -->
-<div class="slide" id="radial8">
-     <header>
-    <h1>with Background size</h1>
-  </header>
-  <section class="content">
-<style contenteditable class="editme">#radial8 {
-  background-image:
-    radial-gradient(
-     circle,
-      rebeccapurple 50%,
-      magenta 50%);
-  background-size: 100px 100px;
-  background-repeat: repeat;
-}</style>
-</section>
- </div>
-
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1>Radial Gradients:<br/>color-stops &amp; color-hints</h1>
-  </header>
-</div>
-
-<!-- effects1 -->
-<div class="slide" id="radial9">
-     <header>
-    <h1>Play Time</h1>
-  </header>
-  <section class="content">
-      <pre>using keywords and position, make a circle with a 100px radius</pre>
-<style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto">#radial9 {
-  background-image:
-    radial-gradient(
-      red 0%,
-      orange 20%,
-      yellow 40%,
-      green 60%,
-      blue 80%,
-      purple 100%
-    );
-}</style>
+      <!-- radial gradients -->
+      <div class="slide" id="radial4">
+        <header>
+          <h1>Radial Gradients: shape keyterms</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial4 {
+              background-image:
+                radial-gradient(ellipse,
+                  black 10px,
+                  magenta 10px 50%,
+                  rebeccapurple 50%);
+            }
+          </style>
+          <pre>&lt;shape> == <b>ellipse</b> || circle </pre>
+        </section>
+      </div>
 
 
-</section>
- </div>
-
-
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Repeating Radial Gradient</h1>
-  </header>
-</div>
+      <!-- radial gradients -->
+      <div class="slide" id="radial5">
+        <header>
+          <h1>Radial Gradients: shape with lengths</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial5 {
+              background-image:
+                radial-gradient(640px 490px,
+                  black 10px,
+                  magenta 10px 50%,
+                  rebeccapurple 50%);
+          </style>
+        </section>
+      </div>
 
 
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>repeating-radial-gradient()</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable>repeating-radial-gradient([<em>&lt;shape&gt;</em>|| <em>&lt;size&gt;</em> at <em>&lt;position&gt;</em>]? 
+      <!-- radial gradients -->
+      <div class="slide" id="radial6">
+        <header>
+          <h1>Percentage only works for ellipses</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial6 {
+              background-image:
+                radial-gradient(10% 50%,
+                  black 10px,
+                  magenta 10px 50%,
+                  rebeccapurple 50%);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <!-- radial size -->
+      <div class="slide object" id="radial05">
+        <header>
+          <h1>Sizing With Keywords</h1>
+        </header>
+        <section class="content">
+          <br /><br />
+          <ul style="background: #ffffffcc; padding: 20px 30px; border-radius: 10px; border: 1px solid; float: left">
+            <li>closest-side</li>
+            <li>closest-corner</li>
+            <li>farthest-side</li>
+            <li><strong>farthest-corner</strong></li>
+            <li><strike>contain (same as closest-side)</strike></li>
+            <li><strike>cover (same as farthest-corner)</strike></li>
+          </ul>
+        </section>
+      </div>
+
+
+
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Keyterms</h1>
+        </header>
+        <section class="content">
+          <dl style="height: 75vh; overflow-y: scroll">
+            <dt>closest-side</dt>
+            <dd>circle: gradient ray end touches closest side.<br />ellipse: vertical ray touches closest of top or
+              bottom edge. horizontal ray touchest closest of right or left side.</dd>
+            <dt>farthest-side</dt>
+            <dd>circle: gradient ray end touches furthest side.<br />ellipse: vertical ray touches furthest of top or
+              bottom edge. horizontal ray touchest furthest of right or left side.</dd>
+            <dt>closest-corner</dt>
+            <dd>circle: radius is length from center of circle (position) to closest corner.<br />ellipse: gradient ray
+              touches corner closest to center while maintaining aspect ratio.</dd>
+            <dt class="imp">farthest-corner</dt>
+            <dd>Default!<br />circle: radius is length from center of circle (position) to furthest
+              corner.<br />ellipse: gradient ray touches corner furthest from center while maintaining aspect ratio.
+            </dd>
+          </dl>
+        </section>
+      </div>
+
+
+
+      <!-- radial gradients -->
+      <div class="slide" id="radial7">
+        <header>
+          <h1>Size with KeyTerms</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial7 {
+              background-image:
+                radial-gradient(circle farthest-corner at 40px 50px,
+                  black 10px,
+                  magenta 10px 99%,
+                  rebeccapurple 99%);
+            }
+          </style>
+          <pre>closest-side | closest-corner | farthest-side | <strong>farthest-corner</strong></pre>
+        </section>
+      </div>
+
+      <!-- effects1 -->
+      <div class="slide" id="radial8">
+        <header>
+          <h1>with Background size</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial8 {
+              background-image:
+                radial-gradient(circle,
+                  rebeccapurple 50%,
+                  magenta 50%);
+              background-size: 100px 100px;
+              background-repeat: repeat;
+            }
+          </style>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1>Radial Gradients:<br />color-stops &amp; color-hints</h1>
+        </header>
+      </div>
+
+      <!-- effects1 -->
+      <div class="slide" id="radial9">
+        <header>
+          <h1>Play Time</h1>
+        </header>
+        <section class="content">
+          <pre>using keywords and position, make a circle with a 100px radius</pre>
+          <style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto">
+            #radial9 {
+              background-image:
+                radial-gradient(red 0%,
+                  orange 20%,
+                  yellow 40%,
+                  green 60%,
+                  blue 80%,
+                  purple 100%);
+            }
+          </style>
+
+
+        </section>
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Repeating Radial Gradient</h1>
+        </header>
+      </div>
+
+
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>repeating-radial-gradient()</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>repeating-radial-gradient([<em>&lt;shape&gt;</em>|| <em>&lt;size&gt;</em> at <em>&lt;position&gt;</em>]? 
    [<em>&lt;color-stop&gt;</em>[, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;color-stop&gt;</em>)</pre>
 
-     <p>Things to remember:</p>
-     <ol>
-      <li>repeat size is the difference beween the first color stop and the last color stop.</li>
-      <li>repeats the radial gradient after the 100% mark.
-      </li>
-      <li>Has no impact when 'furthest-corner' is used or defaults for gradient size</li>
-      <li>Use 'at' with position</li>
-      <li>position is center of gradient</li>
-      <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>repeat size is the difference beween the first color stop and the last color stop.</li>
+            <li>repeats the radial gradient after the 100% mark.
+            </li>
+            <li>Has no impact when 'furthest-corner' is used or defaults for gradient size</li>
+            <li>Use 'at' with position</li>
+            <li>position is center of gradient</li>
+            <li>If shape is specified as circle or omitted, the size can be a length/percent</li>
+          </ol>
+        </section>
+      </div>
 
 
 
- <!-- radial gradients -->
-<div class="slide" id="radial10">
-     <header>
-    <h1>Repeating Radial Gradient</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial10 {
-  background-image:
-    repeating-radial-gradient(circle 
-      closest-side at 100px,
-      red 0%,
-      orange 20%,
-      yellow 40%,
-      green 60%,
-      blue 80%,
-      purple 100%
-    );
-}</style>
-</section>
-</div>
+      <!-- radial gradients -->
+      <div class="slide" id="radial10">
+        <header>
+          <h1>Repeating Radial Gradient</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial10 {
+              background-image:
+                repeating-radial-gradient(circle closest-side at 100px,
+                  red 0%,
+                  orange 20%,
+                  yellow 40%,
+                  green 60%,
+                  blue 80%,
+                  purple 100%);
+            }
+          </style>
+        </section>
+      </div>
 
 
- <!-- radial gradients -->
-<div class="slide" id="radial11">
-     <header>
-    <h1>Repeating Radial Gradient</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial11 {
-  background-image:
-    repeating-radial-gradient(circle,
-      magenta 0 40px,
-      orange 40px 80px
-    );
-}</style>
-</section>
-</div>
-
-
-
-
-
- <!-- radial gradients -->
-<div class="slide" id="radial12">
-     <header>
-    <h1>Make your own</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#radial12 {
-  background-image:
-    repeating-radial-gradient(
-      rebeccapurple,
-      magenta
-    );
-}</style>
-</section>
-</div>
+      <!-- radial gradients -->
+      <div class="slide" id="radial11">
+        <header>
+          <h1>Repeating Radial Gradient</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial11 {
+              background-image:
+                repeating-radial-gradient(circle,
+                  magenta 0 40px,
+                  orange 40px 80px);
+            }
+          </style>
+        </section>
+      </div>
 
 
 
-<div class="slide intro">
-  <header>
-    <h1>Conic gradients</h1>
-  </header>
-</div>
 
- <!-- radial gradients title-->
-<div class="slide divider">
-     <header>
-    <h1>Conic Gradient: Syntax</h1>
-  </header>
- </div>
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>Conic Gradient Syntax</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable>conic-gradient([from <em>&lt;angle&gt;</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
+      <!-- radial gradients -->
+      <div class="slide" id="radial12">
+        <header>
+          <h1>Make your own</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #radial12 {
+              background-image:
+                repeating-radial-gradient(rebeccapurple,
+                  magenta);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <div class="slide intro">
+        <header>
+          <h1>Conic gradients</h1>
+        </header>
+      </div>
+
+      <!-- radial gradients title-->
+      <div class="slide divider">
+        <header>
+          <h1>Conic Gradient: Syntax</h1>
+        </header>
+      </div>
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>Conic Gradient Syntax</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>conic-gradient([from <em>&lt;angle&gt;</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
    [<em>&lt;angle-color-stop&gt;</em>[, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;angle-color-stop&gt;</em>)</pre>
-     <p>Things to remember:</p>
-     <ol><li>Use 'at' with position</li>
-      <li>position defaults to center center</li>
-      <li>Use 'from' with angle</li>
-      <li>0deg points up, goes clockwise</li>
-      <li>&lt;position> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
-      <li>color stop positions have to be angles (or percentages)</li>
-      
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>Use 'at' with position</li>
+            <li>position defaults to center center</li>
+            <li>Use 'from' with angle</li>
+            <li>0deg points up, goes clockwise</li>
+            <li>&lt;position> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
+            <li>color stop positions have to be angles (or percentages)</li>
+
+          </ol>
+        </section>
+      </div>
 
 
 
- <!-- conic gradients -->
-<div class="slide" id="conic1">
-     <header>
-    <h1>Conic Gradients</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic1 {
-  background-image:
-    conic-gradient(
-      magenta 0%,
-      rebeccapurple 100%
-    );
-}</style>
-</section>
-</div>
-
-
-
-
- <!-- conic gradients title-->
-<div class="slide divider">
-     <header>
-    <h1>Conic Gradients: position</h1>
-  </header>
- </div>
-
-<!-- position -->
-<div class="slide">
-  <header>
-    <h1>position</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>same values as <code>background-position</code></li>
-      <li>include 'at'</li>
-
-      <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
-
-      <li>location of gradient center point</li>
-    </ul>
-  </section>
-</div>
-
- <!-- conic gradients -->
-<div class="slide" id="conic2">
-     <header>
-    <h1>Conic Gradients: position</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic2 {
-  background-image:
-    conic-gradient(at 75% 95%,
-      black  1%, 
-      magenta 1%,
-      rebeccapurple 100%);
-}</style>
-</section>
-</div>
-
-
- <!-- conic gradients -->
-<div class="slide" id="conic3">
-     <header>
-    <h1>Conic Gradients: position</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic3 {
-  background-image:
-    conic-gradient(at right 20px bottom 50px,
-      black  1deg, 
-      magenta 1deg,
-      rebeccapurple 360deg);
-}</style>
-</section>
-</div>
-
-
-<div class="slide divider">
-     <header>
-    <h1>Conic Gradients: direction</h1>
-  </header>
-</div>
-
- <!-- conic gradients -->
-<div class="slide" id="conic4">
-     <header>
-    <h1>Conic Gradients: start angle</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic4 {
-  background-image:
-    conic-gradient(from 0.1turn,
-      black 1%, 
-      magenta 1%,
-      rebeccapurple);
-}</style>
-</section>
-</div>
-
-
-
- <!-- conic gradients -->
-<div class="slide" id="conic5">
-     <header>
-    <h1>Conic Gradients: start angle</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic5 {
-  background-image:
-    conic-gradient(from 120deg,
-      black 1%, 
-      magenta 1%,
-      rebeccapurple);
-}</style>
-</section>
-</div>
+      <!-- conic gradients -->
+      <div class="slide" id="conic1">
+        <header>
+          <h1>Conic Gradients</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic1 {
+              background-image:
+                conic-gradient(magenta 0%,
+                  rebeccapurple 100%);
+            }
+          </style>
+        </section>
+      </div>
 
 
 
 
+      <!-- conic gradients title-->
+      <div class="slide divider">
+        <header>
+          <h1>Conic Gradients: position</h1>
+        </header>
+      </div>
 
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1>Conic Gradients:<br/>color-stops &amp; color-hints</h1>
-  </header>
-</div>
+      <!-- position -->
+      <div class="slide">
+        <header>
+          <h1>position</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>same values as <code>background-position</code></li>
+            <li>include 'at'</li>
 
-<!-- effects1 -->
-<div class="slide" id="conic6">
-     <header>
-    <h1>Play Time</h1>
-  </header>
-  <section class="content">
-      <pre>1) create a conic gradient with a soft transition from the 0% to the 100%
+            <li>&lt;postion> is horizontal-vertical, with one value changing horizontal (left/right) only.</li>
+
+            <li>location of gradient center point</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- conic gradients -->
+      <div class="slide" id="conic2">
+        <header>
+          <h1>Conic Gradients: position</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic2 {
+              background-image:
+                conic-gradient(at 75% 95%,
+                  black 1%,
+                  magenta 1%,
+                  rebeccapurple 100%);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <!-- conic gradients -->
+      <div class="slide" id="conic3">
+        <header>
+          <h1>Conic Gradients: position</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic3 {
+              background-image:
+                conic-gradient(at right 20px bottom 50px,
+                  black 1deg,
+                  magenta 1deg,
+                  rebeccapurple 360deg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <div class="slide divider">
+        <header>
+          <h1>Conic Gradients: direction</h1>
+        </header>
+      </div>
+
+      <!-- conic gradients -->
+      <div class="slide" id="conic4">
+        <header>
+          <h1>Conic Gradients: start angle</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic4 {
+              background-image:
+                conic-gradient(from 0.1turn,
+                  black 1%,
+                  magenta 1%,
+                  rebeccapurple);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+      <!-- conic gradients -->
+      <div class="slide" id="conic5">
+        <header>
+          <h1>Conic Gradients: start angle</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic5 {
+              background-image:
+                conic-gradient(from 120deg,
+                  black 1%,
+                  magenta 1%,
+                  rebeccapurple);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+
+
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1>Conic Gradients:<br />color-stops &amp; color-hints</h1>
+        </header>
+      </div>
+
+      <!-- effects1 -->
+      <div class="slide" id="conic6">
+        <header>
+          <h1>Play Time</h1>
+        </header>
+        <section class="content">
+          <pre>1) create a conic gradient with a soft transition from the 0% to the 100%
 2) Create a pie chart.</pre>
-<style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto">#conic6 {
-  background-image:
-    conic-gradient(
-      red 0%,
-      orange 20%,
-      yellow 40%,
-      green 60%,
-      blue 80%,
-      purple 100%
-    );
-}</style>
+          <style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto">
+            #conic6 {
+              background-image:
+                conic-gradient(red 0%,
+                  orange 20%,
+                  yellow 40%,
+                  green 60%,
+                  blue 80%,
+                  purple 100%);
+            }
+          </style>
 
 
-</section>
- </div>
-
-
-
-<!-- effects1 -->
-<div class="slide" id="checkers">
-     <header>
-    <h1>Checker Board</h1>
-  </header>
-  <section class="content">
-<style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto; background: white;">#checkers {
-  background-image:
-      conic-gradient(
-          #fff 0.25turn, 
-          #000 0.25turn 0.5turn, 
-          #fff 0.5turn 0.75turn, 
-          #000 0.75turn
-      );
-     background-size: 100px 100px;
-     border: 1px solid;
-}</style>
-
-
-</section>
- </div>
+        </section>
+      </div>
 
 
 
-<!-- DIVIDER -->
-<div class="slide divider">
-  <header>
-    <h1>Repeating Conic Gradient</h1>
-  </header>
-</div>
+      <!-- effects1 -->
+      <div class="slide" id="checkers">
+        <header>
+          <h1>Checker Board</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme" style="margin-top: : 1em; float: left; width: auto; background: white;">
+            #checkers {
+              background-image:
+                conic-gradient(#fff 0.25turn,
+                  #000 0.25turn 0.5turn,
+                  #fff 0.5turn 0.75turn,
+                  #000 0.75turn);
+              background-size: 100px 100px;
+              border: 1px solid;
+            }
+          </style>
+
+
+        </section>
+      </div>
 
 
 
- <!-- W3C syntax -->
-<div class="slide">
-   <header>
-    <h1>repeating-conic-gradient()</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>repeating-conic-gradient([from <em>&lt;angle&gt;</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
+      <!-- DIVIDER -->
+      <div class="slide divider">
+        <header>
+          <h1>Repeating Conic Gradient</h1>
+        </header>
+      </div>
+
+
+
+      <!-- W3C syntax -->
+      <div class="slide">
+        <header>
+          <h1>repeating-conic-gradient()</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>repeating-conic-gradient([from <em>&lt;angle&gt;</em>]? [ at <em>&lt;position&gt;{1,2}</em>]?  
    [<em>&lt;angle-color-stop&gt;</em>[, <em>&lt;color-hint&gt;</em>]?, ]# <em>&lt;angle-color-stop&gt;</em>)</pre>
 
-     <p>Things to remember:</p>
-     <ol>
-      <li>repeat size is the difference beween the first color stop and the last color stop.</li>
-    
-      <li>Use 'at' with position</li>
-      <li>Use 'from' for angle</li>
-      <li>position is center of gradient</li>
-     </ol>
-     </section>
- </div>
+          <p>Things to remember:</p>
+          <ol>
+            <li>repeat size is the difference beween the first color stop and the last color stop.</li>
+
+            <li>Use 'at' with position</li>
+            <li>Use 'from' for angle</li>
+            <li>position is center of gradient</li>
+          </ol>
+        </section>
+      </div>
 
 
 
- <!-- conic gradients -->
-<div class="slide" id="conic7">
-     <header>
-    <h1>Repeating conic Gradient</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic7 {
-  background-image:
-    repeating-conic-gradient(
-      red 0%,
-      orange 20%,
-      yellow 40%,
-      green 60%,
-      blue 80%,
-      purple 100%
-    );
-}</style>
-</section>
-</div>
+      <!-- conic gradients -->
+      <div class="slide" id="conic7">
+        <header>
+          <h1>Repeating conic Gradient</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic7 {
+              background-image:
+                repeating-conic-gradient(red 0%,
+                  orange 20%,
+                  yellow 40%,
+                  green 60%,
+                  blue 80%,
+                  purple 100%);
+            }
+          </style>
+        </section>
+      </div>
 
 
- <!-- conic gradients -->
-<div class="slide" id="conic11">
-     <header>
-    <h1>Repeating conic Gradient</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic11 {
-  background-image:
-    repeating-conic-gradient(
-      magenta 0 4deg,
-      orange 4deg 8deg
-    );
-}</style>
-</section>
-</div>
+      <!-- conic gradients -->
+      <div class="slide" id="conic11">
+        <header>
+          <h1>Repeating conic Gradient</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic11 {
+              background-image:
+                repeating-conic-gradient(magenta 0 4deg,
+                  orange 4deg 8deg);
+            }
+          </style>
+        </section>
+      </div>
 
 
 
 
 
- <!-- conic gradients -->
-<div class="slide" id="conic12">
-     <header>
-    <h1>Make your own</h1>
-  </header>
-<section class="content">
-  <style contenteditable class="editme">#conic12 {
-  background-image:
-    repeating-conic-gradient(
-      rebeccapurple,
-      magenta
-    );
-}</style>
-</section>
-</div>
+      <!-- conic gradients -->
+      <div class="slide" id="conic12">
+        <header>
+          <h1>Make your own</h1>
+        </header>
+        <section class="content">
+          <style contenteditable class="editme">
+            #conic12 {
+              background-image:
+                repeating-conic-gradient(rebeccapurple,
+                  magenta);
+            }
+          </style>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>Exercise</h1>
-  </header>
-  <section class="content exercisecards">
-  <figure>
-  <div class="card" data-type="H">
-    <div class="back"></div>
-    <div class="face" data-value="A">♥</div>
-  </div>
-  <div class="card" data-type="C">
-    <div class="back"></div>
-    <div class="face" data-value="A">♣</div>
-  </div>
-  <div class="card" data-type="D">
-    <div class="back"></div>
-   <div class="face" data-value="A">♦</div>
-  </div>
-</figure>
-    <p>Let's design the back of our playing cards.</p>
-    <ol>
-      <li>Hide the face with <code>visibility: hidden</code> temporarily, so you can see the back of your cards.</li>
-      <li>Create a gradient design for your deck. All cards are the same (this is a deck!)</li>
-      <li>Use background properties as needed</li>
-      <li>If you have theme color(s) for your cards, use custom properties</li>
+      <div class="slide">
+        <header>
+          <h1>Exercise</h1>
+        </header>
+        <section class="content exercisecards">
+          <figure>
+            <div class="card" data-type="H">
+              <div class="back"></div>
+              <div class="face" data-value="A">♥</div>
+            </div>
+            <div class="card" data-type="C">
+              <div class="back"></div>
+              <div class="face" data-value="A">♣</div>
+            </div>
+            <div class="card" data-type="D">
+              <div class="back"></div>
+              <div class="face" data-value="A">♦</div>
+            </div>
+          </figure>
+          <p>Let's design the back of our playing cards.</p>
+          <ol>
+            <li>Hide the face with <code>visibility: hidden</code> temporarily, so you can see the back of your cards.
+            </li>
+            <li>Create a gradient design for your deck. All cards are the same (this is a deck!)</li>
+            <li>Use background properties as needed</li>
+            <li>If you have theme color(s) for your cards, use custom properties</li>
 
-    </ol>
-    <a href="exercises/cards.html" target="exercise">HTML</a> | <a href="exercises/style.css" target="css">CSS</a>
-  </section>
-</div>
+          </ol>
+          <a href="exercises/cards.html" target="exercise">HTML</a> | <a href="exercises/style.css" target="css">CSS</a>
+        </section>
+      </div>
 
-<div class="slide">
-  <header>
-    <h1>Solution</h1>
-  </header>
-  <section class="content">
-    <p><a href="exercises/answer.html" target="exercise">HTML</a> | <a href="exercises/answer.css" target="css">CSS</a></p>
-    <p>There is no "correct" solution...
-      <br/>... or all solutions are correct</p>
-  </section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>Solution</h1>
+        </header>
+        <section class="content">
+          <p><a href="exercises/answer.html" target="exercise">HTML</a> | <a href="exercises/answer.css"
+              target="css">CSS</a></p>
+          <p>There is no "correct" solution...
+            <br />... or all solutions are correct
+          </p>
+        </section>
+      </div>
 
-<div class="slide">
-  <header>
-    <h1>Solution</h1>
-  </header>
-  <section class="content">
-    <ul>
-    <li>Hide the face with <code>visibility: hidden</code> temporarily, so you can see the back of your cards.
-      <pre contenteditable>face {
+      <div class="slide">
+        <header>
+          <h1>Solution</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Hide the face with <code>visibility: hidden</code> temporarily, so you can see the back of your cards.
+              <pre contenteditable>face {
   font-size: 2em;
   <i>visibility: hidden;</i>
 }</pre>
-    </li><li>If you have theme color(s) for your cards, use custom properties
+            </li>
+            <li>If you have theme color(s) for your cards, use custom properties
 
-      <pre contenteditable><i>:root {
+              <pre contenteditable><i>:root {
   --theme: red;
 }</i></pre>
-      </li>
-      <li>Create a gradient design for your deck. All cards are the same (this is a deck!)
+            </li>
+            <li>Create a gradient design for your deck. All cards are the same (this is a deck!)
 
-      <pre contenteditable><i>background-image: 
+              <pre contenteditable><i>background-image: 
      linear-gradient(-45deg, var(--theme) 25%, transparent 25% 75%, var(--theme) 75%), 
      linear-gradient(-45deg, var(--theme) 25%, transparent 25% 75%, rgb(255, 255, 255) 75%), 
      linear-gradient(45deg, var(--theme) 17%, transparent 17% 25%, var(--theme) 25% 36%, transparent 36% 64%, var(--theme) 64% 75%, transparent 75% 83%, var(--theme) 83%);</i>
 </pre>
-      </li>
-      <li>Use background properties as needed
+            </li>
+            <li>Use background properties as needed
 
-      <pre contenteditable>.back {
+              <pre contenteditable>.back {
   background-image: 
      linear-gradient(-45deg, var(--theme) 25%, transparent 25% 75%, var(--theme) 75%), 
      linear-gradient(-45deg, var(--theme) 25%, transparent 25% 75%, rgb(255, 255, 255) 75%), 
@@ -1683,81 +1726,82 @@ background-image:
   background-size: 2em 2em;
   background-position: -1em -1em;</i>
 }</pre>
-      </li>
-      
-    </ul>
-  </section>
-</div>
+            </li>
+
+          </ul>
+        </section>
+      </div>
 
 
 
-<div class="slide intro">
-  <header>
-    <h1>Box Model</h1>
-  </header>
-  <h1><a href="../boxmodel/index.html">Next ➹</a></h1>
-</div>
+      <div class="slide intro">
+        <header>
+          <h1>Box Model</h1>
+        </header>
+        <h1><a href="../boxmodel/index.html">Next ➹</a></h1>
+      </div>
 
 
 
-<div class="slide dots">
-  <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
 
-<p></ol>
-  </section>
-</div>
-
-
-<div class="slide">
-<header><h1>Links</h1>
-  </header>
-<section class="content">
-</section>
-</div>
+            <p>
+          </ol>
+        </section>
+      </div>
 
 
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
 
+
+
+    </div>
   </div>
-  </div>
-<header>
-<nav>
-<ul>
-  <li><button class="button cancel" id="back">Back</button></li>
-  <li><button class="button done" id="next">Next</button></li>
-</ul>
-</nav>
-</header>
- <footer id="info">
-<p style="float:right"><a href="http://www.twitter.com/estellevw">@estellevw</a> &middot; Press <span>&rarr;</span> key to advance. &middot;<a href="https://estelle.github.com/CSS/">Estelle.Github.com/CSS/</a></p>
-</footer>
+  <header>
+    <nav>
+      <ul>
+        <li><button class="button cancel" id="back">Back</button></li>
+        <li><button class="button done" id="next">Next</button></li>
+      </ul>
+    </nav>
+  </header>
+  <footer id="info">
+    <p style="float:right"> &middot; Press <span>&rarr;</span>
+      key to advance. &middot;<a href="https://rvsp.github.com/CSS/">rvsp.github.com/CSS/</a></p>
+  </footer>
   <script src="../slideshow.js"></script>
 
-  </body>
+</body>
 
 </html>
-
-

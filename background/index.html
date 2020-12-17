@@ -1,146 +1,154 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Backgrounds &amp; Borders: </title>
-<link rel="stylesheet" href="../intro/css/main.css"/>
-   <style>:root {
-  --splashcolor: #E358AD;
-  --dark_bg: #707070;
-  --colorpop: #E358AD; 
-  --lightsplash: #e358adaa; 
-}</style>
-   <link rel="stylesheet" href="borders.css"/>
-  </head>
-  <body>
 
-<header>
+<head>
+  <meta charset="utf-8" />
+  <title>Backgrounds &amp; Borders: </title>
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <style>
+    :root {
+      --splashcolor: #E358AD;
+      --dark_bg: #707070;
+      --colorpop: #E358AD;
+      --lightsplash: #e358adaa;
+    }
+  </style>
+  <link rel="stylesheet" href="borders.css" />
+</head>
+
+<body>
+
+  <header>
     <nav>
-        <ul>
-            <li><button class="button cancel" id="back">Back</button></li>
-            <li><button  class="button done" id="next">Next</button></li>
-        </ul>
+      <ul>
+        <li><button class="button cancel" id="back">Back</button></li>
+        <li><button class="button done" id="next">Next</button></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
   <div id="info">
     <p>
-    <span class="key">&rarr;</span> and <span class="key">&rarr;</span> to change slides.
-    <span class="key">2</span> for comments. <a href="https://estelle.github.com/CSS">estelle.github.com/CSS</a>
+      <span class="key">&rarr;</span> and <span class="key">&rarr;</span> to change slides.
+      <span class="key">2</span> for comments. <a href="https://rvsp.github.com/CSS">rvsp.github.com/CSS</a>
     </p>
   </div>
 
   <div id="presentation">
 
-   <div id="presentation-counter"></div>
+    <div id="presentation-counter"></div>
 
-   <div id="slides">
-
-
-
-<div class="slide intro">
-     <header>
-    <h1>Backgrounds</h1>
-  </header>
-     <p><a href="https://estelle.github.io/CSS/borders">https://estelle.github.io/CSS/background</a></p>
-     <p>Due to CanIUse quirks, please click on headers that read "Browser support:" to load caniuse</p>
-</div>
+    <div id="slides">
 
 
 
+      <div class="slide intro">
+        <header>
+          <h1>Backgrounds</h1>
+        </header>
+        <p><a href="https://rvsp.github.io/CSS/borders">https://rvsp.github.io/CSS/background</a></p>
+        <p>Due to CanIUse quirks, please click on headers that read "Browser support:" to load caniuse</p>
+      </div>
 
 
-<div class="slide">
-    <header>
-    <h1>Backgrounds</h1>
-  </header>
-    <section class="content flex12">
-    <ul>
-    <li>Background properties
-      <ul>
-        <li><code>background-color</code></li>
-        <li><code>background-image</code></li>
-        <li><code>background-repeat</code></li>
-        <li><code>background-attachment</code></li>
-        <li><code>background-position</code></li>
-        <li><code>background-clip</code></li>
-        <li><code>background-origin</code></li>
-        <li><code>background-size</code></li>
-        <li><code>background</code> shorthand</li>
-      </ul>
-    </li>
-    <li><code>background-blend-mode</code></li>
-  </ul>
-  <ul>
-    <li>CSS Filters
-      <ul>
-        <li><code>filter</code> </li>
-        <li><code>backdrop-filter</code> </li>
-        <li><code>&lt;filter></code> functions
+
+
+
+      <div class="slide">
+        <header>
+          <h1>Backgrounds</h1>
+        </header>
+        <section class="content flex12">
           <ul>
-            <li><code> blur()</code> </li>
-            <li><code> brightness()</code> </li>
-            <li><code> contrast()</code> </li>
-            <li><code> grayscale()</code> </li>
-            <li><code> drop-shadow</code> </li>
-            <li><code> hue-rotate</code> </li>
-            <li><code> invert()</code> </li>
-            <li><code> sepia()</code> </li>
-            <li><code> saturate()</code> </li>
+            <li>Background properties
+              <ul>
+                <li><code>background-color</code></li>
+                <li><code>background-image</code></li>
+                <li><code>background-repeat</code></li>
+                <li><code>background-attachment</code></li>
+                <li><code>background-position</code></li>
+                <li><code>background-clip</code></li>
+                <li><code>background-origin</code></li>
+                <li><code>background-size</code></li>
+                <li><code>background</code> shorthand</li>
+              </ul>
+            </li>
+            <li><code>background-blend-mode</code></li>
           </ul>
-        </li>
-      </ul>
-    </li>
-    </ul>
-    </section>
-</div>
+          <ul>
+            <li>CSS Filters
+              <ul>
+                <li><code>filter</code> </li>
+                <li><code>backdrop-filter</code> </li>
+                <li><code>&lt;filter></code> functions
+                  <ul>
+                    <li><code> blur()</code> </li>
+                    <li><code> brightness()</code> </li>
+                    <li><code> contrast()</code> </li>
+                    <li><code> grayscale()</code> </li>
+                    <li><code> drop-shadow</code> </li>
+                    <li><code> hue-rotate</code> </li>
+                    <li><code> invert()</code> </li>
+                    <li><code> sepia()</code> </li>
+                    <li><code> saturate()</code> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- SECTION: Background -->
-<div class="slide intro">
-    <header>
-    <h1>Background properties</h1>
-  </header>
-</div>
+      <!-- SECTION: Background -->
+      <div class="slide intro">
+        <header>
+          <h1>Background properties</h1>
+        </header>
+      </div>
 
 
 
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-color</code> property</h1>
-  </header>
-</div>
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-color</code> property</h1>
+        </header>
+      </div>
 
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="resource">background-color</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the background color of an element.</p>
-  <pre contenteditable>rgb() | rgba() | hsl()> | hsla() | &lt;hex-color> | &lt;named-color> | currentcolor</pre>
-  <p>Unlike the other <code>background</code> longhand properties, this one takes only a single value.</p>
-  <p>The uniform color of the background is rendered behind any specified background-images and may be visible through any transparency in the images.</p>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="resource">background-color</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the background color of an element.</p>
+          <pre contenteditable>rgb() | rgba() | hsl()> | hsla() | &lt;hex-color> | &lt;named-color> | currentcolor</pre>
+          <p>Unlike the other <code>background</code> longhand properties, this one takes only a single value.</p>
+          <p>The uniform color of the background is rendered behind any specified background-images and may be visible
+            through any transparency in the images.</p>
+        </section>
+      </div>
 
 
 
-<!--background-color -->
-<div class="slide">
-   <header>
-    <h1>background-color</h1>
-  </header>
-  <section class="content">
- <ul>
- 	<li>Use any of the color types</li>
-    <li>Always declare when declaring background images</li>
-    <li>Declare only once in a shorthand declaration.</li>
-    <li>Nothing really new here</li>
- </ul>
- <pre contenteditable>  background-color: white;
+      <!--background-color -->
+      <div class="slide">
+        <header>
+          <h1>background-color</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Use any of the color types</li>
+            <li>Always declare when declaring background images</li>
+            <li>Declare only once in a shorthand declaration.</li>
+            <li>Nothing really new here</li>
+          </ul>
+          <pre contenteditable>  background-color: white;
   background-color: #fff;
   background-color: #FFFFFF;
   background-color: #FFFFFFFF;
@@ -152,27 +160,28 @@
   background-color: hsla(0, 100%, 100%, 1);
   background-color: <span class="imp">transparent</span>;
   background-color: currentColor;</pre>
-  <p>Confused? See <a href="../colors/">Colors &amp; Transparency</a></p>
-     </section>
- </div>
+          <p>Confused? See <a href="../colors/">Colors &amp; Transparency</a></p>
+        </section>
+      </div>
 
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-image</code> property</h1>
-  </header>
-</div>
- <!-- bacgkround image -->
-<div class="slide">
-   <header>
-    <h1>Old School: background-image</h1>
-  </header>
-  <section class="content">
- <pre contenteditable>background-image: <em>none | &lt;uri&gt; | inherit</em> </pre>
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-image</code> property</h1>
+        </header>
+      </div>
+      <!-- bacgkround image -->
+      <div class="slide">
+        <header>
+          <h1>Old School: background-image</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>background-image: <em>none | &lt;uri&gt; | inherit</em> </pre>
 
- </pre><pre style="line-height:2;">background-image: url(path/aSingleImage.jpg);</pre>
- <p>Often part of <code>background</code> shorthand with:</p>
- <code><ul>
+          </pre>
+          <pre style="line-height:2;">background-image: url(path/aSingleImage.jpg);</pre>
+          <p>Often part of <code>background</code> shorthand with:</p>
+          <code><ul>
  <li>background-repeat</li>
  <li>background-attachment</li>
  <li>background-position</li>
@@ -181,63 +190,71 @@
 <li>background-origin</li>
 <li>background-size</li>
  </ul></code>
- <p>Don't use  <code>background</code> shorthand for risk of resetting any of 7 other (8 total) properties to default values</p>
- </section>
- </div>
+          <p>Don't use <code>background</code> shorthand for risk of resetting any of 7 other (8 total) properties to
+            default values</p>
+        </section>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" target="resource">background-image</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets one or more background images on an element.</p>
-  <pre contenteditable class="multi">none | inherit | &lt;url> | &lt;image()> | &lt;image-set()> | &lt;element()> 
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" target="resource">background-image</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets one or more background images on an element.</p>
+          <pre contenteditable class="multi">none | inherit | &lt;url> | &lt;image()> | &lt;image-set()> | &lt;element()> 
 &lt;cross-fade()> | &lt;gradient> | &lt;paint()></pre>
 
-<p>Either <code>none</code>, <code>inherit</code>, or one or more comma-separated <code>&lt;image></code> values.</p>
-<pre contenteditable>background-image: url( "path/to/images/photo.jpg" );</pre>
-</section>
-</div>
+          <p>Either <code>none</code>, <code>inherit</code>, or one or more comma-separated <code>&lt;image></code>
+            values.</p>
+          <pre contenteditable>background-image: url( "path/to/images/photo.jpg" );</pre>
+        </section>
+      </div>
 
-<!--background-image -->
-<div class="slide">
-   <header>
-    <h1>multiple background images</h1>
-  </header>
-  <section class="content">
-  <p>Sets one or more background images on an element.</p>
- <pre contenteditable class="multi"><em>none | inherit | [&lt;image&gt;]#</em> </pre>
+      <!--background-image -->
+      <div class="slide">
+        <header>
+          <h1>multiple background images</h1>
+        </header>
+        <section class="content">
+          <p>Sets one or more background images on an element.</p>
+          <pre contenteditable class="multi"><em>none | inherit | [&lt;image&gt;]#</em> </pre>
 
-<pre>&lt;image> = &lt;url> | &lt;image()> | &lt;image-set()> | &lt;element()> 
+          <pre>&lt;image> = &lt;url> | &lt;image()> | &lt;image-set()> | &lt;element()> 
           &lt;cross-fade()> | &lt;gradient> | &lt;paint()></pre>
-     <pre contenteditable>background-image: url(green.gif), url(blue.gif);</pre>
-     <div class="multiplebg"></div>
-     <ul>
-      <li>Comma separated</li>
-        <li>layered front to back</li>
-        <li>Include background-color</li>
-     </ul>
-        <p><code>paint()</code> is new in houdini</p>
-     </section>
- </div>
+          <pre contenteditable>background-image: url(green.gif), url(blue.gif);</pre>
+          <div class="multiplebg"></div>
+          <ul>
+            <li>Comma separated</li>
+            <li>layered front to back</li>
+            <li>Include background-color</li>
+          </ul>
+          <p><code>paint()</code> is new in houdini</p>
+        </section>
+      </div>
 
 
 
- <!--background-image -->
-<div class="slide">
-   <header>
-    <h1>background image tips</h1>
-  </header>
-  <section class="content">
-      <ul>
-        <li>Make sure there's enough contrast with text
-          <ul><li>add drop shadow</li></ul></li>
-        <li>Include a background color to ensure contrast if image fails.</li>
-        <li>Doesn't print by default</li>
-        <li>Not accessible</li>
-     </ul>
-        
-     </section>
- </div>
+      <!--background-image -->
+      <div class="slide">
+        <header>
+          <h1>background image tips</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Make sure there's enough contrast with text
+              <ul>
+                <li>add drop shadow</li>
+              </ul>
+            </li>
+            <li>Include a background color to ensure contrast if image fails.</li>
+            <li>Doesn't print by default</li>
+            <li>Not accessible</li>
+          </ul>
+
+        </section>
+      </div>
 
 
 
@@ -248,1041 +265,1336 @@
 
 
 
- <!-- bacgkround image -->
-<div class="slide">
-   <header>
-    <h1>background-image value types</h1>
-  </header>
-  <section class="content">
- <pre contenteditable class="multi"><em>none | &lt;url&gt;  | &lt;gradient> | </em>
-<i>&lt;image()></i> | <i>&lt;element()></i> | <i>&lt;image-set()></i> | <i>&lt;cross-fade()></i> | <i>&lt;paint()></i></pre><pre style="line-height:1.5;">none
+      <!-- bacgkround image -->
+      <div class="slide">
+        <header>
+          <h1>background-image value types</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable
+            class="multi"><em>none | &lt;url&gt;  | &lt;gradient> | </em>
+<i>&lt;image()></i> | <i>&lt;element()></i> | <i>&lt;image-set()></i> | <i>&lt;cross-fade()></i> | <i>&lt;paint()></i></pre>
+          <pre style="line-height:1.5;">none
 url(firstImage.jpg), url(secondImage.jpg)
 url(data:image/gif;base64,fOulrS123hEAAa517sdfQfda...)
 url(&quot;data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='220' height='200'&gt;&lt;circle cx='55' cy='190' r='25' fill='#FFF' /&gt;&lt;/svg&gt;&quot;);
 linear-gradient(to bottom, green, blue)
 radial-gradient(circle, green, blue)
 paint(workletName)</pre>
- </section>
- </div>
+        </section>
+      </div>
 
 
 
 
-<script>
-  function setData(id) {
-    let el = document.getElementById(id),
-      data = el.getAttribute('data-data');
-    el.setAttribute('data', data);
+      <script>
+        function setData(id) {
+          let el = document.getElementById(id),
+            data = el.getAttribute('data-data');
+          el.setAttribute('data', data);
 
-  }
-</script>
-
-
+        }
+      </script>
 
 
 
 
 
- <!--background-image -->
-<div class="slide">
-   <header>
-    <h1>background-image</h1>
-  </header>
-  <section class="content">
-     <pre contenteditable><strong>background-image:</strong> url(myGif.gif), url(otherGif.gif);</pre>
 
-<pre contenteditable><strong>background-image:</strong> none;</pre>
 
-<pre contenteditable><strong>background-image:</strong> linear-gradient(top, red, blue);</pre>
+      <!--background-image -->
+      <div class="slide">
+        <header>
+          <h1>background-image</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable><strong>background-image:</strong> url(myGif.gif), url(otherGif.gif);</pre>
 
-<pre contenteditable><strong>background-image: </strong>url(data:image/gif;base64,fOulrShEAAQ...);</pre>
+          <pre contenteditable><strong>background-image:</strong> none;</pre>
 
-<pre contenteditable><strong>background-image:</strong>
+          <pre contenteditable><strong>background-image:</strong> linear-gradient(top, red, blue);</pre>
+
+          <pre contenteditable><strong>background-image: </strong>url(data:image/gif;base64,fOulrShEAAQ...);</pre>
+
+          <pre
+            contenteditable><strong>background-image:</strong>
   url(&quot;data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='220' height='200'&gt;&lt;circle cx='55' cy='190' r='25' fill='#FFF' /&gt;&lt;/svg&gt;&quot;);</pre>
-</section>
-</div>
+        </section>
+      </div>
 
-<div class="slide">
-   <header>
-    <h1>Maybe, one day ...</h1>
-  </header>
-  <section class="content">
+      <div class="slide">
+        <header>
+          <h1>Maybe, one day ...</h1>
+        </header>
+        <section class="content">
 
-<pre contenteditable><strong>background-image:</strong> element('#myID');</pre>
+          <pre contenteditable><strong>background-image:</strong> element('#myID');</pre>
 
-<pre contenteditable><strong>background-image:</strong> image('ico_sprite.jpg#xywh=32,64,16,16');</pre>
+          <pre contenteditable><strong>background-image:</strong> image('ico_sprite.jpg#xywh=32,64,16,16');</pre>
 
-<pre contenteditable><strong>background-image:</strong> image("try1.svg", 'try2.png' , "try3.gif");</pre>
-
-
-     </section>
- </div>
+          <pre contenteditable><strong>background-image:</strong> image("try1.svg", 'try2.png' , "try3.gif");</pre>
 
 
-
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-repeat</code> property</h1>
-  </header>
-</div>
+        </section>
+      </div>
 
 
- <!-- background-repeat-->
-<div class="slide">
-   <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat" target="resource">background-repeat</a></code></h1>
-  </header>
-  <section class="content">
-      <p>sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.</p>
-     <pre contenteditable><strong>repeat</strong> | repeat-x | repeat-y | no-repeat | space | round;</pre>
-     <p>Can be comma-seperated for each background image or same value for all</p> 
-     <dl>
-  <dt>repeat</dt>
-  <dd>Tiled as often as needed to cover background</dd>
-  <dt>no-repeat</dt>
-  <dd>Placed once, not tiled or repeated</dd>
-  <dt>repeat-x</dt>
-  <dd>Tiled along X axis only (Equivalent to <code>repeat no-repeat</code>)</dd>
-  <dt>repeat-y</dt>
-  <dd>Tiled along Y axis only (Equivalent to <code>no-repeat repeat</code>)</dd>
-  <dt>space</dt>
-  <dd>Repeated as often as will fit without being clipped, spaced out evenly</dd>
-  <dt>round</dt>
-  <dd>Repeated as often as will fit without being clipped then scaled so no space in between</dd>
-</dl></section>
-</div>
+
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-repeat</code> property</h1>
+        </header>
+      </div>
 
 
- <!-- background-repeat-->
-<div class="slide bgimage" id="bgrepeat">
-     <header>
-    <h1>background-repeat</h1>
-  </header>
-  <section class="content">
-<pre contenteditable>background-repeat: <b><span id="txt_bgrepeat">no-repeat</span></b>; 
+      <!-- background-repeat-->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat" target="resource">background-repeat</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>sets how background images are repeated. A background image can be repeated along the horizontal and
+            vertical axes, or not repeated at all.</p>
+          <pre contenteditable><strong>repeat</strong> | repeat-x | repeat-y | no-repeat | space | round;</pre>
+          <p>Can be comma-seperated for each background image or same value for all</p>
+          <dl>
+            <dt>repeat</dt>
+            <dd>Tiled as often as needed to cover background</dd>
+            <dt>no-repeat</dt>
+            <dd>Placed once, not tiled or repeated</dd>
+            <dt>repeat-x</dt>
+            <dd>Tiled along X axis only (Equivalent to <code>repeat no-repeat</code>)</dd>
+            <dt>repeat-y</dt>
+            <dd>Tiled along Y axis only (Equivalent to <code>no-repeat repeat</code>)</dd>
+            <dt>space</dt>
+            <dd>Repeated as often as will fit without being clipped, spaced out evenly</dd>
+            <dt>round</dt>
+            <dd>Repeated as often as will fit without being clipped then scaled so no space in between</dd>
+          </dl>
+        </section>
+      </div>
+
+
+      <!-- background-repeat-->
+      <div class="slide bgimage" id="bgrepeat">
+        <header>
+          <h1>background-repeat</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>background-repeat: <b><span id="txt_bgrepeat">no-repeat</span></b>; 
 </pre>
-<div style="background-color: rgba(255,255,255,0.6)">
-<p><label for="cmd_bgrepeat">Change the value above:</label>
-  <select id="cmd_bgrepeat" onChange="fnc_bgrepeat(this);">
-  <option>no-repeat</option>
-    <option>repeat</option>
-    <option>repeat-x</option>
-    <option>repeat-y</option>
-    <option>space</option>
-    <option>round</option>
-</select></p>
-  <p style="font-size: 90%;">Should accept 2 values (H &amp; V)<br>
-Tip: Include <code>background-repeat: no-repeat;</code> in your reset CSS</p>
-</div>
-<script defer>
-  function fnc_bgrepeat(event) {
-			  var backsize = event.value;
-			  var slide = document.getElementById('bgrepeat');
+          <div style="background-color: rgba(255,255,255,0.6)">
+            <p><label for="cmd_bgrepeat">Change the value above:</label>
+              <select id="cmd_bgrepeat" onChange="fnc_bgrepeat(this);">
+                <option>no-repeat</option>
+                <option>repeat</option>
+                <option>repeat-x</option>
+                <option>repeat-y</option>
+                <option>space</option>
+                <option>round</option>
+              </select>
+            </p>
+            <p style="font-size: 90%;">Should accept 2 values (H &amp; V)<br>
+              Tip: Include <code>background-repeat: no-repeat;</code> in your reset CSS</p>
+          </div>
+          <script defer>
+            function fnc_bgrepeat(event) {
+              var backsize = event.value;
+              var slide = document.getElementById('bgrepeat');
               slide.style.backgroundRepeat = event.value;
-			  document.getElementById('txt_bgrepeat').innerHTML = event.value;
+              document.getElementById('txt_bgrepeat').innerHTML = event.value;
 
             }
-	</script>
+          </script>
 
-     </section>
- </div>
-
-
-<div class="slide repeat">
-<header><h1>Understand <code>background-repeat</code></h1>
-  </header>
-<section class="content">
-  <p>Test out <code>repeat | round | space</code></p>
- <style contenteditable class="editme">.repeat {
-  background-color: var(--colorpop);
-  background-image: url(img/shark.gif); 
-  background-image: url(img/aria.jpg);
-  background-repeat: space;
-}</style>
-</section>
-</div>
+        </section>
+      </div>
 
 
-
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-attachment</code> property</h1>
-  </header>
-</div>
+      <div class="slide repeat">
+        <header>
+          <h1>Understand <code>background-repeat</code></h1>
+        </header>
+        <section class="content">
+          <p>Test out <code>repeat | round | space</code></p>
+          <style contenteditable class="editme">
+            .repeat {
+              background-color: var(--colorpop);
+              background-image: url(img/shark.gif);
+              background-image: url(img/aria.jpg);
+              background-repeat: space;
+            }
+          </style>
+        </section>
+      </div>
 
 
 
- <!-- background-repeat-->
-<div class="slide">
-   <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment" target="resource">background-attachment</a></code></h1>
-   </header>
-   <section class="content">
-      <p>Sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.</p>
-
-     <pre contenteditable>background-attachment: fixed | local | <strong>scroll</strong></pre><p>Can be comma-seperated for each background image or same value for all</p> 
-     <dl>
-
-<dt>fixed</dt>
-    <dd>Background fixed relative to the viewport. Even if an element has a scrolling mechanism, the background doesn't move with the element. Not compatible with <code>background-clip: text</code>.)</dd>
-<dt>local</dt>
-    <dd>Background fixed relative to the element's contents as if attached to whatever word it was behind. If the element has a scrolling mechanism, the background scrolls with the element's contents.</dd>
-<dt>scroll</dt>
-    <dd>Background is fixed relative to the element itself and does not scroll with its contents as if attached to the border. </dd>
-  </dl>
- </section>
-</div>
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-attachment</code> property</h1>
+        </header>
+      </div>
 
 
 
- <!-- background-attachment -->
-<div class="slide">
-   <header>
-    <h1>background-attachment</h1>
-  </header>
-  <section class="content">
-      <p><a href="https://codepen.io/estelle/pen/OJLNPNe?editors=1100" target="play">isolated use case</a>
+      <!-- background-repeat-->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment" target="resource">background-attachment</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets whether a background image's position is fixed within the viewport, or scrolls with its containing
+            block.</p>
 
-<style>
-.bgattachment {
-    width: 300px;
-    height: 300px;
-    overflow: scroll;
-    border: 1px solid var(--splashcolor);
-    float: right;
-    top: 0;
-    left: 0;
-    white-space: pre;
-}
-</style><style contenteditable class="editme">.stillIrise {
-  background-attachment: scroll;
-  position: static; top: 0; left: 0;
-}</style>
-<p class="bgimage bgattachment stillIrise">You may write me down in history
-With your bitter, twisted lies,
-You may trod me in the very dirt
-But still, like dust, I'll rise.
+          <pre contenteditable>background-attachment: fixed | local | <strong>scroll</strong></pre>
+          <p>Can be comma-seperated for each background image or same value for all</p>
+          <dl>
 
-Does my sassiness upset you?
-Why are you beset with gloom?
-’Cause I walk like I've got oil wells
-Pumping in my living room.
-
-Just like moons and like suns,
-With the certainty of tides,
-Just like hopes springing high,
-Still I'll rise.
-
-Did you want to see me broken?
-Bowed head and lowered eyes?
-Shoulders falling down like teardrops,
-Weakened by my soulful cries?
-
-Does my haughtiness offend you?
-Don't you take it awful hard
-’Cause I laugh like I've got gold mines
-Diggin’ in my own backyard.
-
-You may shoot me with your words,
-You may cut me with your eyes,
-You may kill me with your hatefulness,
-But still, like air, I’ll rise.
-
-Does my sexiness upset you?
-Does it come as a surprise
-That I dance like I've got diamonds
-At the meeting of my thighs?
-
-Out of the huts of history’s shame
-I rise
-Up from a past that’s rooted in pain
-I rise
-I'm a black ocean, leaping and wide,
-Welling and swelling I bear in the tide.
-
-Leaving behind nights of terror and fear
-I rise
-Into a daybreak that’s wondrously clear
-I rise
-Bringing the gifts that my ancestors gave,
-I am the dream and the hope of the slave.
-I rise
-I rise
-I rise..
-</p>
-</section>
- </div>
+            <dt>fixed</dt>
+            <dd>Background fixed relative to the viewport. Even if an element has a scrolling mechanism, the background
+              doesn't move with the element. Not compatible with <code>background-clip: text</code>.)</dd>
+            <dt>local</dt>
+            <dd>Background fixed relative to the element's contents as if attached to whatever word it was behind. If
+              the element has a scrolling mechanism, the background scrolls with the element's contents.</dd>
+            <dt>scroll</dt>
+            <dd>Background is fixed relative to the element itself and does not scroll with its contents as if attached
+              to the border. </dd>
+          </dl>
+        </section>
+      </div>
 
 
 
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-position</code> property</h1>
-  </header>
-</div>
+      <!-- background-attachment -->
+      <div class="slide">
+        <header>
+          <h1>background-attachment</h1>
+        </header>
+        <section class="content">
+          <p><a href="https://codepen.io/estelle/pen/OJLNPNe?editors=1100" target="play">isolated use case</a>
+
+            <style>
+              .bgattachment {
+                width: 300px;
+                height: 300px;
+                overflow: scroll;
+                border: 1px solid var(--splashcolor);
+                float: right;
+                top: 0;
+                left: 0;
+                white-space: pre;
+              }
+            </style>
+            <style contenteditable class="editme">
+              .stillIrise {
+                background-attachment: scroll;
+                position: static;
+                top: 0;
+                left: 0;
+              }
+            </style>
+          <p class="bgimage bgattachment stillIrise">You may write me down in history
+            With your bitter, twisted lies,
+            You may trod me in the very dirt
+            But still, like dust, I'll rise.
+
+            Does my sassiness upset you?
+            Why are you beset with gloom?
+            ’Cause I walk like I've got oil wells
+            Pumping in my living room.
+
+            Just like moons and like suns,
+            With the certainty of tides,
+            Just like hopes springing high,
+            Still I'll rise.
+
+            Did you want to see me broken?
+            Bowed head and lowered eyes?
+            Shoulders falling down like teardrops,
+            Weakened by my soulful cries?
+
+            Does my haughtiness offend you?
+            Don't you take it awful hard
+            ’Cause I laugh like I've got gold mines
+            Diggin’ in my own backyard.
+
+            You may shoot me with your words,
+            You may cut me with your eyes,
+            You may kill me with your hatefulness,
+            But still, like air, I’ll rise.
+
+            Does my sexiness upset you?
+            Does it come as a surprise
+            That I dance like I've got diamonds
+            At the meeting of my thighs?
+
+            Out of the huts of history’s shame
+            I rise
+            Up from a past that’s rooted in pain
+            I rise
+            I'm a black ocean, leaping and wide,
+            Welling and swelling I bear in the tide.
+
+            Leaving behind nights of terror and fear
+            I rise
+            Into a daybreak that’s wondrously clear
+            I rise
+            Bringing the gifts that my ancestors gave,
+            I am the dream and the hope of the slave.
+            I rise
+            I rise
+            I rise..
+          </p>
+        </section>
+      </div>
 
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position" target="resource">background-position</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the initial position for each background image (relative to <code>background-origin</code></p>
-  <pre contenteditable>left | center | right | top | bottom | &lt;length-percentage></pre>
-  <p>Can be comma-seperated for each background image or same value for all</p>
-
-  <p>If one length/% value: it's the left offset, centered vertically</p>
-  <pre contenteditable>background-position: &lt;left-value> &lt;top-value></pre>
-  <p>Four values is two keyterms with an offset for each</p>
-  <pre contenteditable>background-position: &lt;left-right> &lt;LR-offset> &lt;top-value> &lt;TB-offset></pre>
-  </pre>
-  <p>Order matters if you're using length-percentage. Won't fail for keywords, unless you use two vertical or two horizontal</p>
-</section>
-</div>
-
- <!--background-position -->
-<div class="slide object">
-   <header>
-    <h1>Understanding % based <code>background-position</code></h1>
-  </header>
-   <style>.percentbpex div{   
-    background-image: 
-    linear-gradient(to top,
-        var(--colorpop) 2%,
-        transparent  2% 49%,
-        var(--colorpop) 49% , 
-        transparent 51% 98%,
-        var(--colorpop) 98%),
-    linear-gradient(to left,
-        var(--colorpop) 2%,
-        transparent  2% 49%,
-        var(--colorpop) 49% 51%, 
-        transparent 51%  98%,
-        var(--colorpop) 98%);
-    background-size: 95px 95px;
-    background-repeat: no-repeat;
-    border: 4px solid var(--colorpop); 
-    position: absolute; 
-    bottom:0; 
-    top: 0; left: 0; right: 0;
-    pointer-events: none;
-}
-  .percentbpex div:after {content: ''; position: absolute; height: 8px; width: 8px; background-color: #71c6aa; margin-top: -4px; margin-left: -4px;}
-  .percentbpex div {background-position: var(--left) var(--top) ;}
-.percentbpex div:after {top: var(--top); left:var(--left);}
-</style>
-<section class="content percentbpex">
-
-  <div class="percentbpex"></div><br/><br/>
-    <style class="editme" contenteditable>.percentbpex {
---left: 75%;
---top: 75%;
-}</style>
- </div>
-</section>
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-position</code> property</h1>
+        </header>
+      </div>
 
 
 
- <!--background-position -->
-<div class="slide bp4v">
-<header><h1>4-value background-position</h1>
-  </header>
-<section class="content"><style> .bp4v{
-  background-image: radial-gradient(50px, 
-  transparent 70%, #58ADE3 70% 85%,transparent  85% );
-    background-size: 95px 95px;
-    background-repeat: no-repeat;
-  }</style>
-  <p>Positioning relative to any corner</p>
-   <style contenteditable class="editme">.bp4v {
-  background-position: right 50px bottom 50px;
-}</style></section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position" target="resource">background-position</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the initial position for each background image (relative to <code>background-origin</code></p>
+          <pre contenteditable>left | center | right | top | bottom | &lt;length-percentage></pre>
+          <p>Can be comma-seperated for each background image or same value for all</p>
+
+          <p>If one length/% value: it's the left offset, centered vertically</p>
+          <pre contenteditable>background-position: &lt;left-value> &lt;top-value></pre>
+          <p>Four values is two keyterms with an offset for each</p>
+          <pre contenteditable>background-position: &lt;left-right> &lt;LR-offset> &lt;top-value> &lt;TB-offset></pre>
+          </pre>
+          <p>Order matters if you're using length-percentage. Won't fail for keywords, unless you use two vertical or
+            two horizontal</p>
+        </section>
+      </div>
+
+      <!--background-position -->
+      <div class="slide object">
+        <header>
+          <h1>Understanding % based <code>background-position</code></h1>
+        </header>
+        <style>
+          .percentbpex div {
+            background-image:
+              linear-gradient(to top,
+                var(--colorpop) 2%,
+                transparent 2% 49%,
+                var(--colorpop) 49%,
+                transparent 51% 98%,
+                var(--colorpop) 98%),
+              linear-gradient(to left,
+                var(--colorpop) 2%,
+                transparent 2% 49%,
+                var(--colorpop) 49% 51%,
+                transparent 51% 98%,
+                var(--colorpop) 98%);
+            background-size: 95px 95px;
+            background-repeat: no-repeat;
+            border: 4px solid var(--colorpop);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+          }
+
+          .percentbpex div:after {
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            background-color: #71c6aa;
+            margin-top: -4px;
+            margin-left: -4px;
+          }
+
+          .percentbpex div {
+            background-position: var(--left) var(--top);
+          }
+
+          .percentbpex div:after {
+            top: var(--top);
+            left: var(--left);
+          }
+        </style>
+        <section class="content percentbpex">
+
+          <div class="percentbpex"></div><br /><br />
+          <style class="editme" contenteditable>
+            .percentbpex {
+              --left: 75%;
+              --top: 75%;
+            }
+          </style>
+      </div>
+      </section>
 
 
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-clip &amp; background-origin</code> property</h1>
-  </header>
-</div>
-<!--background-clip -->
-<div class="slide" id="bgclip">
-	<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" target="resource">background-clip</a></code></h1>
-  </header>
-    <section class="content">
-      <p>Sets whether an element's background extends underneath its border box, padding box, or content box.</p>
-    <pre contenteditable><strong>border-box</strong> | padding-box | content-box | text </pre>
-<dl>
-<dt>border-box</dt>
-    <dd>The background extends to the outside edge of the border (but underneath the border in z-ordering).</dd>
-<dt>padding-box</dt>
-    <dd>The background extends to the outside edge of the padding. No background is drawn beneath the border.</dd>
-<dt>content-box</dt>
-    <dd>The background is painted within (clipped to) the content box.</dd>
-<dt>text</dt>
-    <dd>The background is painted within (clipped to) the foreground text. </dd>
-  </dl>
-</section>
-</div>
+
+      <!--background-position -->
+      <div class="slide bp4v">
+        <header>
+          <h1>4-value background-position</h1>
+        </header>
+        <section class="content">
+          <style>
+            .bp4v {
+              background-image: radial-gradient(50px,
+                  transparent 70%, #58ADE3 70% 85%, transparent 85%);
+              background-size: 95px 95px;
+              background-repeat: no-repeat;
+            }
+          </style>
+          <p>Positioning relative to any corner</p>
+          <style contenteditable class="editme">
+            .bp4v {
+              background-position: right 50px bottom 50px;
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-clip &amp; background-origin</code> property</h1>
+        </header>
+      </div>
+      <!--background-clip -->
+      <div class="slide" id="bgclip">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" target="resource">background-clip</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets whether an element's background extends underneath its border box, padding box, or content box.</p>
+          <pre contenteditable><strong>border-box</strong> | padding-box | content-box | text </pre>
+          <dl>
+            <dt>border-box</dt>
+            <dd>The background extends to the outside edge of the border (but underneath the border in z-ordering).</dd>
+            <dt>padding-box</dt>
+            <dd>The background extends to the outside edge of the padding. No background is drawn beneath the border.
+            </dd>
+            <dt>content-box</dt>
+            <dd>The background is painted within (clipped to) the content box.</dd>
+            <dt>text</dt>
+            <dd>The background is painted within (clipped to) the foreground text. </dd>
+          </dl>
+        </section>
+      </div>
 
 
 
-<!--background-clip -->
-<div class="slide" id="bgclip">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" target="resource">background-clip</a></code></h1>
-  </header>
-    <section class="content">
-      <pre contenteditable><b>background-clip</b>: <strong>border-box</strong> | padding-box | content-box | text </pre>
-    <div style="background-clip: content-box;" class="backgroundclip bgimage">content-box</div>
-    <div style="background-clip: padding-box;" class="backgroundclip bgimage">padding-box</div>
-    <div style="background-clip: border-box;" class="backgroundclip bgimage">border-box</div>
-    <div style="-webkit-background-clip: text;background-clip: text; color: transparent; font-size: 4em;line-height: 0.5em" class="backgroundclip bgimage">text text text</div>
-    </section>
- </div>
-
-
-
-
- <!--background-origin -->
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" target="resource">background-origin</a></code></h1>
-  </header>
-<section class="content">
-  <p>Sets the background's origin: from the border start, inside the border, or inside the padding.</p>
- <pre contenteditable>border-box | <strong>padding-box</strong> | content-box</pre>
-
- <dl>
-<dt>border-box</dt>
-    <dd>The background is positioned relative to the border box.</dd>
-<dt>padding-box</dt>
-    <dd>The background is positioned relative to the padding box.</dd>
-<dt>content-box</dt>
-    <dd>The background is positioned relative to the content box.</dd> </dl>
-</section>
-</div>
-
- <!--background-origin -->
-<div class="slide" id="bgorigin">
-	<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" target="resource">background-origin</a></code></h1>
-  </header>
-    <section class="content">
-
-    <pre contenteditable><b><u></u>background-origin</b>: border-box | <span class="imp">padding-box</span> | content-box</pre>
-    <p>Can be comma-seperated for each background image or same value for all</p>
-    <div style="background-origin: content-box;" class="backgroundclip bgimage">content-box</div>
-    <div style="background-origin: padding-box;" class="backgroundclip bgimage">padding-box</div>
-    <div style="background-origin: border-box;" class="backgroundclip bgimage">border-box</div>
-     
-    </section>
-</div>
-
-<div class="slide">
-  <header>
-    <h1>background-clip / background-origin</h1>
-  </header>
-<section class="content">
-  <style>
-.bcbo {
-    background-image: radial-gradient(circle closest-side at 50px 50px, transparent 74%, var(--colorpop) 74% 99%,transparent  99% );
-    background-size: 95px 95px;
-    background-repeat: no-repeat;
-    height:200px; width: 200px;
-    margin: auto;
-  }
-</style>
-<br/>
-<style contenteditable class="editme">.bcbo {
-    background-color: #dedede;
-    border: 15px dotted #707071;
-    background-origin: border-box;
-    background-clip: border-box;
-}</style>
-  <div class="bcbo"></div>
-</section>
-</div>
+      <!--background-clip -->
+      <div class="slide" id="bgclip">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" target="resource">background-clip</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <pre
+            contenteditable><b>background-clip</b>: <strong>border-box</strong> | padding-box | content-box | text </pre>
+          <div style="background-clip: content-box;" class="backgroundclip bgimage">content-box</div>
+          <div style="background-clip: padding-box;" class="backgroundclip bgimage">padding-box</div>
+          <div style="background-clip: border-box;" class="backgroundclip bgimage">border-box</div>
+          <div
+            style="-webkit-background-clip: text;background-clip: text; color: transparent; font-size: 4em;line-height: 0.5em"
+            class="backgroundclip bgimage">text text text</div>
+        </section>
+      </div>
 
 
 
 
+      <!--background-origin -->
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" target="resource">background-origin</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <p>Sets the background's origin: from the border start, inside the border, or inside the padding.</p>
+          <pre contenteditable>border-box | <strong>padding-box</strong> | content-box</pre>
+
+          <dl>
+            <dt>border-box</dt>
+            <dd>The background is positioned relative to the border box.</dd>
+            <dt>padding-box</dt>
+            <dd>The background is positioned relative to the padding box.</dd>
+            <dt>content-box</dt>
+            <dd>The background is positioned relative to the content box.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <!--background-origin -->
+      <div class="slide" id="bgorigin">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" target="resource">background-origin</a></code>
+          </h1>
+        </header>
+        <section class="content">
+
+          <pre
+            contenteditable><b><u></u>background-origin</b>: border-box | <span class="imp">padding-box</span> | content-box</pre>
+          <p>Can be comma-seperated for each background image or same value for all</p>
+          <div style="background-origin: content-box;" class="backgroundclip bgimage">content-box</div>
+          <div style="background-origin: padding-box;" class="backgroundclip bgimage">padding-box</div>
+          <div style="background-origin: border-box;" class="backgroundclip bgimage">border-box</div>
+
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>background-clip / background-origin</h1>
+        </header>
+        <section class="content">
+          <style>
+            .bcbo {
+              background-image: radial-gradient(circle closest-side at 50px 50px, transparent 74%, var(--colorpop) 74% 99%, transparent 99%);
+              background-size: 95px 95px;
+              background-repeat: no-repeat;
+              height: 200px;
+              width: 200px;
+              margin: auto;
+            }
+          </style>
+          <br />
+          <style contenteditable class="editme">
+            .bcbo {
+              background-color: #dedede;
+              border: 15px dotted #707071;
+              background-origin: border-box;
+              background-clip: border-box;
+            }
+          </style>
+          <div class="bcbo"></div>
+        </section>
+      </div>
 
 
 
-<!-- background-size -->
-<div class="slide divider">
-  <header>
-    <h1><code>background-size</code></h1>
-  </header>
-</div>
 
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="resource">background-size </a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</p>
-  <pre contenteditable>cover | contain | [ &lt;length-percentage> | auto ]{1,2}</pre> 
-  </pre>
-  <p>Can be comma-seperated for each background image or same value for all</p>
-  <dl>
-  <dt>contain</dt>
-  <dd>Scales up or down until 100% height or width, without going over, and without cropping or stretching.</dd>
-  <dt>cover</dt>
-  <dd>Scales the image as needed to cover 100%. Cropped if needed.</dd>
-  <dt>auto</dt>
-  <dd>Same size as original or 100% of no intrinsic value set.</dd>
-  <dt>&lt;length&gt;</dt>
-  <dd>Sized as defined No negative values.</dd>
-  <dt>&lt;percentage&gt;</dt>
-  <dd>Relative to the size of the element area as determined by the <code>background-origin</code> (padding box by default). If <code>background-attachment: fixed</code> is set, the viewport size. No negative values.</dd>
-</dl>
 
-</section>
-</div>
+      <!-- background-size -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background-size</code></h1>
+        </header>
+      </div>
 
 
- <!--background-size -->
-<div class="slide" id="bgsize">
-	<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="resource">background-size </a></code></h1>
-  </header>
-    <section class="content">
-    <pre contenteditable><b><u></u>background-size</b>: <span class="imp">auto</span> | contain | cover | <span id="actualsize">&lt;length&gt;</span></pre>
-    <div id="bcksizeexample" class="bgimage bgimagebk">
-    <input type="range" min="50" max="150" step="5" value="70" id="bcksizechange" onChange="changeBackSide(this)" style="position:relative; top: -30px;"/>
-    </div><ul>
 
-        <li>Needed for hiDPI images</li>
-        <li>&lsquo;contain&rsquo; grows/shrinks to fully fit - may have 'white space', but no clipping.</li>
-        <li>&lsquo;cover&rsquo; grows to min size that covers 100% of height &amp; width - no white space, but might clip.</li>
-        <li>Note: Use for creating gradients backgrounds<ul>
-            <li>note 2 length values needed to constrain a gradient</li>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="resource">background-size </a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets the size of the element's background image. The image can be left to its natural size, stretched, or
+            constrained to fit the available space.</p>
+          <pre contenteditable>cover | contain | [ &lt;length-percentage> | auto ]{1,2}</pre>
+          </pre>
+          <p>Can be comma-seperated for each background image or same value for all</p>
+          <dl>
+            <dt>contain</dt>
+            <dd>Scales up or down until 100% height or width, without going over, and without cropping or stretching.
+            </dd>
+            <dt>cover</dt>
+            <dd>Scales the image as needed to cover 100%. Cropped if needed.</dd>
+            <dt>auto</dt>
+            <dd>Same size as original or 100% of no intrinsic value set.</dd>
+            <dt>&lt;length&gt;</dt>
+            <dd>Sized as defined No negative values.</dd>
+            <dt>&lt;percentage&gt;</dt>
+            <dd>Relative to the size of the element area as determined by the <code>background-origin</code> (padding
+              box by default). If <code>background-attachment: fixed</code> is set, the viewport size. No negative
+              values.</dd>
+          </dl>
+
+        </section>
+      </div>
+
+
+      <!--background-size -->
+      <div class="slide" id="bgsize">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="resource">background-size </a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <pre
+            contenteditable><b><u></u>background-size</b>: <span class="imp">auto</span> | contain | cover | <span id="actualsize">&lt;length&gt;</span></pre>
+          <div id="bcksizeexample" class="bgimage bgimagebk">
+            <input type="range" min="50" max="150" step="5" value="70" id="bcksizechange"
+              onChange="changeBackSide(this)" style="position:relative; top: -30px;" />
+          </div>
+          <ul>
+
+            <li>Needed for hiDPI images</li>
+            <li>&lsquo;contain&rsquo; grows/shrinks to fully fit - may have 'white space', but no clipping.</li>
+            <li>&lsquo;cover&rsquo; grows to min size that covers 100% of height &amp; width - no white space, but might
+              clip.</li>
+            <li>Note: Use for creating gradients backgrounds<ul>
+                <li>note 2 length values needed to constrain a gradient</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-    </ul>
 
-    </section>
-    <script defer>
-    function changeBackSide(event) {
-			  var backsize = event.value;
-			  var image = document.getElementById('bcksizeexample');
-              image.style.backgroundSize = backsize + "px " + backsize + "px"   ;
-			  document.getElementById('actualsize').innerHTML = "<b>"+ backsize +"px " +  backsize +"px</b>;";
+        </section>
+        <script defer>
+          function changeBackSide(event) {
+            var backsize = event.value;
+            var image = document.getElementById('bcksizeexample');
+            image.style.backgroundSize = backsize + "px " + backsize + "px";
+            document.getElementById('actualsize').innerHTML = "<b>" + backsize + "px " + backsize + "px</b>;";
 
+          }
+        </script>
+      </div>
+
+
+
+
+
+
+      <!--background-size -->
+      <div class="slide" id="bgsize">
+        <header>
+          <h1>background-size</h1>
+        </header>
+        <section class="content">
+          <pre
+            contenteditable><b><u></u>background-size</b>: <span onClick="changeBackSide2('auto')">auto</span> | <span onClick="changeBackSide2('contain')">contain</span> | <span onClick="changeBackSide2('cover')">cover</span> | <span onClick="changeBackSide2('100px 200px')">100px 200px</span> | <span onClick="changeBackSide2('150px')">150px</span></pre>
+          <div id="bcksizeexample2" class="bgimage2">
+          </div>
+
+          <dl class="deprecated listed">
+            <dt>auto</dt>
+            <dd>image is actual size</dd>
+            <dt>cover</dt>
+            <dd>image maintains aspect ratio, covering entire element even if that means part of the image is cut off.
+            </dd>
+            <dt>contain</dt>
+            <dd>image maintains aspect ratio, fitting the entire image into the element even if that means part of the
+              background is showing or the image repeats.</dd>
+            <dt>length</dt>
+            <dd>image maintains aspect ratio, growing or shrinking so that the width is the length defined</dd>
+            <dt>auto length</dt>
+            <dd>image maintains aspect ratio, growing or shrinking so that the height is the length defined</dd>
+
+            <dt>length length</dt>
+            <dd>image DOES NOT NECESSARILY maintain its aspect ratio, height and width both grow or shrink to the length
+              defined</dd>
+        </section>
+        <script defer>
+          function changeBackSide2(backsize) {
+            console.log('hit');
+            var image = document.getElementById('bcksizeexample2');
+            image.style.backgroundSize = backsize;
+
+          }
+        </script>
+      </div>
+
+      <div class="slide size">
+        <header>
+          <h1>Understand <code>background-size</code></h1>
+        </header>
+        <section class="content">
+          <p style="background-color: var(--invertedtext);">Test out
+            <code>cover | contain | auto | &lt;length-percent>{1,2}</code></p>
+          <style contenteditable class="editme">
+            .size {
+              background-color: var(--colorpop);
+              background-image: url(img/shark.gif);
+              background-image: url(img/aria.jpg);
+              background-repeat: space;
+              background-size: 50px 100%;
             }
-	</script>
-</div>
+          </style>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide divider">
+        <header>
+          <h1><code>background</code> shorthand property</h1>
+        </header>
+      </div>
 
 
 
 
+      <!-- background shorthand-->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="resource">background</a></code>
+            shorthand</h1>
+        </header>
+        <section class="content">
 
-
-<!--background-size -->
-<div class="slide" id="bgsize">
-  <header>
-    <h1>background-size</h1>
-  </header>
-    <section class="content">
-    <pre contenteditable><b><u></u>background-size</b>: <span onClick="changeBackSide2('auto')">auto</span> | <span onClick="changeBackSide2('contain')">contain</span> | <span onClick="changeBackSide2('cover')">cover</span> | <span onClick="changeBackSide2('100px 200px')">100px 200px</span> | <span onClick="changeBackSide2('150px')">150px</span></pre>
-    <div id="bcksizeexample2" class="bgimage2">
-    </div>
-
-    <dl class="deprecated listed">
-      <dt>auto</dt>
-      <dd>image is actual size</dd>
-      <dt>cover</dt>
-      <dd>image maintains aspect ratio, covering entire element even if that means part of the image is cut off.</dd>
-      <dt>contain</dt>
-      <dd>image maintains aspect ratio, fitting the entire image into the element even if that means part of the background is showing or the image repeats.</dd>
-      <dt>length</dt>
-      <dd>image maintains aspect ratio, growing or shrinking so that the width is the length defined</dd>
-      <dt>auto length</dt>
-      <dd>image maintains aspect ratio, growing or shrinking so that the height is the length defined</dd>
-
-      <dt>length length</dt>
-      <dd>image DOES NOT NECESSARILY maintain its aspect ratio, height and width both grow or shrink to the  length defined</dd>
-    </section>
-    <script defer>
-    function changeBackSide2(backsize) {
-       console.log('hit');
-        var image = document.getElementById('bcksizeexample2');
-              image.style.backgroundSize = backsize;
-
-            }
-  </script>
-</div>
-
-<div class="slide size">
-<header><h1>Understand <code>background-size</code></h1>
-  </header>
-<section class="content">
-  <p style="background-color: var(--invertedtext);">Test out <code>cover | contain | auto | &lt;length-percent>{1,2}</code></p>
- <style contenteditable class="editme">.size {
-  background-color: var(--colorpop);
-  background-image: url(img/shark.gif); 
-  background-image: url(img/aria.jpg);
-  background-repeat: space;
-  background-size: 50px 100%;
-}</style>
-</section>
-</div>
-
-<!--  -->
-<div class="slide divider">
-  <header>
-    <h1><code>background</code> shorthand property</h1>
-  </header>
-</div>
-
-
-
-
- <!-- background shorthand-->
-<div class="slide">
-  <header>
-    <h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="resource">background</a></code> shorthand</h1>
-  </header>
-    <section class="content">
-
-    <pre contenteditable>background:
+          <pre contenteditable>background:
  img1 position / size repeat attachment origin clip,
  img2 position / size repeat attachment origin clip,
  img3 position / size repeat attachment box{1,2} bgcolor;    </pre>
-<pre contenteditable>background:
+          <pre contenteditable>background:
  url(topImg.jpg) 0 0 / 30px 30px repeat scroll border-box content-box,
  url(botImg.jpg) 15px 15px / 30px 30px fixed border-box #609;</pre>
- <h1>DO NOT USE BACKGROUND SHORTHAND!!!</h1>
- <ul>
-    <li><a href="http://www.standardista.com/css3/css3-background-properties">Border properties &amp; browser support</a></li>
+          <h1>DO NOT USE BACKGROUND SHORTHAND!!!</h1>
+          <ul>
+            <li><a href="http://www.standardista.com/css3/css3-background-properties">Border properties &amp; browser
+                support</a></li>
 
-   <li class="notes">If one &lsquo;box&rsquo; value is present then it sets both 'background-origin' and 'background-clip' to that value. If two values are present, then the first sets 'background-origin' and the second 'background-clip'</li>
-   </ul>
-    </section>
-    </div>
+            <li class="notes">If one &lsquo;box&rsquo; value is present then it sets both 'background-origin' and
+              'background-clip' to that value. If two values are present, then the first sets 'background-origin' and
+              the second 'background-clip'</li>
+          </ul>
+        </section>
+      </div>
 
-<div class="slide sharks">
-<header><h1>Play with background shorthand</h1>
-  </header>
-<section class="content">
-   <p style="background-color: var(--invertedtext);">Test out <code>'img/shark.gif' |  'img/aria.jpg'</code></p>
- <style contenteditable class="editme">.sharks {
-  background: linear-gradient(45deg, 
-    red, transparent, yellow)
-    0 0 / 30px 30px repeat scroll 
-    border-box content-box white;
-}</style>
-</section>
-</div>
-
-
-<div class="slide ugly">
-<header><h1>Play with background shorthand</h1>
-  </header>
-<section class="content">
-   <p style="background-color: var(--invertedtext);">Remove the color? Change all the properties?</p>
- <style contenteditable class="editme">.ugly {
-  background: url(img/shark.gif) 
-    40px 400px / 80px 130px repeat-x scroll 
-    border-box content-box,
-    url(img/aria.jpg) 
-    0 0 / 120px 100px repeat-y scroll 
-    border-box content-box var(--colorpop);
-}</style>
-</section>
-</div>
-
-<div class="slide beautiful">
-<header><h1>Play with longhand properties</h1>
-  </header>
-<section class="content">
-   <p style="background-color: var(--invertedtext);">Is using longhand values less confusing? I got you started....</p>
- <style contenteditable class="editme">.beautiful {
-  background-image:;
-}</style>
-</section>
-</div>
+      <div class="slide sharks">
+        <header>
+          <h1>Play with background shorthand</h1>
+        </header>
+        <section class="content">
+          <p style="background-color: var(--invertedtext);">Test out <code>'img/shark.gif' |  'img/aria.jpg'</code></p>
+          <style contenteditable class="editme">
+            .sharks {
+              background: linear-gradient(45deg,
+                  red, transparent, yellow) 0 0 / 30px 30px repeat scroll border-box content-box white;
+            }
+          </style>
+        </section>
+      </div>
 
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Sets how an element's background images should blend with each other and with the element's background color.</p>
-  <pre contenteditable class="multi">normal | multiply | screen | overlay | darken | lighten | color-dodge 
+      <div class="slide ugly">
+        <header>
+          <h1>Play with background shorthand</h1>
+        </header>
+        <section class="content">
+          <p style="background-color: var(--invertedtext);">Remove the color? Change all the properties?</p>
+          <style contenteditable class="editme">
+            .ugly {
+              background: url(img/shark.gif) 40px 400px / 80px 130px repeat-x scroll border-box content-box,
+                url(img/aria.jpg) 0 0 / 120px 100px repeat-y scroll border-box content-box var(--colorpop);
+            }
+          </style>
+        </section>
+      </div>
+
+      <div class="slide beautiful">
+        <header>
+          <h1>Play with longhand properties</h1>
+        </header>
+        <section class="content">
+          <p style="background-color: var(--invertedtext);">Is using longhand values less confusing? I got you
+            started....</p>
+          <style contenteditable class="editme">
+            .beautiful {
+              background-image: ;
+            }
+          </style>
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Sets how an element's background images should blend with each other and with the element's background
+            color.</p>
+          <pre contenteditable class="multi">normal | multiply | screen | overlay | darken | lighten | color-dodge 
 color-burn | hard-light | soft-light | difference | exclusion
 hue | saturation | color | luminosity</pre>
-<p>Blending modes should be defined in the same order as the background-image property. If the blending modes' and background images' list lengths are not equal, it will be repeated and/or truncated until lengths match.</p>
-<pre contenteditable>background-blend-mode: screen, multiply;</pre>
-</section>
-</div>
+          <p>Blending modes should be defined in the same order as the background-image property. If the blending modes'
+            and background images' list lengths are not equal, it will be repeated and/or truncated until lengths match.
+          </p>
+          <pre contenteditable>background-blend-mode: screen, multiply;</pre>
+        </section>
+      </div>
 
 
-<div class="slide bbm">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code></h1>
-  </header>
-<style>
-.bbm ul {
-  display: flex;
-  gap: 1em;
-  flex-flow: row wrap;
-}
-.bbm li { 
-    flex: 200px;
-    list-style-type: none;
-    height: 200px;
-    background-repeat: no-repeat;
-}
-.bbm .magic {visibility: hidden;}
-</style>
-<section class="content">
-<ul>
-  <li style="background-blend-mode: color;"><span>color</span></li>
-  <li style="background-blend-mode: color-burn;"><span>color-burn</span></li>
-  <li style="background-blend-mode: color-dodge;"><span>color-dodge</span></li>
-  <li style="background-blend-mode: darken;"><span>darken</span></li>
-  <li style="background-blend-mode: difference;"><span>difference</span></li>
-  <li style="background-blend-mode: exclusion;"><span>exclusion</span></li>
-  <li style="background-blend-mode: hard-light;"><span>hard-light</span></li>
-  <li style="background-blend-mode: hue;"><span>hue</span></li>
-  <li style="background-blend-mode: lighten;"><span>lighten</span></li>
-  <li style="background-blend-mode: luminosity;"><span>luminosity</span></li>
-  <li style="background-blend-mode: multiply;"><span>multiply</span></li>
-  <li style="background-blend-mode: normal;"><span>normal</span></li>
-  <li style="background-blend-mode: overlay;"><span>overlay</span></li>
-  <li style="background-blend-mode: saturation;"><span>saturation</span></li>
-  <li style="background-blend-mode: screen;"><span>screen</span></li>
-  <li style="background-blend-mode: soft-light;"><span>soft-light</span></li>
+      <div class="slide bbm">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode" target="resource">background-blend-mode</a></code>
+          </h1>
+        </header>
+        <style>
+          .bbm ul {
+            display: flex;
+            gap: 1em;
+            flex-flow: row wrap;
+          }
 
-  <li style="background-blend-mode: darken, multiply;"><span>darken, multiply</span></li>
-  <li style="background-blend-mode: difference, overlay;"><span>difference, overlay</span></li>
-  <li style="background-blend-mode: luminosity, saturation;"><span>luminosity, saturation</span></li>
-  <li style="background-blend-mode: hue, screen;"><span>hue, screen</span></li>
-  <li style="background-blend-mode: exclusion, soft-light;"><span>exclusion, soft-light</span></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-  <li class="magic"></li>
-</ul>
-<style class="editme" contenteditable>.bbm li {
-  background-image: url(../images/star.svg), linear-gradient(yellow, red); 
-  background-position: center;
-  background-image: linear-gradient(#71c6aa, #71c6aa), linear-gradient(#58ADE3,#58ADE3);
-  background-size: 150px 150px;
-  background-position: 0 0, 20px 20px; }</style>
-</section>
-</div>
+          .bbm li {
+            flex: 200px;
+            list-style-type: none;
+            height: 200px;
+            background-repeat: no-repeat;
+          }
 
+          .bbm .magic {
+            visibility: hidden;
+          }
+        </style>
+        <section class="content">
+          <ul>
+            <li style="background-blend-mode: color;"><span>color</span></li>
+            <li style="background-blend-mode: color-burn;"><span>color-burn</span></li>
+            <li style="background-blend-mode: color-dodge;"><span>color-dodge</span></li>
+            <li style="background-blend-mode: darken;"><span>darken</span></li>
+            <li style="background-blend-mode: difference;"><span>difference</span></li>
+            <li style="background-blend-mode: exclusion;"><span>exclusion</span></li>
+            <li style="background-blend-mode: hard-light;"><span>hard-light</span></li>
+            <li style="background-blend-mode: hue;"><span>hue</span></li>
+            <li style="background-blend-mode: lighten;"><span>lighten</span></li>
+            <li style="background-blend-mode: luminosity;"><span>luminosity</span></li>
+            <li style="background-blend-mode: multiply;"><span>multiply</span></li>
+            <li style="background-blend-mode: normal;"><span>normal</span></li>
+            <li style="background-blend-mode: overlay;"><span>overlay</span></li>
+            <li style="background-blend-mode: saturation;"><span>saturation</span></li>
+            <li style="background-blend-mode: screen;"><span>screen</span></li>
+            <li style="background-blend-mode: soft-light;"><span>soft-light</span></li>
 
-<!--  -->
-<div class="slide intro">
-  <header>
-    <h1>Filter functions</h1>
-  </header>
-</div>
-
-
-<div class="slide object">
-<header><h1>Filters</h1>
-  </header>
-<object data="http://html5-demos.appspot.com/static/css/filters/index.html"></object>
-<a href="http://html5-demos.appspot.com/static/css/filters/index.html" target="play" class="objectlink">Visit Site</a>
-</div>
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="resource">filter</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Applies graphical effects like blur or color shift to an element.</p>
-  <pre contenteditable class="multi">none | blur() | brightness() | contrast() <br/>grayscale() | drop-shadow() | hue-rotate() | invert()<br/> saturate() | opacity() | sepia() | url()</pre>
-  <p>Applies the effects to a foreground element.</p>
-</section>
-</div>
-
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" target="resource">backdrop-filter</a></code> property</h1>
-  </header>
-<section class="content">
-  <p>Apply graphical effects to the area behind an element. </p>
-  <pre contenteditable class="multi">none | blur() | brightness() | contrast() <br/>grayscale() | drop-shadow() | hue-rotate() | invert()<br/> saturate() | opacity() | sepia() | url()</pre>
-  </pre>
-  <p>Applicable to a background (v. <code>filter</code> which is foreground)</p>
-  <pre contenteditable>backdrop-filter: url(image.svg#focus) blur(6px) saturate(50%);</pre>
-  <p>To see the effect you must make the element or its background at least partially transparent because it applies to everything behind the element.</p>
-  <p>Prefixed in safari. New to Chrome and Edge. Not in FF</p>
-</section>
-</div>
+            <li style="background-blend-mode: darken, multiply;"><span>darken, multiply</span></li>
+            <li style="background-blend-mode: difference, overlay;"><span>difference, overlay</span></li>
+            <li style="background-blend-mode: luminosity, saturation;"><span>luminosity, saturation</span></li>
+            <li style="background-blend-mode: hue, screen;"><span>hue, screen</span></li>
+            <li style="background-blend-mode: exclusion, soft-light;"><span>exclusion, soft-light</span></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+            <li class="magic"></li>
+          </ul>
+          <style class="editme" contenteditable>
+            .bbm li {
+              background-image: url(../images/star.svg), linear-gradient(yellow, red);
+              background-position: center;
+              background-image: linear-gradient(#71c6aa, #71c6aa), linear-gradient(#58ADE3, #58ADE3);
+              background-size: 150px 150px;
+              background-position: 0 0, 20px 20px;
+            }
+          </style>
+        </section>
+      </div>
 
 
+      <!--  -->
+      <div class="slide intro">
+        <header>
+          <h1>Filter functions</h1>
+        </header>
+      </div>
 
-<div class="slide">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter_functions" target="resource">&lt;filter></a></code> functions</h1>
-  </header>
-<section class="content">
 
-  <p>The <code>&lt;filter-function&gt;</code> data type is specified using  one of the filter functions listed below. Each function requires an  argument which, if invalid, results in no filter being applied.</p>
-<dl>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur" target="resource">blur()</a></dt>
-  <dd>Blurs the image. <code>&lt;length></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness" target="resource">brightness()</a></dt>
-  <dd>Makes the image brighter or darker. <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast" target="resource">contrast()</a></dt>
-  <dd>Increases or decreases the image's contrast. <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow" target="resource">drop-shadow()</a></dt>
-  <dd>Applies a drop shadow behind the image.  <code>&lt;x-y-blur-spread-color></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale" target="resource">grayscale()</a></dt>
-  <dd>Converts the image to grayscale.  <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate" target="resource">hue-rotate()</a>​​​​​​​​​​​​​​</dt>
-  <dd>Changes the overall hue of the image. <code>&lt;angle></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert"  target="resource">invert()</a></dt>
-  <dd>Inverts the colors of the image. <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/opacity" target="resource">opacity()</a></dt>
-  <dd>Makes the image transparent. <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate" target="resource">saturate()</a></dt>
-  <dd>Super-saturates or desaturates the input image. <code>&lt;number-percent></code></dd>
-  <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia" target="resource">sepia()</a></dt>
-  <dd>Converts the image to sepia. <code>&lt;number-percent></code></dd>
-</dl>
-</section>
-</div>
+      <div class="slide object">
+        <header>
+          <h1>Filters</h1>
+        </header>
+        <object data="http://html5-demos.appspot.com/static/css/filters/index.html"></object>
+        <a href="http://html5-demos.appspot.com/static/css/filters/index.html" target="play" class="objectlink">Visit
+          Site</a>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="resource">filter</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Applies graphical effects like blur or color shift to an element.</p>
+          <pre contenteditable
+            class="multi">none | blur() | brightness() | contrast() <br/>grayscale() | drop-shadow() | hue-rotate() | invert()<br/> saturate() | opacity() | sepia() | url()</pre>
+          <p>Applies the effects to a foreground element.</p>
+        </section>
+      </div>
+
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" target="resource">backdrop-filter</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <p>Apply graphical effects to the area behind an element. </p>
+          <pre contenteditable
+            class="multi">none | blur() | brightness() | contrast() <br/>grayscale() | drop-shadow() | hue-rotate() | invert()<br/> saturate() | opacity() | sepia() | url()</pre>
+          </pre>
+          <p>Applicable to a background (v. <code>filter</code> which is foreground)</p>
+          <pre contenteditable>backdrop-filter: url(image.svg#focus) blur(6px) saturate(50%);</pre>
+          <p>To see the effect you must make the element or its background at least partially transparent because it
+            applies to everything behind the element.</p>
+          <p>Prefixed in safari. New to Chrome and Edge. Not in FF</p>
+        </section>
+      </div>
 
 
 
-<div class="slide" style="background-color: var(--light_bg);">
-<header><h1>Filter Activation!</h1>
-  </header>
-<section class="content">
-  <p>Change the background of the deck so we can see filter-backdrop in action</p>
-  <p>remember how an invalid pseudoclass ruins everything?</p>
- <style contenteditable class="editme">#presentation:NOTVALID, 
-.slide.slide.slide, 
-#slides#slides { 
-  background:unset;
-} </style>
-<p>In the next slides, change <code>.body</code> to <code>body</code></p>
-</section>
-</div>
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter_functions" target="resource">&lt;filter></a></code>
+            functions</h1>
+        </header>
+        <section class="content">
 
-
-<style>
-  .filter p {
-    background-color: #ffffff88;
-  }
-</style>
-<!-- blur() -->
-<div class="slide filter blur">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur" target="resource">blur()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>Applies a Gaussian blur set in <code>&lt;length></code>. <br/><br/>Negative values are not valid.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/charlotte.jpg);}
-.blur { backdrop-filter: blur(10px);}
-.blur img { filter: blur(2px);}</style>
-  <img src="../images/charlotte.jpg" alt="woman protesting"/>
-</section>
-</div>
-
-
-
-
-<!-- brightness() -->
-<div class="slide filter brightness">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness" target="resource">brightness()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>Applies a linear multiplier, making it appear brighter or darker. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. 0% and 0 are black. 200% and 2 doubles the brightness. 100% and 1 have no effect.<br/><br/>Negative values are not valid.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/berlin.jpg);}
-.brightness {backdrop-filter: brightness(200%);}
-.brightness img { filter: brightness(0.3);}</style>
-  <img src="../images/berlin.jpg" alt="woman protesting"/>
-</section>
-</div>
+          <p>The <code>&lt;filter-function&gt;</code> data type is specified using one of the filter functions listed
+            below. Each function requires an argument which, if invalid, results in no filter being applied.</p>
+          <dl>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur"
+                target="resource">blur()</a></dt>
+            <dd>Blurs the image. <code>&lt;length></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness"
+                target="resource">brightness()</a></dt>
+            <dd>Makes the image brighter or darker. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast"
+                target="resource">contrast()</a></dt>
+            <dd>Increases or decreases the image's contrast. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow"
+                target="resource">drop-shadow()</a></dt>
+            <dd>Applies a drop shadow behind the image. <code>&lt;x-y-blur-spread-color></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale"
+                target="resource">grayscale()</a></dt>
+            <dd>Converts the image to grayscale. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate"
+                target="resource">hue-rotate()</a>​​​​​​​​​​​​​​</dt>
+            <dd>Changes the overall hue of the image. <code>&lt;angle></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert"
+                target="resource">invert()</a></dt>
+            <dd>Inverts the colors of the image. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/opacity"
+                target="resource">opacity()</a></dt>
+            <dd>Makes the image transparent. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate"
+                target="resource">saturate()</a></dt>
+            <dd>Super-saturates or desaturates the input image. <code>&lt;number-percent></code></dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia"
+                target="resource">sepia()</a></dt>
+            <dd>Converts the image to sepia. <code>&lt;number-percent></code></dd>
+          </dl>
+        </section>
+      </div>
 
 
 
-<!-- contrast() -->
-<div class="slide filter contrast">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast" target="resource">contrast()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>Adjusts the contrast of the input image. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. A value under 100% decreases the contrast, while a value over 100% increases it. 0% and 0 will be completely grey. 100% and 1 have no effect.<br/><br/>Negative values are not valid.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/brazil.jpg);}
-.contrast {backdrop-filter: contrast(200%);}
-.contrast img { filter: contrast(0.3);}</style>
-  <img src="../images/brazil.jpg" alt="woman protesting"/>
-</section>
-</div>
-
-<!-- grayscale() -->
-<div class="slide filter grayscale">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale" target="resource">grayscale</a></code> function</h1>
-  </header>
-<section class="content">
-  <p> converts the input image to grayscale. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. 100% and 1 (and higher) are completely greyscale.  0% and 0 have no effect.<br/><br/>Negative values are not valid.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/seoul.jpg);}
-.grayscale { backdrop-filter: grayscale(90%);}
-.grayscale img { filter: grayscale(0.5);}</style>
-  <img src="../images/seoul.jpg" alt="woman protesting"/>
-</section>
-</div>
+      <div class="slide" style="background-color: var(--light_bg);">
+        <header>
+          <h1>Filter Activation!</h1>
+        </header>
+        <section class="content">
+          <p>Change the background of the deck so we can see filter-backdrop in action</p>
+          <p>remember how an invalid pseudoclass ruins everything?</p>
+          <style contenteditable class="editme">
+            #presentation:NOTVALID,
+            .slide.slide.slide,
+            #slides#slides {
+              background: unset;
+            }
+          </style>
+          <p>In the next slides, change <code>.body</code> to <code>body</code></p>
+        </section>
+      </div>
 
 
+      <style>
+        .filter p {
+          background-color: #ffffff88;
+        }
+      </style>
+      <!-- blur() -->
+      <div class="slide filter blur">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur" target="resource">blur()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>Applies a Gaussian blur set in <code>&lt;length></code>. <br /><br />Negative values are not valid.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/charlotte.jpg);
+            }
 
-<!-- drop-shadow -->
-<div class="slide filter dropshadow">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow" target="resource">drop-shadow()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>applies a drop shadow effect to the input image. Syntax is the same as <code>box-shadow</code>, written as <code>drop-shadow(offset-x offset-y blur-radius spread-radius color)</code>, but spread radius is not supported.<br/><br/>It follows the image :D.</p>
-  <style contenteditable class="editme">.body {background-image: none;}
-.dropshadow {backdrop-filter: drop-shadow(-37px -37px 20px var(--colorpop));}
-.dropshadow img { filter: drop-shadow(30px 30px 0 var(--colorpop));}</style>
-  <img src="../images/star.svg" alt="A star"/>
-</section>
-</div>
+            .blur {
+              backdrop-filter: blur(10px);
+            }
 
-
-<!-- hue-rotate -->
-<div class="slide filter hue-rotate">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate" target="resource">hue-rotate()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p> rotates the hue of an element and its contents. Set as as <code>&lt;angle></code>. A positive angle increases the hue value. A negative rotation decreases the hue value. The values reset at 360deg, as if <code>angle = &lt;angle> % 360</code>.<br/><br/><code>hue-rotate(-180deg)</code> and <code>hue-rotate(180deg)</code> end up being the same, completely rotated. Even the border!</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/womensmarch.webp);}
-.hue-rotate {backdrop-filter: hue-rotate(-45deg);}
-.hue-rotate img { filter: hue-rotate(-180deg);}</style>
-  <img src="../images/womensmarch.webp" alt="women protesting"/>
-</section>
-</div>
-
-<!-- invert() -->
-<div class="slide filter invert">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert" target="resource">invert()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>inverts the color samples in the input image. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. 100% or 1 is completely inverted. 0% leaves or 0 makes no change. Values between 0% and 100% and 0 and 1 are linear multipliers on the effect.<br/><br/>Negative values are not valid. Check out the difference betweetn inverting the slide v. the body.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/istanbul.jpg);}
-.invert {backdrop-filter: invert(10%);}
-.invert img { filter: invert(1);}</style>
-  <img src="../images/istanbul.jpg" alt="woman protesting"/>
-</section>
-</div>
-
-
-<!-- sepia() -->
-
-<div class="slide filter sepia">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia" target="resource">sepia()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>converts the input image to sepia, giving it a more yellow/brown antique appearance. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. 0% and 0 are completely sepia. 200% and 2 doubles the sepia. 0% and 0 don't change the image's appearance.<br/><br/>Negative values are not valid. Change the effect from the slide to the body.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/batonrouge.jpg);}
-.sepia {backdrop-filter: sepia(50%);}
-.sepia img { filter: sepia(1);}</style>
-  <img src="../images/batonrouge.jpg" alt="woman protesting"/>
-</section>
-</div>
-
-<!-- saturate() -->
-<div class="slide filter saturate">
-<header><h1><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate" target="resource">saturate()</a></code> function</h1>
-  </header>
-<section class="content">
-  <p>Super-saturates or desaturates the input image. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>. 0% and 0 are completely unsatured: black and white. 200% and 2 doubles the saturation. 100% and 1 have no effect. Greater numbers create modern art.<br/><br/>Negative values are not valid.</p>
-  <style contenteditable class="editme">.body {background-image: url(../images/xl.jpg);}
-.saturate {backdrop-filter: saturate(200%);}
-.saturate img { filter: saturate(0.3);}</style>
-  <img src="../images/xl.jpg" alt="woman protesting"/>
-</section>
-</div>
-
-
-<div class="slide">
-<header><h1>Filter DeActivation!</h1>
-  </header>
-<section class="content">
-  <p>Revert the unset</p>
- <style contenteditable class="editme">#presentation:NOTVALID,
-#slides#slides {background-color: #dedede;} 
-.slide.slide.slide:NOTVALID { 
-  background: var(--light_bg);
-} </style>
-</section>
-</div>
+            .blur img {
+              filter: blur(2px);
+            }
+          </style>
+          <img src="../images/charlotte.jpg" alt="woman protesting" />
+        </section>
+      </div>
 
 
 
 
+      <!-- brightness() -->
+      <div class="slide filter brightness">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness" target="resource">brightness()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>Applies a linear multiplier, making it appear brighter or darker. Set as a <code>&lt;percentage></code> or
+            <code>&lt;number></code>. 0% and 0 are black. 200% and 2 doubles the brightness. 100% and 1 have no
+            effect.<br /><br />Negative values are not valid.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/berlin.jpg);
+            }
 
-<div class="slide intro">
-     <header>
-    <h1>Gradients</h1>
-  </header>
-    <h1><a href="../gradients/intro.html">Next ➹</a></h1>
-</div>
+            .brightness {
+              backdrop-filter: brightness(200%);
+            }
 
-
-
-
-    
-
-<div class="slide dots">
-  <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
-
-<p></ol>
-  </section>
-</div>
-
-<!-- links -->
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>
-        <a href="https://drafts.csswg.org/css-backgrounds/">W3C Background and Borders Specification</a>
-      </li>
-      <li><a href="https://www.w3.org/TR/css3-images/#image-notation">image() notation</a></li>
-    </ul>
-  </section>
-</div>
+            .brightness img {
+              filter: brightness(0.3);
+            }
+          </style>
+          <img src="../images/berlin.jpg" alt="woman protesting" />
+        </section>
+      </div>
 
 
 
-  </div>
-  <script src="../slideshow.js"></script>
-  </body>
+      <!-- contrast() -->
+      <div class="slide filter contrast">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast" target="resource">contrast()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>Adjusts the contrast of the input image. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>.
+            A value under 100% decreases the contrast, while a value over 100% increases it. 0% and 0 will be completely
+            grey. 100% and 1 have no effect.<br /><br />Negative values are not valid.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/brazil.jpg);
+            }
+
+            .contrast {
+              backdrop-filter: contrast(200%);
+            }
+
+            .contrast img {
+              filter: contrast(0.3);
+            }
+          </style>
+          <img src="../images/brazil.jpg" alt="woman protesting" />
+        </section>
+      </div>
+
+      <!-- grayscale() -->
+      <div class="slide filter grayscale">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale" target="resource">grayscale</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p> converts the input image to grayscale. Set as a <code>&lt;percentage></code> or <code>&lt;number></code>.
+            100% and 1 (and higher) are completely greyscale. 0% and 0 have no effect.<br /><br />Negative values are
+            not valid.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/seoul.jpg);
+            }
+
+            .grayscale {
+              backdrop-filter: grayscale(90%);
+            }
+
+            .grayscale img {
+              filter: grayscale(0.5);
+            }
+          </style>
+          <img src="../images/seoul.jpg" alt="woman protesting" />
+        </section>
+      </div>
+
+
+
+      <!-- drop-shadow -->
+      <div class="slide filter dropshadow">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow" target="resource">drop-shadow()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>applies a drop shadow effect to the input image. Syntax is the same as <code>box-shadow</code>, written as
+            <code>drop-shadow(offset-x offset-y blur-radius spread-radius color)</code>, but spread radius is not
+            supported.<br /><br />It follows the image :D.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: none;
+            }
+
+            .dropshadow {
+              backdrop-filter: drop-shadow(-37px -37px 20px var(--colorpop));
+            }
+
+            .dropshadow img {
+              filter: drop-shadow(30px 30px 0 var(--colorpop));
+            }
+          </style>
+          <img src="../images/star.svg" alt="A star" />
+        </section>
+      </div>
+
+
+      <!-- hue-rotate -->
+      <div class="slide filter hue-rotate">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate" target="resource">hue-rotate()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p> rotates the hue of an element and its contents. Set as as <code>&lt;angle></code>. A positive angle
+            increases the hue value. A negative rotation decreases the hue value. The values reset at 360deg, as if
+            <code>angle = &lt;angle> % 360</code>.<br /><br /><code>hue-rotate(-180deg)</code> and
+            <code>hue-rotate(180deg)</code> end up being the same, completely rotated. Even the border!</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/womensmarch.webp);
+            }
+
+            .hue-rotate {
+              backdrop-filter: hue-rotate(-45deg);
+            }
+
+            .hue-rotate img {
+              filter: hue-rotate(-180deg);
+            }
+          </style>
+          <img src="../images/womensmarch.webp" alt="women protesting" />
+        </section>
+      </div>
+
+      <!-- invert() -->
+      <div class="slide filter invert">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert" target="resource">invert()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>inverts the color samples in the input image. Set as a <code>&lt;percentage></code> or
+            <code>&lt;number></code>. 100% or 1 is completely inverted. 0% leaves or 0 makes no change. Values between
+            0% and 100% and 0 and 1 are linear multipliers on the effect.<br /><br />Negative values are not valid.
+            Check out the difference betweetn inverting the slide v. the body.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/istanbul.jpg);
+            }
+
+            .invert {
+              backdrop-filter: invert(10%);
+            }
+
+            .invert img {
+              filter: invert(1);
+            }
+          </style>
+          <img src="../images/istanbul.jpg" alt="woman protesting" />
+        </section>
+      </div>
+
+
+      <!-- sepia() -->
+
+      <div class="slide filter sepia">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia" target="resource">sepia()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>converts the input image to sepia, giving it a more yellow/brown antique appearance. Set as a
+            <code>&lt;percentage></code> or <code>&lt;number></code>. 0% and 0 are completely sepia. 200% and 2 doubles
+            the sepia. 0% and 0 don't change the image's appearance.<br /><br />Negative values are not valid. Change
+            the effect from the slide to the body.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/batonrouge.jpg);
+            }
+
+            .sepia {
+              backdrop-filter: sepia(50%);
+            }
+
+            .sepia img {
+              filter: sepia(1);
+            }
+          </style>
+          <img src="../images/batonrouge.jpg" alt="woman protesting" />
+        </section>
+      </div>
+
+      <!-- saturate() -->
+      <div class="slide filter saturate">
+        <header>
+          <h1>
+            <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate" target="resource">saturate()</a></code>
+            function</h1>
+        </header>
+        <section class="content">
+          <p>Super-saturates or desaturates the input image. Set as a <code>&lt;percentage></code> or
+            <code>&lt;number></code>. 0% and 0 are completely unsatured: black and white. 200% and 2 doubles the
+            saturation. 100% and 1 have no effect. Greater numbers create modern art.<br /><br />Negative values are not
+            valid.</p>
+          <style contenteditable class="editme">
+            .body {
+              background-image: url(../images/xl.jpg);
+            }
+
+            .saturate {
+              backdrop-filter: saturate(200%);
+            }
+
+            .saturate img {
+              filter: saturate(0.3);
+            }
+          </style>
+          <img src="../images/xl.jpg" alt="woman protesting" />
+        </section>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>Filter DeActivation!</h1>
+        </header>
+        <section class="content">
+          <p>Revert the unset</p>
+          <style contenteditable class="editme">
+            #presentation:NOTVALID,
+            #slides#slides {
+              background-color: #dedede;
+            }
+
+            .slide.slide.slide:NOTVALID {
+              background: var(--light_bg);
+            }
+          </style>
+        </section>
+      </div>
+
+
+
+
+
+      <div class="slide intro">
+        <header>
+          <h1>Gradients</h1>
+        </header>
+        <h1><a href="../gradients/intro.html">Next ➹</a></h1>
+      </div>
+
+
+
+
+
+
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
+
+            <p>
+          </ol>
+        </section>
+      </div>
+
+      <!-- links -->
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>
+              <a href="https://drafts.csswg.org/css-backgrounds/">W3C Background and Borders Specification</a>
+            </li>
+            <li><a href="https://www.w3.org/TR/css3-images/#image-notation">image() notation</a></li>
+          </ul>
+        </section>
+      </div>
+
+
+
+    </div>
+    <script src="../slideshow.js"></script>
+</body>
+
 </html>

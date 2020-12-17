@@ -1,97 +1,98 @@
-
 <!DOCTYPE HTML>
 <html>
+
 <head>
 
-<title>Pretty box with generated content</title>
+  <title>Pretty box with generated content</title>
 
   <link rel="stylesheet" href="editme.css">
-  <style>li {line-height: 2; 
-  font-family: "helvetica neue",georgia;
-}
-</style>
-<style contenteditable class="editme" style="max-height: 40vh; overflow-y: scroll;">/* images can be found at 
-https://estelle.github.io/CSS/generated/exercises/img/facebook.png
-https://estelle.github.io/CSS/generated/exercises/img/twitter.png
-https://estelle.github.io/CSS/generated/exercises/img/email.png
-https://estelle.github.io/CSS/generated/exercises/img/rss.png
-https://estelle.github.io/CSS/generated/exercises/img/linkedin.png */
+  <style>
+    li {
+      line-height: 2;
+      font-family: "helvetica neue", georgia;
+    }
+  </style>
+  <style contenteditable class="editme" style="max-height: 40vh; overflow-y: scroll;">
+    /* images can be found at 
+https://rvsp.github.io/CSS/generated/exercises/img/facebook.png
+https://rvsp.github.io/CSS/generated/exercises/img/twitter.png
+https://rvsp.github.io/CSS/generated/exercises/img/email.png
+https://rvsp.github.io/CSS/generated/exercises/img/rss.png
+https://rvsp.github.io/CSS/generated/exercises/img/linkedin.png */
 
 
-/* create a selector for linkedin, and add the linkedin icon before the content, and "(LinkedIn Profile)" after the link*/
-a[href*="/in/"][href*=".linkedin.com/"]::before { 
-  content: url(https://estelle.github.io/CSS/generated/exercises/img/linkedin.png);
-  position: relative; top: 4px;
-  margin-right: 0.2em
-}
+    /* create a selector for linkedin, and add the linkedin icon before the content, and "(LinkedIn Profile)" after the link*/
+    a[href*="/in/"][href*=".linkedin.com/"]::before {
+      content: url(https://rvsp.github.io/CSS/generated/exercises/img/linkedin.png);
+      position: relative;
+      top: 4px;
+      margin-right: 0.2em
+    }
 
-a[href*="/in/"][href*=".linkedin.com/"]::after{
-  content: " - (Linked Profile)";
-}
+    a[href*="/in/"][href*=".linkedin.com/"]::after {
+      content: " - (Linked Profile)";
+    }
 
-/* create a selector for an RSS feed, and add the RSS icon before the content and the text "(RSS feed)" after the text.  */
-a[href*="/feed/"]::before { 
-  content: url(https://estelle.github.io/CSS/generated/exercises/img/rss.png);
-  position: relative; top: 4px;
-  margin-right: 0.2em
-}
+    /* create a selector for an RSS feed, and add the RSS icon before the content and the text "(RSS feed)" after the text.  */
+    a[href*="/feed/"]::before {
+      content: url(https://rvsp.github.io/CSS/generated/exercises/img/rss.png);
+      position: relative;
+      top: 4px;
+      margin-right: 0.2em
+    }
 
-a[href*="/feed/"]::after{
-  content: " - (RSS Feed)";
-}
-/* create a selector for facebook, and add the facebook icon before the content */
-a[href*="facebook.com"]::before { 
-  content: url(https://estelle.github.io/CSS/generated/exercises/img/facebook.png);
-  position: relative; top: 4px;
-  margin-right: 0.2em
-}
+    a[href*="/feed/"]::after {
+      content: " - (RSS Feed)";
+    }
 
-a[href*="facebook.com"]::after{
-  content: " - (Unethical mega corp)";
-}
+    /* create a selector for facebook, and add the facebook icon before the content */
+    a[href*="facebook.com"]::before {
+      content: url(https://rvsp.github.io/CSS/generated/exercises/img/facebook.png);
+      position: relative;
+      top: 4px;
+      margin-right: 0.2em
+    }
 
-/* create a selector for twitter, and add the twitter icon before the content */
-a[href*="twitter.com/"]::before { 
-  content: url(https://estelle.github.io/CSS/generated/exercises/img/twitter.png);
-  position: relative; top: 4px;
-  margin-right: 0.2em;
-}
+    a[href*="facebook.com"]::after {
+      content: " - (Unethical mega corp)";
+    }
 
-a[href*="twitter.com/"]::after{
-  content: " - (LinkedIn Profile)";
-}
+    /* create a selector for twitter, and add the twitter icon before the content */
+    a[href*="twitter.com/"]::before {
+      content: url(https://rvsp.github.io/CSS/generated/exercises/img/twitter.png);
+      position: relative;
+      top: 4px;
+      margin-right: 0.2em;
+    }
 
-
-/* create a selector for an mailto linke, and add the email icon before the content */
-a[href^="mailto:"]::before { 
-  content: url(https://estelle.github.io/CSS/generated/exercises/img/email.png);
-  position: relative; top: 4px;
-  margin-right: 0.2em;
-}
-
-a[href^="mailto:"]::after{
-  content: " - (fake email address)";
-}
+    a[href*="twitter.com/"]::after {
+      content: " - (LinkedIn Profile)";
+    }
 
 
-/* extra */
-li {line-height: 2; 
-  font-family: "helvetica neue",georgia;
-  list-style-type: none;
-}
-</style>
+    /* create a selector for an mailto linke, and add the email icon before the content */
+    a[href^="mailto:"]::before {
+      content: url(https://rvsp.github.io/CSS/generated/exercises/img/email.png);
+      position: relative;
+      top: 4px;
+      margin-right: 0.2em;
+    }
+
+    a[href^="mailto:"]::after {
+      content: " - (fake email address)";
+    }
+
+
+    /* extra */
+    li {
+      line-height: 2;
+      font-family: "helvetica neue", georgia;
+      list-style-type: none;
+    }
+  </style>
 </head>
 
 <body>
-<ul>
-  <li><a href="https://www.linkedin.com/in/estellevw">My work network</a></li>
-  <li><a href="http://www.standardista.com/feed/">My professional ramblings</a></li>
-  <li><a href="https://facebook.com">My high school classmates</a></li>
-  <li><a href="https://twitter.com/estellevw">My personal ramblings</a></li>
-  <li><a href="mailto:estelle@example.com">Contact me</a></li>
-</ul>
-  
-<small><a href="https://codepen.io/estelle/pen/RzpYXB">Codepen</a></small>
 </body>
-</html>
 
+</html>

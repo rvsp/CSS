@@ -1,92 +1,92 @@
 <!DOCTYPE HTML>
 <html>
-<head> 
-<meta charset="utf-8" />
-    <title>HTML Tables and CSS</title>
-<link rel="stylesheet" href="../intro/css/main.css"/>
-<style>
-  :root { 
-  --splashcolor: #cc0000;
-  --lightsplash: #ff9999;
-  --dark_bg: #000000;
-  --colorpop: #cc0000;
-}
-</style>
-</head> 
 
-<body> 
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Tables and CSS</title>
+  <link rel="stylesheet" href="../intro/css/main.css" />
+  <style>
+    :root {
+      --splashcolor: #cc0000;
+      --lightsplash: #ff9999;
+      --dark_bg: #000000;
+      --colorpop: #cc0000;
+    }
+  </style>
+</head>
 
-<!-- Top instructions -->
-<div id="topinfo"></div>
-<!-- footer instructions -->  
-<div id="info">
-    <p><a href="http://standardista.com">Estelle Weyl</a> | <a href="http://twitter.com/estellevw">@estellevw</a> | <a href="http://github.com/estelle">Github</a> | Press <span class="key">&rarr;</span> to advance, <span class="key">2</span> for comments, <span class="key">4</span> to read/write notes.</p>
-</div>
+<body>
+
+  <!-- Top instructions -->
+  <div id="topinfo"></div>
+  <!-- footer instructions -->
+  <div id="info">
+  </div>
 
   <div id="presentation">
-   <div id="presentation-counter"></div>
-   <div id="slides">
-   
-<div class="slide intro">
-     <header>
-      <h1>HTML Tables &amp; CSS</h1>
-     </header>
-    </div> 
-    
-    
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Table Purpose</h1>
-  </header>
-  <section class="content">
-    <ul class="col2">
-<li>Structure of a Table</li>
-<li>Caption</li>
-<li><code>caption-side</code> property</li>
-<li><code>text-align</code> and <code>text-transform</code> property</li>
-<li>Borders &amp; Spacing</li>
-<li><code>border-collapse</code></li>
-<li><code>border-spacing</a></code></li>
-<li>Other Table Properties</li>
-<li><code>empty-cells</code> property</li>
-<li>vertical-align</li>
-<li><code>display</code> property</li>
-<li>columns</li>
-<li><code>table-layout</code> property</li>
-<li>Exercise / solution</li>
-<li>Static rows and colums</li>
-<li>Accessibility</li>
-<li>Mobile</li>
-</ul>
-</section>
-</div>
+    <div id="presentation-counter"></div>
+    <div id="slides">
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Table Purpose</h1>
-  </header>
-  <section class="content">
-    <p>Presentation of Data</p>
-    <ul>
-      <li>Presenting</li>
-      <li>Comparing</li>
-      <li>Sorting</li>
-      <li>Calculating</li>
-      <li>Cross Referencing</li>
-    </ul>
-    <p>NOT for presentation</p>
-  </section>
-</div>
+      <div class="slide intro">
+        <header>
+          <h1>HTML Tables &amp; CSS</h1>
+        </header>
+      </div>
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1>Structure of a Table</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable><strong>&lt;table></strong>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Table Purpose</h1>
+        </header>
+        <section class="content">
+          <ul class="col2">
+            <li>Structure of a Table</li>
+            <li>Caption</li>
+            <li><code>caption-side</code> property</li>
+            <li><code>text-align</code> and <code>text-transform</code> property</li>
+            <li>Borders &amp; Spacing</li>
+            <li><code>border-collapse</code></li>
+            <li><code>border-spacing</a></code></li>
+            <li>Other Table Properties</li>
+            <li><code>empty-cells</code> property</li>
+            <li>vertical-align</li>
+            <li><code>display</code> property</li>
+            <li>columns</li>
+            <li><code>table-layout</code> property</li>
+            <li>Exercise / solution</li>
+            <li>Static rows and colums</li>
+            <li>Accessibility</li>
+            <li>Mobile</li>
+          </ul>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Table Purpose</h1>
+        </header>
+        <section class="content">
+          <p>Presentation of Data</p>
+          <ul>
+            <li>Presenting</li>
+            <li>Comparing</li>
+            <li>Sorting</li>
+            <li>Calculating</li>
+            <li>Cross Referencing</li>
+          </ul>
+          <p>NOT for presentation</p>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>Structure of a Table</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable><strong>&lt;table></strong>
   <strong>&lt;caption></strong>&lt;/caption>
   <strong>&lt;colgroup></strong>
     <strong>&lt;col/></strong>
@@ -107,15 +107,15 @@
     &lt;/tr>
   &lt;/tfoot>
 &lt;/table></pre>
-  </section>
-</div>
+        </section>
+      </div>
 
-<div class="slide">
-  <header>
-    <h1>Structure of a Table</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>&lt;table>
+      <div class="slide">
+        <header>
+          <h1>Structure of a Table</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>&lt;table>
   &lt;caption>Table Caption&lt;/caption>
   &lt;colgroup>
     &lt;col/>
@@ -124,263 +124,286 @@
   &lt;tbody>&lt;/tbody>
   &lt;tfoot>&lt;/tfoot>
 &lt;/table></pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
-<!-- caption -->
-<div class="slide intro">
-  <header>
-    <h1>Captions</h1>
-  </header>
-</div>
-<!-- Table Caption -->
-<div class="slide">
-  <header>
-    <h1>Caption</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>Specifies the title of table</li>
-      <li>Always the first child of a &lt;table></li>
-      <li>Can be positioned on top or bottom with <code>caption-side</code></li>In FF, can be top, bottom, left or right of table</li>
-      <li>Can be styled</li>
-      <li>CSS: Inherits from <code>table</code></li>
-    </ul>
-  </section>
-</div>
+      <!-- caption -->
+      <div class="slide intro">
+        <header>
+          <h1>Captions</h1>
+        </header>
+      </div>
+      <!-- Table Caption -->
+      <div class="slide">
+        <header>
+          <h1>Caption</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Specifies the title of table</li>
+            <li>Always the first child of a &lt;table></li>
+            <li>Can be positioned on top or bottom with <code>caption-side</code></li>In FF, can be top, bottom, left or
+            right of table</li>
+            <li>Can be styled</li>
+            <li>CSS: Inherits from <code>table</code></li>
+          </ul>
+        </section>
+      </div>
 
 
-<!-- cpation side -->
-<div class="slide divider">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/caption-side">caption-side</a></code> property</h1>
-  </header>
-</div>
+      <!-- cpation side -->
+      <div class="slide divider">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/caption-side">caption-side</a></code>
+            property</h1>
+        </header>
+      </div>
 
 
 
 
-<!-- cpation side -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/caption-side">caption-side</a></code> property</h1>
-  </header>
-  <section class="content" style="overflow-y: scroll; max-height: 80vh">
-<p>Put on the <code>&lt;table></code>, not the <code>&lt;caption></code>.</p>
-<p>supported</p><pre>caption-side: top; 
-caption-side: bottom;</pre> 
-<p>Experimental</p>
-<pre>caption-side: left; 
+      <!-- cpation side -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/caption-side">caption-side</a></code>
+            property</h1>
+        </header>
+        <section class="content" style="overflow-y: scroll; max-height: 80vh">
+          <p>Put on the <code>&lt;table></code>, not the <code>&lt;caption></code>.</p>
+          <p>supported</p>
+          <pre>caption-side: top; 
+caption-side: bottom;</pre>
+          <p>Experimental</p>
+          <pre>caption-side: left; 
 caption-side: right; 
 caption-side: top-outside; 
 caption-side: bottom-outside;</pre>
-<p>In the specification</p>
-<pre>caption-side: inline-start;
+          <p>In the specification</p>
+          <pre>caption-side: inline-start;
 caption-side: inline-end;</pre>
-<p>deprecated:</p>
-<pre>&lt;table align="left | top | right | bottom"></pre>
-  </section>
-</div>
+          <p>deprecated:</p>
+          <pre>&lt;table align="left | top | right | bottom"></pre>
+        </section>
+      </div>
 
-<!-- caption side -->
-<div class="slide object">
-  <header>
-    <h1><code>caption-side</code> property</h1>
-  </header>
-  <object data="files/captionside.html"></object>
-</div>
+      <!-- caption side -->
+      <div class="slide object">
+        <header>
+          <h1><code>caption-side</code> property</h1>
+        </header>
+        <object data="files/captionside.html"></object>
+      </div>
 
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1><code>&lt;caption></code>  styling</h1>
-  </header>
-  <object data="files/caption.html"></object>
-</div>
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1><code>&lt;caption></code> styling</h1>
+        </header>
+        <object data="files/caption.html"></object>
+      </div>
 
-<!-- style the caption -->
-<div class="slide">
-  <header>
-    <h1><code>&lt;caption></code>  notes</h1>
-  </header>
-  <section class="content">
-    <p><code>caption-side: bottom; text-align: right;</code> can look good on short tables: similar to a figure caption.</p>
-  </section>
-</div>
-
-
-<!-- text-transform -->
-<div class="slide divider">
-  <header>
-    <h1><code>text-align</code> and <code>text-transform</code> property</h1>
-  </header>
-</div>
+      <!-- style the caption -->
+      <div class="slide">
+        <header>
+          <h1><code>&lt;caption></code> notes</h1>
+        </header>
+        <section class="content">
+          <p><code>caption-side: bottom; text-align: right;</code> can look good on short tables: similar to a figure
+            caption.</p>
+        </section>
+      </div>
 
 
-
-<!-- text-transform -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/text-transform">text-transform</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>text-transform: capitalize;</pre>
-<pre contenteditable class="multi">capitalize | uppercase | lowercase | <em>none</em> | full-width | full-size-kana;</pre>
-<ul>
-  <li>Takes into account language-specific case mapping rules</li>
-  <li>First unicode letter or number. Initial punctuations of words are ignored</li>
-  <li><code>uppercase</code> can be hard to read.</li>
-</ul>
-  </section>
-</div>
+      <!-- text-transform -->
+      <div class="slide divider">
+        <header>
+          <h1><code>text-align</code> and <code>text-transform</code> property</h1>
+        </header>
+      </div>
 
 
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1><code>text-align</code> &amp; <code>text-transform</code></h1>
-  </header>
-  <object data="files/text-transform.html"></object>
-</div>
 
-<!-- border spacing -->
-<div class="slide intro">
-  <header>
-    <h1>Borders &amp; Spacing</h1>
-  </header>
-</div>
+      <!-- text-transform -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/text-transform">text-transform</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>text-transform: capitalize;</pre>
+          <pre contenteditable
+            class="multi">capitalize | uppercase | lowercase | <em>none</em> | full-width | full-size-kana;</pre>
+          <ul>
+            <li>Takes into account language-specific case mapping rules</li>
+            <li>First unicode letter or number. Initial punctuations of words are ignored</li>
+            <li><code>uppercase</code> can be hard to read.</li>
+          </ul>
+        </section>
+      </div>
 
-<!-- border-collapse -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-collapse">border-collapse</a></code></h1>
-  </header>
-  <section class="content">
-    <pre><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-collapse">border-collapse</a>: <em>separate</em> | collapse | inherit</pre>
-    <p>When the borders are collapsed <code>border-spacing</code> is irrelevant. When <code>separate</code>, it matters!</p>  
-  </section>
-</div>
 
-<!-- border-spacing -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-spacing">border-spacing</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre>border-spacing: &lt;length> &lt;length>?;</pre>
-    <p>The look you want is probably:</p>
-    <pre>table, td, th {border: none;}
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1><code>text-align</code> &amp; <code>text-transform</code></h1>
+        </header>
+        <object data="files/text-transform.html"></object>
+      </div>
+
+      <!-- border spacing -->
+      <div class="slide intro">
+        <header>
+          <h1>Borders &amp; Spacing</h1>
+        </header>
+      </div>
+
+      <!-- border-collapse -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-collapse">border-collapse</a></code>
+          </h1>
+        </header>
+        <section class="content">
+          <pre><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-collapse">border-collapse</a>: <em>separate</em> | collapse | inherit</pre>
+          <p>When the borders are collapsed <code>border-spacing</code> is irrelevant. When <code>separate</code>, it
+            matters!</p>
+        </section>
+      </div>
+
+      <!-- border-spacing -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/border-spacing">border-spacing</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre>border-spacing: &lt;length> &lt;length>?;</pre>
+          <p>The look you want is probably:</p>
+          <pre>table, td, th {border: none;}
 table {border-spacing: 5px 10px;}</pre>
-<ul>
-  <li>one length: vertical and horizontal padding are the same.</li>
-  <li>two lengths: first is horizontal, second is vertical</li>
-  <li>Note: not TRouBLe</li>
-  <li>Irrelevant if <code>border-collapse: collapse</code></li>
-  <li>Empty space is part of the table, not the column, tbody, row or cell.</li>
-</ul>
-  </section>
-</div>
+          <ul>
+            <li>one length: vertical and horizontal padding are the same.</li>
+            <li>two lengths: first is horizontal, second is vertical</li>
+            <li>Note: not TRouBLe</li>
+            <li>Irrelevant if <code>border-collapse: collapse</code></li>
+            <li>Empty space is part of the table, not the column, tbody, row or cell.</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1>table spacing to improve legibility</h1>
-  </header>
-  <object data="files/padding.html"></object>
-</div>
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1>table spacing to improve legibility</h1>
+        </header>
+        <object data="files/padding.html"></object>
+      </div>
 
 
-<!-- other -->
-<div class="slide intro">
-  <header>
-    <h1>Other Table Properties</h1>
-  </header>
-</div>
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/empty-cells">empty-cells</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre>empty-cells: show | hide</pre>
-    <p>Similar to:</p>
+      <!-- other -->
+      <div class="slide intro">
+        <header>
+          <h1>Other Table Properties</h1>
+        </header>
+      </div>
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/empty-cells">empty-cells</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre>empty-cells: show | hide</pre>
+          <p>Similar to:</p>
 
-<pre contenteditable>td:empty, th:empty {
+          <pre contenteditable>td:empty, th:empty {
   visibility: collapse;
   }</pre>
-<ul>
-  <li>ignored if <code>border-collapse: separate</code></li>
-  <li>applies to elements with diplay of <code>table-cell</code></li>
-  <li>property of <code>table</code> or the cells themselves
-</ul>
-  </section>
-</div>
+          <ul>
+            <li>ignored if <code>border-collapse: separate</code></li>
+            <li>applies to elements with diplay of <code>table-cell</code></li>
+            <li>property of <code>table</code> or the cells themselves
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1>empty-cells</h1>
-  </header>
-  <object data="files/empty.html"></object>
-</div>
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1>empty-cells</h1>
+        </header>
+        <object data="files/empty.html"></object>
+      </div>
 
 
 
 
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/vertical-align">vertical-align</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/vertical-align">vertical-align</a>: baseline | top | bottom | middle |
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/vertical-align">vertical-align</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/vertical-align">vertical-align</a>: baseline | top | bottom | middle |
 sub | super | text-top | text-bottom | &lt;percentage> | &lt;length></pre>
-                  <p>applied to thead, tfoot, tbody, tr, td, th, but not table.</p>
-    <ul style="height: 58vh; overflow: scroll">
- <li><code>baseline</code>: Aligns the baseline of the cell with the baseline of all other cells in the row that are baseline-aligned.</li>
- <li><code>top</code>: Aligns the top padding edge of the cell with the top of the row.</li>
- <li><code>middle</code>: Centers the padding box of the cell within the row.</li>
- <li><code>bottom</code>: 
- Aligns the bottom padding edge of the cell with the bottom of the row.</li>
-<li><code>sub, super, text-top, text-bottom, &lt;length></code>, and <code>&lt;percentage</code>> equal <code>baseline</code>
-  </li>
-</ul>
+          <p>applied to thead, tfoot, tbody, tr, td, th, but not table.</p>
+          <ul style="height: 58vh; overflow: scroll">
+            <li><code>baseline</code>: Aligns the baseline of the cell with the baseline of all other cells in the row
+              that are baseline-aligned.</li>
+            <li><code>top</code>: Aligns the top padding edge of the cell with the top of the row.</li>
+            <li><code>middle</code>: Centers the padding box of the cell within the row.</li>
+            <li><code>bottom</code>:
+              Aligns the bottom padding edge of the cell with the bottom of the row.</li>
+            <li><code>sub, super, text-top, text-bottom, &lt;length></code>, and <code>&lt;percentage</code>> equal
+              <code>baseline</code>
+            </li>
+          </ul>
 
-  </section>
-</div>
-
-
-
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1>vertical-align</h1>
-  </header>
-  <object data="files/vertical.html"></object>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>All the <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/display">display</a></code> properties</h1>
-  </header>
-  <section class="content" style="overflow: scroll; height: 80vh;">
-    <h2><code>&lt;display-outside></code> values</h2>
-  <pre contenteditable>
+
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1>vertical-align</h1>
+        </header>
+        <object data="files/vertical.html"></object>
+      </div>
+
+
+      <div class="slide">
+        <header>
+          <h1>All the
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/display">display</a></code>
+            properties</h1>
+        </header>
+        <section class="content" style="overflow: scroll; height: 80vh;">
+          <h2><code>&lt;display-outside></code> values</h2>
+          <pre contenteditable>
 display: block;
 display: inline;
 display: run-in;</pre>
 
 
-    <h2><code>&lt;display-inside></code> values</h2>
- <pre contenteditable>display: flow;
+          <h2><code>&lt;display-inside></code> values</h2>
+          <pre contenteditable>display: flow;
 display: flow-root;
 display: table;
 display: flex;
@@ -388,15 +411,15 @@ display: grid;
 display: ruby;</pre>
 
 
-    <h2><code>&lt;display-outside></code> plus <code>&lt;display-inside></code> values</h2>
- <pre contenteditable>display: block flow;
+          <h2><code>&lt;display-outside></code> plus <code>&lt;display-inside></code> values</h2>
+          <pre contenteditable>display: block flow;
 display: inline table;
 display: flex run-in;</pre>
 
 
 
-    <h2><code>&lt;display-listitem></code> values</h2>
- <pre contenteditable>display: list-item;
+          <h2><code>&lt;display-listitem></code> values</h2>
+          <pre contenteditable>display: list-item;
 display: list-item block;
 display: list-item inline;
 display: list-item flow;
@@ -406,8 +429,8 @@ display: list-item block flow-root;
 display: flow list-item block;</pre>
 
 
-    <h2><code>&lt;display-internal></code> values</h2>
- <pre contenteditable>display: table-row-group;
+          <h2><code>&lt;display-internal></code> values</h2>
+          <pre contenteditable>display: table-row-group;
 display: table-header-group;
 display: table-footer-group;
 display: table-row;
@@ -421,35 +444,35 @@ display: ruby-base-container;
 display: ruby-text-container;</pre>
 
 
-    <h2><code>&lt;display-box></code> values</h2>
- <pre contenteditable>display: contents;
+          <h2><code>&lt;display-box></code> values</h2>
+          <pre contenteditable>display: contents;
 display: none;</pre>
 
 
-    <h2><code>&lt;display-legacy></code> values</h2>
- <pre contenteditable>display: inline-block;
+          <h2><code>&lt;display-legacy></code> values</h2>
+          <pre contenteditable>display: inline-block;
 display: inline-table;
 display: inline-flex;
 display: inline-grid;</pre>
 
 
-    <h2>global values</h2>
- <pre contenteditable>display: inherit;
+          <h2>global values</h2>
+          <pre contenteditable>display: inherit;
 display: initial;
 display: unset;
 display: revert;</pre>
-</pre>
-  </section>
-</div>
+          </pre>
+        </section>
+      </div>
 
-<!--  -->
-<div class="slide">
-  <header>
-    <h1><code>display</code> property</h1>
-  </header>
-  <section class="content">
-    <pre>display: table | table-cell</pre>
-    <pre>display: table;
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1><code>display</code> property</h1>
+        </header>
+        <section class="content">
+          <pre>display: table | table-cell</pre>
+          <pre>display: table;
 display: table-row-group;
 display: table-header-group;
 display: table-footer-group;
@@ -458,70 +481,89 @@ display: table-cell;
 display: table-column-group;
 display: table-column;
 display: table-caption;</pre>
-<pre>.parent {
+          <pre>.parent {
   display: table;
 }
 .child {
   display: table-cell;
   vertical-align: baseline;
 }</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
-<div class="slide">
-  <header>
-    <h1>Related <code>display</code> values</h1>
-  </header>
-  <section class="content"><dl class="wide">
-  <dt><code>table-row-group</code></dt>
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" title="The HTML Table Body element (<tbody>) encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of the table (<table>).">&lt;tbody&gt;</a> element.</dd>
-  <dt><code>table-header-group</code></dt>
+      <div class="slide">
+        <header>
+          <h1>Related <code>display</code> values</h1>
+        </header>
+        <section class="content">
+          <dl class="wide">
+            <dt><code>table-row-group</code></dt>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody"
+                title="The HTML Table Body element (<tbody>) encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of the table (<table>).">&lt;tbody&gt;</a>
+              element.</dd>
+            <dt><code>table-header-group</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" title="The HTML <thead> element defines a set of rows defining the head of the columns of the table.">&lt;thead&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead"
+                title="The HTML <thead> element defines a set of rows defining the head of the columns of the table.">&lt;thead&gt;</a>
+              element.</dd>
 
-  <dt><code>table-footer-group</code></dt>
+            <dt><code>table-footer-group</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" title="The HTML <tfoot> element defines a set of rows summarizing the columns of the table.">&lt;tfoot&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot"
+                title="The HTML <tfoot> element defines a set of rows summarizing the columns of the table.">&lt;tfoot&gt;</a>
+              element.</dd>
 
-  <dt><code>table-row</code></dt>
+            <dt><code>table-row</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" title="The HTML <tr> element defines a row of cells in a table. The row's cells can then be established using a mix of <td> (data cell) and <th> (header cell) elements.The HTML <tr> element specifies that the markup contained inside the <tr> block comprises one row of a table, inside which the <th> and <td> elements create header and data cells, respectively, within the row.">&lt;tr&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
+                title="The HTML <tr> element defines a row of cells in a table. The row's cells can then be established using a mix of <td> (data cell) and <th> (header cell) elements.The HTML <tr> element specifies that the markup contained inside the <tr> block comprises one row of a table, inside which the <th> and <td> elements create header and data cells, respectively, within the row.">&lt;tr&gt;</a>
+              element.</dd>
 
-  <dt><code>table-cell</code></dt>
+            <dt><code>table-cell</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" title="The HTML <td> element defines a cell of a table that contains data. It participates in the table model.">&lt;td&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td"
+                title="The HTML <td> element defines a cell of a table that contains data. It participates in the table model.">&lt;td&gt;</a>
+              element.</dd>
 
-  <dt><code>table-column-group</code></dt>
+            <dt><code>table-column-group</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup" title="The HTML <colgroup> element defines a group of columns within a table.">&lt;colgroup&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup"
+                title="The HTML <colgroup> element defines a group of columns within a table.">&lt;colgroup&gt;</a>
+              element.</dd>
 
-  <dt><code>table-column</code></dt>
+            <dt><code>table-column</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" title="The HTML <col> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element.">&lt;col&gt;</a> element.</dd>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col"
+                title="The HTML <col> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element.">&lt;col&gt;</a>
+              element.</dd>
 
-  <dt><code>table-caption</code></dt>
+            <dt><code>table-caption</code></dt>
 
-  <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" title="The HTML Table Caption element (<caption>) specifies the caption (or title) of a table, and if used is always the first child of a <table>.">&lt;caption&gt;</a> element.</dd>
-</dl></section></div>
+            <dd>Behaves like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption"
+                title="The HTML Table Caption element (<caption>) specifies the caption (or title) of a table, and if used is always the first child of a <table>.">&lt;caption&gt;</a>
+              element.</dd>
+          </dl>
+        </section>
+      </div>
 
-<!-- divider -->
-<div class="slide intro">
-  <header>
-    <h1>columns</h1>
-  </header>
-  <section class="content">
-    </section>
-  </div>
-  
-  <!--  -->
-<div class="slide">
-    <header>
-    <h1>&lt;col> Syntax</h1>
-  </header>
-    
-  <section class="content">
-<pre contenteditable>&lt;table>
+      <!-- divider -->
+      <div class="slide intro">
+        <header>
+          <h1>columns</h1>
+        </header>
+        <section class="content">
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>&lt;col> Syntax</h1>
+        </header>
+
+        <section class="content">
+          <pre contenteditable>&lt;table>
   &lt;caption>u.s. women's national team&lt;/caption>
 &lt;colgroup>
   &lt;col class="name"/>
@@ -531,74 +573,77 @@ display: table-caption;</pre>
   &lt;col class="goals"/>
   &lt;col class="assists"/>
   &lt;/colgroup></em>
-&lt;thead>....</pre> 
-</section>
-  </div>
-  
-  <!--  -->
-<div class="slide">
-    <header>
-    <h1>&lt;col> Styling</h1>
-  </header>
-    
-  <section class="content">
-<p>limited stylability</p>
-<pre>border: <i>/* if table { border-collapse: collapse;} is set */</i>
+&lt;thead>....</pre>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="slide">
+        <header>
+          <h1>&lt;col> Styling</h1>
+        </header>
+
+        <section class="content">
+          <p>limited stylability</p>
+          <pre>border: <i>/* if table { border-collapse: collapse;} is set */</i>
 background:
 width:
 visibility: /* collapse value only */</pre>
-  </section>
-</div>
+        </section>
+      </div>
 
 
 
 
 
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1>styling columns</h1>
-  </header>
-  <object data="files/colstyle.html"></object>
-</div>
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1>styling columns</h1>
+        </header>
+        <object data="files/colstyle.html"></object>
+      </div>
 
 
-<!-- table layout -->
-<div class="slide">
-  <header>
-    <h1><code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/table-layout">table-layout</a></code> property</h1>
-  </header>
-  <section class="content">
-    <pre contenteditable>table-layout: <em>auto</em> | fixed</pre>
-    <ul>
+      <!-- table layout -->
+      <div class="slide">
+        <header>
+          <h1>
+            <code><a target="resource" href="https://developer.mozilla.org/en-US/docs/web/css/table-layout">table-layout</a></code>
+            property</h1>
+        </header>
+        <section class="content">
+          <pre contenteditable>table-layout: <em>auto</em> | fixed</pre>
+          <ul>
 
-<li><code>auto</code> - widths of table and cells fit content.</li>
-<li><code>fixed</code> - widths of table and columns set by &lt;col> width or first row of cells. (with too-wide cells observing <code>overflow</code> value.</li>
-      <li>fixed renders faster - only need first row downloaded to start painting.</li>
-    </ul>
-  </section>
-</div>
-
-
-
-<!-- style the caption -->
-<div class="slide object">
-  <header>
-    <h1><code>table-layout</code> property</h1>
-  </header>
-  <object data="files/table-layout.html"></object>
-</div>
+            <li><code>auto</code> - widths of table and cells fit content.</li>
+            <li><code>fixed</code> - widths of table and columns set by &lt;col> width or first row of cells. (with
+              too-wide cells observing <code>overflow</code> value.</li>
+            <li>fixed renders faster - only need first row downloaded to start painting.</li>
+          </ul>
+        </section>
+      </div>
 
 
 
-<!-- Style a Table -->
-<div class="slide">
-  <header>
-    <h1><a href="files/play.html">Exercise</a></h1>
-  </header>
-  <section class="content">
-    <p>Style the USNWT table for legibility
-    <pre><strike>display:</strike>
+      <!-- style the caption -->
+      <div class="slide object">
+        <header>
+          <h1><code>table-layout</code> property</h1>
+        </header>
+        <object data="files/table-layout.html"></object>
+      </div>
+
+
+
+      <!-- Style a Table -->
+      <div class="slide">
+        <header>
+          <h1><a href="files/play.html">Exercise</a></h1>
+        </header>
+        <section class="content">
+          <p>Style the USNWT table for legibility
+          <pre><strike>display:</strike>
 caption-side:
 border-collapse:
 border-spacing:
@@ -606,8 +651,8 @@ empty-cells:
 table-layout:
 vertical-align:
 text-align:</pre>
-<div style="display: flex; gap: 1em;">
-<pre style="flex: 1; height: 8em; overflow-y: scroll">table
+          <div style="display: flex; gap: 1em;">
+            <pre style="flex: 1; height: 8em; overflow-y: scroll">table
 colgroup
 colspan
 thead
@@ -616,7 +661,8 @@ tfoot
 tr
 th
 td
-</pre><pre style="flex: 1; height: 8em; overflow-y: scroll">table, td, th {}
+</pre>
+            <pre style="flex: 1; height: 8em; overflow-y: scroll">table, td, th {}
 table {}
 col.name {}
 col.number {}
@@ -626,158 +672,165 @@ col.goals {}
 col.assists {}
 caption {}
 thead {}
-tbody {}</pre></div><p><a href="files/play.html" target="play" class="objectlink">Open in browser</a></p>
-  </section>
-</div>
+tbody {}</pre>
+          </div>
+          <p><a href="files/play.html" target="play" class="objectlink">Open in browser</a></p>
+        </section>
+      </div>
 
 
-<!-- Style a Table -->
-<div class="slide intro">
-  <header>
-    <h1>Intentionally left blank</h1>
-  </header>
-  <section class="content">No cheating!</section>
-</div>
+      <!-- Style a Table -->
+      <div class="slide intro">
+        <header>
+          <h1>Intentionally left blank</h1>
+        </header>
+        <section class="content">No cheating!</section>
+      </div>
 
-<!-- Style a Table -->
-<div class="slide object">
-  <header>
-    <h1>Solution</h1>
-  </header>
-    <object data="files/styled.html"></object>
-</div>
-
-
-<!-- Style a Table -->
-<div class="slide object">
-  <header>
-    <h1>Static Top Row</h1>
-  </header>
-<object data="files/theadsticky.html"></object>
-</div>
-
-<!-- Style a Table -->
-<div class="slide object">
-  <header>
-    <h1>Static Left Column</h1>
-  </header>
-  <object data="files/leftcolsticky.html"></object>
-</div>
+      <!-- Style a Table -->
+      <div class="slide object">
+        <header>
+          <h1>Solution</h1>
+        </header>
+        <object data="files/styled.html"></object>
+      </div>
 
 
-<!-- Style a Table -->
-<div class="slide object">
-  <header>
-    <h1>Static header, footer &amp; left column</h1>
-  </header>
-    <object data="files/fullsticky.html"></object>
-</div>
+      <!-- Style a Table -->
+      <div class="slide object">
+        <header>
+          <h1>Static Top Row</h1>
+        </header>
+        <object data="files/theadsticky.html"></object>
+      </div>
 
-<!-- Style a Table -->
-<div class="slide">
-  <header>
-    <h1>Accessibility</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>Use proportional rather than absolute sizing</li>
-      <li><code>display:</code> other than <code>table</code> removes the table semantics</li>
-      <li>if you do convert to <code>grid</code>, use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role" target="resource"><code>aria-role</code>s</a>. </li>
-      <li>If table maintains selection state, has two-dimensional navigation, or allows cell rearrangement use grid or treegrid roles instead.</li>
-      </ul> 
-  </section>
-</div>
+      <!-- Style a Table -->
+      <div class="slide object">
+        <header>
+          <h1>Static Left Column</h1>
+        </header>
+        <object data="files/leftcolsticky.html"></object>
+      </div>
 
 
+      <!-- Style a Table -->
+      <div class="slide object">
+        <header>
+          <h1>Static header, footer &amp; left column</h1>
+        </header>
+        <object data="files/fullsticky.html"></object>
+      </div>
 
-<!-- Style a Table -->
-<div class="slide">
-  <header>
-    <h1>On Mobile</h1>
-  </header>
-  <section class="content">
-    <ul>
-      <li>Scroll</li>
-      <li>Fix header and left column, enabling scrolling</li>
-      <li>Linearize</li>
-      <li>hide some columns / allow user selection</li>
-      <li>Shrink (<code>col.club { visibility: collapse; }</code>)</li>
-    </ul>
-  </section>
-</div>
+      <!-- Style a Table -->
+      <div class="slide">
+        <header>
+          <h1>Accessibility</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Use proportional rather than absolute sizing</li>
+            <li><code>display:</code> other than <code>table</code> removes the table semantics</li>
+            <li>if you do convert to <code>grid</code>, use <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role"
+                target="resource"><code>aria-role</code>s</a>. </li>
+            <li>If table maintains selection state, has two-dimensional navigation, or allows cell rearrangement use
+              grid or treegrid roles instead.</li>
+          </ul>
+        </section>
+      </div>
 
 
 
+      <!-- Style a Table -->
+      <div class="slide">
+        <header>
+          <h1>On Mobile</h1>
+        </header>
+        <section class="content">
+          <ul>
+            <li>Scroll</li>
+            <li>Fix header and left column, enabling scrolling</li>
+            <li>Linearize</li>
+            <li>hide some columns / allow user selection</li>
+            <li>Shrink (<code>col.club { visibility: collapse; }</code>)</li>
+          </ul>
+        </section>
+      </div>
 
-<!--NEXT-->
-<div class="slide">
-   <header>
-    <h1>Grid</h1>
-  </header>
-  <section class="content">
-    <h1><a href="../grid/index.html">Next ➹</a></h1></section>
-</div>
 
-<div class="slide dots">
-  <header>
-    <h1>Table of Content</h1>
-  </header>
-  <section>
-    <ol class="col2">
-<li><a href="../intro/index.html">Introduction</a></li>
-    <li><a href="../selectors/index.html">Selectors</a></li>
-    <li><a href="../selectors/specificity.html">Specificity</a></li>
-    <li><a href="../generated/index.html">Generated Content</a></li>
-    <li><a href="../media/index.html">Media Queries</a></li>
-    <li><a href="../values/index.html">Units &amp; Values </a></li>
-    <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
-    <li><a href="../math/index.html">Math &amp; Variables</a></li>
-    <li><a href="../fonts/index.html">Fonts</a></li>
-    <li><a href="../text/index.html">Text</a></li>
-    <li><a href="../images/index.html">Images</a></li>
-    <li><a href="../background/index.html">Backgrounds</a></li>
-    <li><a href="../gradients/index.html">Gradients</a></li>
-    <li><a href="../boxmodel/index.html">Box Model</a></li>
-    <li><a href="../flexbox/index.html">Flexbox</a></li>
-    <li><a href="../tables/index.html">Tables</a></li>
-    <li><a href="../grid/index.html">Grids</a></li>
-    <li><a href="../transforms/index.html">Transforms</a></li>
-    <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
-   <li><a href="../other/index.html">Other Features</a></li>
 
-<p></ol>
-  </section>
-</div>
 
-<!-- TOC -->
-<div class="slide">
-  <header>
-    <h1>Links</h1>
-  </header>
-    <section class="content">
-      <ul>
-      </ul>
-    </section>
-</div>
- 
-  
+      <!--NEXT-->
+      <div class="slide">
+        <header>
+          <h1>Grid</h1>
+        </header>
+        <section class="content">
+          <h1><a href="../grid/index.html">Next ➹</a></h1>
+        </section>
+      </div>
 
-    
+      <div class="slide dots">
+        <header>
+          <h1>Table of Content</h1>
+        </header>
+        <section>
+          <ol class="col2">
+            <li><a href="../intro/index.html">Introduction</a></li>
+            <li><a href="../selectors/index.html">Selectors</a></li>
+            <li><a href="../selectors/specificity.html">Specificity</a></li>
+            <li><a href="../generated/index.html">Generated Content</a></li>
+            <li><a href="../media/index.html">Media Queries</a></li>
+            <li><a href="../values/index.html">Units &amp; Values </a></li>
+            <li><a href="../colors/index.html">Colors &amp; Transparency </a></li>
+            <li><a href="../math/index.html">Math &amp; Variables</a></li>
+            <li><a href="../fonts/index.html">Fonts</a></li>
+            <li><a href="../text/index.html">Text</a></li>
+            <li><a href="../images/index.html">Images</a></li>
+            <li><a href="../background/index.html">Backgrounds</a></li>
+            <li><a href="../gradients/index.html">Gradients</a></li>
+            <li><a href="../boxmodel/index.html">Box Model</a></li>
+            <li><a href="../flexbox/index.html">Flexbox</a></li>
+            <li><a href="../tables/index.html">Tables</a></li>
+            <li><a href="../grid/index.html">Grids</a></li>
+            <li><a href="../transforms/index.html">Transforms</a></li>
+            <li><a href="../animations/index.html">Transitions &amp; Animation</a></li>
+            <li><a href="../other/index.html">Other Features</a></li>
 
-   
+            <p>
+          </ol>
+        </section>
+      </div>
 
-   </div>
-   
-<header>
-    <nav>
-      <ul>
-        <li><button class="cancel" id="back">Back</button></li>
-        <li><button class="done" id="next">Next</button></li>
-      </ul>
-    </nav>
-</header>
-</div>
-<script src="slides.js"></script>
-</body> 
+      <!-- TOC -->
+      <div class="slide">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <section class="content">
+          <ul>
+          </ul>
+        </section>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><button class="cancel" id="back">Back</button></li>
+          <li><button class="done" id="next">Next</button></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <script src="slides.js"></script>
+</body>
+
 </html>
-
